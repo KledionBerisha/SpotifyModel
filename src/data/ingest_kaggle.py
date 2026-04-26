@@ -7,6 +7,7 @@ import pandas as pd
 
 
 DEFAULT_DATASET = "yamaerenay/spotify-dataset-19212020-600k-tracks"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 
 def _find_csv_file(dataset_dir: Path) -> Path:
@@ -21,12 +22,30 @@ def _find_csv_file(dataset_dir: Path) -> Path:
     return csv_files[0]
 
 
+def _get_year_series(df: pd.DataFrame) -> pd.Series:
+    if "year" in df.columns:
+        return pd.to_numeric(df["year"],
+        errors="coerce")
+    if "release_date" in df.columns:
+        parsed = pd.to_datetime(df["release_date"], errors="coerce")
+        return parsed.dt.year
+    raise ValueError(
+        "Input dataset must contain either 'year' or 'release_date' column."
+    )
+
+def _resolve_output_path(output_csv:Path) -> Path:
+    if output_csv.is_absolute():
+        return output_csv
+    return PROJECT_ROOT / output_csv
+
 def run(input_csv: Path, output_csv: Path) -> None:
     df = pd.read_csv(input_csv)
-    if "year" not in df.columns:
-        raise ValueError("Input dataset must contain a 'year' column.")
+    years = _get_year_series(df)
+    df = df.assign(year=years).dropna(subset=["year"]).copy()
+    df["year"] = df["year"].astype(int)
 
     filtered = df[(df["year"] >= 1960) & (df["year"] <= 2020)].copy()
+    output_csv = _resolve_output_path(output_csv)
     output_csv.parent.mkdir(parents=True, exist_ok=True)
     filtered.to_csv(output_csv, index=False)
 
