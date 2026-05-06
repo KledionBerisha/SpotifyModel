@@ -13,6 +13,7 @@ from scipy import stats
 
 # Project root
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+ANALYSIS_END_YEAR = 2025
 
 logger = logging.getLogger(__name__)
 
@@ -34,11 +35,13 @@ def load_data(csv_path: str) -> pd.DataFrame:
     """Load and validate merged Spotify dataset."""
     df = pd.read_csv(csv_path)
     df["year"] = pd.to_numeric(df["year"], errors="coerce")
-    
+
     for col in AUDIO_FEATURES:
         if col in df.columns:
             df[col] = pd.to_numeric(df[col], errors="coerce")
-    
+
+    df = df[df["year"].between(1980, ANALYSIS_END_YEAR)].copy()
+
     logger.info(f"Loaded {len(df)} tracks from {csv_path}")
     return df
 
@@ -46,8 +49,10 @@ def load_data(csv_path: str) -> pd.DataFrame:
 def add_decade(df: pd.DataFrame) -> pd.DataFrame:
     """Add decade column."""
     df = df.copy()
-    df["decade"] = (df["year"] // 10 * 10).astype(int)
-    df["decade_label"] = df["decade"].astype(str) + "s"
+    bucket_start = (df["year"] // 5) * 5
+    bucket_end = np.minimum(bucket_start + 4, ANALYSIS_END_YEAR)
+    df["decade"] = bucket_start.astype(int)
+    df["decade_label"] = bucket_start.astype(int).astype(str) + "-" + bucket_end.astype(int).astype(str)
     return df
 
 
@@ -151,6 +156,7 @@ def plot_variance_trends(variance_df: pd.DataFrame, output_dir: Path) -> None:
         ax.set_title(f"{feature.capitalize()} Variance Trend", fontweight="bold")
         ax.set_xlabel("Decade")
         ax.set_ylabel("Variance")
+        ax.set_xlim(-0.5, len(decades) - 0.5)
         ax.grid(alpha=0.3)
         ax.tick_params(axis="x", rotation=45)
     
@@ -213,6 +219,7 @@ def plot_iqr_trends(variance_df: pd.DataFrame, output_dir: Path) -> None:
         ax.set_title(f"{feature.capitalize()} IQR by Decade", fontweight="bold")
         ax.set_ylabel("IQR (Interquartile Range)")
         ax.set_xlabel("Decade")
+        ax.set_xlim(-0.5, len(decades) - 0.5)
         ax.grid(axis="y", alpha=0.3)
     
     axes[-1].axis("off")
@@ -233,7 +240,7 @@ def generate_report(
     
     with open(report_path, "w", encoding="utf-8") as f:
         f.write("=" * 80 + "\n")
-        f.write("SPOTIFY MUSIC STANDARDIZATION ANALYSIS (1960-2026)\n")
+        f.write("SPOTIFY MUSIC STANDARDIZATION ANALYSIS (1980-2026)\n")
         f.write("=" * 80 + "\n\n")
         
         f.write("RESEARCH QUESTION:\n")
@@ -271,7 +278,7 @@ def generate_report(
             f.write("\n")
         
         # Variance trend analysis
-        f.write("VARIANCE TRENDS (1960s → 2020s):\n")
+        f.write("VARIANCE TRENDS (1980 → 2025) (5-Year Periods):\n")
         f.write("-" * 80 + "\n\n")
         
         for feature in AUDIO_FEATURES:
@@ -280,15 +287,15 @@ def generate_report(
             if len(feature_var) < 2:
                 continue
             
-            var_1960s = feature_var.iloc[0]["variance"]
-            var_2020s = feature_var.iloc[-1]["variance"]
-            change_pct = ((var_2020s - var_1960s) / var_1960s * 100) if var_1960s != 0 else 0
+            var_1980s = feature_var.iloc[0]["variance"]
+            var_2025 = feature_var.iloc[-1]["variance"]
+            change_pct = ((var_2025 - var_1980s) / var_1980s * 100) if var_1980s != 0 else 0
             
-            trend = "↓ DECREASING (more standardized)" if var_2020s < var_1960s else "↑ INCREASING (more diverse)"
+            trend = "↓ DECREASING (more standardized)" if var_2025 < var_1980s else "↑ INCREASING (more diverse)"
             
             f.write(f"{feature.upper()}:\n")
-            f.write(f"  1960s Variance: {var_1960s:.6f}\n")
-            f.write(f"  2020s Variance: {var_2020s:.6f}\n")
+            f.write(f"  1980s Variance: {var_1980s:.6f}\n")
+            f.write(f"  2020s Variance: {var_2025:.6f}\n")
             f.write(f"  Change: {change_pct:+.1f}%\n")
             f.write(f"  Trend: {trend}\n\n")
         

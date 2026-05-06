@@ -1,4 +1,4 @@
-"""Analyze long-term trends in Spotify audio characteristics (1960-2026)."""
+"""Analyze long-term trends in Spotify audio characteristics (1980-2025)."""
 
 import argparse
 import logging
@@ -13,6 +13,8 @@ from scipy import stats
 
 # Project root for relative paths
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+ANALYSIS_END_YEAR = 2025
+BUCKET_SIZE_YEARS = 5
 
 logger = logging.getLogger(__name__)
 
@@ -39,35 +41,67 @@ def load_data(csv_path: str) -> pd.DataFrame:
     for col in AUDIO_FEATURES:
         if col in df.columns:
             df[col] = pd.to_numeric(df[col], errors="coerce")
-    
+
+    df = df[df["year"].between(1980, ANALYSIS_END_YEAR)].copy()
+
     logger.info(f"Loaded {len(df)} tracks from {csv_path}")
     return df
 
+def add_five_year_bucket(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.copy()
+    bucket_start = (df["year"] // BUCKET_SIZE_YEARS) * BUCKET_SIZE_YEARS
+    bucket_end = np.minimum(bucket_start + (BUCKET_SIZE_YEARS - 1), ANALYSIS_END_YEAR)
 
-def compute_yearly_statistics(df: pd.DataFrame) -> pd.DataFrame:
+    df["bucket_start"] = bucket_start.astype(int)
+    df["bucket_label"] = (
+        bucket_start.astype(int).astype(str)
+        + "-"
+        + bucket_end.astype(int).astype(str)
+    )
+    return df
+
+def compute_period_statistics(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Compute yearly statistics for all audio features.
-    
-    Returns:
-        DataFrame with columns: year, feature_mean, feature_median, feature_std, feature_count
+    Compute 5-year period statistics for all audio features.
     """
-    yearly_stats = df.groupby("year", as_index=False)[AUDIO_FEATURES].agg([
+    bucketed = add_five_year_bucket(df)
+
+    period_stats = bucketed.groupby(
+        ["bucket_start", "bucket_label"],
+        as_index=False
+    )[AUDIO_FEATURES].agg([
         ("mean", "mean"),
         ("median", "median"),
         ("std", "std"),
     ])
-    
-    # Flatten multi-level columns
-    yearly_stats.columns = ["_".join(col).strip() if col[1] else col[0] 
-                             for col in yearly_stats.columns]
-    yearly_stats.rename(columns={"year_": "year"}, inplace=True)
-    
-    # Add count of tracks per year
-    yearly_counts = df.groupby("year").size().reset_index(name="track_count")
-    yearly_stats = yearly_stats.merge(yearly_counts, on="year")
-    
-    logger.info(f"Computed yearly statistics for {len(yearly_stats)} years")
-    return yearly_stats
+
+    period_stats.columns = [
+        "_".join(col).strip() if col[1] else col[0]
+        for col in period_stats.columns
+    ]
+
+    period_stats.rename(
+        columns={
+            "bucket_start_": "bucket_start",
+            "bucket_label_": "bucket_label",
+        },
+        inplace=True,
+    )
+
+    period_counts = bucketed.groupby(
+        ["bucket_start", "bucket_label"]
+    ).size().reset_index(name="track_count")
+
+    period_stats = period_stats.merge(
+        period_counts,
+        on=["bucket_start", "bucket_label"]
+    ).sort_values("bucket_start")
+
+    # Keep the old "year" field so the rest of the code can still work
+    period_stats["year"] = period_stats["bucket_start"]
+
+    logger.info(f"Computed statistics for {len(period_stats)} 5-year periods")
+    return period_stats
 
 
 def test_trend(years: np.ndarray, values: np.ndarray) -> Tuple[float, float, float]:
@@ -128,107 +162,80 @@ def analyze_trends(yearly_stats: pd.DataFrame) -> pd.DataFrame:
     return trends_df
 
 
-def plot_trends(yearly_stats: pd.DataFrame, output_dir: Path) -> None:
-    """Create line plot of all audio features over time."""
-    years = yearly_stats["year"].values
-    
+def plot_trends(period_stats: pd.DataFrame, output_dir: Path) -> None:
+    """Create line plot of all audio features over 5-year periods."""
+    x = period_stats["bucket_start"].values
+    labels = period_stats["bucket_label"].values
+
     fig, axes = plt.subplots(3, 3, figsize=(16, 12), facecolor="white")
     axes = axes.flatten()
-    
+
     for idx, feature in enumerate(AUDIO_FEATURES):
         ax = axes[idx]
         col_mean = f"{feature}_mean"
         col_std = f"{feature}_std"
-        
-        if col_mean not in yearly_stats.columns:
+
+        if col_mean not in period_stats.columns:
             continue
-        
-        means = yearly_stats[col_mean].values
-        stds = yearly_stats[col_std].values if col_std in yearly_stats.columns else None
-        
-        ax.plot(years, means, linewidth=2.5, label=feature, color="steelblue")
-        
+
+        means = period_stats[col_mean].values
+        stds = period_stats[col_std].values if col_std in period_stats.columns else None
+
+        ax.plot(x, means, linewidth=2.5, label=feature, color="steelblue")
+
         if stds is not None:
-            ax.fill_between(years, means - stds, means + stds, alpha=0.3, color="steelblue")
-        
-        # Add linear trend line
+            ax.fill_between(x, means - stds, means + stds, alpha=0.3, color="steelblue")
+
         mask = ~(np.isnan(means))
         if mask.sum() >= 2:
-            z = np.polyfit(years[mask], means[mask], 1)
+            z = np.polyfit(x[mask], means[mask], 1)
             p = np.poly1d(z)
-            ax.plot(years[mask], p(years[mask]), "--", linewidth=2, color="red", alpha=0.7, label="Trend")
-        
-        ax.set_xlabel("Year")
+            ax.plot(x[mask], p(x[mask]), "--", linewidth=2, color="red", alpha=0.7, label="Trend")
+
+        ax.set_xlabel("5-Year Period")
         ax.set_ylabel(feature.capitalize())
-        ax.set_title(f"{feature.capitalize()} Trend (1960-2026)")
+        ax.set_title(f"{feature.capitalize()} Trend (1980-2025)")
         ax.grid(alpha=0.3)
         ax.legend(fontsize=8)
-    
-    # Hide unused subplots
+
+        ax.set_xticks(x)
+        ax.set_xticklabels(labels, rotation=45)
+
     for idx in range(len(AUDIO_FEATURES), len(axes)):
         axes[idx].axis("off")
-    
+
     plt.tight_layout()
     fig.savefig(output_dir / "trend_analysis_all_features.png", dpi=300, bbox_inches="tight")
     logger.info("Saved: trend_analysis_all_features.png")
     plt.close(fig)
 
-
 def generate_report(
     trends_df: pd.DataFrame,
-    yearly_stats: pd.DataFrame,
+    period_stats: pd.DataFrame,
     output_dir: Path,
 ) -> None:
-    """Generate a text report summarizing key findings."""
     report_path = output_dir / "trend_analysis_report.txt"
-    
+
     with open(report_path, "w", encoding="utf-8") as f:
         f.write("=" * 80 + "\n")
-        f.write("SPOTIFY AUDIO TRENDS ANALYSIS (1960-2026)\n")
+        f.write("SPOTIFY AUDIO TRENDS ANALYSIS (1980-2025, 5-YEAR PERIODS)\n")
         f.write("=" * 80 + "\n\n")
-        
-        f.write("RESEARCH QUESTION:\n")
-        f.write("How have the audio characteristics of popular songs evolved over time?\n\n")
-        
-        f.write("KEY FINDINGS:\n")
-        f.write("-" * 80 + "\n\n")
-        
-        # Significant trends
-        sig_trends = trends_df[trends_df["p_value"] < 0.05].sort_values("p_value")
-        if len(sig_trends) > 0:
-            f.write(f"STATISTICALLY SIGNIFICANT TRENDS (p < 0.05):\n")
-            for _, row in sig_trends.iterrows():
-                f.write(f"  • {row['feature'].upper()}\n")
-                f.write(f"    Trend: {row['trend_direction']}\n")
-                f.write(f"    Slope: {row['slope']:.6f}\n")
-                f.write(f"    P-value: {row['p_value']:.4f}\n")
-                f.write(f"    R²: {row['r_squared']:.4f}\n\n")
-        else:
-            f.write("No statistically significant trends found (α = 0.05).\n\n")
-        
-        # Feature ranges over time
-        f.write("FEATURE RANGES (1960 vs 2026):\n")
-        early_years = yearly_stats[yearly_stats["year"] <= 1970]
-        recent_years = yearly_stats[yearly_stats["year"] >= 2020]
-        
-        if len(early_years) > 0 and len(recent_years) > 0:
-            for feature in AUDIO_FEATURES:
-                col_mean = f"{feature}_mean"
-                if col_mean in yearly_stats.columns:
-                    early_avg = early_years[col_mean].mean()
-                    recent_avg = recent_years[col_mean].mean()
-                    change_pct = ((recent_avg - early_avg) / early_avg * 100) if early_avg != 0 else 0
-                    
-                    f.write(f"  • {feature.upper()}\n")
-                    f.write(f"    1960s average: {early_avg:.4f}\n")
-                    f.write(f"    2020s average: {recent_avg:.4f}\n")
-                    f.write(f"    Change: {change_pct:+.1f}%\n\n")
-        
-        f.write("=" * 80 + "\n")
-        f.write("Report generated by trend_analysis.py\n")
-    
-    logger.info(f"Saved: {report_path}")
 
+        f.write("FEATURE RANGES (FIRST vs LAST 5-YEAR PERIOD):\n")
+        first_period = period_stats.iloc[0]
+        last_period = period_stats.iloc[-1]
+
+        for feature in AUDIO_FEATURES:
+            col_mean = f"{feature}_mean"
+            if col_mean in period_stats.columns:
+                first_avg = first_period[col_mean]
+                last_avg = last_period[col_mean]
+                change_pct = ((last_avg - first_avg) / first_avg * 100) if first_avg != 0 else 0
+
+                f.write(f"  • {feature.upper()}\n")
+                f.write(f"    {first_period['bucket_label']} average: {first_avg:.4f}\n")
+                f.write(f"    {last_period['bucket_label']} average: {last_avg:.4f}\n")
+                f.write(f"    Change: {change_pct:+.1f}%\n\n")
 
 def save_statistics(yearly_stats: pd.DataFrame, output_dir: Path) -> None:
     """Save yearly statistics to CSV."""
@@ -258,20 +265,12 @@ def run(
     # Load data
     df = load_data(input_csv)
     
-    # Compute statistics
-    yearly_stats = compute_yearly_statistics(df)
-    
-    # Analyze trends
-    trends_df = analyze_trends(yearly_stats)
-    
-    # Generate outputs
-    plot_trends(yearly_stats, output_path)
-    save_statistics(yearly_stats, output_path)
-    generate_report(trends_df, yearly_stats, output_path)
-    
-    logger.info(f"Trend analysis complete. Results saved to: {output_path}")
-    
-    return yearly_stats, trends_df
+    period_stats = compute_period_statistics(df)
+    trends_df = analyze_trends(period_stats)
+    plot_trends(period_stats, output_path)
+    save_statistics(period_stats, output_path)
+    generate_report(trends_df, period_stats, output_path)
+    return period_stats, trends_df
 
 
 def parse_args() -> argparse.Namespace:
@@ -307,3 +306,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

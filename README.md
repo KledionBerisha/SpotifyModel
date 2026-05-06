@@ -1,18 +1,18 @@
 # SpotifyModel
 Machine Learning model that is trained upon data from Spotify
 
-# Analiza e Karakteristikave Audio në Spotify (1960 - 2025)
+# Analiza e Karakteristikave Audio në Spotify (1980 - 2025)
 
-Ky projekt analizon këngët më të njohura në Spotify nga viti 1960 deri në 2025 për të parë si kanë ndryshuar karakteristikat audio me kalimin e kohës. Qasja është hibride:
+Ky projekt analizon këngët më të njohura në Spotify nga viti 1980 deri në 2025 për të parë si kanë ndryshuar karakteristikat audio me kalimin e kohës. Qasja është hibride:
 
-- Dataset Kaggle (1921-2020), i filtruar në periudhën 1960-2020.
+- Dataset Kaggle (1921-2020), i filtruar në periudhën 1980-2020.
 - Spotify API për periudhën 2021-2025.
 
 Qëllimi është të ndërtohet një analizë statistikore dhe një pipeline i machine learning për të kuptuar evolucionin e muzikës moderne.
 
 ## Pyetjet kryesore të kërkimit
 
-1. Si kanë ndryshuar karakteristikat kryesore audio nga 1960 deri në 2025?
+1. Si kanë ndryshuar karakteristikat kryesore audio nga 1980 deri në 2025?
 2. A ekziston tendencë drejt standardizimit të muzikës moderne?
 3. Cilat janë marrëdhëniet ndërmjet karakteristikave audio?
 4. Cilat karakteristika ndikojnë më shumë në popullaritet?
@@ -35,11 +35,11 @@ Qëllimi është të ndërtohet një analizë statistikore dhe një pipeline i m
 
 ## Plani i analizës (sipas pyetjeve)
 
-### 1) Trendet ndër dekada (1960-2025)
+### 1) Trendet ndër dekada (1980-2025)
 
 Metodologjia:
 
-- Ndarja në dekada: 1960s, 1970s, 1980s, 1990s, 2000s, 2010s, 2020-2025.
+- Ndarja në dekada: 1980s, 1990s, 2000s, 2010s, 2020-2025.
 - Llogaritje e statistikave për çdo variabël: mesatare, medianë, devijim standard.
 - Vizualizime: line plots sipas vitit dhe boxplots sipas dekadës.
 - Teste trendi: regresion linear i variablës ndaj vitit dhe, kur duhet, test jo-parametrik.
@@ -117,7 +117,7 @@ Analiza ndër dekada:
 
 Ndarja e periudhave:
 
-- Para streaming: 1960-2009.
+- Para streaming: 1980-2009.
 - Pas streaming: 2010-2025.
 
 Metodologjia:
@@ -135,7 +135,7 @@ Output i pritshëm:
 
 1. Data ingestion
 
-- Ngarkimi i Kaggle dataset dhe filtrimi 1960-2020.
+- Ngarkimi i Kaggle dataset dhe filtrimi 1980-2020.
 - Marrja e të dhënave 2021-2025 nga Spotify API.
 
 2. Data cleaning dhe harmonization
@@ -163,7 +163,7 @@ Output i pritshëm:
 
 ## Deliverables
 
-- Dataset final i unifikuar 1960-2025.
+- Dataset final i unifikuar 1980-2025.
 - Raport analitik me grafikë dhe teste statistikore.
 - Model ML me metrika performance dhe interpretim feature importance.
 - Analizë clustering me evolucionin e grupeve ndër dekada.

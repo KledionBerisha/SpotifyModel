@@ -13,6 +13,7 @@ from scipy import stats
 
 # Project root
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+ANALYSIS_END_YEAR = 2025
 
 logger = logging.getLogger(__name__)
 
@@ -37,21 +38,23 @@ def load_data(csv_path: str) -> pd.DataFrame:
     """Load and validate merged Spotify dataset."""
     df = pd.read_csv(csv_path)
     df["year"] = pd.to_numeric(df["year"], errors="coerce")
-    
+
     for col in AUDIO_FEATURES:
         if col in df.columns:
             df[col] = pd.to_numeric(df[col], errors="coerce")
-    
+
+    df = df[df["year"].between(1980, ANALYSIS_END_YEAR)].copy()
+
     logger.info(f"Loaded {len(df)} tracks from {csv_path}")
     return df
 
 
 def split_by_streaming_era(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
-    """Split data into pre-streaming (1960-2009) and post-streaming (2010+)."""
+    """Split data into pre-streaming (1980-2009) and post-streaming (2010+)."""
     pre = df[df["year"] < STREAMING_ERA_START].copy()
     post = df[df["year"] >= STREAMING_ERA_START].copy()
     
-    logger.info(f"Pre-streaming (1960-2009): {len(pre)} tracks")
+    logger.info(f"Pre-streaming (1980-2009): {len(pre)} tracks")
     logger.info(f"Post-streaming (2010+): {len(post)} tracks")
     
     return pre, post
@@ -155,7 +158,7 @@ def plot_distributions(pre: pd.DataFrame, post: pd.DataFrame, output_dir: Path) 
         
         bp = ax.boxplot(
             data_to_plot,
-            labels=["Pre-Streaming\n(1960-2009)", "Post-Streaming\n(2010-2026)"],
+            labels=["Pre-Streaming\n(1980-2009)", "Post-Streaming\n(2010-2026)"],
             patch_artist=True,
             showmeans=True,
         )
@@ -272,7 +275,7 @@ def generate_report(results_df: pd.DataFrame, output_dir: Path) -> None:
         
         f.write("METHODOLOGY:\n")
         f.write("-" * 80 + "\n")
-        f.write("Pre-Streaming Era: 1960-2009 (traditional radio/physical media era)\n")
+        f.write("Pre-Streaming Era: 1980-2009 (traditional radio/physical media era)\n")
         f.write("Post-Streaming Era: 2010-2026 (Spotify/Apple Music/YouTube Music)\n\n")
         f.write("Statistical Tests:\n")
         f.write("  • t-test (assumes normality)\n")

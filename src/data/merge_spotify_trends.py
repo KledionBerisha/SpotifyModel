@@ -173,7 +173,7 @@ def build_api_dataframe_for_year(
 
 def load_and_prepare_kaggle_data(
     csv_path: str,
-    start_year: int = 1960,
+    start_year: int = 1980,
     end_year: int = 2020,
 ) -> pd.DataFrame:
     """Load Kaggle CSV, keep years in range, and align columns to REQUIRED_COLUMNS."""
@@ -233,7 +233,7 @@ def build_merged_dataset(
     output_csv: str,
     api_start_year: int = 2021,
     api_end_year: int = 2025,
-    kaggle_start_year: int = 1960,
+    kaggle_start_year: int = 1980,
     kaggle_end_year: int = 2020,
     client_id: str | None = None,
     client_secret: str | None = None,
@@ -318,7 +318,7 @@ def build_argument_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("--client-id", default=os.getenv("SPOTIFY_CLIENT_ID"), help="Spotify Client ID")
     parser.add_argument("--client-secret", default=os.getenv("SPOTIFY_CLIENT_SECRET"), help="Spotify Client Secret")
-    parser.add_argument("--kaggle-start-year", type=int, default=1960, help="Kaggle data lower year bound")
+    parser.add_argument("--kaggle-start-year", type=int, default=1980, help="Kaggle data lower year bound")
     parser.add_argument("--kaggle-end-year", type=int, default=2020, help="Kaggle data upper year bound")
     parser.add_argument("--api-start-year", type=int, default=2021, help="Spotify API lower year bound")
     parser.add_argument("--api-end-year", type=int, default=2025, help="Spotify API upper year bound")

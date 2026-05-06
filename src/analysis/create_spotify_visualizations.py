@@ -10,6 +10,7 @@ import seaborn as sns
 
 # Project root for relative paths
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+ANALYSIS_END_YEAR = 2025
 
 logger = logging.getLogger(__name__)
 
@@ -69,12 +70,15 @@ def create_line_trend_plot(df: pd.DataFrame, output_dir: Path) -> None:
 
     ax.set_xlabel("Year")
     ax.set_ylabel("Average Feature Value")
+    ax.set_xlim(1958, 2027)
+    ax.set_xticks(range(1980, 2026, 10))
+    ax.margins(x=0)
     ax.legend(title="Audio Features")
     ax.grid(alpha=0.25)
 
     add_figure_caption(
         fig,
-        "Figura 1. Evolución anual de loudness, danceability y energy (1960–2026).",
+        "Figura 1. Annual evolution of loudness, danceability and energy (1960–2025).",
     )
     fig.tight_layout(rect=[0, 0.04, 1, 1])
     fig.savefig(output_dir / "figura_1_line_trends.png", dpi=300, bbox_inches="tight")
@@ -88,8 +92,10 @@ def create_decade_boxplot(df: pd.DataFrame, output_dir: Path) -> None:
     Evaluates whether music became more standardized across decades.
     """
     df = df.copy()
-    df["decade"] = (df["year"] // 10) * 10
-    df["decade_label"] = df["decade"].astype("Int64").astype(str) + "s"
+    bucket_start = (df["year"] // 5) * 5
+    bucket_end = np.minimum(bucket_start + 4, ANALYSIS_END_YEAR)
+    df["decade"] = bucket_start.astype(int)
+    df["decade_label"] = bucket_start.astype(int).astype(str) + "-" + bucket_end.astype(int).astype(str)
 
     decade_order = sorted(df["decade_label"].dropna().unique(), key=lambda x: int(x[:-1]))
 
@@ -220,8 +226,8 @@ def main() -> None:
     df = ensure_numeric(df, numeric_columns)
 
     # Keep target timeline
-    df = df[(df["year"] >= 1960) & (df["year"] <= 2026)].copy()
-    logger.info(f"Filtered to {len(df)} rows for years 1960-2026")
+    df = df[(df["year"] >= 1980) & (df["year"] <= ANALYSIS_END_YEAR)].copy()
+    logger.info(f"Filtered to {len(df)} rows for years 1980-{ANALYSIS_END_YEAR}")
 
     create_line_trend_plot(df, output_dir)
     create_decade_boxplot(df, output_dir)

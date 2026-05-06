@@ -1,4 +1,4 @@
-"""Download and process the Kaggle Spotify dataset for years 1960-2020."""
+"""Download and process the Kaggle Spotify dataset for years 1980-2020."""
 
 import argparse
 from pathlib import Path
@@ -44,7 +44,7 @@ def run(input_csv: Path, output_csv: Path) -> None:
     df = df.assign(year=years).dropna(subset=["year"]).copy()
     df["year"] = df["year"].astype(int)
 
-    filtered = df[(df["year"] >= 1960) & (df["year"] <= 2020)].copy()
+    filtered = df[(df["year"] >= 1980) & (df["year"] <= 2020)].copy()
     output_csv = _resolve_output_path(output_csv)
     output_csv.parent.mkdir(parents=True, exist_ok=True)
     filtered.to_csv(output_csv, index=False)
@@ -68,7 +68,7 @@ def run_from_kaggle(output_csv: Path, dataset_ref: str = DEFAULT_DATASET) -> Non
 
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Process Kaggle Spotify dataset for years 1960-2020."
+        description="Process Kaggle Spotify dataset for years 1980-2020."
     )
     parser.add_argument(
         "--output-csv",
