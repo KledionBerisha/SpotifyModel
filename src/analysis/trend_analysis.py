@@ -255,7 +255,7 @@ def run(
         (yearly_stats, trends_df)
     """
     if input_csv is None:
-        input_csv = str(PROJECT_ROOT / "data/processed/Spotify_1960_2026_Final.csv")
+        input_csv = str(PROJECT_ROOT / "data/processed/Spotify_1980_2025_Final.csv")
     if output_dir is None:
         output_dir = str(PROJECT_ROOT / "reports")
     
@@ -282,7 +282,7 @@ def parse_args() -> argparse.Namespace:
         "--input-csv",
         type=str,
         default=None,
-        help=f"Path to merged Spotify dataset (default: data/processed/Spotify_1960_2026_Final.csv)",
+        help=f"Path to merged Spotify dataset (default: data/processed/Spotify_1980_2025_Final.csv)",
     )
     parser.add_argument(
         "--output-dir",

@@ -4,6 +4,7 @@ from pathlib import Path
 from typing import List
 
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 import plotly.express as px
 import seaborn as sns
@@ -18,12 +19,12 @@ logger = logging.getLogger(__name__)
 def parse_args() -> argparse.Namespace:
     """Parse script arguments for flexible input/output paths."""
     parser = argparse.ArgumentParser(
-        description="Create visualizations for Spotify_1960_2026_Final.csv"
+        description="Create visualizations for Spotify_1980_2025_Final.csv"
     )
     parser.add_argument(
         "--input-csv",
         type=str,
-        default=str(PROJECT_ROOT / "data/processed/Spotify_1960_2026_Final.csv"),
+        default=str(PROJECT_ROOT / "data/processed/Spotify_1980_2025_Final.csv"),
         help="Path to merged Spotify dataset CSV.",
     )
     parser.add_argument(
@@ -50,45 +51,42 @@ def ensure_numeric(df: pd.DataFrame, columns: List[str]) -> pd.DataFrame:
 
 
 def create_line_trend_plot(df: pd.DataFrame, output_dir: Path) -> None:
-    """
-    Figura 1: Long-term trends in loudness, danceability, and energy.
-    Shows how production intensity and rhythmic characteristics evolved over time.
-    """
     yearly = (
         df.groupby("year", as_index=False)[["loudness", "danceability", "energy"]]
         .mean()
         .sort_values("year")
     )
 
-    plt.style.use("default")
-    fig, ax = plt.subplots(figsize=(12, 6), facecolor="white")
-    ax.set_facecolor("white")
+    fig, axes = plt.subplots(2, 1, figsize=(12, 10), facecolor="white", sharex=True)
 
-    sns.lineplot(data=yearly, x="year", y="loudness", label="Loudness", linewidth=2.2, ax=ax)
-    sns.lineplot(data=yearly, x="year", y="danceability", label="Danceability", linewidth=2.2, ax=ax)
-    sns.lineplot(data=yearly, x="year", y="energy", label="Energy", linewidth=2.2, ax=ax)
+    sns.lineplot(data=yearly, x="year", y="loudness", label="Loudness", linewidth=2.2, ax=axes[0], color="steelblue")
+    axes[0].set_ylabel("Average Loudness (dB)")
+    axes[0].set_title("Annual Loudness Trend (1980-2025)")
+    axes[0].grid(alpha=0.25)
+    axes[0].legend()
 
-    ax.set_xlabel("Year")
-    ax.set_ylabel("Average Feature Value")
-    ax.set_xlim(1958, 2027)
-    ax.set_xticks(range(1980, 2026, 10))
-    ax.margins(x=0)
-    ax.legend(title="Audio Features")
-    ax.grid(alpha=0.25)
-
+    sns.lineplot(data=yearly, x="year", y="danceability", label="Danceability", linewidth=2.2, ax=axes[1], color="darkorange")
+    sns.lineplot(data=yearly, x="year", y="energy", label="Energy", linewidth=2.2, ax=axes[1], color="forestgreen")
+    axes[1].set_xlabel("Year")
+    axes[1].set_ylabel("Average Feature Value")
+    axes[1].set_title("Annual Danceability and Energy Trends (1980-2025)")
+    axes[1].set_xlim(1978, 2026)
+    axes[1].set_xticks(range(1980, 2026, 10))
+    axes[1].grid(alpha=0.25)
+    axes[1].legend()
     add_figure_caption(
         fig,
-        "Figura 1. Annual evolution of loudness, danceability and energy (1960–2025).",
+        "Figure 1. Annual evolution of loudness, danceability and energy (1980–2025).",
     )
-    fig.tight_layout(rect=[0, 0.04, 1, 1])
-    fig.savefig(output_dir / "figura_1_line_trends.png", dpi=300, bbox_inches="tight")
+    fig.tight_layout()
+    fig.savefig(output_dir / "figure_1_line_trends.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
-    logger.info("Saved: figura_1_line_trends.png")
+    logger.info("Saved: figure_1_line_trends.png")
 
 
 def create_decade_boxplot(df: pd.DataFrame, output_dir: Path) -> None:
     """
-    Figura 2: Danceability distribution by decade.
+    figure 2: Danceability distribution by decade.
     Evaluates whether music became more standardized across decades.
     """
     df = df.copy()
@@ -97,8 +95,10 @@ def create_decade_boxplot(df: pd.DataFrame, output_dir: Path) -> None:
     df["decade"] = bucket_start.astype(int)
     df["decade_label"] = bucket_start.astype(int).astype(str) + "-" + bucket_end.astype(int).astype(str)
 
-    decade_order = sorted(df["decade_label"].dropna().unique(), key=lambda x: int(x[:-1]))
-
+    decade_order = sorted(
+        df["decade_label"].dropna().unique(),
+        key=lambda x: int(str(x).split("-")[0]),
+    )
     fig, ax = plt.subplots(figsize=(12, 6), facecolor="white")
     ax.set_facecolor("white")
     sns.boxplot(
@@ -117,17 +117,17 @@ def create_decade_boxplot(df: pd.DataFrame, output_dir: Path) -> None:
 
     add_figure_caption(
         fig,
-        "Figura 2. Distribución de danceability por década (análisis de estandarización).",
+        "Figure 2. Danceability distribution by decade (standardization analysis).",
     )
     fig.tight_layout(rect=[0, 0.04, 1, 1])
-    fig.savefig(output_dir / "figura_2_danceability_boxplot.png", dpi=300, bbox_inches="tight")
+    fig.savefig(output_dir / "figure_2_danceability_boxplot.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
-    logger.info("Saved: figura_2_danceability_boxplot.png")
+    logger.info("Saved: figure_2_danceability_boxplot.png")
 
 
 def create_correlation_heatmap(df: pd.DataFrame, output_dir: Path) -> None:
     """
-    Figura 3: Correlations among audio features.
+    figure 3: Correlations among audio features.
     Reveals which musical attributes tend to increase or decrease together.
     """
     corr_features = [
@@ -161,38 +161,47 @@ def create_correlation_heatmap(df: pd.DataFrame, output_dir: Path) -> None:
 
     add_figure_caption(
         fig,
-        "Figura 3. Matriz de correlación entre variables de audio.",
+        "Figure 3. Correlation matrix between audio variables.",
     )
     fig.tight_layout(rect=[0, 0.04, 1, 1])
-    fig.savefig(output_dir / "figura_3_correlation_heatmap.png", dpi=300, bbox_inches="tight")
+    fig.savefig(output_dir / "figure_3_correlation_heatmap.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
-    logger.info("Saved: figura_3_correlation_heatmap.png")
+    logger.info("Saved: figure_3_correlation_heatmap.png")
 
 
 def create_interactive_scatter(df: pd.DataFrame, output_dir: Path) -> None:
     """
-    Figura 4 (BONUS): Interactive scatter of year vs energy, colored by loudness.
+    Figure 4 (BONUS): Interactive scatter of year vs energy, colored by loudness.
     Point size uses popularity; hover shows song and artist.
+    Samples 250 songs evenly distributed across years to reduce crowding.
     """
     viz_df = df.copy()
 
     if "popularity" not in viz_df.columns:
         viz_df["popularity"] = 50
 
+    # Sample 250 songs evenly across years to avoid crowding
+    songs_per_year = max(1, 250 // viz_df["year"].nunique())
+    viz_df_sampled = viz_df.groupby("year", group_keys=False).apply(
+        lambda x: x.sample(n=min(songs_per_year, len(x)), random_state=42)
+    ).reset_index(drop=True)
+
+    logger.info(f"Sampled {len(viz_df_sampled)} songs for Figure 4 (from {len(viz_df)} total)")
+
     fig = px.scatter(
-        viz_df,
+        viz_df_sampled,
         x="year",
         y="energy",
         size="popularity",
         color="loudness",
         hover_data=["name", "artists"],
-        title="Figura 4. Dispersión interactiva de energy por año (color: loudness, tamaño: popularity).",
+        title="Figure 4. Interactive scatter plot of energy by year (color: loudness, size: popularity).",
         color_continuous_scale="Viridis",
         opacity=0.7,
     )
     fig.update_layout(template="plotly_white")
-    fig.write_html(output_dir / "figura_4_interactive_scatter.html", include_plotlyjs="cdn")
-    logger.info("Saved: figura_4_interactive_scatter.html")
+    fig.write_html(output_dir / "figure_4_interactive_scatter.html", include_plotlyjs="cdn")
+    logger.info("Saved: figure_4_interactive_scatter.html")
 
 
 def main() -> None:

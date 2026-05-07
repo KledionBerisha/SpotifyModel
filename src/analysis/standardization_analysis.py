@@ -180,8 +180,10 @@ def plot_violin_distributions(df: pd.DataFrame, output_dir: Path) -> None:
         # Prepare data for violin plot
         plot_data = df[[feature, "decade_label"]].dropna()
         
-        decade_order = sorted(plot_data["decade_label"].unique(), 
-                             key=lambda x: int(x[:-1]))
+        decade_order = sorted(
+            plot_data["decade_label"].unique(),
+            key=lambda x: int(str(x).split("-")[0]),
+        )
         
         sns.violinplot(data=plot_data, x="decade_label", y=feature, 
                        order=decade_order, ax=ax, palette="Set2")
@@ -240,7 +242,7 @@ def generate_report(
     
     with open(report_path, "w", encoding="utf-8") as f:
         f.write("=" * 80 + "\n")
-        f.write("SPOTIFY MUSIC STANDARDIZATION ANALYSIS (1980-2026)\n")
+        f.write("SPOTIFY MUSIC STANDARDIZATION ANALYSIS (1980-2025)\n")
         f.write("=" * 80 + "\n\n")
         
         f.write("RESEARCH QUESTION:\n")
@@ -327,7 +329,7 @@ def run(
         (variance_df, levene_df)
     """
     if input_csv is None:
-        input_csv = str(PROJECT_ROOT / "data/processed/Spotify_1960_2026_Final.csv")
+        input_csv = str(PROJECT_ROOT / "data/processed/Spotify_1980_2025_Final.csv")
     if output_dir is None:
         output_dir = str(PROJECT_ROOT / "reports")
     
@@ -365,7 +367,7 @@ def parse_args() -> argparse.Namespace:
         "--input-csv",
         type=str,
         default=None,
-        help="Path to merged Spotify dataset (default: data/processed/Spotify_1960_2026_Final.csv)",
+        help="Path to merged Spotify dataset (default: data/processed/Spotify_1980_2025_Final.csv)",
     )
     parser.add_argument(
         "--output-dir",

@@ -313,7 +313,7 @@ def build_argument_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--output-csv",
         type=str,
-        default=str(PROJECT_ROOT / "data/processed/Spotify_1960_2026_Final.csv"),
+        default=str(PROJECT_ROOT / "data/processed/Spotify_1980_2025_Final.csv"),
         help="Output CSV filename",
     )
     parser.add_argument("--client-id", default=os.getenv("SPOTIFY_CLIENT_ID"), help="Spotify Client ID")

@@ -158,7 +158,7 @@ def plot_distributions(pre: pd.DataFrame, post: pd.DataFrame, output_dir: Path) 
         
         bp = ax.boxplot(
             data_to_plot,
-            labels=["Pre-Streaming\n(1980-2009)", "Post-Streaming\n(2010-2026)"],
+            labels=["Pre-Streaming\n(1980-2009)", "Post-Streaming\n(2010-2025)"],
             patch_artist=True,
             showmeans=True,
         )
@@ -276,7 +276,7 @@ def generate_report(results_df: pd.DataFrame, output_dir: Path) -> None:
         f.write("METHODOLOGY:\n")
         f.write("-" * 80 + "\n")
         f.write("Pre-Streaming Era: 1980-2009 (traditional radio/physical media era)\n")
-        f.write("Post-Streaming Era: 2010-2026 (Spotify/Apple Music/YouTube Music)\n\n")
+        f.write("Post-Streaming Era: 2010-2025 (Spotify/Apple Music/YouTube Music)\n\n")
         f.write("Statistical Tests:\n")
         f.write("  • t-test (assumes normality)\n")
         f.write("  • Mann-Whitney U test (non-parametric, rank-based)\n")
@@ -339,7 +339,7 @@ def run(
         results_df
     """
     if input_csv is None:
-        input_csv = str(PROJECT_ROOT / "data/processed/Spotify_1960_2026_Final.csv")
+        input_csv = str(PROJECT_ROOT / "data/processed/Spotify_1980_2025_Final.csv")
     if output_dir is None:
         output_dir = str(PROJECT_ROOT / "reports")
     
@@ -375,7 +375,7 @@ def parse_args() -> argparse.Namespace:
         "--input-csv",
         type=str,
         default=None,
-        help="Path to merged Spotify dataset (default: data/processed/Spotify_1960_2026_Final.csv)",
+        help="Path to merged Spotify dataset (default: data/processed/Spotify_1980_2025_Final.csv)",
     )
     parser.add_argument(
         "--output-dir",
