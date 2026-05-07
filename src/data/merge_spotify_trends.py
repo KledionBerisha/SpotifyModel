@@ -29,6 +29,7 @@ REQUIRED_COLUMNS = [
     "speechiness",
     "tempo",
     "valence",
+    "popularity",
 ]
 
 logger = logging.getLogger(__name__)
@@ -92,24 +93,53 @@ def fetch_year_track_candidates(
     return candidates
 
 
-def fetch_audio_features_map(sp: spotipy.Spotify, track_ids: List[str]) -> Dict[str, Dict]:
-    """Fetch audio features in batches and map them by track id."""
+def fetch_audio_features_map(sp: spotipy.Spotify, track_ids: List[str], max_retries: int = 3) -> Dict[str, Dict]:
+    """Fetch audio features in batches with retries and return map by track id."""
     features_by_id: Dict[str, Dict] = {}
     batch_size = 100
 
     for i in range(0, len(track_ids), batch_size):
         batch_ids = track_ids[i : i + batch_size]
-        try:
-            features_batch = sp.audio_features(batch_ids)
-        except SpotifyException as exc:
-            if exc.http_status == 403:
-                logger.warning("audio-features endpoint returned 403. Continuing with missing values.")
-                return features_by_id
-            raise
-        for feature in features_batch:
+        features_batch = None
+
+        for attempt in range(1, max_retries + 1):
+            try:
+                features_batch = sp.audio_features(batch_ids)
+                break
+            except SpotifyException as exc:
+                status = getattr(exc, "http_status", None)
+                # Rate limit: respect Retry-After if present, otherwise backoff
+                if status == 429:
+                    retry_after = 5
+                    try:
+                        retry_after = int(exc.headers.get("Retry-After", retry_after))  # type: ignore[attr-defined]
+                    except Exception:
+                        pass
+                    logger.warning("Rate limited; sleeping %s seconds", retry_after)
+                    time.sleep(retry_after + random.uniform(0.1, 1.0))
+                    continue
+                # Server errors: short backoff and retry
+                if status in (500, 502, 503, 504):
+                    wait = 1.0 * attempt
+                    logger.warning("Server error %s on audio_features; retrying in %.1fs", status, wait)
+                    time.sleep(wait)
+                    continue
+                # Forbidden: log and proceed treating features as missing for this batch
+                if status == 403:
+                    logger.warning("audio-features endpoint returned 403 for this batch. Continuing with missing values for these ids.")
+                    features_batch = [None] * len(batch_ids)
+                    break
+                raise
+
+        if features_batch is None:
+            # If retries exhausted, mark as missing
+            features_batch = [None] * len(batch_ids)
+
+        for fid, feature in zip(batch_ids, features_batch):
             if feature and feature.get("id"):
                 features_by_id[feature["id"]] = feature
-        time.sleep(0.05)
+        # small polite pause between batches
+        time.sleep(0.05 + random.uniform(0.0, 0.05))
 
     return features_by_id
 
@@ -122,7 +152,7 @@ def build_api_dataframe_for_year(
     max_search_results_per_query: int,
     query_seeds: List[str],
 ) -> pd.DataFrame:
-    """Build a DataFrame of top tracks for one year from Spotify API."""
+    """Build a DataFrame of top tracks for one year from Spotify API, only keeping tracks with real audio features."""
     candidates = fetch_year_track_candidates(
         sp=sp,
         year=year,
@@ -146,10 +176,18 @@ def build_api_dataframe_for_year(
     track_ids = [track["id"] for track in ranked_tracks if track.get("id")]
     audio_features_map = fetch_audio_features_map(sp, track_ids)
 
+    # Log how many features we found
+    found = len(audio_features_map)
+    logger.info("Requested %d track ids, found audio features for %d", len(track_ids), found)
+
     rows = []
     for track in ranked_tracks:
         track_id = track.get("id")
-        feature = audio_features_map.get(track_id, {})
+        feature = audio_features_map.get(track_id)
+        if not feature:
+            # skip tracks with missing audio features (avoid later imputation causing constant columns)
+            logger.debug("Skipping track without audio features: %s (%s)", track.get("name"), track_id)
+            continue
         rows.append(
             {
                 "artists": safe_artists_to_string(track.get("artists", [])),
@@ -165,6 +203,7 @@ def build_api_dataframe_for_year(
                 "speechiness": feature.get("speechiness"),
                 "tempo": feature.get("tempo"),
                 "valence": feature.get("valence"),
+                "popularity": track.get("popularity"),
             }
         )
 
@@ -218,6 +257,7 @@ def clean_merged_data(df: pd.DataFrame) -> pd.DataFrame:
         "speechiness",
         "tempo",
         "valence",
+        "popularity",
     ]
 
     for col in numeric_cols:
