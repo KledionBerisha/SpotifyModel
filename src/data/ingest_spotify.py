@@ -8,18 +8,21 @@ import os
 import random
 import time
 from pathlib import Path
-from typing import Dict, List
+from typing import Iterator, Sequence
 
 import pandas as pd
+import requests
 import spotipy
 from dotenv import load_dotenv
 from spotipy.exceptions import SpotifyException
-from spotipy.oauth2 import SpotifyClientCredentials
+from spotipy.oauth2 import SpotifyClientCredentials, SpotifyOAuth
 
 logger = logging.getLogger(__name__)
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 load_dotenv(PROJECT_ROOT / ".env")
 
+TRACKS_BATCH_SIZE = 50
+AUDIO_FEATURES_BATCH_SIZE = 100
 API_MAX_TRACKS_PER_YEAR = 200
 API_MAX_SEARCH_RESULTS_PER_QUERY = 50
 
@@ -42,21 +45,52 @@ REQUIRED_COLUMNS = [
 
 
 class SpotifyAccessBlocked(RuntimeError):
-    """Raised when Spotify blocks audio-features access with a 403."""
+    """Raised when Spotify blocks access with a 403."""
+
+
+def chunked(items: Sequence[str], chunk_size: int) -> Iterator[list[str]]:
+    """Yield chunks from a sequence."""
+    for start in range(0, len(items), chunk_size):
+        yield list(items[start : start + chunk_size])
 
 
 def authenticate_spotify(
     client_id: str | None = None,
     client_secret: str | None = None,
 ) -> spotipy.Spotify:
-    """Authenticate with Spotify using Client Credentials flow."""
+    """Authenticate with Spotify.
+
+    Defaults to client-credentials flow for public read access.
+    OAuth is optional and can be enabled with SPOTIFY_USE_OAUTH=true.
+    """
     client_id = client_id or os.getenv("SPOTIFY_CLIENT_ID")
     client_secret = client_secret or os.getenv("SPOTIFY_CLIENT_SECRET")
+    use_oauth = os.getenv("SPOTIFY_USE_OAUTH", "false").lower() in {
+        "1",
+        "true",
+        "yes",
+        "on",
+    }
 
     if not client_id or not client_secret:
         raise ValueError(
             "SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET must be set in environment or passed as args"
         )
+
+    if use_oauth:
+        redirect_uri = os.getenv("SPOTIFY_REDIRECT_URI")
+        if not redirect_uri:
+            raise ValueError("SPOTIFY_REDIRECT_URI must be set when SPOTIFY_USE_OAUTH is enabled")
+
+        auth_manager = SpotifyOAuth(
+            client_id=client_id,
+            client_secret=client_secret,
+            redirect_uri=redirect_uri,
+            scope="user-read-private user-read-email",
+            cache_path=str(PROJECT_ROOT / ".spotify-cache"),
+            open_browser=False,
+        )
+        return spotipy.Spotify(auth_manager=auth_manager)
 
     auth_manager = SpotifyClientCredentials(
         client_id=client_id,
@@ -66,7 +100,7 @@ def authenticate_spotify(
     return spotipy.Spotify(auth_manager=auth_manager)
 
 
-def safe_artists_to_string(artists_payload: List[Dict]) -> str:
+def safe_artists_to_string(artists_payload: list[dict]) -> str:
     """Convert Spotify artists payload to a comma-separated string."""
     if not artists_payload:
         return "Unknown"
@@ -76,33 +110,60 @@ def safe_artists_to_string(artists_payload: List[Dict]) -> str:
 def fetch_year_track_candidates(
     sp: spotipy.Spotify,
     year: int,
-    market: str = "US",
+    market: str | None = None,
     max_search_results_per_query: int = API_MAX_SEARCH_RESULTS_PER_QUERY,
-    query_seeds: List[str] | None = None,
-) -> List[Dict]:
+    query_seeds: list[str] | None = None,
+) -> list[dict]:
     """Fetch track candidates for a given year using Spotify search."""
-    candidates: List[Dict] = []
+    candidates: list[dict] = []
     limit = 10
     seeds = query_seeds or [""]
+    max_net_retries = 5
 
     for seed in seeds:
         query = f"year:{year} {seed}".strip()
         offset = 0
 
         while offset < max_search_results_per_query:
-            try:
-                response = sp.search(
-                    q=query,
-                    type="track",
-                    market=market,
-                    limit=limit,
-                    offset=offset,
-                )
-            except SpotifyException as exc:
-                if exc.http_status == 429:
-                    logger.warning("Rate limited on search query '%s'. Skipping remaining pages.", query)
+            search_kwargs = {
+                "q": query,
+                "type": "track",
+                "limit": limit,
+                "offset": offset,
+            }
+            if market:
+                search_kwargs["market"] = market
+
+            response = None
+            for attempt in range(1, max_net_retries + 1):
+                try:
+                    response = sp.search(**search_kwargs)
                     break
-                raise
+                except SpotifyException as exc:
+                    if exc.http_status == 429:
+                        logger.warning("Rate limited on search query '%s'. Skipping remaining pages.", query)
+                        response = None
+                        break
+                    if exc.http_status == 403:
+                        raise SpotifyAccessBlocked("Spotify returned 403 on search. Stopping API fetch.") from exc
+                    raise
+                except requests.exceptions.RequestException as exc:
+                    wait = 2 ** (attempt - 1)
+                    logger.warning(
+                        "Network error on search attempt %d/%d for query '%s': %s. Retrying in %.1fs",
+                        attempt,
+                        max_net_retries,
+                        query,
+                        exc,
+                        wait,
+                    )
+                    time.sleep(wait)
+                    continue
+            else:
+                logger.warning("Search failed after %d network retries; skipping this query page.", max_net_retries)
+
+            if not response:
+                break
 
             items = response.get("tracks", {}).get("items", [])
             if not items:
@@ -115,33 +176,168 @@ def fetch_year_track_candidates(
     return candidates
 
 
-def fetch_audio_features_with_retry(
+def fetch_tracks_with_retry(
     sp: spotipy.Spotify,
-    track_ids: List[str],
+    track_ids: Sequence[str],
     max_retries: int = 5,
     base_wait: int = 60,
-) -> Dict[str, Dict]:
-    """
-    Fetch audio features with retry logic.
+    market: str | None = None,
+    skip_forbidden: bool = True,
+) -> dict[str, dict]:
+    """Fetch track metadata in batches using Spotify's plural tracks endpoint.
 
-    On 429, back off and retry.
-    On 403, stop the run by raising SpotifyAccessBlocked.
+    On a 403 for a full batch, this function will attempt to isolate forbidden IDs
+    by sub-batching and, if necessary, requesting individual IDs. If `skip_forbidden`
+    is True (default), forbidden IDs are skipped so ingestion can continue.
     """
-    features_by_id: Dict[str, Dict] = {}
-    batch_size = 20
+    tracks_by_id: dict[str, dict] = {}
 
-    for i in range(0, len(track_ids), batch_size):
-        batch_ids = track_ids[i : i + batch_size]
+    for batch_ids in chunked([track_id for track_id in track_ids if track_id], TRACKS_BATCH_SIZE):
+        batch_tracks = None
+
+        for attempt in range(1, max_retries + 1):
+            try:
+                if market:
+                    response = sp.tracks(batch_ids, market=market)
+                else:
+                    response = sp.tracks(batch_ids)
+                batch_tracks = response.get("tracks", []) if isinstance(response, dict) else response
+                break
+            except SpotifyException as exc:
+                status = getattr(exc, "http_status", None)
+
+                if status == 429:
+                    retry_after = base_wait * (2 ** (attempt - 1))
+                    try:
+                        retry_after = int(exc.headers.get("Retry-After", retry_after))
+                    except Exception:
+                        pass
+                    logger.warning(
+                        "Rate limited on tracks batch (attempt %d/%d). Waiting %ss...",
+                        attempt,
+                        max_retries,
+                        retry_after,
+                    )
+                    time.sleep(retry_after + random.uniform(1.0, 5.0))
+                    continue
+
+                if status in (500, 502, 503, 504):
+                    wait = 5.0 * attempt
+                    logger.warning(
+                        "Server error %s on tracks batch (attempt %d). Retrying in %.1fs...",
+                        status,
+                        attempt,
+                        wait,
+                    )
+                    time.sleep(wait)
+                    continue
+
+                if status == 403:
+                    logger.error(
+                        "403 Forbidden on tracks batch. batch_size=%d, ids=%s",
+                        len(batch_ids),
+                        ",".join(batch_ids),
+                    )
+                    if not skip_forbidden:
+                        raise SpotifyAccessBlocked(
+                            "Spotify returned 403 on tracks endpoint. This can indicate app permissions, blocked access, or a restricted batch."
+                        ) from exc
+
+                    # Try to isolate the problem by sub-batching; fall back to individual ids.
+                    logger.info("Attempting to isolate forbidden IDs by sub-batching (size=%d).", len(batch_ids))
+
+                    # If batch is already size 1, skip it.
+                    if len(batch_ids) == 1:
+                        logger.warning("Skipping forbidden track id=%s", batch_ids[0])
+                        batch_tracks = [None]
+                        break
+
+                    # First try halves, then quarters, then individuals as needed.
+                    try:
+                        sub_batch_size = max(1, len(batch_ids) // 2)
+                        for sub_ids in chunked(batch_ids, sub_batch_size):
+                            try:
+                                if market:
+                                    sub_resp = sp.tracks(sub_ids, market=market)
+                                else:
+                                    sub_resp = sp.tracks(sub_ids)
+                                sub_tracks = sub_resp.get("tracks", []) if isinstance(sub_resp, dict) else sub_resp
+                                for t in sub_tracks:
+                                    if t and t.get("id"):
+                                        tracks_by_id[t["id"]] = t
+                                time.sleep(0.1)
+                            except SpotifyException as sub_exc:
+                                s_status = getattr(sub_exc, "http_status", None)
+                                # If sub-batch also 403 and is larger than 1, drill down to individuals
+                                if s_status == 403 and len(sub_ids) > 1:
+                                    logger.info("Sub-batch of size %d returned 403; drilling down.", len(sub_ids))
+                                    for tid in sub_ids:
+                                        try:
+                                            if market:
+                                                single_resp = sp.tracks([tid], market=market)
+                                            else:
+                                                single_resp = sp.tracks([tid])
+                                            single_tracks = single_resp.get("tracks", []) if isinstance(single_resp, dict) else single_resp
+                                            if single_tracks and single_tracks[0] and single_tracks[0].get("id"):
+                                                tracks_by_id[single_tracks[0]["id"]] = single_tracks[0]
+                                        except SpotifyException as single_exc:
+                                            ss = getattr(single_exc, "http_status", None)
+                                            if ss == 403:
+                                                logger.warning("Skipping forbidden track id=%s", tid)
+                                                continue
+                                            raise
+                                elif s_status == 403:
+                                    # sub_ids length is 1, skip it
+                                    for tid in sub_ids:
+                                        logger.warning("Skipping forbidden track id=%s", tid)
+                                    continue
+                                else:
+                                    raise
+                    except Exception:
+                        logger.exception("Error while isolating forbidden IDs; continuing by skipping problematic items.")
+                    # We've attempted to collect what we could via sub-requests; mark batch handled.
+                    batch_tracks = []
+                    break
+                raise
+            except requests.exceptions.RequestException as exc:
+                wait = 2 ** (attempt - 1)
+                logger.warning(
+                    "Network error fetching tracks batch (attempt %d/%d): %s. Retrying in %.1fs",
+                    attempt,
+                    max_retries,
+                    exc,
+                    wait,
+                )
+                time.sleep(wait)
+                continue
+
+        if batch_tracks is None:
+            logger.warning("Failed after %d attempts on tracks batch. Treating as missing.", max_retries)
+            batch_tracks = [None] * len(batch_ids)
+
+        for track in batch_tracks:
+            if track and track.get("id"):
+                tracks_by_id[track["id"]] = track
+
+        time.sleep(0.25)
+
+    return tracks_by_id
+
+
+def fetch_audio_features_with_retry(
+    sp: spotipy.Spotify,
+    track_ids: Sequence[str],
+    max_retries: int = 5,
+    base_wait: int = 60,
+) -> dict[str, dict]:
+    """Fetch audio features in batches using Spotify's plural endpoint."""
+    features_by_id: dict[str, dict] = {}
+
+    for batch_ids in chunked([track_id for track_id in track_ids if track_id], AUDIO_FEATURES_BATCH_SIZE):
         features_batch = None
 
         for attempt in range(1, max_retries + 1):
             try:
-                logger.debug(
-                    "Fetching %d features (attempt %d/%d)",
-                    len(batch_ids),
-                    attempt,
-                    max_retries,
-                )
                 features_batch = sp.audio_features(batch_ids)
                 break
             except SpotifyException as exc:
@@ -154,7 +350,7 @@ def fetch_audio_features_with_retry(
                     except Exception:
                         pass
                     logger.warning(
-                        "Rate limited (attempt %d/%d). Waiting %ss...",
+                        "Rate limited on audio_features batch (attempt %d/%d). Waiting %ss...",
                         attempt,
                         max_retries,
                         retry_after,
@@ -165,7 +361,7 @@ def fetch_audio_features_with_retry(
                 if status in (500, 502, 503, 504):
                     wait = 5.0 * attempt
                     logger.warning(
-                        "Server error %s (attempt %d). Retrying in %.1fs...",
+                        "Server error %s on audio_features batch (attempt %d). Retrying in %.1fs...",
                         status,
                         attempt,
                         wait,
@@ -174,21 +370,37 @@ def fetch_audio_features_with_retry(
                     continue
 
                 if status == 403:
+                    logger.error(
+                        "403 Forbidden on audio_features batch. batch_size=%d, ids=%s",
+                        len(batch_ids),
+                        ",".join(batch_ids),
+                    )
                     raise SpotifyAccessBlocked(
-                        "Spotify returned 403 on audio_features. Stopping API fetch for this run."
+                        "Spotify returned 403 on audio_features. This can indicate app permissions, blocked access, or a restricted batch."
                     ) from exc
 
                 raise
+            except requests.exceptions.RequestException as exc:
+                wait = 2 ** (attempt - 1)
+                logger.warning(
+                    "Network error fetching audio_features (attempt %d/%d): %s. Retrying in %.1fs",
+                    attempt,
+                    max_retries,
+                    exc,
+                    wait,
+                )
+                time.sleep(wait)
+                continue
 
         if features_batch is None:
-            logger.warning("Failed after %d attempts. Treating batch as missing.", max_retries)
+            logger.warning("Failed after %d attempts on audio_features batch. Treating as missing.", max_retries)
             features_batch = [None] * len(batch_ids)
 
-        for fid, feature in zip(batch_ids, features_batch):
+        for track_id, feature in zip(batch_ids, features_batch):
             if feature and feature.get("id"):
                 features_by_id[feature["id"]] = feature
 
-        time.sleep(0.5)
+        time.sleep(0.25)
 
     return features_by_id
 
@@ -197,9 +409,9 @@ def build_api_dataframe_for_year(
     sp: spotipy.Spotify,
     year: int,
     tracks_per_year: int,
-    market: str = "US",
+    market: str | None = None,
     max_search_results_per_query: int = API_MAX_SEARCH_RESULTS_PER_QUERY,
-    query_seeds: List[str] | None = None,
+    query_seeds: list[str] | None = None,
 ) -> pd.DataFrame:
     """Build a DataFrame of top tracks for one year from Spotify API."""
     logger.info("Fetching tracks for year %d", year)
@@ -213,7 +425,7 @@ def build_api_dataframe_for_year(
     )
     logger.info("  Found %d candidates", len(candidates))
 
-    unique_tracks: Dict[str, Dict] = {}
+    unique_tracks: dict[str, dict] = {}
     for track in candidates:
         track_id = track.get("id")
         if track_id and track_id not in unique_tracks:
@@ -226,21 +438,29 @@ def build_api_dataframe_for_year(
         reverse=True,
     )[:top_n]
 
-    track_ids = [t["id"] for t in ranked_tracks if t.get("id")]
+    track_ids = [track["id"] for track in ranked_tracks if track.get("id")]
     logger.info("  Ranking top %d by popularity", len(track_ids))
 
     if not track_ids:
         return pd.DataFrame(columns=REQUIRED_COLUMNS)
 
+    track_details_map = fetch_tracks_with_retry(sp, track_ids, market=market)
     audio_features_map = fetch_audio_features_with_retry(sp, track_ids)
-    logger.info("  Got audio features for %d/%d tracks", len(audio_features_map), len(track_ids))
+
+    logger.info(
+        "  Got track details for %d/%d and audio features for %d/%d tracks",
+        len(track_details_map),
+        len(track_ids),
+        len(audio_features_map),
+        len(track_ids),
+    )
 
     rows = []
-    for track in ranked_tracks:
-        track_id = track.get("id")
+    for track_id in track_ids:
+        track = track_details_map.get(track_id)
         feature = audio_features_map.get(track_id)
 
-        if not feature:
+        if not track or not feature:
             continue
 
         rows.append(
@@ -270,7 +490,7 @@ def build_api_dataframe(
     api_start_year: int = 2021,
     api_end_year: int = 2025,
     tracks_per_year: int = 7500,
-    market: str = "US",
+    market: str | None = None,
     max_search_results_per_query: int = API_MAX_SEARCH_RESULTS_PER_QUERY,
     query_seeds: str | None = None,
     client_id: str | None = None,
@@ -316,6 +536,7 @@ def run(
     api_start_year: int = 2021,
     api_end_year: int = 2025,
     tracks_per_year: int = 7500,
+    market: str | None = None,
 ) -> pd.DataFrame:
     """Fetch and save Spotify API dataset."""
     logging.basicConfig(level=logging.INFO)
@@ -324,6 +545,7 @@ def run(
         api_start_year=api_start_year,
         api_end_year=api_end_year,
         tracks_per_year=tracks_per_year,
+        market=market,
     )
 
     if output_csv:
@@ -336,11 +558,12 @@ def run(
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Ingest Spotify API dataset (2021-2025)")
+    parser = argparse.ArgumentParser(description="Fetch Spotify API dataset (2021-2025)")
     parser.add_argument("--output-csv", type=str, help="Output CSV path")
     parser.add_argument("--api-start-year", type=int, default=2021)
     parser.add_argument("--api-end-year", type=int, default=2025)
     parser.add_argument("--tracks-per-year", type=int, default=7500)
+    parser.add_argument("--market", type=str, default=None, help="Optional Spotify market code")
     args = parser.parse_args()
 
     run(
@@ -348,4 +571,5 @@ if __name__ == "__main__":
         api_start_year=args.api_start_year,
         api_end_year=args.api_end_year,
         tracks_per_year=args.tracks_per_year,
+        market=args.market,
     )

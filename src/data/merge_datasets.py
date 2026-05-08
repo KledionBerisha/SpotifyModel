@@ -65,11 +65,16 @@ def run(
     logger.info("=" * 80)
     logger.info("STEP 2: Fetching Spotify API data...")
     logger.info("=" * 80)
-    api_df = ingest_spotify.build_api_dataframe(
-        api_start_year=api_start_year,
-        api_end_year=api_end_year,
-        tracks_per_year=tracks_per_year,
-    )
+    try:
+        api_df = ingest_spotify.build_api_dataframe(
+            api_start_year=api_start_year,
+            api_end_year=api_end_year,
+            tracks_per_year=tracks_per_year,
+        )
+    except ingest_spotify.SpotifyAccessBlocked as exc:
+        logger.error("%s", exc)
+        logger.error("Continuing with Kaggle-only dataset.")
+        api_df = pd.DataFrame(columns=kaggle_df.columns)
 
     logger.info("")
     logger.info("=" * 80)
