@@ -9,10 +9,12 @@ from typing import Dict, List
 import numpy as np
 import pandas as pd
 import spotipy
+from dotenv import load_dotenv
 from spotipy.exceptions import SpotifyException
 from spotipy.oauth2 import SpotifyClientCredentials
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+load_dotenv(PROJECT_ROOT / ".env")
 
 # Columns required for the final merged dataset.
 REQUIRED_COLUMNS = [
@@ -96,7 +98,7 @@ def fetch_year_track_candidates(
 def fetch_audio_features_map(sp: spotipy.Spotify, track_ids: List[str], max_retries: int = 3) -> Dict[str, Dict]:
     """Fetch audio features in batches with retries and return map by track id."""
     features_by_id: Dict[str, Dict] = {}
-    batch_size = 100
+    batch_size = 25
 
     for i in range(0, len(track_ids), batch_size):
         batch_ids = track_ids[i : i + batch_size]
@@ -241,7 +243,9 @@ def clean_merged_data(df: pd.DataFrame) -> pd.DataFrame:
     """Clean merged dataset: remove duplicates, handle missing values, fill numeric columns."""
     cleaned = df.copy()
 
+    cleaned["year"] = pd.to_numeric(cleaned["year"], errors="coerce")
     cleaned.drop_duplicates(subset=["artists", "name", "year"], inplace=True)
+    api_rows = cleaned["year"].between(2021, 2025, inclusive="both")
 
     for text_col in ["artists", "name"]:
         cleaned[text_col] = cleaned[text_col].fillna("Unknown")
@@ -262,9 +266,14 @@ def clean_merged_data(df: pd.DataFrame) -> pd.DataFrame:
 
     for col in numeric_cols:
         cleaned[col] = pd.to_numeric(cleaned[col], errors="coerce")
-        cleaned[col] = cleaned[col].fillna(cleaned[col].median())
+        fill_value = cleaned.loc[~api_rows, col].median()
+        if pd.isna(fill_value):
+            fill_value = cleaned[col].median()
+        if pd.isna(fill_value):
+            fill_value = 0.0
+        cleaned.loc[~api_rows, col] = cleaned.loc[~api_rows, col].fillna(fill_value)
 
-    cleaned["year"] = pd.to_numeric(cleaned["year"], errors="coerce").astype("Int64")
+    cleaned["year"] = cleaned["year"].astype("Int64")
     cleaned = cleaned[REQUIRED_COLUMNS].reset_index(drop=True)
     return cleaned
 

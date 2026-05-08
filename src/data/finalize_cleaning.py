@@ -69,16 +69,20 @@ def clean_df(df: pd.DataFrame) -> pd.DataFrame:
 
     if "artists" in df.columns:
         df["artists"] = df["artists"].apply(parse_artists)
-
-    # Numeric columns: coerce and impute with median
+    
+    api_mask = df["year"].between(2021, YEAR_MAX, inclusive="both")
+    
+    # Numeric columns: coerce and impute only for pre-2021 rows.
     for c in NUMERIC_COLS:
         if c not in df.columns:
             df[c] = np.nan
         df[c] = pd.to_numeric(df[c], errors="coerce")
-        median = df[c].median(skipna=True)
+        median = df.loc[~api_mask, c].median(skipna=True)
+        if pd.isna(median):
+            median = df[c].median(skipna=True)
         if pd.isna(median):
             median = 0.0
-        df[c] = df[c].fillna(median)
+        df.loc[~api_mask, c] = df.loc[~api_mask, c].fillna(median)
 
     # Sanity bounds and clipping
     zero_one_cols = [
@@ -98,18 +102,39 @@ def clean_df(df: pd.DataFrame) -> pd.DataFrame:
         df["loudness"] = df["loudness"].clip(-60.0, 0.0)
 
     if "tempo" in df.columns:
-        tempo_med = df["tempo"].median(skipna=True)
-        df["tempo"] = df["tempo"].fillna(tempo_med)
-        df.loc[(df["tempo"] < 30) | (df["tempo"] > 250), "tempo"] = tempo_med
+        tempo_med = df.loc[~api_mask, "tempo"].median(skipna=True)
+        if pd.isna(tempo_med):
+            tempo_med = df["tempo"].median(skipna=True)
+        if pd.isna(tempo_med):
+            tempo_med = 0.0
+        df.loc[~api_mask, "tempo"] = df.loc[~api_mask, "tempo"].fillna(tempo_med)
+        df.loc[(~api_mask) & ((df["tempo"] < 30) | (df["tempo"] > 250)), "tempo"] = tempo_med
 
     if "duration_ms" in df.columns:
-        dur_med = df["duration_ms"].median(skipna=True)
-        df["duration_ms"] = df["duration_ms"].fillna(dur_med)
-        df.loc[(df["duration_ms"] < 10000) | (df["duration_ms"] > 3_600_000), "duration_ms"] = dur_med
+        dur_med = df.loc[~api_mask, "duration_ms"].median(skipna=True)
+        if pd.isna(dur_med):
+            dur_med = df["duration_ms"].median(skipna=True)
+        if pd.isna(dur_med):
+            dur_med = 0.0
+        df.loc[~api_mask, "duration_ms"] = df.loc[~api_mask, "duration_ms"].fillna(dur_med)
+        df.loc[(~api_mask) & ((df["duration_ms"] < 10000) | (df["duration_ms"] > 3_600_000)), "duration_ms"] = dur_med
 
-    # Ensure popularity exists (may be missing for Kaggle rows)
+    # Handle popularity: coerce and impute for pre-2021 rows only
     if "popularity" not in df.columns:
-        df["popularity"] = pd.NA
+        df["popularity"] = np.nan
+    else:
+        df["popularity"] = pd.to_numeric(df["popularity"], errors="coerce")
+    
+    # Impute popularity for Kaggle rows (pre-2021) only
+    pop_median = df.loc[~api_mask, "popularity"].median(skipna=True)
+    if pd.isna(pop_median):
+        pop_median = df["popularity"].median(skipna=True)
+    if not pd.isna(pop_median):
+        df.loc[~api_mask, "popularity"] = df.loc[~api_mask, "popularity"].fillna(pop_median)
+    
+    # Clip popularity to valid range
+    if "popularity" in df.columns:
+        df["popularity"] = df["popularity"].clip(0, 100)
 
     # Reorder columns for consistency
     desired = [

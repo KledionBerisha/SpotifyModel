@@ -168,3 +168,75 @@ Output i pritshëm:
 - Model ML me metrika performance dhe interpretim feature importance.
 - Analizë clustering me evolucionin e grupeve ndër dekada.
 - Seksion përfundimtar: çfarë ka ndryshuar në muzikë dhe sa është standardizuar ajo.
+
+
+## Ekzekutimi i Pipeline-it të Plotë
+
+Instalo varësitë e projektit:
+```powershell
+pip install -r requirements.txt
+
+Krijo skedarin .env në rrënjën e projektit me kredencialet e Spotify API:
+SPOTIFY_CLIENT_ID=your_client_id
+SPOTIFY_CLIENT_SECRET=your_client_secret
+
+1. Shkarko dhe përgatit të dhënat e Kaggle (1980-2020)
+
+python -m src.data.ingest_kaggle `
+  --input-csv data/interim/kaggle_1960_2020.csv `
+  --output-csv data/interim/kaggle_prepared.csv
+
+
+2. Merr të dhënat e Spotify API (2021-2025)
+
+python -m src.data.ingest_spotify `
+  --output-csv data/interim/spotify_api_2021_2025.csv `
+  --api-start-year 2021 `
+  --api-end-year 2025
+
+
+3. Bashko të dhënat e Kaggle dhe Spotify në një tabelë të unifikuar
+
+python -m src.data.merge_datasets `
+  --output-csv data/processed/Spotify_1960_2026_Final.csv
+
+
+4. Pastroni të dhënat: heq dublikatat, menaxho vlerat mungese, normalizimi
+
+python src/data/finalize_cleaning.py `
+  --input data/processed/Spotify_1960_2026_Final.csv `
+  --output data/processed/Spotify_1980_2025_Final_clean.csv
+
+
+5. Përgatit features për modelimin: ndarje e features dhe target (popularity)
+
+python -m src.features.preprocess
+
+Prodhon: data/processed/model_input.csv
+
+
+6. Trajno modelet e machine learning për parashikimin e popullaritetit
+
+python -m src.models.train_popularity_model
+
+
+7. Grupo këngët sipas karakteristikave audio me KMeans clustering
+
+python -m src.models.clustering_analysis
+
+
+8. Krijo analiza statistikore (trendet, korrelacionet, krahasimi para/pas 2010)
+
+python -m src.analysis.trend_analysis
+python -m src.analysis.correlation_analysis
+python -m src.analysis.standardization_analysis
+python -m src.analysis.pre_post_2010_analysis
+python -m src.analysis.create_spotify_visualizations
+
+
+Rezultatet
+Pas përfundimit të pipeline-it, të gjithë rezultatet do të jenë në:
+
+- reports — grafikë, metrikat e modeleve, raporte analitike
+- models/ — modelet e trajnuara (joblib files)
+- processed — të dhënat e përpunuara dhe të gatshme për analizë

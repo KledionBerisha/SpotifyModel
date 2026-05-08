@@ -1,101 +1,98 @@
-"""Download and process the Kaggle Spotify dataset for years 1980-2020."""
+"""Ingest Kaggle Spotify dataset (1960-2020)."""
 
 import argparse
+import logging
 from pathlib import Path
 
 import pandas as pd
 
-
-DEFAULT_DATASET = "yamaerenay/spotify-dataset-19212020-600k-tracks"
+logger = logging.getLogger(__name__)
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
+REQUIRED_COLUMNS = [
+    "artists",
+    "name",
+    "duration_ms",
+    "year",
+    "acousticness",
+    "danceability",
+    "energy",
+    "instrumentalness",
+    "liveness",
+    "loudness",
+    "speechiness",
+    "tempo",
+    "valence",
+    "popularity",
+]
 
-def _find_csv_file(dataset_dir: Path) -> Path:
-    csv_files = sorted(dataset_dir.rglob("*.csv"))
-    if not csv_files:
-        raise FileNotFoundError(f"No CSV files found in: {dataset_dir}")
-    # Prefer files that look like the main tracks table.
-    for candidate in csv_files:
-        name = candidate.name.lower()
-        if "track" in name or "spotify" in name:
-            return candidate
-    return csv_files[0]
 
-
-def _get_year_series(df: pd.DataFrame) -> pd.Series:
+def load_and_prepare_kaggle_data(
+    csv_path: str | Path,
+    start_year: int = 1980,
+    end_year: int = 2020,
+) -> pd.DataFrame:
+    """Load, filter, and align Kaggle CSV to required columns."""
+    csv_path = Path(csv_path)
+    logger.info(f"Loading Kaggle CSV: {csv_path}")
+    
+    df = pd.read_csv(csv_path, low_memory=False)
+    
+    # Extract year from either 'year' or 'release_date' column
     if "year" in df.columns:
-        return pd.to_numeric(df["year"],
-        errors="coerce")
-    if "release_date" in df.columns:
-        parsed = pd.to_datetime(df["release_date"], errors="coerce")
-        return parsed.dt.year
-    raise ValueError(
-        "Input dataset must contain either 'year' or 'release_date' column."
-    )
-
-def _resolve_output_path(output_csv:Path) -> Path:
-    if output_csv.is_absolute():
-        return output_csv
-    return PROJECT_ROOT / output_csv
-
-def run(input_csv: Path, output_csv: Path) -> None:
-    df = pd.read_csv(input_csv)
-    years = _get_year_series(df)
-    df = df.assign(year=years).dropna(subset=["year"]).copy()
-    df["year"] = df["year"].astype(int)
-
-    filtered = df[(df["year"] >= 1980) & (df["year"] <= 2020)].copy()
-    output_csv = _resolve_output_path(output_csv)
-    output_csv.parent.mkdir(parents=True, exist_ok=True)
-    filtered.to_csv(output_csv, index=False)
-
-
-def run_from_kaggle(output_csv: Path, dataset_ref: str = DEFAULT_DATASET) -> None:
-    try:
-        import kagglehub
-    except ImportError as exc:
-        raise ImportError(
-            "kagglehub is not installed. Install it with: pip install kagglehub"
-        ) from exc
-
-    dataset_path = Path(kagglehub.dataset_download(dataset_ref))
-    input_csv = _find_csv_file(dataset_path)
-    run(input_csv=input_csv, output_csv=output_csv)
-    print(f"Downloaded dataset to: {dataset_path}")
-    print(f"Using input file: {input_csv}")
-    print(f"Saved filtered output: {output_csv}")
+        df["year"] = pd.to_numeric(df["year"], errors="coerce")
+    elif "release_date" in df.columns:
+        df["year"] = pd.to_datetime(df["release_date"], errors="coerce").dt.year
+    else:
+        raise ValueError("Dataset must have 'year' or 'release_date' column")
+    
+    # Filter by year range
+    df = df[df["year"].notna()].copy()
+    df = df[(df["year"].astype(int) >= start_year) & (df["year"].astype(int) <= end_year)].copy()
+    logger.info(f"Filtered to {len(df)} rows in range {start_year}-{end_year}")
+    
+    # Ensure all required columns exist
+    import numpy as np
+    for col in REQUIRED_COLUMNS:
+        if col not in df.columns:
+            df[col] = np.nan
+    
+    # Select and align columns
+    kaggle_df = df[REQUIRED_COLUMNS].copy()
+    kaggle_df["year"] = kaggle_df["year"].astype("Int64")
+    
+    logger.info(f"Kaggle prepared: {len(kaggle_df)} rows")
+    return kaggle_df
 
 
-def _parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Process Kaggle Spotify dataset for years 1980-2020."
-    )
-    parser.add_argument(
-        "--output-csv",
-        type=Path,
-        default=Path("data/interim/kaggle_1960_2020.csv"),
-        help="Output CSV path for filtered dataset.",
-    )
-    parser.add_argument(
-        "--input-csv",
-        type=Path,
-        default=None,
-        help="Optional local input CSV. If omitted, data is downloaded from Kaggle.",
-    )
-    parser.add_argument(
-        "--dataset-ref",
-        type=str,
-        default=DEFAULT_DATASET,
-        help="Kaggle dataset reference for kagglehub download.",
-    )
-    return parser.parse_args()
+def run(
+    input_csv: str | Path | None = None,
+    output_csv: str | Path | None = None,
+    start_year: int = 1980,
+    end_year: int = 2020,
+) -> pd.DataFrame:
+    """Load and save Kaggle data."""
+    logging.basicConfig(level=logging.INFO)
+    
+    if input_csv is None:
+        input_csv = PROJECT_ROOT / "data/interim/kaggle_1960_2020.csv"
+    
+    kaggle_df = load_and_prepare_kaggle_data(input_csv, start_year, end_year)
+    
+    if output_csv:
+        output_path = Path(output_csv)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        kaggle_df.to_csv(output_path, index=False)
+        logger.info(f"Saved to {output_path}")
+    
+    return kaggle_df
 
 
 if __name__ == "__main__":
-    args = _parse_args()
-    if args.input_csv is not None:
-        run(input_csv=args.input_csv, output_csv=args.output_csv)
-        print(f"Processed local input: {args.input_csv}")
-        print(f"Saved filtered output: {args.output_csv}")
-    else:
-        run_from_kaggle(output_csv=args.output_csv, dataset_ref=args.dataset_ref)
+    parser = argparse.ArgumentParser(description="Ingest Kaggle Spotify dataset")
+    parser.add_argument("--input-csv", type=str, help="Input Kaggle CSV path")
+    parser.add_argument("--output-csv", type=str, help="Output CSV path")
+    parser.add_argument("--start-year", type=int, default=1980)
+    parser.add_argument("--end-year", type=int, default=2020)
+    args = parser.parse_args()
+    run(input_csv=args.input_csv, output_csv=args.output_csv, start_year=args.start_year, end_year=args.end_year)
