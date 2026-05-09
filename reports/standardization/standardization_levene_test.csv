@@ -1,0 +1,10 @@
+feature,levene_statistic,p_value,variance_changing
+acousticness,607.8449878989769,0.0,Yes (p < 0.05)
+danceability,118.54550788093006,1.480132624816478e-223,Yes (p < 0.05)
+energy,467.615673437543,0.0,Yes (p < 0.05)
+instrumentalness,155.17489701684818,1.79850993421757e-294,Yes (p < 0.05)
+liveness,190.1248704350493,0.0,Yes (p < 0.05)
+loudness,778.717976441853,0.0,Yes (p < 0.05)
+speechiness,685.3239358212342,0.0,Yes (p < 0.05)
+tempo,188.08329797591327,0.0,Yes (p < 0.05)
+valence,321.78056017838975,0.0,Yes (p < 0.05)

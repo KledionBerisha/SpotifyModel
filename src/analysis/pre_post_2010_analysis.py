@@ -341,7 +341,7 @@ def run(
     if input_csv is None:
         input_csv = str(PROJECT_ROOT / "data/processed/Spotify_1980_2025_Final.csv")
     if output_dir is None:
-        output_dir = str(PROJECT_ROOT / "reports")
+        output_dir = str(PROJECT_ROOT / "reports" / "pre_post_2010")
     
     output_path = Path(output_dir)
     output_path.mkdir(parents=True, exist_ok=True)

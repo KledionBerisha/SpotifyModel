@@ -1,0 +1,50 @@
+================================================================================
+SPOTIFY AUDIO TRENDS ANALYSIS (1980-2025, 5-YEAR PERIODS)
+================================================================================
+
+FEATURE RANGES (FIRST vs LAST 5-YEAR PERIOD):
+  • ACOUSTICNESS
+    1980-1984 average: 0.4311
+    2025-2025 average: 0.2520
+    Change: -41.6%
+
+  • DANCEABILITY
+    1980-1984 average: 0.5623
+    2025-2025 average: 0.5630
+    Change: +0.1%
+
+  • ENERGY
+    1980-1984 average: 0.5387
+    2025-2025 average: 0.5880
+    Change: +9.1%
+
+  • INSTRUMENTALNESS
+    1980-1984 average: 0.0844
+    2025-2025 average: 0.0001
+    Change: -99.9%
+
+  • LIVENESS
+    1980-1984 average: 0.2336
+    2025-2025 average: 0.1300
+    Change: -44.3%
+
+  • LOUDNESS
+    1980-1984 average: -11.2816
+    2025-2025 average: -9.0655
+    Change: -19.6%
+
+  • SPEECHINESS
+    1980-1984 average: 0.1573
+    2025-2025 average: 0.0432
+    Change: -72.5%
+
+  • TEMPO
+    1980-1984 average: 118.4831
+    2025-2025 average: 117.6430
+    Change: -0.7%
+
+  • VALENCE
+    1980-1984 average: 0.5811
+    2025-2025 average: 0.5510
+    Change: -5.2%
+

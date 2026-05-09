@@ -24,7 +24,7 @@ from src.features.preprocess import (
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_INPUT_CSV = PROJECT_ROOT / "data/processed/Spotify_1980_2025_Final_clean.csv"
 DEFAULT_MODEL_DIR = PROJECT_ROOT / "models"
-DEFAULT_REPORT_DIR = PROJECT_ROOT / "reports"
+DEFAULT_REPORT_DIR = PROJECT_ROOT / "reports" / "popularity_model"
 
 DEFAULT_MODEL_PATH = DEFAULT_MODEL_DIR / "popularity_model.joblib"
 DEFAULT_METRICS_PATH = DEFAULT_REPORT_DIR / "popularity_model_metrics.csv"
@@ -92,16 +92,20 @@ def build_models() -> dict[str, object]:
             random_state=42,
             n_jobs=-1,
             min_samples_leaf=2,
+            verbose=1,  # Tregon progresin e pemëve
         ),
-        "gradient_boosting": GradientBoostingRegressor(random_state=42),
+        "gradient_boosting": GradientBoostingRegressor(
+            random_state=42,
+            verbose=1,  # Tregon progresin
+        ),
     }
-
-
 def fit_models(train_df: pd.DataFrame) -> dict[str, object]:
     """Fit all candidate models."""
     models = build_models()
-    for model in models.values():
+    for name, model in models.items():
+        logger.info("Duke filluar trajnimin për: %s", name)
         model.fit(train_df[MODEL_FEATURE_COLUMNS], train_df[TARGET_COLUMN])
+        logger.info("Përfundoi trajnimi për: %s", name)
     return models
 
 
@@ -188,6 +192,12 @@ def run(
     output_report_dir.mkdir(parents=True, exist_ok=True)
 
     df = load_clean_dataset(source_path)
+
+    # Stratified sampling: 100,000 këngë, të ndara në mënyrë të barabartë sipas viteve
+    num_years = df["year"].nunique()
+    n_per_year = 100000 // num_years
+    df = df.groupby("year", group_keys=False).apply(lambda x: x.sample(n=min(len(x), n_per_year), random_state=42)).reset_index(drop=True)
+    logger.info("Dataseti u balancua: rreth %d këngë për vit (%d në total).", n_per_year, len(df))
     model_frame = build_model_frame(df, drop_missing_target=True)
 
     if model_frame.empty:
@@ -232,7 +242,7 @@ def run(
     best_test_metrics = test_scores[best_model_name]
 
     importance_df = extract_feature_importance(best_model)
-    shap_df = compute_shap_values(best_model, train_df[MODEL_FEATURE_COLUMNS], test_df[MODEL_FEATURE_COLUMNS])
+    shap_df = compute_shap_values(best_model, train_df[MODEL_FEATURE_COLUMNS], test_df[MODEL_FEATURE_COLUMNS].sample(n=min(50, len(test_df)), random_state=42))
     report_text = build_report(
         best_model_name,
         best_validation_metrics,

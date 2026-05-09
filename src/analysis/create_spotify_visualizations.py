@@ -179,6 +179,8 @@ def create_interactive_scatter(df: pd.DataFrame, output_dir: Path) -> None:
 
     if "popularity" not in viz_df.columns:
         viz_df["popularity"] = 50
+    else:
+        viz_df["popularity"] = pd.to_numeric(viz_df["popularity"], errors="coerce").fillna(50)
 
     # Sample 250 songs evenly across years to avoid crowding
     songs_per_year = max(1, 250 // viz_df["year"].nunique())

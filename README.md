@@ -198,13 +198,15 @@ python -m src.data.ingest_spotify `
 3. Bashko të dhënat e Kaggle dhe Spotify në një tabelë të unifikuar
 
 python -m src.data.merge_datasets `
-  --output-csv data/processed/Spotify_1960_2026_Final.csv
+  --kaggle-csv data/interim/kaggle_prepared.csv `
+  --spotify-csv data/raw/spotify/Spotify_2021_2025_API_Only.csv `
+  --output-csv data/processed/Spotify_1980_2025_Final.csv
 
 
-4. Pastroni të dhënat: heq dublikatat, menaxho vlerat mungese, normalizimi
+4. Pastroni tëdhënat: heq dublikatat, menaxho vlerat mungese, normalizimi
 
 python src/data/finalize_cleaning.py `
-  --input data/processed/Spotify_1960_2026_Final.csv `
+  --input data/processed/Spotify_1980_2025_Final.csv `
   --output data/processed/Spotify_1980_2025_Final_clean.csv
 
 
