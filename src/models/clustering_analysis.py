@@ -19,7 +19,7 @@ from src.features.preprocess import AUDIO_FEATURE_COLUMNS, load_clean_dataset
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_INPUT_CSV = PROJECT_ROOT / "data/processed/Spotify_1980_2025_Final_clean.csv"
-DEFAULT_REPORT_DIR = PROJECT_ROOT / "reports"
+DEFAULT_REPORT_DIR = PROJECT_ROOT / "reports" / "clustering"
 
 DEFAULT_CLUSTERED_CSV = DEFAULT_REPORT_DIR / "clustered_tracks.csv"
 DEFAULT_CLUSTER_SUMMARY_CSV = DEFAULT_REPORT_DIR / "cluster_summary.csv"
@@ -183,8 +183,14 @@ def run(
     output_dir.mkdir(parents=True, exist_ok=True)
 
     df = load_clean_dataset(source_path)
+    
+    # Stratified sampling: 10,000 këngë, të ndara në mënyrë të barabartë sipas viteve
+    num_years = df["year"].nunique()
+    n_per_year = 10000 // num_years
+    df = df.groupby("year", group_keys=False).apply(lambda x: x.sample(n=min(len(x), n_per_year), random_state=42)).reset_index(drop=True)
+    logger.info("Dataseti u balancua për clustering: rreth %d këngë për vit (%d në total).", n_per_year, len(df))
+    
     cluster_frame = build_cluster_frame(df)
-
     if cluster_frame.empty:
         raise ValueError("No rows with complete audio features were found for clustering.")
 

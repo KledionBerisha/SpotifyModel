@@ -8,8 +8,6 @@ from pathlib import Path
 
 import pandas as pd
 
-from . import ingest_kaggle, ingest_spotify
-
 logger = logging.getLogger(__name__)
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
@@ -27,23 +25,11 @@ def merge_datasets(
 
 def run(
     kaggle_csv: str | Path | None = None,
+    spotify_csv: str | Path | None = None,
     output_csv: str | Path | None = None,
-    api_start_year: int = 2021,
-    api_end_year: int = 2025,
-    tracks_per_year: int = 7500,
 ) -> pd.DataFrame:
     """
     Run full merge pipeline.
-
-    Args:
-        kaggle_csv: Path to Kaggle CSV
-        output_csv: Path to save merged output
-        api_start_year: API fetch start year
-        api_end_year: API fetch end year
-        tracks_per_year: Tracks to fetch per year
-
-    Returns:
-        Merged DataFrame
     """
     logging.basicConfig(
         level=logging.INFO,
@@ -51,28 +37,27 @@ def run(
     )
 
     if kaggle_csv is None:
-        kaggle_csv = PROJECT_ROOT / "data/interim/kaggle_1960_2020.csv"
+        kaggle_csv = PROJECT_ROOT / "data/interim/kaggle_prepared.csv"
+        
+    if spotify_csv is None:
+        spotify_csv = PROJECT_ROOT / "data/interim/spotify_api_2021_2025.csv"
 
     if output_csv is None:
-        output_csv = PROJECT_ROOT / "data/processed/Spotify_1960_2026_Final.csv"
+        output_csv = PROJECT_ROOT / "data/processed/Spotify_1980_2025_Final.csv"
 
     logger.info("=" * 80)
     logger.info("STEP 1: Loading Kaggle data...")
     logger.info("=" * 80)
-    kaggle_df = ingest_kaggle.load_and_prepare_kaggle_data(kaggle_csv)
+    kaggle_df = pd.read_csv(kaggle_csv, low_memory=False)
 
     logger.info("")
     logger.info("=" * 80)
-    logger.info("STEP 2: Fetching Spotify API data...")
+    logger.info("STEP 2: Loading Spotify API data...")
     logger.info("=" * 80)
     try:
-        api_df = ingest_spotify.build_api_dataframe(
-            api_start_year=api_start_year,
-            api_end_year=api_end_year,
-            tracks_per_year=tracks_per_year,
-        )
-    except ingest_spotify.SpotifyAccessBlocked as exc:
-        logger.error("%s", exc)
+        api_df = pd.read_csv(spotify_csv, low_memory=False)
+    except Exception as exc:
+        logger.error("Could not load spotify data: %s", exc)
         logger.error("Continuing with Kaggle-only dataset.")
         api_df = pd.DataFrame(columns=kaggle_df.columns)
 
@@ -99,16 +84,12 @@ def run(
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Merge Kaggle and Spotify datasets")
     parser.add_argument("--kaggle-csv", type=str, help="Kaggle CSV path")
+    parser.add_argument("--spotify-csv", type=str, help="Spotify API CSV path")
     parser.add_argument("--output-csv", type=str, help="Output CSV path")
-    parser.add_argument("--api-start-year", type=int, default=2021)
-    parser.add_argument("--api-end-year", type=int, default=2025)
-    parser.add_argument("--tracks-per-year", type=int, default=7500)
     args = parser.parse_args()
 
     run(
         kaggle_csv=args.kaggle_csv,
+        spotify_csv=args.spotify_csv,
         output_csv=args.output_csv,
-        api_start_year=args.api_start_year,
-        api_end_year=args.api_end_year,
-        tracks_per_year=args.tracks_per_year,
     )
