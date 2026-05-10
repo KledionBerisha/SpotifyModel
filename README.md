@@ -239,6 +239,11 @@ python -m src.analysis.pre_post_2010_analysis
 python -m src.analysis.create_spotify_visualizations
 
 
+9. Dashboard-it Interaktiv
+
+streamlit run dashboards\dashboard.py
+
+
 Rezultatet
 Pas përfundimit të pipeline-it, të gjithë rezultatet do të jenë në:
 
