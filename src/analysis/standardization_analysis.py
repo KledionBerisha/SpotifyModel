@@ -185,7 +185,7 @@ def plot_violin_distributions(df: pd.DataFrame, output_dir: Path) -> None:
             key=lambda x: int(str(x).split("-")[0]),
         )
         
-        sns.violinplot(data=plot_data, x="decade_label", y=feature, 
+        sns.violinplot(data=plot_data, x="decade_label", y=feature, hue="decade_label", legend=False,
                        order=decade_order, ax=ax, palette="Set2")
         
         ax.set_title(f"{feature.capitalize()}", fontweight="bold")

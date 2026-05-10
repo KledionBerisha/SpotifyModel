@@ -1,575 +1,409 @@
-"""Fetch Spotify API data for recent years (2021-2025)."""
+#!/usr/bin/env python3
+"""
+Fetch Spotify API data for recent years (2021-2025) and build Kaggle-style datasets.
+Also supports fixing missing track popularity in existing CSVs.
+"""
 
 from __future__ import annotations
 
 import argparse
+import ast
+import base64
+import hashlib
+import json
 import logging
 import os
-import random
 import time
+from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterator, Sequence
+from typing import Any, Iterable
 
 import pandas as pd
 import requests
-import spotipy
 from dotenv import load_dotenv
-from spotipy.exceptions import SpotifyException
-from spotipy.oauth2 import SpotifyClientCredentials, SpotifyOAuth
 
 logger = logging.getLogger(__name__)
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
+# Load variables from .env file automatically
 load_dotenv(PROJECT_ROOT / ".env")
 
-TRACKS_BATCH_SIZE = 50
-AUDIO_FEATURES_BATCH_SIZE = 100
-API_MAX_TRACKS_PER_YEAR = 200
-API_MAX_SEARCH_RESULTS_PER_QUERY = 50
-
-REQUIRED_COLUMNS = [
-    "artists",
-    "name",
-    "duration_ms",
-    "year",
-    "acousticness",
-    "danceability",
-    "energy",
-    "instrumentalness",
-    "liveness",
-    "loudness",
-    "speechiness",
-    "tempo",
-    "valence",
-    "popularity",
+TRACK_COLUMNS = [
+    "id", "name", "popularity", "duration_ms", "explicit", "artists",
+    "id_artists", "release_date", "danceability", "energy", "key",
+    "loudness", "mode", "speechiness", "acousticness", "instrumentalness",
+    "liveness", "valence", "tempo", "time_signature"
 ]
 
+ARTIST_COLUMNS = ["id", "followers", "genres", "name", "popularity"]
 
-class SpotifyAccessBlocked(RuntimeError):
-    """Raised when Spotify blocks access with a 403."""
+AUDIO_COLUMNS = [
+    "danceability", "energy", "key", "loudness", "mode", "speechiness",
+    "acousticness", "instrumentalness", "liveness", "valence", "tempo",
+    "time_signature"
+]
 
+class SpotifyApiError(RuntimeError):
+    def __init__(self, message: str, status_code: int | None = None):
+        super().__init__(message)
+        self.status_code = status_code
 
-def chunked(items: Sequence[str], chunk_size: int) -> Iterator[list[str]]:
-    """Yield chunks from a sequence."""
-    for start in range(0, len(items), chunk_size):
-        yield list(items[start : start + chunk_size])
+def batched(items: list[str], size: int) -> Iterable[list[str]]:
+    for i in range(0, len(items), size):
+        yield items[i : i + size]
 
+def literal_list(values: list[str]) -> str:
+    return repr(values)
 
-def authenticate_spotify(
-    client_id: str | None = None,
-    client_secret: str | None = None,
-) -> spotipy.Spotify:
-    """Authenticate with Spotify.
+def cache_load(path: Path) -> Any | None:
+    if path.exists():
+        with path.open("r", encoding="utf-8") as f:
+            return json.load(f)
+    return None
 
-    Defaults to client-credentials flow for public read access.
-    OAuth is optional and can be enabled with SPOTIFY_USE_OAUTH=true.
-    """
-    client_id = client_id or os.getenv("SPOTIFY_CLIENT_ID")
-    client_secret = client_secret or os.getenv("SPOTIFY_CLIENT_SECRET")
-    use_oauth = os.getenv("SPOTIFY_USE_OAUTH", "false").lower() in {
-        "1",
-        "true",
-        "yes",
-        "on",
-    }
+def cache_save(path: Path, data: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    with tmp.open("w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    tmp.replace(path)
 
-    if not client_id or not client_secret:
-        raise ValueError(
-            "SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET must be set in environment or passed as args"
+def batch_cache_path(cache_dir: Path, namespace: str, ids: list[str]) -> Path:
+    digest = hashlib.sha1(",".join(ids).encode("utf-8")).hexdigest()
+    return cache_dir / namespace / f"{digest}.json"
+
+@dataclass
+class SpotifyClient:
+    client_id: str
+    client_secret: str
+    token: str | None = None
+    token_expires_at: float = 0
+
+    def authenticate(self) -> None:
+        auth = base64.b64encode(f"{self.client_id}:{self.client_secret}".encode()).decode()
+        response = requests.post(
+            "https://accounts.spotify.com/api/token",
+            headers={"Authorization": f"Basic {auth}"},
+            data={"grant_type": "client_credentials"},
+            timeout=30,
         )
+        if response.status_code >= 400:
+            raise SpotifyApiError(f"Spotify auth failed: {response.status_code} {response.text}", response.status_code)
+        payload = response.json()
+        self.token = payload["access_token"]
+        self.token_expires_at = time.time() + int(payload.get("expires_in", 3600)) - 60
 
-    if use_oauth:
-        redirect_uri = os.getenv("SPOTIFY_REDIRECT_URI")
-        if not redirect_uri:
-            raise ValueError("SPOTIFY_REDIRECT_URI must be set when SPOTIFY_USE_OAUTH is enabled")
+    def get(self, path: str, params: dict[str, Any] | None = None) -> dict[str, Any]:
+        if not self.token or time.time() >= self.token_expires_at:
+            self.authenticate()
 
-        auth_manager = SpotifyOAuth(
-            client_id=client_id,
-            client_secret=client_secret,
-            redirect_uri=redirect_uri,
-            scope="user-read-private user-read-email",
-            cache_path=str(PROJECT_ROOT / ".spotify-cache"),
-            open_browser=False,
-        )
-        return spotipy.Spotify(auth_manager=auth_manager)
-
-    auth_manager = SpotifyClientCredentials(
-        client_id=client_id,
-        client_secret=client_secret,
-        cache_handler=None,
-    )
-    return spotipy.Spotify(auth_manager=auth_manager)
-
-
-def safe_artists_to_string(artists_payload: list[dict]) -> str:
-    """Convert Spotify artists payload to a comma-separated string."""
-    if not artists_payload:
-        return "Unknown"
-    return ", ".join(artist.get("name", "Unknown") for artist in artists_payload)
-
-
-def fetch_year_track_candidates(
-    sp: spotipy.Spotify,
-    year: int,
-    market: str | None = None,
-    max_search_results_per_query: int = API_MAX_SEARCH_RESULTS_PER_QUERY,
-    query_seeds: list[str] | None = None,
-) -> list[dict]:
-    """Fetch track candidates for a given year using Spotify search."""
-    candidates: list[dict] = []
-    limit = 10
-    seeds = query_seeds or [""]
-    max_net_retries = 5
-
-    for seed in seeds:
-        query = f"year:{year} {seed}".strip()
-        offset = 0
-
-        while offset < max_search_results_per_query:
-            search_kwargs = {
-                "q": query,
-                "type": "track",
-                "limit": limit,
-                "offset": offset,
-            }
-            if market:
-                search_kwargs["market"] = market
-
-            response = None
-            for attempt in range(1, max_net_retries + 1):
-                try:
-                    response = sp.search(**search_kwargs)
-                    break
-                except SpotifyException as exc:
-                    if exc.http_status == 429:
-                        logger.warning("Rate limited on search query '%s'. Skipping remaining pages.", query)
-                        response = None
-                        break
-                    if exc.http_status == 403:
-                        raise SpotifyAccessBlocked("Spotify returned 403 on search. Stopping API fetch.") from exc
-                    raise
-                except requests.exceptions.RequestException as exc:
-                    wait = 2 ** (attempt - 1)
-                    logger.warning(
-                        "Network error on search attempt %d/%d for query '%s': %s. Retrying in %.1fs",
-                        attempt,
-                        max_net_retries,
-                        query,
-                        exc,
-                        wait,
-                    )
-                    time.sleep(wait)
-                    continue
-            else:
-                logger.warning("Search failed after %d network retries; skipping this query page.", max_net_retries)
-
-            if not response:
-                break
-
-            items = response.get("tracks", {}).get("items", [])
-            if not items:
-                break
-
-            candidates.extend(items)
-            offset += limit
-            time.sleep(0.1)
-
-    return candidates
-
-
-def fetch_tracks_with_retry(
-    sp: spotipy.Spotify,
-    track_ids: Sequence[str],
-    max_retries: int = 5,
-    base_wait: int = 60,
-    market: str | None = None,
-    skip_forbidden: bool = True,
-) -> dict[str, dict]:
-    """Fetch track metadata in batches using Spotify's plural tracks endpoint.
-
-    On a 403 for a full batch, this function will attempt to isolate forbidden IDs
-    by sub-batching and, if necessary, requesting individual IDs. If `skip_forbidden`
-    is True (default), forbidden IDs are skipped so ingestion can continue.
-    """
-    tracks_by_id: dict[str, dict] = {}
-
-    for batch_ids in chunked([track_id for track_id in track_ids if track_id], TRACKS_BATCH_SIZE):
-        batch_tracks = None
-
-        for attempt in range(1, max_retries + 1):
-            try:
-                if market:
-                    response = sp.tracks(batch_ids, market=market)
-                else:
-                    response = sp.tracks(batch_ids)
-                batch_tracks = response.get("tracks", []) if isinstance(response, dict) else response
-                break
-            except SpotifyException as exc:
-                status = getattr(exc, "http_status", None)
-
-                if status == 429:
-                    retry_after = base_wait * (2 ** (attempt - 1))
-                    try:
-                        retry_after = int(exc.headers.get("Retry-After", retry_after))
-                    except Exception:
-                        pass
-                    logger.warning(
-                        "Rate limited on tracks batch (attempt %d/%d). Waiting %ss...",
-                        attempt,
-                        max_retries,
-                        retry_after,
-                    )
-                    time.sleep(retry_after + random.uniform(1.0, 5.0))
-                    continue
-
-                if status in (500, 502, 503, 504):
-                    wait = 5.0 * attempt
-                    logger.warning(
-                        "Server error %s on tracks batch (attempt %d). Retrying in %.1fs...",
-                        status,
-                        attempt,
-                        wait,
-                    )
-                    time.sleep(wait)
-                    continue
-
-                if status == 403:
-                    logger.error(
-                        "403 Forbidden on tracks batch. batch_size=%d, ids=%s",
-                        len(batch_ids),
-                        ",".join(batch_ids),
-                    )
-                    if not skip_forbidden:
-                        raise SpotifyAccessBlocked(
-                            "Spotify returned 403 on tracks endpoint. This can indicate app permissions, blocked access, or a restricted batch."
-                        ) from exc
-
-                    # Try to isolate the problem by sub-batching; fall back to individual ids.
-                    logger.info("Attempting to isolate forbidden IDs by sub-batching (size=%d).", len(batch_ids))
-
-                    # If batch is already size 1, skip it.
-                    if len(batch_ids) == 1:
-                        logger.warning("Skipping forbidden track id=%s", batch_ids[0])
-                        batch_tracks = [None]
-                        break
-
-                    # First try halves, then quarters, then individuals as needed.
-                    try:
-                        sub_batch_size = max(1, len(batch_ids) // 2)
-                        for sub_ids in chunked(batch_ids, sub_batch_size):
-                            try:
-                                if market:
-                                    sub_resp = sp.tracks(sub_ids, market=market)
-                                else:
-                                    sub_resp = sp.tracks(sub_ids)
-                                sub_tracks = sub_resp.get("tracks", []) if isinstance(sub_resp, dict) else sub_resp
-                                for t in sub_tracks:
-                                    if t and t.get("id"):
-                                        tracks_by_id[t["id"]] = t
-                                time.sleep(0.1)
-                            except SpotifyException as sub_exc:
-                                s_status = getattr(sub_exc, "http_status", None)
-                                # If sub-batch also 403 and is larger than 1, drill down to individuals
-                                if s_status == 403 and len(sub_ids) > 1:
-                                    logger.info("Sub-batch of size %d returned 403; drilling down.", len(sub_ids))
-                                    for tid in sub_ids:
-                                        try:
-                                            if market:
-                                                single_resp = sp.tracks([tid], market=market)
-                                            else:
-                                                single_resp = sp.tracks([tid])
-                                            single_tracks = single_resp.get("tracks", []) if isinstance(single_resp, dict) else single_resp
-                                            if single_tracks and single_tracks[0] and single_tracks[0].get("id"):
-                                                tracks_by_id[single_tracks[0]["id"]] = single_tracks[0]
-                                        except SpotifyException as single_exc:
-                                            ss = getattr(single_exc, "http_status", None)
-                                            if ss == 403:
-                                                logger.warning("Skipping forbidden track id=%s", tid)
-                                                continue
-                                            raise
-                                elif s_status == 403:
-                                    # sub_ids length is 1, skip it
-                                    for tid in sub_ids:
-                                        logger.warning("Skipping forbidden track id=%s", tid)
-                                    continue
-                                else:
-                                    raise
-                    except Exception:
-                        logger.exception("Error while isolating forbidden IDs; continuing by skipping problematic items.")
-                    # We've attempted to collect what we could via sub-requests; mark batch handled.
-                    batch_tracks = []
-                    break
-                raise
-            except requests.exceptions.RequestException as exc:
-                wait = 2 ** (attempt - 1)
-                logger.warning(
-                    "Network error fetching tracks batch (attempt %d/%d): %s. Retrying in %.1fs",
-                    attempt,
-                    max_retries,
-                    exc,
-                    wait,
-                )
-                time.sleep(wait)
-                continue
-
-        if batch_tracks is None:
-            logger.warning("Failed after %d attempts on tracks batch. Treating as missing.", max_retries)
-            batch_tracks = [None] * len(batch_ids)
-
-        for track in batch_tracks:
-            if track and track.get("id"):
-                tracks_by_id[track["id"]] = track
-
-        time.sleep(0.25)
-
-    return tracks_by_id
-
-
-def fetch_audio_features_with_retry(
-    sp: spotipy.Spotify,
-    track_ids: Sequence[str],
-    max_retries: int = 5,
-    base_wait: int = 60,
-) -> dict[str, dict]:
-    """Fetch audio features in batches using Spotify's plural endpoint."""
-    features_by_id: dict[str, dict] = {}
-
-    for batch_ids in chunked([track_id for track_id in track_ids if track_id], AUDIO_FEATURES_BATCH_SIZE):
-        features_batch = None
-
-        for attempt in range(1, max_retries + 1):
-            try:
-                features_batch = sp.audio_features(batch_ids)
-                break
-            except SpotifyException as exc:
-                status = getattr(exc, "http_status", None)
-
-                if status == 429:
-                    retry_after = base_wait * (2 ** (attempt - 1))
-                    try:
-                        retry_after = int(exc.headers.get("Retry-After", retry_after))
-                    except Exception:
-                        pass
-                    logger.warning(
-                        "Rate limited on audio_features batch (attempt %d/%d). Waiting %ss...",
-                        attempt,
-                        max_retries,
-                        retry_after,
-                    )
-                    time.sleep(retry_after + random.uniform(1.0, 5.0))
-                    continue
-
-                if status in (500, 502, 503, 504):
-                    wait = 5.0 * attempt
-                    logger.warning(
-                        "Server error %s on audio_features batch (attempt %d). Retrying in %.1fs...",
-                        status,
-                        attempt,
-                        wait,
-                    )
-                    time.sleep(wait)
-                    continue
-
-                if status == 403:
-                    logger.error(
-                        "403 Forbidden on audio_features batch. batch_size=%d, ids=%s",
-                        len(batch_ids),
-                        ",".join(batch_ids),
-                    )
-                    raise SpotifyAccessBlocked(
-                        "Spotify returned 403 on audio_features. This can indicate app permissions, blocked access, or a restricted batch."
-                    ) from exc
-
-                raise
-            except requests.exceptions.RequestException as exc:
-                wait = 2 ** (attempt - 1)
-                logger.warning(
-                    "Network error fetching audio_features (attempt %d/%d): %s. Retrying in %.1fs",
-                    attempt,
-                    max_retries,
-                    exc,
-                    wait,
-                )
-                time.sleep(wait)
-                continue
-
-        if features_batch is None:
-            logger.warning("Failed after %d attempts on audio_features batch. Treating as missing.", max_retries)
-            features_batch = [None] * len(batch_ids)
-
-        for track_id, feature in zip(batch_ids, features_batch):
-            if feature and feature.get("id"):
-                features_by_id[feature["id"]] = feature
-
-        time.sleep(0.25)
-
-    return features_by_id
-
-
-def build_api_dataframe_for_year(
-    sp: spotipy.Spotify,
-    year: int,
-    tracks_per_year: int,
-    market: str | None = None,
-    max_search_results_per_query: int = API_MAX_SEARCH_RESULTS_PER_QUERY,
-    query_seeds: list[str] | None = None,
-) -> pd.DataFrame:
-    """Build a DataFrame of top tracks for one year from Spotify API."""
-    logger.info("Fetching tracks for year %d", year)
-
-    candidates = fetch_year_track_candidates(
-        sp=sp,
-        year=year,
-        market=market,
-        max_search_results_per_query=max_search_results_per_query,
-        query_seeds=query_seeds,
-    )
-    logger.info("  Found %d candidates", len(candidates))
-
-    unique_tracks: dict[str, dict] = {}
-    for track in candidates:
-        track_id = track.get("id")
-        if track_id and track_id not in unique_tracks:
-            unique_tracks[track_id] = track
-
-    top_n = min(tracks_per_year, API_MAX_TRACKS_PER_YEAR)
-    ranked_tracks = sorted(
-        unique_tracks.values(),
-        key=lambda t: t.get("popularity", 0),
-        reverse=True,
-    )[:top_n]
-
-    track_ids = [track["id"] for track in ranked_tracks if track.get("id")]
-    logger.info("  Ranking top %d by popularity", len(track_ids))
-
-    if not track_ids:
-        return pd.DataFrame(columns=REQUIRED_COLUMNS)
-
-    track_details_map = fetch_tracks_with_retry(sp, track_ids, market=market)
-    audio_features_map = fetch_audio_features_with_retry(sp, track_ids)
-
-    logger.info(
-        "  Got track details for %d/%d and audio features for %d/%d tracks",
-        len(track_details_map),
-        len(track_ids),
-        len(audio_features_map),
-        len(track_ids),
-    )
-
-    rows = []
-    for track_id in track_ids:
-        track = track_details_map.get(track_id)
-        feature = audio_features_map.get(track_id)
-
-        if not track or not feature:
-            continue
-
-        rows.append(
-            {
-                "artists": safe_artists_to_string(track.get("artists", [])),
-                "name": track.get("name"),
-                "duration_ms": track.get("duration_ms"),
-                "year": year,
-                "acousticness": feature.get("acousticness"),
-                "danceability": feature.get("danceability"),
-                "energy": feature.get("energy"),
-                "instrumentalness": feature.get("instrumentalness"),
-                "liveness": feature.get("liveness"),
-                "loudness": feature.get("loudness"),
-                "speechiness": feature.get("speechiness"),
-                "tempo": feature.get("tempo"),
-                "valence": feature.get("valence"),
-                "popularity": track.get("popularity"),
-            }
-        )
-
-    logger.info("  Built %d rows for %d", len(rows), year)
-    return pd.DataFrame(rows, columns=REQUIRED_COLUMNS)
-
-
-def build_api_dataframe(
-    api_start_year: int = 2021,
-    api_end_year: int = 2025,
-    tracks_per_year: int = 7500,
-    market: str | None = None,
-    max_search_results_per_query: int = API_MAX_SEARCH_RESULTS_PER_QUERY,
-    query_seeds: str | None = None,
-    client_id: str | None = None,
-    client_secret: str | None = None,
-) -> pd.DataFrame:
-    """Fetch and build complete API dataset for a year range."""
-    sp = authenticate_spotify(client_id, client_secret)
-
-    default_seeds = ",a,e,i,o,u,the,love,feat,remix,radio,live"
-    seeds_str = query_seeds or default_seeds
-    query_seeds_list = [seed.strip() for seed in seeds_str.split(",") if seed.strip()]
-    query_seeds_list = [""] + query_seeds_list
-
-    api_frames = []
-    for year in range(api_start_year, api_end_year + 1):
-        try:
-            year_df = build_api_dataframe_for_year(
-                sp=sp,
-                year=year,
-                tracks_per_year=tracks_per_year,
-                market=market,
-                max_search_results_per_query=max_search_results_per_query,
-                query_seeds=query_seeds_list,
+        url = f"https://api.spotify.com/v1/{path.lstrip('/')}"
+        for attempt in range(8):
+            response = requests.get(
+                url,
+                params=params,
+                headers={"Authorization": f"Bearer {self.token}"},
+                timeout=45,
             )
-        except SpotifyAccessBlocked as exc:
-            logger.error("%s", exc)
-            logger.error("Stopping API ingestion early at year %d.", year)
+
+            if response.status_code == 401 and attempt == 0:
+                self.authenticate()
+                continue
+
+            if response.status_code == 429:
+                retry_after = int(response.headers.get("Retry-After", "2"))
+                logger.warning(f"Rate limited. Waiting {retry_after}s.")
+                time.sleep(retry_after + 1)
+                continue
+
+            if response.status_code in {500, 502, 503, 504}:
+                time.sleep(2**attempt)
+                continue
+
+            if response.status_code >= 400:
+                raise SpotifyApiError(f"Spotify request failed for {path}: {response.status_code} {response.text}", response.status_code)
+
+            return response.json()
+        raise SpotifyApiError(f"Spotify request failed after retries for {path}")
+
+def search_tracks_for_year(sp: SpotifyClient, year: int, market: str, max_search_results: int, cache_dir: Path) -> list[dict[str, Any]]:
+    cache_path = cache_dir / f"search_{year}_{market}_{max_search_results}.json"
+    cached = cache_load(cache_path)
+    if cached is not None:
+        return cached
+
+    tracks: dict[str, dict[str, Any]] = {}
+    limit = 10
+    max_offset = min(max_search_results, 1000)
+
+    for offset in range(0, max_offset, limit):
+        payload = sp.get("search", {"q": f"year:{year}", "type": "track", "limit": limit, "offset": offset, "market": market})
+        items = payload.get("tracks", {}).get("items", [])
+        if not items:
             break
+        for item in items:
+            release_date = item.get("album", {}).get("release_date", "")
+            if release_date.startswith(str(year)):
+                tracks[item["id"]] = item
+        time.sleep(0.15)
 
-        api_frames.append(year_df)
+    result = sorted(tracks.values(), key=lambda t: t.get("popularity", 0), reverse=True)
+    cache_save(cache_path, result)
+    return result
 
-    api_df = (
-        pd.concat(api_frames, ignore_index=True)
-        if api_frames
-        else pd.DataFrame(columns=REQUIRED_COLUMNS)
-    )
-    logger.info("Total API data: %d rows", len(api_df))
-    return api_df
+def hydrate_track_details(sp: SpotifyClient, tracks: list[dict[str, Any]], market: str, max_candidates: int, cache_dir: Path) -> list[dict[str, Any]]:
+    hydrated: list[dict[str, Any]] = []
+    needs_hydration = any(track.get("popularity") is None for track in tracks)
+    if not needs_hydration:
+        return tracks
 
+    tracks_to_hydrate = tracks[:max_candidates]
+    for track in tracks_to_hydrate:
+        track_id = track["id"]
+        cache_path = cache_dir / "tracks" / f"{track_id}.json"
+        cached = cache_load(cache_path)
+        if cached is None:
+            try:
+                cached = sp.get(f"tracks/{track_id}", {"market": market})
+                cache_save(cache_path, cached)
+                time.sleep(0.05)
+            except SpotifyApiError:
+                cached = track
+        hydrated.append(cached or track)
 
-def run(
-    output_csv: str | Path | None = None,
-    api_start_year: int = 2021,
-    api_end_year: int = 2025,
-    tracks_per_year: int = 7500,
-    market: str | None = None,
-) -> pd.DataFrame:
-    """Fetch and save Spotify API dataset."""
-    logging.basicConfig(level=logging.INFO)
+    return sorted(hydrated, key=lambda t: t.get("popularity", 0) or 0, reverse=True)
 
-    api_df = build_api_dataframe(
-        api_start_year=api_start_year,
-        api_end_year=api_end_year,
-        tracks_per_year=tracks_per_year,
-        market=market,
-    )
+def fetch_artists(sp: SpotifyClient, artist_ids: list[str], cache_dir: Path) -> dict[str, dict[str, Any]]:
+    result: dict[str, dict[str, Any]] = {}
+    for batch in batched(sorted(set(artist_ids)), 50):
+        cache_path = batch_cache_path(cache_dir, "artists", batch)
+        cached = cache_load(cache_path)
+        if cached is None:
+            payload = sp.get("artists", {"ids": ",".join(batch)})
+            cached = payload.get("artists", [])
+            cache_save(cache_path, cached)
+            time.sleep(0.15)
+        for artist in cached:
+            if artist:
+                result[artist["id"]] = artist
+    return result
 
-    if output_csv:
-        output_path = Path(output_csv)
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-        api_df.to_csv(output_path, index=False)
-        logger.info("Saved to %s", output_path)
+def fetch_artists_individually(sp: SpotifyClient, artist_ids: list[str], cache_dir: Path) -> dict[str, dict[str, Any]]:
+    result: dict[str, dict[str, Any]] = {}
+    for artist_id in sorted(set(artist_ids)):
+        cache_path = cache_dir / "artists_individual" / f"{artist_id}.json"
+        cached = cache_load(cache_path)
+        if cached is None:
+            try:
+                cached = sp.get(f"artists/{artist_id}")
+                cache_save(cache_path, cached)
+                time.sleep(0.05)
+            except SpotifyApiError:
+                cached = None
+        if cached:
+            result[artist_id] = cached
+    return result
 
-    return api_df
+def fetch_spotify_audio_features(sp: SpotifyClient, track_ids: list[str], cache_dir: Path) -> dict[str, dict[str, Any]]:
+    result: dict[str, dict[str, Any]] = {}
+    for batch in batched(track_ids, 100):
+        cache_path = batch_cache_path(cache_dir, "spotify_audio_features", batch)
+        cached = cache_load(cache_path)
+        if cached is None:
+            payload = sp.get("audio-features", {"ids": ",".join(batch)})
+            cached = payload.get("audio_features", [])
+            cache_save(cache_path, cached)
+            time.sleep(0.15)
+        for features in cached:
+            if features:
+                result[features["id"]] = features
+    return result
 
+def fetch_reccobeats_audio_features(track_ids: list[str], cache_dir: Path) -> dict[str, dict[str, Any]]:
+    result: dict[str, dict[str, Any]] = {}
+    for batch in batched(track_ids, 40):
+        cache_path = batch_cache_path(cache_dir, "reccobeats_audio_features", batch)
+        cached = cache_load(cache_path)
+        if cached is None:
+            response = requests.get(
+                "https://api.reccobeats.com/v1/audio-features",
+                params={"ids": ",".join(batch)},
+                headers={"Accept": "application/json"},
+                timeout=45,
+            )
+            if response.status_code == 429:
+                time.sleep(int(response.headers.get("Retry-After", "2")) + 1)
+                response = requests.get(
+                    "https://api.reccobeats.com/v1/audio-features",
+                    params={"ids": ",".join(batch)},
+                    headers={"Accept": "application/json"},
+                    timeout=45,
+                )
+            response.raise_for_status()
+            cached = response.json().get("content", [])
+            cache_save(cache_path, cached)
+            time.sleep(1.0)
+        for features in cached:
+            marker = "/track/"
+            href = features.get("href", "")
+            if marker in href:
+                spotify_id = href.split(marker, 1)[1].split("?", 1)[0].strip()
+                if spotify_id:
+                    result[spotify_id] = features
+    return result
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Fetch Spotify API dataset (2021-2025)")
-    parser.add_argument("--output-csv", type=str, help="Output CSV path")
+def normalize_audio_features(features: dict[str, Any] | None, source: str) -> dict[str, Any]:
+    if not features:
+        return {column: None for column in AUDIO_COLUMNS}
+    normalized = {column: features.get(column) for column in AUDIO_COLUMNS}
+    if source == "reccobeats" and normalized.get("time_signature") is None:
+        normalized["time_signature"] = 4
+    return normalized
+
+def build_track_row(track: dict[str, Any], audio_features: dict[str, Any]) -> dict[str, Any]:
+    artists = track.get("artists", [])
+    row = {
+        "id": track.get("id"),
+        "name": track.get("name"),
+        "popularity": int(track.get("popularity") or 0),
+        "duration_ms": int(track.get("duration_ms") or 0),
+        "explicit": int(bool(track.get("explicit"))),
+        "artists": literal_list([artist.get("name", "") for artist in artists]),
+        "id_artists": literal_list([artist.get("id", "") for artist in artists]),
+        "release_date": track.get("album", {}).get("release_date", ""),
+    }
+    row.update(audio_features)
+    return {column: row.get(column) for column in TRACK_COLUMNS}
+
+def artist_stubs_from_tracks(tracks: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    stubs: dict[str, dict[str, Any]] = {}
+    for track in tracks:
+        for artist in track.get("artists", []):
+            artist_id = artist.get("id")
+            if artist_id:
+                stubs.setdefault(artist_id, {"id": artist_id, "followers": {"total": 0}, "genres": [], "name": artist.get("name", ""), "popularity": 0})
+    return stubs
+
+def build_dataset(args, sp: SpotifyClient):
+    args.output_csv.parent.mkdir(parents=True, exist_ok=True)
+    selected_tracks: list[dict[str, Any]] = []
+
+    for year in range(args.api_start_year, args.api_end_year + 1):
+        candidates = search_tracks_for_year(sp, year, args.market, args.max_search_results, args.cache_dir)
+        candidates = hydrate_track_details(sp, candidates, args.market, args.max_hydrate_candidates, args.cache_dir)
+        chosen = candidates[: args.top_n]
+        logger.info(f"{year}: selected {len(chosen)} tracks from {len(candidates)} candidates")
+        selected_tracks.extend(chosen)
+
+    track_ids = [track["id"] for track in selected_tracks]
+    audio_source_used = args.audio_source
+
+    if args.audio_source in {"auto", "spotify"}:
+        try:
+            audio = fetch_spotify_audio_features(sp, track_ids, args.cache_dir)
+            audio_source_used = "spotify"
+        except SpotifyApiError as exc:
+            if args.audio_source == "spotify" or exc.status_code != 403:
+                raise
+            logger.info("Spotify audio-features returned 403; falling back to ReccoBeats.")
+            audio = fetch_reccobeats_audio_features(track_ids, args.cache_dir)
+            audio_source_used = "reccobeats"
+    else:
+        audio = fetch_reccobeats_audio_features(track_ids, args.cache_dir)
+
+    track_rows = []
+    for track in selected_tracks:
+        features = normalize_audio_features(audio.get(track["id"]), audio_source_used)
+        track_rows.append(build_track_row(track, features))
+
+    tracks_df = pd.DataFrame(track_rows, columns=TRACK_COLUMNS)
+    tracks_df.to_csv(args.output_csv, index=False)
+    logger.info(f"Wrote tracks to {args.output_csv}")
+
+    artist_ids = []
+    for value in tracks_df["id_artists"]:
+        artist_ids.extend([str(item) for item in ast.literal_eval(value)])
+
+    artist_stubs = artist_stubs_from_tracks(selected_tracks)
+    try:
+        artist_data = fetch_artists(sp, artist_ids, args.cache_dir)
+        artist_data = {**artist_stubs, **artist_data}
+    except SpotifyApiError as exc:
+        if exc.status_code != 403:
+            raise
+        logger.info("Spotify batch artists returned 403; trying individuals.")
+        artist_data = {**artist_stubs, **fetch_artists_individually(sp, artist_ids, args.cache_dir)}
+
+    artist_rows = sorted([{"id": a.get("id"), "followers": float(a.get("followers", {}).get("total") or 0), "genres": literal_list(a.get("genres") or []), "name": a.get("name"), "popularity": int(a.get("popularity") or 0)} for a in artist_data.values()], key=lambda row: row["id"] or "")
+    
+    artists_df = pd.DataFrame(artist_rows, columns=ARTIST_COLUMNS)
+    artists_path = args.output_csv.parent / f"artists_{args.api_start_year}_{args.api_end_year}.csv"
+    artists_df.to_csv(artists_path, index=False)
+    logger.info(f"Wrote artists to {artists_path}")
+
+def fix_popularity(args, sp: SpotifyClient):
+    if not args.output_csv.exists():
+        logger.error(f"Cannot fix popularity. File {args.output_csv} does not exist.")
+        return
+    
+    df = pd.read_csv(args.output_csv)
+    fixed = 0
+    missing = []
+    
+    for i, track_id in enumerate(df["id"].astype(str).tolist()):
+        if i % 25 == 0:
+            logger.info(f"Processing {i}/{len(df)} tracks")
+
+        cache_path = args.cache_dir / "tracks" / f"{track_id}.json"
+        track = cache_load(cache_path)
+        if track is None:
+            try:
+                track = sp.get(f"tracks/{track_id}", {"market": args.market})
+                cache_save(cache_path, track)
+                time.sleep(0.12)
+            except SpotifyApiError:
+                missing.append(track_id)
+                continue
+        
+        popularity = track.get("popularity")
+        if popularity is not None:
+            df.loc[i, "popularity"] = int(popularity)
+            fixed += 1
+        else:
+            missing.append(track_id)
+
+    df["popularity"] = df["popularity"].fillna(0).astype(int)
+    df.to_csv(args.output_csv, index=False)
+    logger.info(f"Updated popularity for {fixed} tracks in {args.output_csv}")
+
+def main() -> None:
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+    
+    parser = argparse.ArgumentParser(description="Fetch or fix Spotify API dataset.")
+    parser.add_argument("--output-csv", type=Path, default=PROJECT_ROOT / "data/raw/spotify/tracks_2021_2025.csv")
     parser.add_argument("--api-start-year", type=int, default=2021)
     parser.add_argument("--api-end-year", type=int, default=2025)
-    parser.add_argument("--tracks-per-year", type=int, default=7500)
-    parser.add_argument("--market", type=str, default=None, help="Optional Spotify market code")
+    parser.add_argument("--top-n", type=int, default=50)
+    parser.add_argument("--market", default="US")
+    parser.add_argument("--max-search-results", type=int, default=1000)
+    parser.add_argument("--max-hydrate-candidates", type=int, default=250)
+    parser.add_argument("--audio-source", choices=["auto", "spotify", "reccobeats"], default="auto")
+    parser.add_argument("--cache-dir", type=Path, default=PROJECT_ROOT / ".cache_spotify_dataset")
+    parser.add_argument("--fix-csv", action="store_true", help="Fix track popularity in output-csv instead of fetching new data.")
     args = parser.parse_args()
 
-    run(
-        output_csv=args.output_csv,
-        api_start_year=args.api_start_year,
-        api_end_year=args.api_end_year,
-        tracks_per_year=args.tracks_per_year,
-        market=args.market,
-    )
+    client_id = os.environ.get("SPOTIFY_CLIENT_ID")
+    client_secret = os.environ.get("SPOTIFY_CLIENT_SECRET")
+    if not client_id or not client_secret:
+        raise SystemExit("Set SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET in .env or environment.")
+
+    sp = SpotifyClient(client_id=client_id, client_secret=client_secret)
+    args.cache_dir.mkdir(parents=True, exist_ok=True)
+
+    if args.fix_csv:
+        fix_popularity(args, sp)
+    else:
+        build_dataset(args, sp)
+
+if __name__ == "__main__":
+    main()

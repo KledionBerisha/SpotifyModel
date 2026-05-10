@@ -1,6 +1,6 @@
 artists,name,year,alternative_method,alternative_cluster
 Max Webster,Battle Scar,1980,dbscan,0
-Fleetwood Mac,"Sara - Live 1979, St. Louis, MO",1980,dbscan,-1
+Fleetwood Mac,"Sara - Live 1979, St. Louis, MO",1980,dbscan,0
 Motörhead,Shoot You in the Back,1980,dbscan,0
 Vasco Rossi,Non l'hai mica capito,1980,dbscan,0
 Kuldeep Manak,Yaaran Da Truck - Kuldip Manak,1980,dbscan,0
@@ -22,9 +22,9 @@ Doce,Café Com Sal,1980,dbscan,0
 Nicola Di Bari,Agnese,1980,dbscan,0
 The Cure,Play For Today,1980,dbscan,0
 Fünf Freunde,010 - im Nebel - Teil 05,1980,dbscan,0
-The Police,Voices Inside My Head,1980,dbscan,-1
+The Police,Voices Inside My Head,1980,dbscan,0
 Irene Cara,Fame,1980,dbscan,0
-The Jam,But I'm Different Now - Demo Version,1980,dbscan,-1
+The Jam,But I'm Different Now - Demo Version,1980,dbscan,0
 "Giacomo Puccini, José Carreras, Fernando Corena, Berliner Philharmoniker, Herbert von Karajan","Tosca / Act 1: ""Recondita armonia""",1980,dbscan,0
 C. Ashwath,Mohada Hendathi,1980,dbscan,0
 Ersen ve Dadaşlar,Müdür Beyin Yeşil Kürkü,1980,dbscan,0
@@ -33,14 +33,14 @@ Francis Santana,Merengue Apambichao,1980,dbscan,0
 Bibi Blocksberg,Kapitel 14 - Hexerei in der Schule (Folge 002),1980,dbscan,0
 Off Course,おまえもひとり,1980,dbscan,0
 Rajkumar,Haalu Jenu,1980,dbscan,0
-UB40,25%,1980,dbscan,-1
+UB40,25%,1980,dbscan,0
 999,L'il Red Riding Hood,1980,dbscan,0
 林翠萍,褪色的相思夢,1980,dbscan,0
 Billy Joel,You May Be Right,1980,dbscan,0
 Chava Alberstein,עוד חוזר הניגון,1980,dbscan,0
 Ratih Purwasih,Kucari Jalan Terbaik,1980,dbscan,0
 "Halli og Laddi, Laddi",Ástarogsaknaðarófararharmleikur Diðriks og Júlíu í Týrol,1980,dbscan,0
-Valentín Elizalde,Flor de Capomo,1980,dbscan,-1
+Valentín Elizalde,Flor de Capomo,1980,dbscan,0
 サザンオールスターズ,Tiny Bubbles(type-B),1980,dbscan,0
 星河大樂隊,十八姑娘一朵花,1980,dbscan,-1
 Nicola Di Bari,Zingara,1980,dbscan,0
@@ -53,7 +53,7 @@ Zlatá brána,Trampoty s kozami,1980,dbscan,0
 AC/DC,Givin the Dog a Bone,1980,dbscan,0
 Susanna Kwan,茫茫的風裡,1980,dbscan,0
 Pat Benatar,Hit Me With Your Best Shot,1980,dbscan,0
-Glenn Miller,Tuxedo Junction,1980,dbscan,1
+Glenn Miller,Tuxedo Junction,1980,dbscan,0
 New Musik,Straight Lines,1980,dbscan,0
 Benjamin Blümchen,Kapitel 08 - und die Schule (Folge 006),1980,dbscan,-1
 John Lennon,Cleanup Time - Remastered 2010,1980,dbscan,0
@@ -98,7 +98,7 @@ Zerrin Özer,Ayrılıklar Unutulmaz,1980,dbscan,0
 Pecos,Señor,1980,dbscan,0
 Paul Simon,"Oh, Marion",1980,dbscan,0
 Bruce Springsteen,The Ties That Bind,1980,dbscan,0
-Alfons Åberg,"Raska på, Alfons",1980,dbscan,-1
+Alfons Åberg,"Raska på, Alfons",1980,dbscan,0
 "Pavol Hammel, Prúdy",Pod,1980,dbscan,0
 Knutsen & Ludvigsen,Arm i arm med det store dyret,1980,dbscan,0
 Utangarðsmenn,Hiroshima,1980,dbscan,0
@@ -153,7 +153,7 @@ Sharon O'Neill,Asian Paradise,1980,dbscan,0
 "Bezerra Da Silva, Genaro",Colina Maldita (feat. Genaro),1980,dbscan,0
 U2,Another Time Another Place - Remastered 2008,1980,dbscan,0
 The Rolling Stones,Dance (pt 1) - Remastered,1980,dbscan,0
-Die drei ???,018 - und die Geisterinsel - Teil 01,1980,dbscan,-1
+Die drei ???,018 - und die Geisterinsel - Teil 01,1980,dbscan,0
 Bryan Adams,Wastin' Time,1980,dbscan,0
 Tim Maia,"Você E Eu, Eu E Você (Juntinhos)",1980,dbscan,0
 De Syngende Husmødre,Jeg Venter På Deg Til Du Kommer,1980,dbscan,0
@@ -184,14 +184,14 @@ Die drei ???,020 - und die flammende Spur - Teil 20,1980,dbscan,0
 サザンオールスターズ,涙のアベニュー,1980,dbscan,0
 "Barbra Streisand, Barry Gibb",What Kind of Fool (feat. Barry Gibb),1980,dbscan,0
 Talking Heads,Once in a Lifetime,1980,dbscan,0
-"Arik Einstein, Shalom Hanoch, Dafna Armoni",מחרוזת שבלול 2,1980,dbscan,-1
+"Arik Einstein, Shalom Hanoch, Dafna Armoni",מחרוזת שבלול 2,1980,dbscan,0
 Ramones,I Want You Around - 2002 Remaster,1980,dbscan,0
 Die drei ???,011 - und das Gespensterschloss - Teil 33,1980,dbscan,0
 Chris de Burgh,Some Things Never Change,1980,dbscan,0
 Juan Bautista,Estoy Aqui Pero No Se Yo,1980,dbscan,0
 Los Kjarkas,Ella Es,1980,dbscan,0
 Dolly Parton,Old Flames Can't Hold a Candle to You,1980,dbscan,0
-Louis van Dijk,Agnus Dei,1980,dbscan,1
+Louis van Dijk,Agnus Dei,1980,dbscan,0
 The Beat,Hands Off...She's Mine,1980,dbscan,0
 Benjamin Blümchen,Kapitel 22 - und die Schule (Folge 006),1980,dbscan,-1
 Alice Cooper,Clones (We're All),1980,dbscan,0
@@ -205,7 +205,7 @@ Glenn Miller,Little Brown Jug,1980,dbscan,-1
 Bibi Blocksberg,Kapitel 32 - Die Zauberlimonade (Folge 003),1980,dbscan,0
 Globi,S' gaat wiiter mit Im Schlepptau vo me ne Wal,1980,dbscan,0
 "Arik Einstein, Shalom Hanoch",סן פרנציסקו על המים,1980,dbscan,0
-Globi,Im Tandem dur China,1980,dbscan,-1
+Globi,Im Tandem dur China,1980,dbscan,0
 Kishore Kumar,Honthon Pe Jaan Chali Aayegi,1980,dbscan,0
 "Sonora Ponceña, Papo Lucca",Night In Tunisia,1980,dbscan,0
 July Mateo Rasputin,Macumba,1980,dbscan,0
@@ -238,7 +238,7 @@ Hassisen Kone,Tällä Tiellä,1981,dbscan,0
 Reginaldo Rossi,Quando Você Foi Embora,1981,dbscan,0
 Pat Benatar,Helter Skelter,1981,dbscan,0
 Los Manseros Santiagueños,Hermano Coplero,1981,dbscan,0
-"Wolfgang Amadeus Mozart, András Schiff","Piano Sonata No.18 in D, K.576: 3. Allegretto",1981,dbscan,1
+"Wolfgang Amadeus Mozart, András Schiff","Piano Sonata No.18 in D, K.576: 3. Allegretto",1981,dbscan,0
 Matti Caspi,אולי אהבה,1981,dbscan,-1
 Fünf Freunde,014 - machen eine Entdeckung - Teil 24,1981,dbscan,-1
 Louis Chedid,Chanson pour une emmerdeuse,1981,dbscan,0
@@ -254,7 +254,7 @@ Hubert-Félix Thiéfaine,113ème cigarette sans dormir - Remastered,1981,dbscan,
 Bubbi Morthens,Þú hefur valið,1981,dbscan,0
 100 First Songs' Participants,אצבעות לי,1981,dbscan,0
 Camilo Sesto,¿Quieres Ser Mi Amante?,1981,dbscan,0
-Joy Division,The Kill - 2007 Remaster,1981,dbscan,-1
+Joy Division,The Kill - 2007 Remaster,1981,dbscan,0
 Vazelina Bilopphøggers,Vaermeldingsstubben,1981,dbscan,-1
 Mariana García Vigil,Yo Digo Que las Estrellas,1981,dbscan,0
 U2,"October - Live, Hammersmith Palais - December 1982",1981,dbscan,-1
@@ -272,7 +272,7 @@ TKKG Retro-Archiv,003 - Das leere Grab im Moor - Teil 10,1981,dbscan,-1
 Ozzy Osbourne,Over the Mountain,1981,dbscan,0
 "Gustav Holst, Berliner Philharmoniker, Herbert von Karajan, RIAS Kammerchor","The Planets, Op. 32: 7. Neptune, the Mystic",1981,dbscan,-1
 Los Del Altillo,"Retirada "" Araca la Cana "" 1954 (Paso Molino)",1981,dbscan,0
-"Wolfgang Amadeus Mozart, András Schiff","Piano Sonata No.14 in C minor, K.457: 1. Molto allegro",1981,dbscan,1
+"Wolfgang Amadeus Mozart, András Schiff","Piano Sonata No.14 in C minor, K.457: 1. Molto allegro",1981,dbscan,0
 Clara Nunes,Minha Missão,1981,dbscan,0
 "Мими Иванова, ВИГ Старт",Лодка в реката,1981,dbscan,0
 The Police,One World (Not Three),1981,dbscan,0
@@ -296,7 +296,7 @@ De Strangers,Stad On De Schelde,1981,dbscan,0
 Avner Gadasi,מנגן ושר,1981,dbscan,0
 Queen,Somebody To Love - Remastered 2011,1981,dbscan,0
 Naomi Shemer,אין דבר,1981,dbscan,0
-Paco de Lucía,En La Caleta,1981,dbscan,1
+Paco de Lucía,En La Caleta,1981,dbscan,0
 Alberto Camerini,Rock 'n' Roll Robot,1981,dbscan,0
 Jagjit Singh,Yada Yada He Dharmasys,1981,dbscan,0
 Traditional,"Nina, Buschi, schlof",1981,dbscan,0
@@ -337,13 +337,13 @@ Fünf Freunde,012 - auf der Felseninsel - Teil 19,1981,dbscan,0
 Garland Jeffreys,96 Tears,1981,dbscan,0
 Rick James,Ghetto Life,1981,dbscan,0
 The Rolling Stones,Waiting On A Friend - Remastered,1981,dbscan,0
-Phil Collins,In The Air Tonight - Live,1981,dbscan,-1
+Phil Collins,In The Air Tonight - Live,1981,dbscan,0
 The Golden Ali'is,Lau'i'ula,1981,dbscan,0
 Juan Gabriel,"Canta, Canta",1981,dbscan,0
 Iwan Fals,Bung Hatta,1981,dbscan,0
 Duran Duran,Girls on Film - Night Mix; Extended Version,1981,dbscan,0
 New Order,Dreams Never End - 2019 Remaster,1981,dbscan,0
-Sleepy Sleepers,P-Piisi,1981,dbscan,-1
+Sleepy Sleepers,P-Piisi,1981,dbscan,0
 "Johann Sebastian Bach, The English Concert, Trevor Pinnock","Concerto For Harpsichord, Strings, And Continuo No.5 In F Minor, BWV 1056: 2. Largo",1981,dbscan,-1
 Australian Crawl,Easy On Your Own - Remastered,1981,dbscan,0
 HaClique,גולם,1981,dbscan,0
@@ -355,14 +355,14 @@ Pretenders,I Go to Sleep - 2006 Remaster,1981,dbscan,0
 Fünf Freunde,016 - auf dem Leuchtturm - Teil 04,1981,dbscan,0
 Die drei ???,0025 - und die singende Schlange - Teil 17,1981,dbscan,0
 TKKG Retro-Archiv,001 - Die Jagd nach den Millionendieben - Teil 12,1981,dbscan,0
-Die drei ???,0024 - und die silberne Spinne - Teil 30,1981,dbscan,-1
+Die drei ???,0024 - und die silberne Spinne - Teil 30,1981,dbscan,0
 Doce,Dói-Dói,1981,dbscan,0
 Eddie Palmieri,Páginas De Mujer,1981,dbscan,0
 Genesis,Me and Sarah Jane - 2007 Remaster,1981,dbscan,0
 Nil Burak,Kırk Yılda Bir,1981,dbscan,0
 Elly & Rikkert,Vijf Broden en Twee Vissen,1981,dbscan,0
 TKKG Retro-Archiv,006 - Angst in der 9a - Teil 16,1981,dbscan,0
-TKKG Retro-Archiv,004 - Das Paket mit dem Totenkopf - Teil 02,1981,dbscan,-1
+TKKG Retro-Archiv,004 - Das Paket mit dem Totenkopf - Teil 02,1981,dbscan,0
 Taxi,TVWC,1981,dbscan,0
 Sezen Aksu,Biliyorsun,1981,dbscan,0
 Sibel Egemen,Böyle Bir Rastlantı,1981,dbscan,0
@@ -379,7 +379,7 @@ Los Shapis,Si No Regresas,1981,dbscan,0
 Commodores,Lucy,1981,dbscan,0
 Fünf Freunde,011 - geraten in Schwierigkeiten - Teil 07,1981,dbscan,0
 "Lata Mangeshkar, Kishore Kumar","Dekha Ek Khwab, Pt. 1",1981,dbscan,0
-"Luiz Gonzaga, Gonzaguinha",Juazeiro / No Meu Pé De Serra / Estrada Do Canindé / Riacho Do Navio / Papo - Ao Vivo,1981,dbscan,-1
+"Luiz Gonzaga, Gonzaguinha",Juazeiro / No Meu Pé De Serra / Estrada Do Canindé / Riacho Do Navio / Papo - Ao Vivo,1981,dbscan,0
 Eddie Palmieri,Ritmo Alegre,1981,dbscan,-1
 Traditional,Schneeglöggli lüüt,1981,dbscan,0
 Alberto Pérez,La Tormenta,1981,dbscan,-1
@@ -387,8 +387,8 @@ Quincy Jones,Betcha Wouldn't Hurt Me - Extended Version,1981,dbscan,0
 Die drei ???,0024 - und die silberne Spinne - Teil 20,1981,dbscan,0
 Patti Austin,The Way I Feel,1981,dbscan,0
 Sammy Hagar,I'll Fall In Love Again,1981,dbscan,0
-"Wolfgang Amadeus Mozart, András Schiff","Piano Sonata No.10 in C major, K.330: 1. Allegro moderato",1981,dbscan,1
-"Wolfgang Amadeus Mozart, András Schiff","Piano Sonata No.18 in D, K.576: 2. Adagio",1981,dbscan,-1
+"Wolfgang Amadeus Mozart, András Schiff","Piano Sonata No.10 in C major, K.330: 1. Allegro moderato",1981,dbscan,0
+"Wolfgang Amadeus Mozart, András Schiff","Piano Sonata No.18 in D, K.576: 2. Adagio",1981,dbscan,0
 Fünf Freunde,016 - auf dem Leuchtturm - Teil 24,1981,dbscan,0
 KSMB,Rövarnas visa,1981,dbscan,0
 Queen,Play The Game,1981,dbscan,0
@@ -438,7 +438,7 @@ A Turma Do Balão Mágico,A Galinha Magricela (La Gallina Papanatas),1982,dbscan
 The Cure,A Short Term Effect,1982,dbscan,0
 Daryl Hall & John Oates,Art of Heartbreak,1982,dbscan,0
 Kliby Und Caroline,Vorwitzige Caroline!,1982,dbscan,0
-Brian Eno,Lizard Point - Remastered 2004,1982,dbscan,1
+Brian Eno,Lizard Point - Remastered 2004,1982,dbscan,0
 Håkon Banken,En Liten Gulnad Lapp,1982,dbscan,0
 Radosinské naivné divadlo,Veľká noc,1982,dbscan,0
 Los Shapis,La Novia,1982,dbscan,0
@@ -466,7 +466,7 @@ Los Manseros Santiagueños,Ciudad de La Banda,1982,dbscan,0
 Teresa Teng,幾多愁,1982,dbscan,0
 Luz Casal,No aguanto más,1982,dbscan,0
 TKKG Retro-Archiv,008 - Auf der Spur der Vogeljäger - Teil 10,1982,dbscan,0
-"Antonio Vivaldi, Simon Standage, The English Concert, Trevor Pinnock","Violin Concerto in F Major, Op. 8, No. 3, RV 293 ""L'autunno"": 3. Allegro (La caccia)",1982,dbscan,-1
+"Antonio Vivaldi, Simon Standage, The English Concert, Trevor Pinnock","Violin Concerto in F Major, Op. 8, No. 3, RV 293 ""L'autunno"": 3. Allegro (La caccia)",1982,dbscan,0
 Matti Caspi,שיר ההפלגה,1982,dbscan,0
 TKKG Retro-Archiv,023 - Kampf der Spione - Teil 24,1982,dbscan,0
 TKKG Retro-Archiv,009 - Abenteuer im Ferienlager - Teil 16,1982,dbscan,0
@@ -496,7 +496,7 @@ Venom,Sacrifice,1982,dbscan,0
 TKKG Retro-Archiv,022 - In den Klauen des Tigers - Teil 04,1982,dbscan,-1
 Donna Summer,State of Independence - 2014 Remaster,1982,dbscan,0
 Magnús Eiríksson,Vals númer 1,1982,dbscan,-1
-"Sergei Rachmaninoff, Concertgebouworkest, Vladimir Ashkenazy","Symphony No. 2 in E Minor, Op. 27: 3. Adagio",1982,dbscan,1
+"Sergei Rachmaninoff, Concertgebouworkest, Vladimir Ashkenazy","Symphony No. 2 in E Minor, Op. 27: 3. Adagio",1982,dbscan,0
 TKKG Retro-Archiv,009 - Abenteuer im Ferienlager - Teil 20,1982,dbscan,-1
 George Strait,Lover In Disguise,1982,dbscan,0
 Kate Bush,Night Of The Swallow - 2018 Remaster,1982,dbscan,0
@@ -534,7 +534,7 @@ Stevie Wonder,That Girl,1982,dbscan,0
 Anvil,Metal On Metal,1982,dbscan,0
 KISS,I Still Love You,1982,dbscan,0
 Bruce Springsteen,Atlantic City,1982,dbscan,0
-Charly García,Sereno Fantástico,1982,dbscan,1
+Charly García,Sereno Fantástico,1982,dbscan,0
 Led Zeppelin,I Can't Quit You Baby - 1990 Remaster,1982,dbscan,0
 Off Course,眠れぬ夜,1982,dbscan,0
 Donald Fagen,Green Flower Street,1982,dbscan,0
@@ -550,7 +550,7 @@ TKKG Retro-Archiv,007 - Rätsel um die alte Villa - Teil 11,1982,dbscan,-1
 Fleetwood Mac,"The Chain - Live at the Forum, Los Angeles, CA October 21-22, 1982; 2016 Remaster",1982,dbscan,0
 Randy Crawford,Windsong,1982,dbscan,0
 Shmulik Kraus,פרחים,1982,dbscan,0
-The Alan Parsons Project,Sirius - Chicago Bulls Theme Song,1982,dbscan,-1
+The Alan Parsons Project,Sirius - Chicago Bulls Theme Song,1982,dbscan,0
 Lime,"Babe, We're Gonna Love Tonight - Radio Edit",1982,dbscan,0
 Hemlata,Jab Tak Pure Na Ho Phere Saat,1982,dbscan,0
 Marino,Las Cosas Viejas Pasaron,1982,dbscan,0
@@ -572,7 +572,7 @@ Haris Alexiou,An Pethani Mia Agapi,1982,dbscan,0
 Luis Miguel,Adolescente Soñador,1982,dbscan,0
 Daniel Balavoine,C'est fini,1982,dbscan,0
 張德蘭,黃色手絹,1982,dbscan,0
-Daniel Altamirano,Dios a la Una,1982,dbscan,-1
+Daniel Altamirano,Dios a la Una,1982,dbscan,0
 "Egill Ólafsson, Magnús Eiríksson",Litli karlinn,1982,dbscan,0
 Malurt,Tæt på,1982,dbscan,0
 Yaz,Winter Kills,1982,dbscan,-1
@@ -597,7 +597,7 @@ Ramon Ayala Y Sus Bravos Del Norte,Recuérdame Y Ven A Mi,1982,dbscan,0
 Teresa Teng,但願人長久,1982,dbscan,0
 Ofra Haza,סופרסטאר,1982,dbscan,0
 TKKG Retro-Archiv,"012 - Nachts, wenn der Feuerteufel kommt - Teil 08",1982,dbscan,-1
-"Antonio Vivaldi, Simon Standage, The English Concert, Trevor Pinnock","Violin Concerto in F Minor, Op. 8, No. 4, RV 297 ""L'inverno"": 2. Largo",1982,dbscan,-1
+"Antonio Vivaldi, Simon Standage, The English Concert, Trevor Pinnock","Violin Concerto in F Minor, Op. 8, No. 4, RV 297 ""L'inverno"": 2. Largo",1982,dbscan,0
 KISS,Saint And Sinner,1982,dbscan,0
 Donna Summer,State of Independence,1982,dbscan,0
 Eppu Normaali,Näinä Päivinä,1982,dbscan,0
@@ -621,7 +621,7 @@ TKKG Retro-Archiv,022 - In den Klauen des Tigers - Teil 08,1982,dbscan,0
 Annabelle Lui,彩雲曲 - 電影「彩雲曲」主題曲,1982,dbscan,0
 "Mercedes Sosa, León Gieco",Sólo Le Pido A Dios - Live At Teatro Opera De Buenos Aires / 1982,1982,dbscan,0
 Metin Milli,Kaderimde Hep Güzeli Aradım,1982,dbscan,0
-Vazelina Bilopphøggers,"Får itte mer pudding, tjukken",1982,dbscan,-1
+Vazelina Bilopphøggers,"Får itte mer pudding, tjukken",1982,dbscan,0
 "Shlomo Artzi, Meir Shalev",שמשון הגיבור,1982,dbscan,0
 沈雁,輕愁,1982,dbscan,0
 "Milan Lasica, Jaroslav Filip","Kde bolo, tam bolo",1982,dbscan,0
@@ -697,10 +697,10 @@ Motörhead,Another Perfect Day,1983,dbscan,0
 Larbanois & Carrero,Ciudadano,1983,dbscan,0
 Larbanois & Carrero,Zumba Que Zumba,1983,dbscan,0
 Renée martel,Mille après mille,1983,dbscan,0
-Orchestral Manoeuvres In The Dark,Silent Running,1983,dbscan,-1
-Die drei ???,0031 - und das Narbengesicht - Teil 07,1983,dbscan,-1
+Orchestral Manoeuvres In The Dark,Silent Running,1983,dbscan,0
+Die drei ???,0031 - und das Narbengesicht - Teil 07,1983,dbscan,0
 Vazelina Bilopphøggers,Come Prima,1983,dbscan,0
-Die drei ???,0031 - und das Narbengesicht - Teil 26,1983,dbscan,-1
+Die drei ???,0031 - und das Narbengesicht - Teil 26,1983,dbscan,0
 Spandau Ballet,True - New Mix; 2010 Remaster,1983,dbscan,0
 Thin Lizzy,Cold Sweat,1983,dbscan,-1
 Tsuyoshi Nagabuchi,恋人時代,1983,dbscan,0
@@ -723,14 +723,14 @@ Anri,SHYNESS BOY,1983,dbscan,0
 Cholo Berrocal,Desdén,1983,dbscan,0
 DeBarge,Time Will Reveal,1983,dbscan,0
 Billy Joel,Keeping the Faith,1983,dbscan,0
-"Johann Sebastian Bach, András Schiff","Aria mit 30 Veränderungen, BWV 988 ""Goldberg Variations"": Var. 25 a 2 Clav.",1983,dbscan,1
+"Johann Sebastian Bach, András Schiff","Aria mit 30 Veränderungen, BWV 988 ""Goldberg Variations"": Var. 25 a 2 Clav.",1983,dbscan,0
 Def Leppard,Billy's Got A Gun,1983,dbscan,0
 The Romantics,Talking In Your Sleep,1983,dbscan,0
 Teddy Pendergrass,Just Because You're Mine,1983,dbscan,0
 "Eurythmics, Annie Lennox, Dave Stewart",Love Is A Stranger - Remastered Version,1983,dbscan,0
 Benjamin Blümchen,Kapitel 05 - auf dem Bauernhof (Folge 027),1983,dbscan,0
 The Police,Tea In The Sahara,1983,dbscan,0
-"Edvard Grieg, Berliner Philharmoniker, Herbert von Karajan","Peer Gynt Suite No.2, Op.55: 4. Solveig's Song",1983,dbscan,1
+"Edvard Grieg, Berliner Philharmoniker, Herbert von Karajan","Peer Gynt Suite No.2, Op.55: 4. Solveig's Song",1983,dbscan,0
 PIPER,Summer Breeze,1983,dbscan,0
 Grupo Alegría,Vete y No Vuelvas,1983,dbscan,0
 Emmylou Harris,Pledging My Love,1983,dbscan,0
@@ -761,7 +761,7 @@ DD Smash,Outlook For Thursday - Live,1983,dbscan,0
 Bibi Blocksberg,Kapitel 04 - verliebt sich (Folge 009),1983,dbscan,0
 Elton John,Cold As Christmas (In The Middle Of The Year),1983,dbscan,0
 蔡琴,愛情的喜悅,1983,dbscan,0
-Black Uhuru,Big Spliff,1983,dbscan,-1
+Black Uhuru,Big Spliff,1983,dbscan,0
 Aretha Franklin,Every Girl (Wants My Guy) - Single Version,1983,dbscan,0
 Vidyabhushana,Pongolalanooduthiha,1983,dbscan,0
 Ofra Haza,בלדה למלך,1983,dbscan,0
@@ -770,8 +770,8 @@ Foster & Allen,If Those Lips Could Only Speak,1983,dbscan,0
 Thorleifs,Tjo och tjim,1983,dbscan,0
 Toty Pino y Los Excelentes,A Mis Amigos Locutores,1983,dbscan,0
 Wipers,Over the Edge,1983,dbscan,0
-Wim Mertens,Close Cover,1983,dbscan,1
-Wim Mertens,Circles - Version 2007,1983,dbscan,1
+Wim Mertens,Close Cover,1983,dbscan,0
+Wim Mertens,Circles - Version 2007,1983,dbscan,0
 "R. D. Burman, Lata Mangeshkar",Agar Tum Na Hote - Female Version Sad,1983,dbscan,0
 Molly Hatchet,Fall Of The Peacemakers,1983,dbscan,0
 Rubén Juárez,Anclao En Paris,1983,dbscan,0
@@ -804,7 +804,7 @@ Pink Floyd,The Final Cut - 2011 Remastered Version,1983,dbscan,0
 "Tito Puente, Willie Colón",Oye Cómo Va,1983,dbscan,0
 "Demis Roussos, Florence Warner",Lost In Love,1983,dbscan,0
 Daniela Romo,Te amo,1983,dbscan,0
-楊婉珍,蛻變,1983,dbscan,-1
+楊婉珍,蛻變,1983,dbscan,0
 Gnags,Fodgænger,1983,dbscan,0
 Miro Žbirka,Zázračné hodiny,1983,dbscan,0
 "Anne Linnet, Marquis De Sade",Nattog,1983,dbscan,-1
@@ -828,8 +828,8 @@ The Exponents,I'll Say Goodbye (Even Though I'm Blue),1983,dbscan,0
 Orquestra e Coro Carroussell,Caranguejo Não É Peixe,1983,dbscan,0
 Peter Schilling,Die Wüste lebt,1983,dbscan,0
 Los Invasores De Nuevo León,Tu Tuviste La Culpa,1983,dbscan,0
-Tuts Washington,When The Saints Go Marching In,1983,dbscan,-1
-Die drei ???,0031 - und das Narbengesicht - Teil 16,1983,dbscan,-1
+Tuts Washington,When The Saints Go Marching In,1983,dbscan,0
+Die drei ???,0031 - und das Narbengesicht - Teil 16,1983,dbscan,0
 Tullio De Piscopo,Stop Bajon - Club Mix,1983,dbscan,0
 Juice Leskinen Grand Slam,Maailman ääriin,1983,dbscan,0
 Toto Cutugno,Sarà,1983,dbscan,0
@@ -855,14 +855,14 @@ Marcel Khalifa,My Mother,1983,dbscan,0
 Benjamin Blümchen,Kapitel 26 - als Bademeister (Folge 026),1983,dbscan,0
 Reshma,Bari Lambi Judai,1983,dbscan,0
 Lionel Richie,Penny Lover,1983,dbscan,0
-"Wolfgang Amadeus Mozart, Chicago Symphony Orchestra, Sir Georg Solti","Symphony No.39 in E Flat Major, K.543: 3. Menuetto (Allegretto)",1983,dbscan,1
+"Wolfgang Amadeus Mozart, Chicago Symphony Orchestra, Sir Georg Solti","Symphony No.39 in E Flat Major, K.543: 3. Menuetto (Allegretto)",1983,dbscan,0
 The Fixx,Outside,1983,dbscan,0
 Lucio Dalla,Noi Come Voi,1983,dbscan,0
-"George Frideric Handel, The English Concert, Trevor Pinnock","Water Music Suite No.1 in F, HWV 348: 3. Allegro - Andante - Allegro",1983,dbscan,1
+"George Frideric Handel, The English Concert, Trevor Pinnock","Water Music Suite No.1 in F, HWV 348: 3. Allegro - Andante - Allegro",1983,dbscan,0
 The Cure,The Lovecats,1983,dbscan,0
 Philip Glass,Prophecies,1983,dbscan,-1
 Sankomota,Mope,1983,dbscan,0
-Manos Hadjidakis,I Evgeniki Kiria,1983,dbscan,1
+Manos Hadjidakis,I Evgeniki Kiria,1983,dbscan,0
 "Arik Einstein, Itzhak Klepter",שביר,1983,dbscan,0
 3 Busserulls,Jodletur til Sveits,1983,dbscan,0
 K. J. Yesudas,Maane Madhura Karimbe,1983,dbscan,0
@@ -888,7 +888,7 @@ Die drei ???,034 - und der rote Pirat - Teil 02,1984,dbscan,0
 REO Speedwagon,Can't Fight This Feeling,1984,dbscan,0
 Thanos Kalliris,Ohi Ohi To Moro Mou,1984,dbscan,0
 Teencats,Rock ´n´ Roll On My Radio,1984,dbscan,0
-Omar Khairat,Qalp La Yaref Al khouf,1984,dbscan,-1
+Omar Khairat,Qalp La Yaref Al khouf,1984,dbscan,0
 Shlomo Artzi,צריך להתקדם,1984,dbscan,0
 Pino Daniele,Oi ne' - 2021 Remaster,1984,dbscan,0
 Teencats,Darling,1984,dbscan,0
@@ -934,7 +934,7 @@ Lucio Dalla,Viaggi organizzati,1984,dbscan,0
 Nurit Galron,למדני את השיר הפשוט,1984,dbscan,0
 Zak Stefanou,Mikro Mou Poni,1984,dbscan,0
 Hari Om Sharan,Aarti Kunj Bihari Ki,1984,dbscan,0
-Eduardo Mateo,El Boliche,1984,dbscan,-1
+Eduardo Mateo,El Boliche,1984,dbscan,0
 Silvio Rodríguez,Canción para Mi Soldado,1984,dbscan,0
 Rocío Jurado,Muera el Amor,1984,dbscan,0
 Leonard Cohen,Heart with No Companion,1984,dbscan,0
@@ -952,20 +952,20 @@ Thomas Mapfumo,Chemera Chaunoda,1984,dbscan,0
 Yiannis Kotsiras,Enas Erotas Ftinos,1984,dbscan,0
 Willie Colón,Gitana,1984,dbscan,0
 Fausto,A Voar Por Cima Das Aguas,1984,dbscan,0
-"Johannes Brahms, Wiener Philharmoniker, Claudio Abbado","Hungarian Dance No.12 in D Minor, WoO 1",1984,dbscan,1
+"Johannes Brahms, Wiener Philharmoniker, Claudio Abbado","Hungarian Dance No.12 in D Minor, WoO 1",1984,dbscan,0
 Ludwig Hirsch,Der Zwerg,1984,dbscan,0
 José José,Seré,1984,dbscan,0
 38 Special,If I'd Been The One,1984,dbscan,0
 Scorpions,Bad Boys Running Wild,1984,dbscan,0
 Chicago,Hard Habit to Break - 2006 Remaster,1984,dbscan,0
-Rodney Rude,Rude Hangs Out At Kings Cross,1984,dbscan,-1
+Rodney Rude,Rude Hangs Out At Kings Cross,1984,dbscan,0
 Tim & Struppi,006 - Die Juwelen der Sängerin - Teil 16,1984,dbscan,0
 Orquesta Novel,You Are My Everything,1984,dbscan,0
 Roberto Carlos,Lua Nova - Versão Remasterizada,1984,dbscan,0
 Indeep,The Record Keeps Spinning,1984,dbscan,0
 Iwan Fals,Jangan Bicara,1984,dbscan,0
 TKKG Retro-Archiv,026 - Das Geiseldrama - Teil 24,1984,dbscan,0
-"Johann Sebastian Bach, András Schiff","Prelude and Fugue in F sharp minor (WTK, Book I, No.14), BWV 859",1984,dbscan,-1
+"Johann Sebastian Bach, András Schiff","Prelude and Fugue in F sharp minor (WTK, Book I, No.14), BWV 859",1984,dbscan,0
 Tim & Struppi,005 - Der Fall Bienlein - Teil 38,1984,dbscan,-1
 TKKG Retro-Archiv,029 - Hundediebe kennen keine Gnade - Teil 19,1984,dbscan,0
 Stamatis Kraounakis,To Rock,1984,dbscan,0
@@ -983,7 +983,7 @@ Alan Tam,愛的替身,1984,dbscan,0
 Tim & Struppi,004 - Reiseziel Mond - Teil 15,1984,dbscan,-1
 TNT,Break The Ice,1984,dbscan,0
 Johannes Kleppevik,A Sailor's Song,1984,dbscan,0
-"Maurice Ravel, Ivo Pogorelich","Gaspard de la nuit, M. 55: 1. Ondine",1984,dbscan,1
+"Maurice Ravel, Ivo Pogorelich","Gaspard de la nuit, M. 55: 1. Ondine",1984,dbscan,0
 Jorge Velosa y los Hermanos Torres,Amores en Domingo,1984,dbscan,0
 Shlomo Artzi,וביחד נזדקן,1984,dbscan,0
 Tim & Struppi,006 - Die Juwelen der Sängerin - Teil 28,1984,dbscan,0
@@ -1012,7 +1012,7 @@ Yehudit Ravitz,בעד או נגד,1984,dbscan,0
 Los Shapis,Triste Despertar (En Vivo) [Bonus Track],1984,dbscan,0
 Simone de Oliveira,Fadinho Das Iscas,1984,dbscan,0
 Michalis Hatzigiannis,Thalassa Platia,1984,dbscan,0
-"Tintin, Tomas Bolme, Bert-Åke Varg","Det sönderslagna örat, del 22",1984,dbscan,-1
+"Tintin, Tomas Bolme, Bert-Åke Varg","Det sönderslagna örat, del 22",1984,dbscan,0
 "รณชัย / อัจฉรพรรณี, รวมศิลปิน (รวมดาว)",ดำเนินทราย,1984,dbscan,0
 Tõnu Aav,Kuidas Jänkuonu Lõviisandast jagu sai,1984,dbscan,0
 Teodoro & Sampaio,Vestido De Seda,1984,dbscan,0
@@ -1060,13 +1060,13 @@ Caetano Veloso,Podres Poderes,1984,dbscan,0
 "Willi Resetarits, Schurli Herrnstadt, Herbert Tampier, Beatrix Neundlinger, Lukas Resetarits, Lena Rothstein, Sigi Maron, Erich Meixner, Maria Bill, Alfred Winter, Angela Berann",Schiff ahoi!,1984,dbscan,0
 Howard Jones,New Song - 2008 Remastered Version,1984,dbscan,0
 Rush,Afterimage,1984,dbscan,0
-"Tintin, Tomas Bolme, Bert-Åke Varg","Det sönderslagna örat, del 29",1984,dbscan,-1
-"Skruk, Ytre Suløens Jass-Ensemble",Amazing Grace,1984,dbscan,1
-"Erik Satie, Pascal Rogé",Je te veux,1984,dbscan,1
+"Tintin, Tomas Bolme, Bert-Åke Varg","Det sönderslagna örat, del 29",1984,dbscan,0
+"Skruk, Ytre Suløens Jass-Ensemble",Amazing Grace,1984,dbscan,0
+"Erik Satie, Pascal Rogé",Je te veux,1984,dbscan,0
 Charles Bernstein,Main Title (A Nightmare on Elm Street),1984,dbscan,0
 Silvio Rodríguez,Nuestro Tema,1984,dbscan,0
 Kadri Gopalnath,Endaro Mahanubhavulu,1984,dbscan,-1
-TKKG Retro-Archiv,031 - Die Entführung in der Mondscheingasse - Teil 21,1984,dbscan,-1
+TKKG Retro-Archiv,031 - Die Entführung in der Mondscheingasse - Teil 21,1984,dbscan,0
 Los Bukis,Presiento Que Voy A Llorar,1984,dbscan,0
 คีรีบูน,อุ่นไอรัก,1984,dbscan,-1
 Bryan Adams,Run To You,1984,dbscan,0
@@ -1083,7 +1083,7 @@ Marina Lima,Veneno,1984,dbscan,0
 Benjamin Blümchen,Kapitel 11 - kauft ein (Folge 039),1984,dbscan,-1
 Eleni Dimou,Den Boroume,1984,dbscan,0
 Ruy Maurity,Mãe Guerreira,1984,dbscan,0
-R. Carlos Nakai,Song For the Morning Star,1984,dbscan,1
+R. Carlos Nakai,Song For the Morning Star,1984,dbscan,0
 Roupa Nova,Show De Rock'n Roll,1985,dbscan,0
 Sade,Punch Drunk,1985,dbscan,-1
 Die drei ???,036 - und der Super-Wal - Teil 38,1985,dbscan,0
@@ -1132,11 +1132,11 @@ Elán,Stuzkova,1985,dbscan,0
 Marc Lavoine,Elle a les yeux revolver,1985,dbscan,0
 ZZ Top,Planet of Women,1985,dbscan,0
 Kino,Весна,1985,dbscan,0
-Benjamin Blümchen,Kapitel 38 - als Pirat (Folge 041),1985,dbscan,-1
+Benjamin Blümchen,Kapitel 38 - als Pirat (Folge 041),1985,dbscan,0
 Radio Futura,Un Vaso de Agua (Al Enemigo),1985,dbscan,0
 "Dioni Fernández, El Equipo",Caribe,1985,dbscan,0
 Narcosis,Vida Actual,1985,dbscan,0
-Georges Delerue,Symphonic Suite For Chorus And Orchestra - Part I - Version Two,1985,dbscan,1
+Georges Delerue,Symphonic Suite For Chorus And Orchestra - Part I - Version Two,1985,dbscan,0
 S.T.S,Herr Lohengrin,1985,dbscan,0
 Los Diablitos,Tú Eres Lo Que Yo Más Quiero,1985,dbscan,0
 "Antonio Vivaldi, Itzhak Perlman, Israel Philharmonic Orchestra","Vivaldi: Violin Concerto in G Minor, RV 315 ""L'estate"" (No. 2 from ""Il cimento dell'armonia e dell'inventione"", Op. 8): II. Adagio",1985,dbscan,0
@@ -1145,7 +1145,7 @@ Los Chichos,"Señor, Ayudame",1985,dbscan,0
 New Order,The Perfect Kiss - 2015 Remaster,1985,dbscan,0
 Barry Manilow,Overture,1985,dbscan,0
 Tom Waits,Clap Hands,1985,dbscan,0
-Kino,Спокойная ночь,1985,dbscan,1
+Kino,Спокойная ночь,1985,dbscan,0
 Wham!,Everything She Wants - Remix,1985,dbscan,0
 Sade,Jezebel,1985,dbscan,0
 "Chani Livne, Hofim Group",חופים,1985,dbscan,0
@@ -1153,7 +1153,7 @@ Rondò Veneziano,Odissea veneziana,1985,dbscan,0
 Depeche Mode,Get the Balance Right,1985,dbscan,0
 Razor,Evil Invaders,1985,dbscan,-1
 Y&T,Summertime Girls - Studio Version,1985,dbscan,0
-Los Bukis,Amame,1985,dbscan,-1
+Los Bukis,Amame,1985,dbscan,0
 Los Kjarkas,El Día Que Yo Me Vaya,1985,dbscan,0
 Tsai Chin,一年又一年,1985,dbscan,0
 Prince,Around the World in a Day,1985,dbscan,0
@@ -1168,7 +1168,7 @@ The Innocent,เรื่องของหัวใจ,1985,dbscan,0
 Los Calchakis,El Centinela,1985,dbscan,-1
 Katrina & The Waves,Sun Street,1985,dbscan,0
 Patxi Andion,Padre,1985,dbscan,0
-"Tove Jansson, Mumintrollen, Mumin","Den insnöade salongen, del 8",1985,dbscan,-1
+"Tove Jansson, Mumintrollen, Mumin","Den insnöade salongen, del 8",1985,dbscan,0
 Benjamin Blümchen,Kapitel 07 - als Pirat (Folge 041),1985,dbscan,-1
 Chatree,ใจคน,1985,dbscan,0
 The Dead Milkmen,Serrated Edge,1985,dbscan,0
@@ -1189,7 +1189,7 @@ Starship,Tomorrow Doesn't Matter Tonight,1985,dbscan,0
 Rosendo,Callejones,1985,dbscan,0
 TKKG Retro-Archiv,040 - Duell im Morgengrauen - Teil 10,1985,dbscan,0
 "Dioni Fernández, El Equipo",Fiesta y Fiesta,1985,dbscan,0
-Sutién,En vivo es vida,1985,dbscan,-1
+Sutién,En vivo es vida,1985,dbscan,0
 Hombres G,Tormenta contigo,1985,dbscan,0
 Chatree,รอรัก,1985,dbscan,0
 Scorpions,Loving You Sunday Morning - Live,1985,dbscan,0
@@ -1211,7 +1211,7 @@ The Outfield,All the Love in the World,1985,dbscan,0
 Paul Young,Every Time You Go Away,1985,dbscan,0
 Renaud,Buffalo débile,1985,dbscan,0
 "Raimonds Pauls, Viktors Lapčenoks",Kuplejas par laimi,1985,dbscan,0
-"Michael Brook, Brian Eno, Daniel Lanois",Distant Village,1985,dbscan,-1
+"Michael Brook, Brian Eno, Daniel Lanois",Distant Village,1985,dbscan,0
 Sonora Borinquen,Tu Boca,1985,dbscan,0
 サザンオールスターズ,真昼の情景(このせまい野原いっぱい),1985,dbscan,0
 Jimmy Buffett,Pencil Thin Mustache,1985,dbscan,0
@@ -1219,7 +1219,7 @@ Go West,Don't Look Down,1985,dbscan,0
 Benjamin Blümchen,Kapitel 05 - als Bäcker (Folge 044),1985,dbscan,0
 Razor,Deathrace,1985,dbscan,0
 "Giovanni Battista Pergolesi, Margaret Marshall, Lucia Valentini Terrani, London Symphony Orchestra, Claudio Abbado, Leslie Pearson",Stabat Mater: 9. Sancta Mater,1985,dbscan,0
-Die drei ???,036 - und der Super-Wal - Teil 18,1985,dbscan,-1
+Die drei ???,036 - und der Super-Wal - Teil 18,1985,dbscan,0
 Jovelina Perola Negra,Feirinha da Pavuna (Confusão de Legumes),1985,dbscan,0
 Tublatanka,Schody do seba,1985,dbscan,0
 ICON,Out For Blood,1985,dbscan,0
@@ -1231,7 +1231,7 @@ Eddie Meduza,Josephine - Insp. 1980,1985,dbscan,0
 Roger Whittaker,The Last Farewell,1985,dbscan,0
 The Innocent,เพียงครึ่งใจ,1985,dbscan,0
 Dire Straits,Your Latest Trick,1985,dbscan,0
-Die drei ???,036 - und der Super-Wal - Teil 06,1985,dbscan,-1
+Die drei ???,036 - und der Super-Wal - Teil 06,1985,dbscan,0
 Scorpions,No One Like You - Live,1985,dbscan,0
 Diane Schuur,Love Dance,1985,dbscan,0
 Esclarecidos,Arponera,1985,dbscan,0
@@ -1259,7 +1259,7 @@ Benjamin Blümchen,Kapitel 20 - zieht aus (Folge 040),1985,dbscan,-1
 Haustor,Ena,1985,dbscan,0
 Bad Company,Rock 'n' Roll Fantasy - 2009 Remaster,1985,dbscan,0
 Silereves,Petite musique du jouet en cire,1985,dbscan,0
-"Joaquín Rodrigo, Narciso Yepes, Philharmonia Orchestra, Luis Antonio García Navarro",Concierto de Aranjuez For Guitar And Orchestra: 2. Adagio,1985,dbscan,1
+"Joaquín Rodrigo, Narciso Yepes, Philharmonia Orchestra, Luis Antonio García Navarro",Concierto de Aranjuez For Guitar And Orchestra: 2. Adagio,1985,dbscan,0
 Luis Miguel,Fiebre De Amor - Instrumental,1985,dbscan,0
 Ayumi Nakamura,翼の折れたエンジェル (2019 Remaster),1985,dbscan,0
 環球合唱團,山村姑娘,1985,dbscan,0
@@ -1268,17 +1268,17 @@ The Checkers,You Love Rock'n'Roll,1985,dbscan,0
 Stardust Revue,と・つ・ぜ・ん Fall In Love,1985,dbscan,0
 Benjamin Blümchen,Kapitel 29 - als Pirat (Folge 041),1985,dbscan,-1
 環球合唱團,山谷裡的燈光,1985,dbscan,0
-Tommy Flanagan Trio,You Go To My Head,1985,dbscan,1
+Tommy Flanagan Trio,You Go To My Head,1985,dbscan,0
 Frank Zappa,What's New In Baltimore?,1985,dbscan,0
 Pintura Roja,Padre Olvidado,1985,dbscan,0
 Bubbi Morthens,Systir minna auðmýktu bræðra,1985,dbscan,0
-Benjamin Blümchen,Kapitel 37 - als Ritter (Folge 042),1985,dbscan,-1
+Benjamin Blümchen,Kapitel 37 - als Ritter (Folge 042),1985,dbscan,0
 Dave Van Ronk,Luang Prabang,1985,dbscan,-1
 Baby Do Brasil,Sem Pecado E Sem Juízo,1985,dbscan,0
 Soda Stereo,El Cuerpo Del Delito - Remasterizado 2007,1985,dbscan,0
-"Psalty, Ernie Rettino, Debby Kerner Rettino",Scene 4: Are We Having Fun yet?,1985,dbscan,-1
+"Psalty, Ernie Rettino, Debby Kerner Rettino",Scene 4: Are We Having Fun yet?,1985,dbscan,0
 Commodores,I Keep Running,1985,dbscan,0
-"Antonio Vivaldi, Itzhak Perlman, Israel Philharmonic Orchestra","Vivaldi: Violin Concerto in E Major, RV 269 ""La primavera"" (No. 1 from ""Il cimento dell'armonia e dell'inventione"", Op. 8): I. Allegro",1985,dbscan,1
+"Antonio Vivaldi, Itzhak Perlman, Israel Philharmonic Orchestra","Vivaldi: Violin Concerto in E Major, RV 269 ""La primavera"" (No. 1 from ""Il cimento dell'armonia e dell'inventione"", Op. 8): I. Allegro",1985,dbscan,0
 Marino,Soldado de Jesus,1985,dbscan,0
 Caetano Veloso,Tempo De Estio,1985,dbscan,-1
 Terje Rypdal,Chaser,1985,dbscan,-1
@@ -1319,7 +1319,7 @@ Ofra Haza,כל הקלפים,1986,dbscan,0
 Peter Gabriel,In Your Eyes - Live,1986,dbscan,0
 Ofra Haza,הכאב הזה,1986,dbscan,0
 "Arik Einstein, Miki Gavrielov",לטפטף טיפה,1986,dbscan,0
-"Johann Sebastian Bach, Helmut Walcha","Toccata and Fugue in D Minor, BWV 565: Toccata",1986,dbscan,1
+"Johann Sebastian Bach, Helmut Walcha","Toccata and Fugue in D Minor, BWV 565: Toccata",1986,dbscan,0
 ชรินทร์ นันทนาคร,เรือนแพ,1986,dbscan,0
 Nurit Galron,בגובה שווה,1986,dbscan,0
 Crowded House,That's What I Call Love,1986,dbscan,0
@@ -1336,7 +1336,7 @@ Journey,Happy to Give,1986,dbscan,0
 Raphy Leavitt,Chiquilla,1986,dbscan,0
 Hanni und Nanni,03 - in neuen Abenteuern - Teil 21,1986,dbscan,0
 Sandra,Midnight Man,1986,dbscan,0
-The Mr. T Experience,Surfin' Mozart,1986,dbscan,-1
+The Mr. T Experience,Surfin' Mozart,1986,dbscan,0
 Eleni Dimou,I Stagones Tis Agapis,1986,dbscan,0
 Kenny Loggins,"Danger Zone - From ""Top Gun"" Original Soundtrack",1986,dbscan,0
 Die drei ???,039 - und die Perlenvögel - Teil 21,1986,dbscan,-1
@@ -1350,19 +1350,19 @@ Stephanie,Ouragan,1986,dbscan,0
 The Smiths,Bigmouth Strikes Again - 2011 Remaster,1986,dbscan,0
 Zucchero,Una Ragione Per Vivere,1986,dbscan,0
 Klymaxx,I'd Still Say Yes,1986,dbscan,0
-Benjamin Blümchen,Kapitel 13 - als Müllmann (Folge 049),1986,dbscan,-1
+Benjamin Blümchen,Kapitel 13 - als Müllmann (Folge 049),1986,dbscan,0
 "Madonna, Chris Lord-Alge",La Isla Bonita - Extended Remix,1986,dbscan,0
 Tat Ming Pair,馬路天使之等待黎明版,1986,dbscan,0
 José Augusto,O Amor Acontece,1986,dbscan,0
 Natalia Kukulska,Mój pechowy dzień,1986,dbscan,0
-Wham!,Blue - Live in China,1986,dbscan,-1
+Wham!,Blue - Live in China,1986,dbscan,0
 "Michelle Weeks, Tisha Campbell, Tichina Arnold, Ellen Greene, Rick Moranis",Skid Row (Downtown),1986,dbscan,0
 Los Estomagos,Solo,1986,dbscan,0
 Beastie Boys,Rhymin & Stealin,1986,dbscan,0
 "Bruce Hornsby, The Range",The Red Plains,1986,dbscan,0
 Los Traidores,No Estoy Loco,1986,dbscan,0
 Madonna,True Blue,1986,dbscan,0
-TKKG Retro-Archiv,043 - Gefangen in der Schreckenskammer - Teil 23,1986,dbscan,-1
+TKKG Retro-Archiv,043 - Gefangen in der Schreckenskammer - Teil 23,1986,dbscan,0
 Jermaine Stewart,We Don't Have To Take Our Clothes Off,1986,dbscan,0
 Los Traidores,Montevideo Agoniza - Bonus,1986,dbscan,0
 Benjamin Blümchen,Kapitel 24 - als Sheriff (Folge 050),1986,dbscan,0
@@ -1384,7 +1384,7 @@ Virus,Wadu Wadu - Live,1986,dbscan,0
 Micro,จำฝังใจ,1986,dbscan,0
 Tai Ji,迷途,1986,dbscan,0
 Shirley & Lee,Let the Good Times Roll,1986,dbscan,0
-Cocteau Twins,Whales Tails,1986,dbscan,1
+Cocteau Twins,Whales Tails,1986,dbscan,0
 Bombay Sisters,Lalitha Ashtothram,1986,dbscan,0
 สุรพล สมบัติเจริญ,บ้านนี้ฉันรัก,1986,dbscan,0
 Sonora Cumanacao,Trizas,1986,dbscan,0
@@ -1431,7 +1431,7 @@ Margalit Tzan'ani,בגלל האהבה,1986,dbscan,0
 Cicatriz,Inadaptados,1986,dbscan,0
 Hanni und Nanni,04 - Lustige Streiche mit Hanni und Nanni - Teil 14,1986,dbscan,0
 Orchestral Manoeuvres In The Dark,(Forever) Live And Die,1986,dbscan,0
-David Sylvian,The Healing Place,1986,dbscan,1
+David Sylvian,The Healing Place,1986,dbscan,0
 BOØWY,JUSTY,1986,dbscan,0
 Benjamin Blümchen,Kapitel 16 - als Müllmann (Folge 049),1986,dbscan,-1
 Danupol Kaewkarn,ของขวัญ,1986,dbscan,0
@@ -1463,7 +1463,7 @@ Kate Bush,Experiment IV,1986,dbscan,0
 Hanni und Nanni,02 - schmieden neue Pläne - Teil 03,1986,dbscan,-1
 "Polo Hofer, Die Schmetterband",Im letschte Tram,1986,dbscan,0
 Omar Khairat,Kadeyet Am Ahmed,1986,dbscan,0
-Original Soundtrack,Never Never Land,1986,dbscan,1
+Original Soundtrack,Never Never Land,1986,dbscan,0
 รวมศิลปิน (นพเก้า 2),เข้าใจรัก,1986,dbscan,0
 銀河小歌星,小金魚,1986,dbscan,0
 Tone Norum,Stranded - Re-Mixed Version,1986,dbscan,0
@@ -1488,11 +1488,11 @@ Bruce Springsteen,"Raise Your Hand - Live at the Roxy Theatre, W. Hollywood, CA 
 TKKG Retro-Archiv,044 - Um Mitternacht am schwarzen Fluß - Teil 07,1986,dbscan,0
 Anna Vissi,Apodixis,1986,dbscan,0
 Sergio Caputo,I cinesi non si affacciano mai,1986,dbscan,0
-"Los Kjarkas, Savia Andina",Por un Sueño de Amor - Remastered,1986,dbscan,-1
+"Los Kjarkas, Savia Andina",Por un Sueño de Amor - Remastered,1986,dbscan,0
 李壽全,張三的歌,1986,dbscan,0
 Sumo,Llegando Los Monos (Reprise),1986,dbscan,-1
 Charas Ferngahrom,ทั้งรู้ก็รัก,1986,dbscan,0
-Bruce Springsteen,"Two Hearts - Live at Meadowlands Arena, E. Rutherford, NJ - July 1981",1986,dbscan,-1
+Bruce Springsteen,"Two Hearts - Live at Meadowlands Arena, E. Rutherford, NJ - July 1981",1986,dbscan,0
 TKKG Retro-Archiv,042 - Anschlag auf den Silberpfeil - Teil 12,1986,dbscan,0
 John Farnham,You're the Voice - Remastered,1986,dbscan,0
 Ali Ekber Çiçek,Ne Sevdiğin Belli Ne Sevmediğin,1986,dbscan,0
@@ -1504,7 +1504,7 @@ TKKG Retro-Archiv,043 - Gefangen in der Schreckenskammer - Teil 13,1986,dbscan,-
 Topi Sorsakoski & Agents,Tyttö Metsässä,1986,dbscan,0
 Accept,I'm A Rebel,1986,dbscan,0
 Die drei ???,038 - und der unsichtbare Gegner - Teil 27,1986,dbscan,0
-Téléphone,Fleur de ma ville (Live) - Remasterisé en 2015,1986,dbscan,-1
+Téléphone,Fleur de ma ville (Live) - Remasterisé en 2015,1986,dbscan,0
 Headwind,Kita Serupa,1986,dbscan,0
 Wham!,Battlestations,1986,dbscan,0
 Bajka Muzyczna,Puchatek i pszczoły,1986,dbscan,-1
@@ -1526,14 +1526,14 @@ The System,Don't Disturb This Groove,1987,dbscan,0
 "Arik Einstein, Miki Gavrielov",עיתונאי קטן,1987,dbscan,0
 Klein Orkest,Mijn Vader,1987,dbscan,0
 3+2,Életemben csak két nőt szerettem,1987,dbscan,0
-TKKG Retro-Archiv,049 - Bombe an Bord - Teil 22,1987,dbscan,-1
+TKKG Retro-Archiv,049 - Bombe an Bord - Teil 22,1987,dbscan,0
 TKKG Retro-Archiv,048 - Bestien in der Finsternis - Teil 20,1987,dbscan,0
 Klaus Doldinger,Tatort Titelmusik,1987,dbscan,0
 Pink Floyd,A New Machine (Part 2) [2011 - Remaster],1987,dbscan,0
 "Koqui Acosta, Luis Acosta, Fernando Villalona",Nathalie,1987,dbscan,0
 Sonora Borinquen,Brindis por Pierrot,1987,dbscan,0
 Midnight Oil,Warakurna - 2007 Remastered,1987,dbscan,0
-"Modest Mussorgsky, Orchestre Symphonique de Montréal, Charles Dutoit",Pictures At An Exhibition: Samuel Goldenberg and Schmuyle,1987,dbscan,1
+"Modest Mussorgsky, Orchestre Symphonique de Montréal, Charles Dutoit",Pictures At An Exhibition: Samuel Goldenberg and Schmuyle,1987,dbscan,0
 林禹勝,冷熱的愛,1987,dbscan,-1
 Prince,Housequake,1987,dbscan,0
 Serge Gainsbourg,Aux enfants de la chance,1987,dbscan,0
@@ -1564,7 +1564,7 @@ Fausto,Lusitana,1987,dbscan,0
 Fandango,"Autos, Moda Y Rock N Roll",1987,dbscan,0
 "Andrew Lloyd Webber, Phantom Of The Opera Original London Cast, Sarah Brightman, Michael Crawford",I Remember / Stranger Than You Dreamt It,1987,dbscan,0
 The Cavaliers,It's A Beautiful Game,1987,dbscan,0
-INXS,Devil Inside,1987,dbscan,-1
+INXS,Devil Inside,1987,dbscan,0
 Pink Floyd,Round And Around - 2011 Remastered Version,1987,dbscan,-1
 Whitesnake,Crying in the Rain - 1987 Version; 2017 Remaster,1987,dbscan,0
 Bad Boys Blue,Gimme Gimme Your Lovin' (Little Lady),1987,dbscan,0
@@ -1579,7 +1579,7 @@ Los Gnomos,Pequeño Planeta,1987,dbscan,0
 Arik Sinai,אחת מהבוהמה,1987,dbscan,0
 Sissel,Mitt hjerte alltid vanker,1987,dbscan,0
 Michel Rivard,Un trou dans les nuages,1987,dbscan,0
-"Ludwig van Beethoven, Orpheus Chamber Orchestra","The Creatures of Prometheus, Op. 43: No. 16 Finale. Allegretto",1987,dbscan,1
+"Ludwig van Beethoven, Orpheus Chamber Orchestra","The Creatures of Prometheus, Op. 43: No. 16 Finale. Allegretto",1987,dbscan,0
 Oingo Boingo,We Close Our Eyes,1987,dbscan,0
 Madonna,Santa Baby,1987,dbscan,0
 XYZ,กว่าจะรัก,1987,dbscan,0
@@ -1594,7 +1594,7 @@ Ebba Grön,Profit,1987,dbscan,0
 De Dijk,Mag Het Licht Uit,1987,dbscan,0
 Haris & Panos Katsimihas,Nihtose Nihta,1987,dbscan,0
 Obus,Va a Estallar el Obus - En Directo,1987,dbscan,0
-Los Violadores,Violadores de la Ley,1987,dbscan,-1
+Los Violadores,Violadores de la Ley,1987,dbscan,0
 林禹勝,第一次接觸,1987,dbscan,-1
 Henry Garcia,Clavelito y Azucena,1987,dbscan,0
 TKKG Retro-Archiv,048 - Bestien in der Finsternis - Teil 05,1987,dbscan,0
@@ -1630,7 +1630,7 @@ Makoto Ozone,Beautiful Love,1987,dbscan,-1
 Peter Nagy,Máme doma dážď,1987,dbscan,0
 Danupol Kaewkarn,และแล้ว,1987,dbscan,0
 The Gun Club,The Breaking Hands,1987,dbscan,0
-Gökhan Güney,Hasret Rüzgarları,1987,dbscan,-1
+Gökhan Güney,Hasret Rüzgarları,1987,dbscan,0
 Grazhdanskaya Oborona,Попс,1987,dbscan,-1
 Héctor Lavoe,Loco,1987,dbscan,0
 New Order,In a Lonely Place,1987,dbscan,-1
@@ -1654,7 +1654,7 @@ Josie Aiello,Make Up My Heart,1987,dbscan,0
 Grazhdanskaya Oborona,Западло,1987,dbscan,-1
 Paolo Conte,Aguaplano,1987,dbscan,0
 Ludwig Hirsch,Komm grosser schwarzer Vogel,1987,dbscan,-1
-"Claude Debussy, Vlado Perlemuter","L'Isle Joyeuse, L. 106",1987,dbscan,1
+"Claude Debussy, Vlado Perlemuter","L'Isle Joyeuse, L. 106",1987,dbscan,0
 Lars H.U.G.,Dreng dreng - 2003 Digital Remaster,1987,dbscan,-1
 "Peter Nagy, Beáta Dubasova, Vaso Patejdl",Popletená abeceda,1987,dbscan,0
 Karina,Sin Máscara,1987,dbscan,0
@@ -1681,7 +1681,7 @@ Vazelina Bilopphøggers,"Vond Rygg, Såre Knoker",1987,dbscan,0
 Beth Carvalho,Da Melhor Qualidade - Ao Vivo,1987,dbscan,0
 Los Invasores De Nuevo León,Al Fin Mujer,1987,dbscan,0
 Halid Bešlić,"Hej, Zoro Ne Svani",1987,dbscan,0
-"George Frideric Handel, Andrew Davis, Toronto Mendelssohn Choir, Elmer Iseler Singers, Florence Quivar, John Aler, Samuel Ramey, Kathleen Battle, Toronto Symphony Orchestra","Rejoice Greatly, O Daughter Of Zion - Live",1987,dbscan,-1
+"George Frideric Handel, Andrew Davis, Toronto Mendelssohn Choir, Elmer Iseler Singers, Florence Quivar, John Aler, Samuel Ramey, Kathleen Battle, Toronto Symphony Orchestra","Rejoice Greatly, O Daughter Of Zion - Live",1987,dbscan,0
 Peter Nagy,Opica na bicykli,1987,dbscan,0
 Lars Eric Mattsson,I Love to Rock,1987,dbscan,0
 Belinda Carlisle,"I Get Weak (7"" Mix)",1987,dbscan,0
@@ -1698,7 +1698,7 @@ Rubén Blades,Claro Oscuro (Twilight),1987,dbscan,0
 Lars H.U.G.,"Solen er så rød, mor - 2003 Digital Remaster",1987,dbscan,-1
 "Tiffany, George Tobin, Bill Smith",Feelings Of Forever,1987,dbscan,0
 Peter LeMarc,Vägen (låter oss längta),1987,dbscan,0
-Joaquin Sabina y Viceversa,Tratado de Impaciencia Número 11 - Directo,1987,dbscan,-1
+Joaquin Sabina y Viceversa,Tratado de Impaciencia Número 11 - Directo,1987,dbscan,0
 Jody Chiang,欲怎樣,1987,dbscan,0
 Die drei ???,041 - und das Volk der Winde - Teil 09,1987,dbscan,0
 Billie Jo Spears,(Hey Won't You Play) Another Somebody Done Somebody Wrong Song,1987,dbscan,0
@@ -1712,7 +1712,7 @@ New Order,True Faith,1987,dbscan,0
 The Shadows,Wonderful Land,1987,dbscan,-1
 Paula Koivuniemi,Kuuleeko yö,1987,dbscan,0
 Die drei ???,041 - und das Volk der Winde - Teil 19,1987,dbscan,0
-Grazhdanskaya Oborona,Я иллюзорен,1987,dbscan,-1
+Grazhdanskaya Oborona,Я иллюзорен,1987,dbscan,0
 "蔡榮吉, 吳爾笠, 張方瑜, 陳姿妤",洋娃娃,1987,dbscan,0
 "Carlos David, Orquesta Liberacion",Dame Tu Querer,1987,dbscan,0
 El Tri,Nunca digas que no,1987,dbscan,0
@@ -1746,7 +1746,7 @@ Return,Steal Your Heart,1988,dbscan,0
 Michał Bajor,Buffo,1988,dbscan,0
 潘越雲,若我輕輕叫著你的名,1988,dbscan,0
 Rubén Blades,Nacer De Ti (Born from You),1988,dbscan,0
-陳雲山,陽關三疊,1988,dbscan,1
+陳雲山,陽關三疊,1988,dbscan,0
 Leslie Cheung,"奔向未來日子 - 電影""英雄本色續集""主題曲",1988,dbscan,0
 Emilio José,Nuestra Playa,1988,dbscan,0
 The J. Geils Band,Land Of A Thousand Dances,1988,dbscan,0
@@ -1763,7 +1763,7 @@ Lita Ford,Kiss Me Deadly,1988,dbscan,0
 Müşerref Akay,Türkiyem,1988,dbscan,0
 Die drei ???,044 - und der gestohlene Preis - Teil 06,1988,dbscan,0
 Van Halen,Mine All Mine,1988,dbscan,0
-Art Pepper,Patricia,1988,dbscan,-1
+Art Pepper,Patricia,1988,dbscan,0
 Anri,SUMMER CANDLES,1988,dbscan,0
 Hothouse Flowers,Hallelujah Jordan,1988,dbscan,0
 Alphonse Mouzon,A Lullabye For Little Alphonse,1988,dbscan,-1
@@ -1800,7 +1800,7 @@ Marino,Cristo Es la Peña,1988,dbscan,0
 鄭怡,離家出走,1988,dbscan,0
 Yehuda Poliker,קול מארץ הרוח,1988,dbscan,0
 Böhse Onkelz,28,1988,dbscan,0
-陳雲山,楓橋夜泊,1988,dbscan,1
+陳雲山,楓橋夜泊,1988,dbscan,0
 Alejandro Filio,Esa Mujer,1988,dbscan,0
 Kari Bremnes,Mit Hjerte Hamrer Og Hamrer,1988,dbscan,0
 Poison,Nothin' But A Good Time - Remastered 2006,1988,dbscan,0
@@ -1811,7 +1811,7 @@ Slayer,Read Between The Lies,1988,dbscan,-1
 Team,Nárocní,1988,dbscan,0
 TKKG Retro-Archiv,060 - Der Teufel vom Waiga See - Teil 02,1988,dbscan,-1
 Roberto Goyeneche,Che Bandoneon,1988,dbscan,0
-Jacques Brel,La chanson de Jacky,1988,dbscan,-1
+Jacques Brel,La chanson de Jacky,1988,dbscan,0
 Grazhdanskaya Oborona,Анархия,1988,dbscan,-1
 The Pasadenas,Enchanted Lady,1988,dbscan,0
 TKKG Retro-Archiv,060 - Der Teufel vom Waiga See - Teil 10,1988,dbscan,0
@@ -1839,7 +1839,7 @@ Jørgen Slips,Hvor har jeg sovet i natt?,1988,dbscan,0
 D. G. S. Dhinakaran,Enna En Aanandham,1988,dbscan,0
 Raul Seixas,Areia Da Ampulheta,1988,dbscan,0
 The Beatles,Don't Let Me Down - Remastered 2009,1988,dbscan,0
-"Frédéric Chopin, Krystian Zimerman","Fantaisie In F Minor, Op.49",1988,dbscan,1
+"Frédéric Chopin, Krystian Zimerman","Fantaisie In F Minor, Op.49",1988,dbscan,0
 Die drei ???,044 - und der gestohlene Preis - Teil 24,1988,dbscan,0
 The Beatles,Day Tripper - Remastered 2009,1988,dbscan,0
 The Beatles,She Loves You - Remastered 2009,1988,dbscan,0
@@ -1874,7 +1874,7 @@ Die drei ???,043 - und der höllische Werwolf - Teil 11,1988,dbscan,0
 TKKG Retro-Archiv,061 - Im Schatten des Dämons - Teil 20,1988,dbscan,0
 Shakin' Stevens,Tired of Toein' the Line,1988,dbscan,0
 S. P. Balasubrahmanyam,Taralirada,1988,dbscan,0
-Sadhana Sargam,Anbay (Sky),1988,dbscan,-1
+Sadhana Sargam,Anbay (Sky),1988,dbscan,0
 Steve Winwood,Roll With It,1988,dbscan,0
 R.E.M.,Hairshirt - Remastered,1988,dbscan,0
 林淑容,Zong You Yi Tian Deng Dao Ni,1988,dbscan,0
@@ -1906,7 +1906,7 @@ Zohar Argov,בדד,1988,dbscan,0
 The Jeremy Days,Brand New Toy,1988,dbscan,0
 Luther Vandross,I Wonder,1988,dbscan,0
 Cazuza,Boas Novas,1988,dbscan,0
-陳雲山,美麗的瑪莉漢,1988,dbscan,-1
+陳雲山,美麗的瑪莉漢,1988,dbscan,0
 Margaret Becker,Find Me - Very Best Of Margaret Becker Album Version,1988,dbscan,0
 Runrig,Chi Mi'n Geamhradh - Live,1988,dbscan,-1
 Tanita Tikaram,Valentine Heart,1988,dbscan,0
@@ -1943,7 +1943,7 @@ Luther Vandross,I Know You Want To,1988,dbscan,0
 Xutos & Pontapés,À Minha Maneira,1988,dbscan,0
 Sezen Aksu,Hasret,1988,dbscan,0
 Metallica,The Shortest Straw (Remastered),1988,dbscan,0
-Jens Bolling,Tornerose,1988,dbscan,-1
+Jens Bolling,Tornerose,1988,dbscan,0
 Bon Jovi,Wild Is The Wind,1988,dbscan,0
 Metallica,Last Caress - Live / Seattle '89,1988,dbscan,-1
 Fleetwood Mac,Say You Love Me,1988,dbscan,0
@@ -1960,11 +1960,11 @@ Squallor,38 luglio,1989,dbscan,0
 Kliby Und Caroline,Blick ins Nachbarhaus (2. Teil),1989,dbscan,0
 "李淑雲, 許鈺珮, 吳爾笠, 蔡榮吉",燒肉包,1989,dbscan,0
 Pat Metheny Group,Have You Heard,1989,dbscan,0
-Farid Farjad,Aylirigh,1989,dbscan,1
+Farid Farjad,Aylirigh,1989,dbscan,0
 David Bowie,Ashes to Ashes,1989,dbscan,0
-"Jacques Offenbach, Berliner Philharmoniker, Herbert von Karajan",Gaîté parisienne: Barcarolle,1989,dbscan,1
+"Jacques Offenbach, Berliner Philharmoniker, Herbert von Karajan",Gaîté parisienne: Barcarolle,1989,dbscan,0
 Search,Derap Komando,1989,dbscan,0
-"Tintin, Tomas Bolme, Bert-Åke Varg","De sju kristallkulorna, del 12",1989,dbscan,-1
+"Tintin, Tomas Bolme, Bert-Åke Varg","De sju kristallkulorna, del 12",1989,dbscan,0
 New Model Army,Green and Grey,1989,dbscan,0
 Clint Black,Nothing's News,1989,dbscan,0
 "Manhar Udhas, Anuradha Paudwal",Tera Naam Liya,1989,dbscan,0
@@ -1995,7 +1995,7 @@ Gervasio,Aun Sigo Cantando,1989,dbscan,0
 Globi,Na mee vo De Globi im Adlerhorscht,1989,dbscan,-1
 Die drei ???,048 - und die gefährlichen Fässer - Teil 05,1989,dbscan,0
 İbrahim Tatlıses,Şımarık Sevgilim,1989,dbscan,0
-Jon Jelmer,Hawaiian Breeze,1989,dbscan,1
+Jon Jelmer,Hawaiian Breeze,1989,dbscan,0
 Александр Барыкин,Летучий голландец,1989,dbscan,0
 Swing Out Sister,Precious Words,1989,dbscan,0
 Ratones Paranoicos,Encerrado,1989,dbscan,0
@@ -2005,7 +2005,7 @@ The Offspring,A Thousand Days,1989,dbscan,0
 Lenny Kravitz,Mr. Cab Driver,1989,dbscan,0
 "Don Moen, Integrity's Hosanna! Music",This Is My Holy Place - Live,1989,dbscan,0
 Anuradha Paudwal,Ek Sanam Chahiye Aashiqui Ke Liye,1989,dbscan,0
-Glenn Miller,Sunrise Serenade - 1989 Remastered,1989,dbscan,1
+Glenn Miller,Sunrise Serenade - 1989 Remastered,1989,dbscan,0
 The Pogues,"Misty Morning, Albert Bridge",1989,dbscan,0
 Miljoonasade,Lelukaupan häät,1989,dbscan,0
 Proyección,A Qué Volviste,1989,dbscan,0
@@ -2036,10 +2036,10 @@ Globi,Dr Globi und dä Kasper i de Spiis-Chammer vom König,1989,dbscan,0
 The McGuire Sisters,Sincerely,1989,dbscan,0
 God Bless,2002,1989,dbscan,0
 Danny Robas,סיאנס,1989,dbscan,0
-"Johann Strauss II, Deutsches Symphonie-Orchester Berlin, Ferenc Fricsay","Kaiserwalzer, Op.437",1989,dbscan,1
+"Johann Strauss II, Deutsches Symphonie-Orchester Berlin, Ferenc Fricsay","Kaiserwalzer, Op.437",1989,dbscan,0
 Kino,Хочу перемен,1989,dbscan,0
 Paula Tsui,重逢,1989,dbscan,0
-"Tintin, Tomas Bolme, Bert-Åke Varg","De sju kristallkulorna, del 4",1989,dbscan,-1
+"Tintin, Tomas Bolme, Bert-Åke Varg","De sju kristallkulorna, del 4",1989,dbscan,0
 Eduardo De Crescenzo,C'è Il Sole,1989,dbscan,0
 "Salma Agha, Mohammed Aziz",Teri Mohabbat Meri Jawani,1989,dbscan,0
 Prince,Partyman,1989,dbscan,0
@@ -2070,11 +2070,11 @@ Peter Lipa,Porucha je v mojom prijímači,1989,dbscan,0
 Fra Lippo Lippi,Everytime I See You - Live,1989,dbscan,0
 Marie Carmen,Faut pas que j'panique,1989,dbscan,0
 羅大佑,傳說,1989,dbscan,0
-Lou Reed,Romeo Had Juliette,1989,dbscan,-1
+Lou Reed,Romeo Had Juliette,1989,dbscan,0
 Palabra en Acción,Bendito Sea El Señor,1989,dbscan,0
 Gnags,Når Alt Er Forbi,1989,dbscan,0
 "Piero Brega, Carlo Siliotto, Francesco Giannastasio, Sara Modigliani",Su Comunisti Della Capitale,1989,dbscan,0
-Julee Cruise,Falling,1989,dbscan,1
+Julee Cruise,Falling,1989,dbscan,0
 Pongthep Kradonchamnan,ด.ญ.ปรางค์,1989,dbscan,0
 Roxette,The Look,1989,dbscan,0
 Beyond,午夜迷牆 - 電影「黑色迷牆」主題曲,1989,dbscan,0
@@ -2110,12 +2110,12 @@ Eddie Meduza,"Love Me, Baby",1989,dbscan,0
 Darina Lasciaková,Ticha noc,1989,dbscan,0
 Roy Black,Ein kleines bißchen Zärtlichkeit,1989,dbscan,0
 The Cure,Prayers for Rain - 2010 Remaster,1989,dbscan,0
-"Toninho Horta, Pat Metheny",Moonstone,1989,dbscan,1
+"Toninho Horta, Pat Metheny",Moonstone,1989,dbscan,0
 Belinda Carlisle,"Vision of You (7"" Edit)",1989,dbscan,0
 Züri West,Redt si no vo mir,1989,dbscan,0
 Anni Tannin Lapsilaulajat,Minä olen pikku-tyttö,1989,dbscan,0
 UP-BEAT,TEARS OF RAINBOW,1989,dbscan,0
-Micheal O Suilleabhain,"Ah, Sweet Dancer",1989,dbscan,1
+Micheal O Suilleabhain,"Ah, Sweet Dancer",1989,dbscan,0
 Die drei ???,045 - und das Gold der Wikinger - Teil 40,1989,dbscan,0
 TKKG Retro-Archiv,063 - Die Falle am Fuchsbach - Teil 02,1989,dbscan,-1
 童安格,忘不了,1989,dbscan,0
@@ -2158,10 +2158,10 @@ Dave Wong,她的背影,1989,dbscan,0
 Os Paralamas Do Sucesso,Perplexo,1989,dbscan,0
 Zucchero,Il Mare (Impetuoso Al Tramonto Sali'Sulla Luna E Dietro Una Tendina Di Stelle...),1989,dbscan,0
 Katy Bodtker,Aftenhymnen,1989,dbscan,0
-"Charlie Chaplin, Thomas Beckmann",Smile,1989,dbscan,1
+"Charlie Chaplin, Thomas Beckmann",Smile,1989,dbscan,0
 Billy Ogan,ปล่อยเขา,1989,dbscan,0
-Gábor Presser,Electromantic,1989,dbscan,1
-Die drei ???,048 - und die gefährlichen Fässer - Teil 28,1989,dbscan,-1
+Gábor Presser,Electromantic,1989,dbscan,0
+Die drei ???,048 - und die gefährlichen Fässer - Teil 28,1989,dbscan,0
 Crvena Jabuka,"Tuga, Ti I Ja",1989,dbscan,0
 News,Falder For Dig,1989,dbscan,0
 Skid Row,Rattlesnake Shake,1989,dbscan,0
@@ -2172,7 +2172,7 @@ Luís Goes,Cantares Do Penedo,1989,dbscan,0
 Charly García,No Te Mueras en Mi Casa,1990,dbscan,0
 Etti Ankri,רואה לך בעיניים,1990,dbscan,0
 Barão Vermelho,Ponto fraco,1990,dbscan,0
-Modern English,I Melt With You - Rerecorded,1990,dbscan,-1
+Modern English,I Melt With You - Rerecorded,1990,dbscan,0
 Napoleon Boulevard,Jelentés az alagútból,1990,dbscan,0
 Iwan Fals,Hadapi Saja (versi edit),1990,dbscan,0
 KC & The Sunshine Band,Boogie Shoes,1990,dbscan,0
@@ -2189,7 +2189,7 @@ Dream Police,When the Sun Goes Down,1990,dbscan,0
 Sléttuúlfarnir,Andlitið sem hlær,1990,dbscan,0
 Garzon y Collazos,Soberbia,1990,dbscan,0
 "Sa & Guarabyra, Ivan Lins",Quem Saberia Perder,1990,dbscan,0
-"Felix Mendelssohn, Péter Nagy","Lieder ohne Worte (Songs without Words), Book 7, Op. 85: No. 40 in D Major, Op. 85, No. 4",1990,dbscan,1
+"Felix Mendelssohn, Péter Nagy","Lieder ohne Worte (Songs without Words), Book 7, Op. 85: No. 40 in D Major, Op. 85, No. 4",1990,dbscan,0
 Juan Gabriel,A Mi Me Gusta Soñar,1990,dbscan,0
 Bruce Dickinson,Tattooed Millionaire - 2001 Remastered Version,1990,dbscan,0
 Egor Letov,Поезд ушёл,1990,dbscan,0
@@ -2201,7 +2201,7 @@ Fünf Freunde,026 - ...und die Perlenschmuggler - Teil 35,1990,dbscan,0
 Niagara,Chien Rouge,1990,dbscan,0
 Megadeth,Take No Prisoners,1990,dbscan,0
 Grazhdanskaya Oborona,Мы будем умирать (А вы наблюдать),1990,dbscan,-1
-傻瓜樂團,後街人生,1990,dbscan,-1
+傻瓜樂團,後街人生,1990,dbscan,0
 Stjórnin,Ef ekki er til nein ást,1990,dbscan,0
 江淑娜,說聲對不起,1990,dbscan,0
 The 12th Man,Scene 8: Second Over,1990,dbscan,-1
@@ -2311,12 +2311,12 @@ Pebbles,Giving You The Benefit,1990,dbscan,0
 Fairuz,El Massih Kaam,1990,dbscan,0
 Mohammed Abdel Wahab,La Mosh Ana Ely Abky,1990,dbscan,0
 Llajtaymanta,Los Jóvenes,1990,dbscan,0
-TKKG Retro-Archiv,075 - Lösegeld am Henkersberg - Teil 22,1990,dbscan,-1
+TKKG Retro-Archiv,075 - Lösegeld am Henkersberg - Teil 22,1990,dbscan,0
 Bernard Lavilliers,Les barbares,1990,dbscan,0
 Franz Zimmer,Die Fahrkart’n nach Wien,1990,dbscan,0
 Mashina,אכזבה,1990,dbscan,0
 "FairHope, Integrity's Hosanna! Music",Purify My Heart,1990,dbscan,0
-Tsuyoshi Nagabuchi,素顔,1990,dbscan,-1
+Tsuyoshi Nagabuchi,素顔,1990,dbscan,0
 David Bowie,Modern Love - Single Version; 1990 Remaster,1990,dbscan,0
 Jorge Aragão,Papel de Pão,1990,dbscan,0
 Agatha Christie,Щёкотно,1990,dbscan,0
@@ -2377,7 +2377,7 @@ Boudewijn de Groot,Verdronken Vlinder,1990,dbscan,0
 Mannakorn,Silfurstjarnan,1990,dbscan,0
 "Santana, Jorge Moreno","Satellite (feat. Jorge Moreno) - From ""Havana Nights""",1990,dbscan,0
 Caifanes,Amárrate a una Escoba y Vuela Lejos,1990,dbscan,0
-Emile Pandolfi,Les Miserables Medley,1990,dbscan,1
+Emile Pandolfi,Les Miserables Medley,1990,dbscan,0
 "Fortisakharof, Rami Fortis, Berry Sakharof",שמיים של שומקום,1990,dbscan,0
 Nová růže,Anděl Fantazie,1990,dbscan,0
 Anita Baker,Lonely,1990,dbscan,0
@@ -2387,8 +2387,8 @@ Prudence,Tomorrow May Be Vanished,1990,dbscan,0
 "Elomar, Geraldo Azevedo, Vital Farias, Xangai",Estampas Eucalol,1990,dbscan,-1
 Cengiz Kurtoğlu,Aşkımıza Ağlıyorum,1990,dbscan,0
 Leevi and the leavings,Sateisena päivänä,1991,dbscan,0
-"Wolfgang Amadeus Mozart, Metropolitan Opera Orchestra, James Levine","Le nozze di Figaro, K.492: Overture",1991,dbscan,1
-Roxette,Perfect Day,1991,dbscan,-1
+"Wolfgang Amadeus Mozart, Metropolitan Opera Orchestra, James Levine","Le nozze di Figaro, K.492: Overture",1991,dbscan,0
+Roxette,Perfect Day,1991,dbscan,0
 Urbanda,Pero Te Amo,1991,dbscan,0
 Marino,Por Que Te Abates,1991,dbscan,0
 Hideo Murata,無法松の一生 (度胸千両入り),1991,dbscan,0
@@ -2447,12 +2447,12 @@ V'Moto Rock,El kell hogy engedj,1991,dbscan,-1
 Oshik Levi,"בלדה לשוטר (מהסרט ""השוטר אזולאי"")",1991,dbscan,0
 Los Secretos,Adiós tristeza,1991,dbscan,0
 Wilmer X,Vem får nu se alla tårar?,1991,dbscan,0
-Nino Rota,Main Title (The Godfather Waltz),1991,dbscan,1
+Nino Rota,Main Title (The Godfather Waltz),1991,dbscan,0
 The September When,Bullet Me,1991,dbscan,0
 Roxette,Knockin' On Every Door,1991,dbscan,0
 Aaron Neville,Somewhere Somebody,1991,dbscan,0
 TKKG Retro-Archiv,079 - Ein Toter braucht Hilfe - Teil 20,1991,dbscan,0
-Chitãozinho & Xororó,Peao De Rodeio,1991,dbscan,-1
+Chitãozinho & Xororó,Peao De Rodeio,1991,dbscan,0
 "Niamh Kavanagh, The Commitments","Do Right Woman, Do Right Man",1991,dbscan,0
 Béla Fleck and the Flecktones,Flight of the Cosmic Hippo,1991,dbscan,-1
 Crowded House,Italian Plastic,1991,dbscan,0
@@ -2475,7 +2475,7 @@ Sergio Denis,Como Estas Despues de Tanto Tiempo,1991,dbscan,0
 Will Downing,I Go Crazy,1991,dbscan,0
 Nazım Hikmet,Kız Çocuğu,1991,dbscan,-1
 Wolfgang Ambros,Oh St. Hubertus - Live,1991,dbscan,-1
-"Murray Perahia, Radu Lupu","Concerto No. 10 in E-flat Major for 2 Pianos & Orchestra, K.365/316a: III. Rondeaux. Allegro",1991,dbscan,1
+"Murray Perahia, Radu Lupu","Concerto No. 10 in E-flat Major for 2 Pianos & Orchestra, K.365/316a: III. Rondeaux. Allegro",1991,dbscan,0
 "Yoni Rechter, Gidi Gov",העיקר זה הרומנטיקה - בהופעה,1991,dbscan,0
 Michael Bolton,When a Man Loves a Woman,1991,dbscan,0
 Luis Miguel,No Me Platiques Más,1991,dbscan,0
@@ -2496,7 +2496,7 @@ Teenage Fanclub,Star Sign,1991,dbscan,0
 Samson & Gert,De Wijde Wereld,1991,dbscan,0
 Rata Blanca,Guerrero Del Arco Iris,1991,dbscan,-1
 MK,Burning - Vibe Mix,1991,dbscan,0
-Globi,S' gaat wiiter mit Bim Profässer Gastropodus im Museum,1991,dbscan,-1
+Globi,S' gaat wiiter mit Bim Profässer Gastropodus im Museum,1991,dbscan,0
 Piojos Y Piojitos,Piojos y Piojitos,1991,dbscan,0
 "Pavlos Sidiropoulos, Oi Aprosarmosti",Aprosarmosti,1991,dbscan,0
 Bibi Blocksberg,Kapitel 16 - wird entführt (Folge 051),1991,dbscan,0
@@ -2520,7 +2520,7 @@ Pan Mei Chen,我怕我不是你最愛的人,1991,dbscan,0
 Vivek Verma,Meri Jaan Chali,1991,dbscan,0
 Peabo Bryson,Closer Than Close,1991,dbscan,0
 Karibe con K,Entrégate,1991,dbscan,0
-La Ley,Solo Ideales,1991,dbscan,-1
+La Ley,Solo Ideales,1991,dbscan,0
 Alberto Vazquez,Perdóname Mi Vida,1991,dbscan,0
 娃娃,飄洋過海來看你,1991,dbscan,0
 Bez Ladu A Skladu,Arab Muhamad Abdul Ali,1991,dbscan,0
@@ -2571,7 +2571,7 @@ Züri West,Dr Arturo Bandini un i,1991,dbscan,0
 Bibi und Tina,Kapitel 24 - Das Fohlen (Folge 001),1991,dbscan,0
 Lisa Fischer,How Can I Ease the Pain,1991,dbscan,0
 Moshe Cohen,מחבק בקבוק,1991,dbscan,0
-Anni Tannin Lapsilaulajat,Lumipyry,1991,dbscan,-1
+Anni Tannin Lapsilaulajat,Lumipyry,1991,dbscan,0
 Element Of Crime,Vier Stunden vor Elbe 1,1991,dbscan,0
 KATSUMI,"YES, 抱きしめて",1991,dbscan,0
 Modestia Aparte,Piel Y Arena,1991,dbscan,0
@@ -2587,7 +2587,7 @@ Nútímabörn,Okkar fyrstu fundir,1991,dbscan,0
 Divinyls,Pleasure And Pain,1991,dbscan,0
 Kaya Brüel,Stay,1991,dbscan,0
 "Miguel Alejandro, Pocho La Pantera, Combo Salamandra, Los Cartageneros, Alcides, Los Players, Ricky Maravilla, Gladys ""La bomba tucumana""",Nena Juguetona / Pero Muy Celosa / El Hijo de Cuca / La Arañita / Si Quieres Lastimarme / Por Robarte un Beso / Amores Como el Tuyo / Ritmo Tambor y Timbal / La Pollera Amarilla / Usted Señor - Mix,1991,dbscan,0
-Emile Pandolfi,Theme from Beauty and the Beast (The First Time I loved Forever),1991,dbscan,1
+Emile Pandolfi,Theme from Beauty and the Beast (The First Time I loved Forever),1991,dbscan,0
 The Saw Doctors,Don't Let Me Down,1991,dbscan,0
 The Waterboys,And a Bang on the Ear,1991,dbscan,0
 2Pac,Brenda's Got A Baby,1991,dbscan,0
@@ -2618,7 +2618,7 @@ The Pharcyde,Otha Fish,1992,dbscan,0
 The Tubes,She's A Beauty,1992,dbscan,0
 "Marty Nystrom, Integrity's Hosanna! Music",Shepherd of My Soul - Live,1992,dbscan,0
 The Swinging Blue Jeans,You're No Good,1992,dbscan,0
-"Franz Liszt, Daniel Barenboim","6 Consolations, S. 172: No. 3 In D Flat Major (Lento, placido)",1992,dbscan,1
+"Franz Liszt, Daniel Barenboim","6 Consolations, S. 172: No. 3 In D Flat Major (Lento, placido)",1992,dbscan,0
 Ramones,Tomorrow She Goes Away,1992,dbscan,0
 Prince,My Name Is Prince,1992,dbscan,0
 Raça Negra,Estou Bem,1992,dbscan,0
@@ -2628,7 +2628,7 @@ Janek Ledecky,Jenom láska,1992,dbscan,0
 Roger Waters,Too Much Rope,1992,dbscan,0
 Xutos & Pontapés,Chuva Dissolvente,1992,dbscan,0
 Body Count,Body Count,1992,dbscan,0
-David Qualey,Just The Way You Are,1992,dbscan,1
+David Qualey,Just The Way You Are,1992,dbscan,0
 Fröbelin Palikat,Jumppalaulu,1992,dbscan,0
 Ferdi Tayfur,Sen Nerdesin Ben Nerdeyim,1992,dbscan,0
 Mariko Takahashi,愛はルフラン,1992,dbscan,0
@@ -2675,7 +2675,7 @@ Alpay,Eylül'de Gel Demiştim,1992,dbscan,0
 Benito Lertxundi,Mundurat eman ninduzun,1992,dbscan,0
 Warda,Batwanes Beek,1992,dbscan,0
 Soda Stereo,Sweet Sahumerio - Remasterizado 2007,1992,dbscan,0
-Orchester Anthony Ventura,Morning Has Broken,1992,dbscan,1
+Orchester Anthony Ventura,Morning Has Broken,1992,dbscan,0
 HaGashash HaHiver,הרכבת ממשלה חדשה,1992,dbscan,0
 Mikel Markez,Zure Begiek,1992,dbscan,0
 SWV,I'm So Into You,1992,dbscan,0
@@ -2699,7 +2699,7 @@ Rhonda Clark,Tomorrow,1992,dbscan,0
 Freud Marx Engels & Jung,Kipee,1992,dbscan,0
 Izhar Ashdot,דמעות של זעם ומילים,1992,dbscan,0
 Margaretha Krook,"Alla får ropa, sa mamma, del 5",1992,dbscan,0
-Golden Earring,Twilight Zone - Live,1992,dbscan,-1
+Golden Earring,Twilight Zone - Live,1992,dbscan,0
 Imelda Papin,Isang Linggong Pag-Ibig,1992,dbscan,0
 "Sami Aarva, Kuoro - Aladdin",Askelta edellä (Repriisi),1992,dbscan,0
 Aşkın Nur Yengi,Serserim Benim,1992,dbscan,0
@@ -2711,7 +2711,7 @@ Eifo HaYeled,זמן סוכר,1992,dbscan,0
 Peter LeMarc,Tootoolah,1992,dbscan,0
 Almendra,Final,1992,dbscan,0
 Grup Yorum,Dünyanin Üzerinde,1992,dbscan,0
-"Claude Debussy, Aldo Ciccolini","Debussy: Arabesques, CD 74, L. 66: No. 1, Andantino con moto",1992,dbscan,1
+"Claude Debussy, Aldo Ciccolini","Debussy: Arabesques, CD 74, L. 66: No. 1, Andantino con moto",1992,dbscan,0
 Jade,One Woman,1992,dbscan,0
 Kala Marka,Aguas Claras,1992,dbscan,0
 "Tai Chi, David Ling Jr",等玉人,1992,dbscan,0
@@ -2736,7 +2736,7 @@ James Reyne,Always The Way,1992,dbscan,0
 The Sundays,Wild Horses,1992,dbscan,0
 La Frontera,Judas El Miserable - En Directo Verano 1.992,1992,dbscan,0
 Kino Cabral,Belita,1992,dbscan,0
-Alan Menken,Le baiser,1992,dbscan,1
+Alan Menken,Le baiser,1992,dbscan,0
 Antonio Aguilar,El Caballo Jovero,1992,dbscan,0
 Def Leppard,Stand Up (Kick Love Into Motion),1992,dbscan,0
 The Police,Walking On The Moon,1992,dbscan,0
@@ -2906,15 +2906,15 @@ Capleton,Buggering,1993,dbscan,0
 Counting Crows,Rain King,1993,dbscan,0
 İbrahim Tatlıses,Seni Sevmediğim Yalan,1993,dbscan,0
 Fröbelin Palikat,Eläimellinen uimakoulu,1993,dbscan,0
-M. S. Rama Rao,Ee Visala Prasantha,1993,dbscan,-1
-Tim Hardin Trio,はじまりはいつも雨,1993,dbscan,1
-Anni Tannin Lapsilaulajat,Lapset nyt käyvät nukkumaan,1993,dbscan,-1
+M. S. Rama Rao,Ee Visala Prasantha,1993,dbscan,0
+Tim Hardin Trio,はじまりはいつも雨,1993,dbscan,0
+Anni Tannin Lapsilaulajat,Lapset nyt käyvät nukkumaan,1993,dbscan,0
 Kyosuke Himuro,Memories Of Blue,1993,dbscan,0
 Gasolin',På Banen (Derudaf),1993,dbscan,0
 Alex Bueno y Su Orquesta,El Jardin Prohibido,1993,dbscan,0
 Los Reyes Locos,La Negra Esther,1993,dbscan,0
 Man Ray,Todo Cambia,1993,dbscan,0
-Los Violines de Villafontana,Popurri: El Hombre de la Mancha / Dulcinea / Me Simpatiza El / Sueño Imposible,1993,dbscan,1
+Los Violines de Villafontana,Popurri: El Hombre de la Mancha / Dulcinea / Me Simpatiza El / Sueño Imposible,1993,dbscan,0
 Freda',Allt man kan önska sig,1993,dbscan,0
 Die Prinzen,Alles nur geklaut,1993,dbscan,0
 PJ Harvey,Rid Of Me,1993,dbscan,0
@@ -2949,7 +2949,7 @@ Jam & Spoon,Stella,1993,dbscan,0
 Wu-Tang Clan,Method Man - Home Grown Version,1993,dbscan,0
 Óscar Medina,Buscale,1993,dbscan,0
 "Mano, Minmini",Adi Poonguilea,1993,dbscan,0
-John Williams,Theme From Jurassic Park,1993,dbscan,1
+John Williams,Theme From Jurassic Park,1993,dbscan,0
 Entre Aspas,Criatura Da Noite,1993,dbscan,0
 Heroes Del Silencio,La apariencia no es sincera - 1012 - Remaster,1993,dbscan,0
 Martinho Da Vila,Na Aba,1993,dbscan,0
@@ -3004,7 +3004,7 @@ PS & Co,Ung og rík,1993,dbscan,0
 Mofa Haarnavot Shel Dr. Kasper,כל יום כל יום,1993,dbscan,0
 Leftfield,Open Up (Radio Edit),1993,dbscan,0
 Ingenting,Komma deg hjem,1993,dbscan,0
-John Williams,Opening Titles,1993,dbscan,1
+John Williams,Opening Titles,1993,dbscan,0
 Racionais MC's,Parte II,1993,dbscan,0
 Lee Kernaghan,Southern Son - Remastered,1993,dbscan,0
 Chiang Yu-Heng,提醒我,1993,dbscan,0
@@ -3021,7 +3021,7 @@ Bjørn Eidsvåg,Se i nåde til oss,1993,dbscan,0
 Wilmer X,"Ah du, hur fan ser du ut?",1993,dbscan,0
 The Bar-Kays,Hit And Run,1993,dbscan,0
 Cypress Hill,Legalize It,1993,dbscan,-1
-"Bedřich Smetana, Duo Crommelynck","Má vlast: Vltava (The Moldau). Allegro commodo, non agitato",1993,dbscan,1
+"Bedřich Smetana, Duo Crommelynck","Má vlast: Vltava (The Moldau). Allegro commodo, non agitato",1993,dbscan,0
 Joe Dolan,Here We Go Again,1993,dbscan,0
 Paul Voudouris,It Takes Two To Tango,1993,dbscan,0
 LINDBERG,YOU BELONG TO ME,1993,dbscan,0
@@ -3034,7 +3034,7 @@ Marisela,Tu Dama de Hierro,1993,dbscan,0
 Maria Bethânia,Palavras,1993,dbscan,0
 Krasnaya Plesen,Балалайкин,1993,dbscan,0
 The Cruel Sea,The Honeymoon Is Over,1993,dbscan,0
-Emile Pandolfi,Someday My Prince Will Come,1993,dbscan,1
+Emile Pandolfi,Someday My Prince Will Come,1993,dbscan,0
 Carlene Carter,Wastin' Time with You,1993,dbscan,0
 Axelle Red,Sensualité,1993,dbscan,0
 "Shakul Hameed, Minmini",Pachai Kili Paadum Paattu,1994,dbscan,-1
@@ -3042,11 +3042,11 @@ Bush,Everything Zen - Remastered,1994,dbscan,0
 Pk2,Que Bonito,1994,dbscan,0
 Ebiet G. Ade,Nyanyian Kasmaran,1994,dbscan,0
 Count Basie,Splanky - Remix; 1994 Remaster,1994,dbscan,0
-David Huntsinger,Johnny Fedora And Alice Blue Bonnet,1994,dbscan,1
+David Huntsinger,Johnny Fedora And Alice Blue Bonnet,1994,dbscan,0
 Bad Religion,Better Off Dead,1994,dbscan,0
 Güllü,Oyuncak Gibi,1994,dbscan,0
 Gilby Clarke,Dead Flowers,1994,dbscan,0
-Ludovico Einaudi,Passaggio,1994,dbscan,1
+Ludovico Einaudi,Passaggio,1994,dbscan,0
 Miki Imai,Miss You,1994,dbscan,0
 Thug Life,Cradle To The Grave,1994,dbscan,0
 เสือ ธนพล อินทฤทธิ์,18 ฝน,1994,dbscan,0
@@ -3132,7 +3132,7 @@ Mike Laure,Hoja Seca,1994,dbscan,0
 Clay Walker,This Woman and This Man,1994,dbscan,0
 O.C.,Time's Up,1994,dbscan,0
 Las Pelotas,Senderos,1994,dbscan,0
-Marcos Witt,Oh Jesus,1994,dbscan,-1
+Marcos Witt,Oh Jesus,1994,dbscan,0
 Cesar Manalili,Someday / Let Me Be With You / You Are Always In My Heart,1994,dbscan,-1
 Die drei ???,059 - Giftiges Wasser - Teil 29,1994,dbscan,0
 "Katla María, Pálmi Gunnarsson",Emil í Kattholti,1994,dbscan,0
@@ -3161,11 +3161,11 @@ Leikhópurinn Kardemommubærinn,Kardemommusöngurinn,1994,dbscan,-1
 Bobby Chen,然而,1994,dbscan,0
 Zebulon,Job Steady,1994,dbscan,0
 音樂磁場,愛的代價,1994,dbscan,0
-Nine Inch Nails,Big Man With A Gun,1994,dbscan,-1
-"Yoni Rechter, Avner Kaner",קטע איתי,1994,dbscan,-1
+Nine Inch Nails,Big Man With A Gun,1994,dbscan,0
+"Yoni Rechter, Avner Kaner",קטע איתי,1994,dbscan,0
 Ricky Nelson,Lonesome Town,1994,dbscan,0
 Burak Kut,Bebeğimdin,1994,dbscan,0
-Cesar Manalili,All Alone Am I,1994,dbscan,1
+Cesar Manalili,All Alone Am I,1994,dbscan,0
 Dream Theater,Lie,1994,dbscan,0
 Alejandro Sanz,Qué no te daría yo,1994,dbscan,0
 "Emmylou Harris, Dolly Parton, Linda Ronstadt",Even Cowgirls Get the Blues (with Dolly Parton & Linda Ronstadt),1994,dbscan,0
@@ -3192,11 +3192,11 @@ Flema,Hombre Vicioso,1994,dbscan,0
 "Monika Načeva, Michal Pavlíček",Příteli,1994,dbscan,0
 Grup Yorum,Asker Kaçakları,1994,dbscan,0
 "Bukros Singers, Bingbing Bonoan Agullana",Abalayan,1994,dbscan,0
-"Chris Barber, Monty Sunshine",Petite Fleur,1994,dbscan,1
+"Chris Barber, Monty Sunshine",Petite Fleur,1994,dbscan,0
 Ecos del Rocio,La Gitana,1994,dbscan,0
 Ahmet Kaya,Kum Gibi,1994,dbscan,0
 Oliver Onions,Dune Buggy,1994,dbscan,0
-Oasis,Columbia - Remastered,1994,dbscan,-1
+Oasis,Columbia - Remastered,1994,dbscan,0
 Proletaryat,Przemijanie,1994,dbscan,0
 Nirvana,Lake Of Fire,1994,dbscan,0
 Leikhópurinn Kardemommubærinn,Kardemommuhátíð,1994,dbscan,0
@@ -3223,8 +3223,8 @@ Katy Garbi,Atofio Chrysafi,1994,dbscan,0
 Bebe & Cece Winans,Intro-Count It All Joy,1994,dbscan,0
 巫啟賢,那一段日子,1994,dbscan,0
 "A.R. Rahman, Unni Menon, K. S. Chithra, Mano",Veera Bobbili Kotalo,1994,dbscan,0
-R.E.M.,Tongue,1994,dbscan,1
-Alan Silvestri,Jenny Returns,1994,dbscan,1
+R.E.M.,Tongue,1994,dbscan,0
+Alan Silvestri,Jenny Returns,1994,dbscan,0
 Kid Abelha,Canário do reino (feat. esp. Lulu Santos) - Acústico,1994,dbscan,0
 Banda Pequeños Musical,"Eso no, no, no",1994,dbscan,0
 Karel Gott,Einmal um die ganze Welt,1994,dbscan,0
@@ -3245,7 +3245,7 @@ C.S.I.,Lieve,1994,dbscan,0
 Keith Sweat,When I Give My Love,1994,dbscan,0
 Omen,Ne a Pénz …,1994,dbscan,0
 Cidade Negra,Casa,1994,dbscan,0
-"Johann Pachelbel, Stuttgart Chamber Orchestra, Bernhard Güller","Canon and Gigue in D Major, P. 37: I. Canon",1994,dbscan,1
+"Johann Pachelbel, Stuttgart Chamber Orchestra, Bernhard Güller","Canon and Gigue in D Major, P. 37: I. Canon",1994,dbscan,0
 Mustafa Sandal,Beni Ağlatma,1994,dbscan,0
 "Ýmsir leikarar, Ýmsir",Marteinn mætir refnum,1994,dbscan,0
 Wu Bai,背叛,1994,dbscan,0
@@ -3288,7 +3288,7 @@ Emmylou Harris,Goodbye,1995,dbscan,0
 Jason Wang,酒中月,1995,dbscan,0
 Los Tucanes De Tijuana,El Cartel de a Kilo,1995,dbscan,0
 Ahmet Kaya,Sen Yanma Diye (İlahi),1995,dbscan,0
-Marilyn Manson,Sweet Dreams (Are Made Of This),1995,dbscan,-1
+Marilyn Manson,Sweet Dreams (Are Made Of This),1995,dbscan,0
 Eric Clapton,Knockin' On Heaven's Door,1995,dbscan,0
 The Screaming Jets,Sad Song,1995,dbscan,0
 Kristina Orbakaitė,Каждый день с тобой,1995,dbscan,0
@@ -3303,7 +3303,7 @@ Los Tigres Del Norte,Te He De Olvidar,1995,dbscan,0
 Eraserheads,Kamasupra,1995,dbscan,0
 Zezé Di Camargo & Luciano,"Liberdade, Liberdade",1995,dbscan,0
 Die drei ???,063 - Fußballgangster - Teil 03,1995,dbscan,0
-9 Lazy 9,Electric Lazyland,1995,dbscan,-1
+9 Lazy 9,Electric Lazyland,1995,dbscan,0
 Globi,S' gaat wiiter mit De Fallschirm als Sprungtuech,1995,dbscan,-1
 Bruce Springsteen,Hungry Heart,1995,dbscan,0
 "Franco Chillemi, Piero Chiambretti, Roberto Stafoggia","Mio, Mio, Mio",1995,dbscan,0
@@ -3344,7 +3344,7 @@ WHYNOT,"What A Wonderful ""某""",1995,dbscan,0
 Blind Melon,Mouthful Of Cavities,1995,dbscan,0
 Stef Bos,Niet Van Deze Wereld,1995,dbscan,0
 Wolfsheim,The Sparrows And The Nightingales - Long Version,1995,dbscan,0
-Stan Whitmire,Sweet Hour Of Prayer/I Must Tell Jesus - Medley,1995,dbscan,1
+Stan Whitmire,Sweet Hour Of Prayer/I Must Tell Jesus - Medley,1995,dbscan,0
 Andre Hazes,Leven Op 'T Plein,1995,dbscan,0
 Wakin Chau,沿途有你,1995,dbscan,0
 Cher,One by One,1995,dbscan,0
@@ -3398,7 +3398,7 @@ The Manhattans,I'll Never Find Another (Find Another Like You),1995,dbscan,0
 Globi,S' gaat wiiter mit Grossi Wösch z' Lugano,1995,dbscan,-1
 "Pamela Chopra, Manpreet Kaur",Ghar Aaja Pardesi,1995,dbscan,0
 Die drei ???,061 - und die Rache des Tigers - Teil 19,1995,dbscan,-1
-Terje Rypdal,If Mountains Could Sing,1995,dbscan,1
+Terje Rypdal,If Mountains Could Sing,1995,dbscan,0
 Los Planetas,Si Esta Bien,1995,dbscan,0
 Alisha Chinai,Akeli Mein Aayi,1995,dbscan,-1
 Jeki Mekayten,את לי כחלום,1995,dbscan,0
@@ -3431,7 +3431,7 @@ Nana Caymmi,De Volta Pro Meu Aconchego / Faltando Um Pedaço,1995,dbscan,0
 Pulp,Bar Italia,1995,dbscan,0
 Diana,Canção dos Namorados (El Vale de las Mariposas),1995,dbscan,0
 Flash and the Pan,Early Morning Wake Up Call,1995,dbscan,0
-Mijares,Cuatro Veces Amor - En Vivo,1995,dbscan,-1
+Mijares,Cuatro Veces Amor - En Vivo,1995,dbscan,0
 "Hana Zagorová, Stanislav Hložek, Petr Kotvald, Orchestr Karla Vágnera",Jinak To Nejde,1995,dbscan,0
 Studio Buffo,Tylko W Moich Snach,1995,dbscan,0
 Diomedes y El Grupo Mio,Esto Se Encendió,1995,dbscan,0
@@ -3485,7 +3485,7 @@ Rod Stewart,For the First Time,1996,dbscan,0
 Nacka Skoglund,Vi hänger me',1996,dbscan,0
 Amerika'n Sound,Una Copita Más,1996,dbscan,0
 Mani Matter,ds Nünitram,1996,dbscan,0
-Tripes,Tha Anatello,1996,dbscan,-1
+Tripes,Tha Anatello,1996,dbscan,0
 Elephant Kashimashi,悲しみの果て,1996,dbscan,0
 Soda Stereo,Un Misil En Mi Placard - MTV Unplugged,1996,dbscan,0
 Café Tacvba,Perfidia,1996,dbscan,-1
@@ -3495,7 +3495,7 @@ Kör ur Täby musikklasser,Nu grönskar det,1996,dbscan,0
 "Jaroslav Samson Lenk, Maci",Na Konečné,1996,dbscan,0
 Grupo Brumas,Heriste Mi Corazón,1996,dbscan,0
 Junior Klan,Que Risa Me Da,1996,dbscan,0
-Grazhdanskaya Oborona,Победа,1996,dbscan,-1
+Grazhdanskaya Oborona,Победа,1996,dbscan,0
 Johnny Madsen,Johnny The Blues,1996,dbscan,0
 I.P.C.C.,Nyakallang,1996,dbscan,0
 Psyched Up Janis,Vanity,1996,dbscan,0
@@ -3516,7 +3516,7 @@ Guisela Santa Cruz,Misterios del Corazón,1996,dbscan,0
 Ultra Bra,Kahdeksanvuotiaana,1996,dbscan,0
 Axelle Red,Rester femme,1996,dbscan,0
 Silvio Rodríguez,El Viento Eres Tú,1996,dbscan,-1
-Guttermouth,Whiskey,1996,dbscan,-1
+Guttermouth,Whiskey,1996,dbscan,0
 "Babyface, Kenny G",Every Time I Close My Eyes (with Kenny G),1996,dbscan,0
 Agrupacion Mi Casa y Yo,Que Bueno Es el Señor,1996,dbscan,0
 Junior Brown,Surf Medley,1996,dbscan,-1
@@ -3527,7 +3527,7 @@ La Bouche,Sweet Dreams - Radio Version,1996,dbscan,0
 Ümit Besen,Islak Mendil,1996,dbscan,0
 Got Jakraphan,เทพธิดาผ้าซิ่น,1996,dbscan,0
 Édith Piaf,Chante moi - Version anglaise,1996,dbscan,0
-"Franz Schubert, Mischa Maisky, Daria Hovora","Du bist die Ruh, Op. 59/3, D. 776",1996,dbscan,1
+"Franz Schubert, Mischa Maisky, Daria Hovora","Du bist die Ruh, Op. 59/3, D. 776",1996,dbscan,0
 Alfredo Zitarrosa,A Jose Artigas,1996,dbscan,0
 Jorge Véliz y Los Santiagueños de Oro,Dibujándote,1996,dbscan,0
 Delfins,Nao Vou Ficar,1996,dbscan,0
@@ -3558,7 +3558,7 @@ Marco Borsato,Maskers Af,1996,dbscan,0
 Hiperbolė,Himnas Žemei,1996,dbscan,0
 Kenan Doğulu,Ağla,1996,dbscan,0
 Imiskoubria,I Apolloneia Kormara - Mr. Sfihterman Mix,1996,dbscan,0
-Play School,Nursery Rhyme Medley,1996,dbscan,-1
+Play School,Nursery Rhyme Medley,1996,dbscan,0
 Soledad,Ah Mi Corrientes Pora,1996,dbscan,0
 Tom Petty and the Heartbreakers,Angel Dream (No. 4),1996,dbscan,0
 Lal Chand Yamla Jatt,Das Main Ki Pyar Wichon Khatyal,1996,dbscan,0
@@ -3593,13 +3593,13 @@ Nautilus Pompilius,Хлоп-хлоп,1996,dbscan,0
 Korn,Porno Creep,1996,dbscan,0
 Carlos Do Carmo,Manhã,1996,dbscan,0
 N-Trance,Electronic Pleasure,1996,dbscan,0
-Altamiro Carrilho,Bem-Te-Vi Tristonho,1996,dbscan,1
+Altamiro Carrilho,Bem-Te-Vi Tristonho,1996,dbscan,0
 Tri Yann,La jument de Michao - Live,1996,dbscan,0
 Yin Carrizo Y Su Conjunto Viva Panama,Soy Como Soy,1996,dbscan,0
 Amerika'n Sound,Cumbia,1996,dbscan,0
 "Alabina, Los Niños De Sara",Rona,1996,dbscan,0
 Counting Crows,A Long December,1996,dbscan,0
-Bruce Broughton,In the Park - Score Version,1996,dbscan,1
+Bruce Broughton,In the Park - Score Version,1996,dbscan,0
 E!E,Hovno,1996,dbscan,0
 Aviv Geffen,יותר מידי,1996,dbscan,-1
 "S. P. Balasubrahmanyam, K. S. Chithra",Alolam Kili Thopilae,1996,dbscan,0
@@ -3640,7 +3640,7 @@ Schürzenjäger,Der Jodelautomat (Japaner),1996,dbscan,0
 IVAN CRUZ,Ficha Marcada,1996,dbscan,0
 Cassiane,Entregue Tudo a Deus,1996,dbscan,0
 Spice Girls,Who Do You Think You Are,1996,dbscan,0
-Farid Hardja,Ini Rindu,1996,dbscan,-1
+Farid Hardja,Ini Rindu,1996,dbscan,0
 Dennys Del Rio,El Pajarillo,1996,dbscan,0
 Ales Brichta,V Uniformě Lokaje,1996,dbscan,0
 Marcos Vidal,No Te Quepa Duda,1996,dbscan,0
@@ -3651,7 +3651,7 @@ Luis Miguel,Que Tú Te Vas,1996,dbscan,0
 Ümit Besen,Posta Kutusu,1996,dbscan,0
 Zezé Di Camargo & Luciano,"Brigue Comigo, Mas Não Vá",1996,dbscan,0
 "Skank, Manu Chao",Los Pretos (feat. Manu Chao),1996,dbscan,0
-"Neffa, Kaos One",I Fieri B-Boyz,1996,dbscan,-1
+"Neffa, Kaos One",I Fieri B-Boyz,1996,dbscan,0
 DJ Spooky,Galactic Funk,1996,dbscan,0
 Laura Pausini,Il mondo che vorrei,1996,dbscan,0
 Madeleine Peyroux,Lovesick Blues,1996,dbscan,0
@@ -3695,7 +3695,7 @@ La Portuaria,El Bar De La Calle Rodney,1997,dbscan,0
 Alípio Martins,Onde andará você,1997,dbscan,0
 Puff Johnson,Come Closer,1997,dbscan,0
 Mariah Carey,Babydoll,1997,dbscan,0
-Taeko Onuki,Happy-Go-Lucky,1997,dbscan,-1
+Taeko Onuki,Happy-Go-Lucky,1997,dbscan,0
 Los inquietos del vallenato,Ahora Que Te Vas,1997,dbscan,0
 Dato' Sri Siti Nurhaliza,Sri Mersing,1997,dbscan,0
 Johnny Madsen,En Nat På Jorden,1997,dbscan,0
@@ -3743,7 +3743,7 @@ Old & In The Way,Wild Horses,1997,dbscan,0
 Budka Suflera,Radio taxi,1997,dbscan,0
 Pentagram,Give Me Something to Kill the Pain,1997,dbscan,0
 Aerosmith,Pink,1997,dbscan,0
-Heavy D,Big Daddy,1997,dbscan,-1
+Heavy D,Big Daddy,1997,dbscan,0
 Ashley,Todita Tuya,1997,dbscan,0
 Svanhildur Jakobsdóttir,Litlu andarungarnir,1997,dbscan,0
 Molotov,¿Por Qué No Te Haces Para Alla?.. Al Mas Alla,1997,dbscan,0
@@ -3759,7 +3759,7 @@ Ronnie van Bemmel,Ik Ben Blij Dat Ik Je Niet Vergeten Ben,1997,dbscan,0
 Black Box,Fall into My Love,1997,dbscan,0
 THE YELLOW MONKEY,LOVE LOVE SHOW,1997,dbscan,0
 K-Ci & JoJo,How Could You,1997,dbscan,0
-Elliott Smith,Angeles - Remastered 2017,1997,dbscan,-1
+Elliott Smith,Angeles - Remastered 2017,1997,dbscan,0
 Legião Urbana,Clarisse,1997,dbscan,0
 Marco Antonio Solís,Ya Aprenderas,1997,dbscan,0
 Nilüfer,Unut Gitsin,1997,dbscan,0
@@ -3781,7 +3781,7 @@ Los del bohio,Cantandio A La Gilada,1997,dbscan,0
 Ajit Kadkade,Om Shri Gurdev Datt,1997,dbscan,0
 Huang Yee Ling,無人知影,1997,dbscan,0
 Lara Fabian,Tout,1997,dbscan,0
-"Ludwig van Beethoven, Nicolaus Esterhazy Sinfonia, Béla Drahos","Symphony No. 7 in A Major, Op. 92: III. Presto",1997,dbscan,1
+"Ludwig van Beethoven, Nicolaus Esterhazy Sinfonia, Béla Drahos","Symphony No. 7 in A Major, Op. 92: III. Presto",1997,dbscan,0
 Pedro Suárez-Vértiz,Me Siento Mejor,1997,dbscan,0
 "Wyclef Jean, Refugee All Stars",Guantanamera (feat. Refugee All Stars),1997,dbscan,0
 Katy Garbi,Asymfonia Charaktiron,1997,dbscan,0
@@ -3867,7 +3867,7 @@ Born Jamericans,Send My Love / Send One Your Love,1997,dbscan,0
 Bhai Surinder Singh Ji Jodhpuri,Har Jiyo Tu Nimanian Tu Maan,1997,dbscan,0
 "David Tomlinson, Dick Van Dyke, The Londoners",Let's Go Fly a Kite,1997,dbscan,0
 "Nuyorican Soul, Jocelyn Brown","It's Alright, I Feel It",1997,dbscan,0
-Farid Farjad,Pari Kojaee,1997,dbscan,1
+Farid Farjad,Pari Kojaee,1997,dbscan,0
 八草楽団,平成狸合戦メインテーマ「元気節」(平成狸合戦ぽんぽこ),1997,dbscan,-1
 Las Carlotas,Esta Niña Viene Tarde,1997,dbscan,0
 "Alejandro Fernández, Gloria Estefan",En el Jardín,1997,dbscan,0
@@ -3881,7 +3881,7 @@ Die drei ???,076 - Stimmen aus dem Nichts - Teil 10,1997,dbscan,0
 鄭茜尹,夢中等待你,1997,dbscan,0
 "El Soldado, Sergio Dawi",Balada para un Hombre Buscado,1997,dbscan,0
 "JAY-Z, Babyface, Foxy Brown",Always Be My Sunshine,1997,dbscan,0
-Channel Zero,Black Fuel,1997,dbscan,-1
+Channel Zero,Black Fuel,1997,dbscan,0
 Bondy Chiu,每隔兩秒,1997,dbscan,0
 Scorpions,Walking On The Edge,1997,dbscan,0
 Mansur Ark,Doyamıyorum,1997,dbscan,0
@@ -3949,7 +3949,7 @@ Sergey Nagovitsyn,Озоновый слой,1998,dbscan,0
 Malk De Koijn,Ørkenstorm I Aberdeen - Radio Version,1998,dbscan,0
 "Vico C, Giovanni Hidalgo",Explosion AKA X-Plosion,1998,dbscan,0
 "Neffa, Al Castellana",Vento Freddo,1998,dbscan,0
-John Fahey,Sunflower River Blues - Re-Recorded Version,1998,dbscan,1
+John Fahey,Sunflower River Blues - Re-Recorded Version,1998,dbscan,0
 The Temptations,This Is My Promise,1998,dbscan,0
 Artie Shaw,Begin the Beguine,1998,dbscan,-1
 Leehom Wang,公轉自轉,1998,dbscan,0
@@ -4022,7 +4022,7 @@ Antonis Remos,Etsi Xafnika,1998,dbscan,0
 Enrique Iglesias,Dicen Por Ahi,1998,dbscan,0
 Axelle Red,Dejame Ser Mujer,1998,dbscan,0
 Natiruts,Deixa O Menino Jogar,1998,dbscan,0
-Alejandro Fernández,Un Mundo Raro,1998,dbscan,-1
+Alejandro Fernández,Un Mundo Raro,1998,dbscan,0
 Luther Vandross,Religion,1998,dbscan,0
 "Kurupt, Tray Dee, Slip Capone",C-Walk,1998,dbscan,0
 Banda Sinaloense MM,El Niño Perdido,1998,dbscan,0
@@ -4055,7 +4055,7 @@ Canticuentos,Ronda de las Vocales,1998,dbscan,0
 Beyond,霧,1998,dbscan,0
 P.O.P,รักของเธอมีจริงหรือเปล่า,1998,dbscan,0
 Glykeria,Hathikame,1998,dbscan,0
-"Wolfgang Amadeus Mozart, Lagana Ruggero","La bataille, K. 535 (Arr. for Piano)",1998,dbscan,1
+"Wolfgang Amadeus Mozart, Lagana Ruggero","La bataille, K. 535 (Arr. for Piano)",1998,dbscan,0
 Klapa Maslina,Da Te Mogu Pismom Zvati,1998,dbscan,0
 "Boyzone, Rude Boy, Andy Bradfield",All That I Need - Edit,1998,dbscan,0
 "Mark Van Dale, Enrico, DJ Quicksilver",Water Verve - DJ Quicksilver Radio Edit,1998,dbscan,0
@@ -4068,7 +4068,7 @@ Parousia,Historia De Amor,1998,dbscan,0
 Peyote Asesino,El Peyote Asesino,1998,dbscan,0
 SEATBELTS,Felt Tip Pen,1998,dbscan,-1
 "Fred Hammond, Radical For Christ",Glory To Glory To Glory,1998,dbscan,0
-Lars Gullin,Ma,1998,dbscan,1
+Lars Gullin,Ma,1998,dbscan,0
 Opeth,Credence,1998,dbscan,0
 Pepe Aguilar,Este Terco Corazón,1998,dbscan,0
 Redman,I'll Bee Dat,1998,dbscan,0
@@ -4104,7 +4104,7 @@ Galy Galiano,Quien Entiende Este Amor,1998,dbscan,0
 Liquido,Narcotic - Long Version,1998,dbscan,0
 Willy Crook,Best Dress,1998,dbscan,0
 Sandy & Papo,La Hora de Bailar,1998,dbscan,0
-Juan Gabriel,Amor Eterno,1998,dbscan,-1
+Juan Gabriel,Amor Eterno,1998,dbscan,0
 Enrique Urquijo y Los problemas,Desde que no nos vemos,1998,dbscan,0
 Got Jakraphan,ใต้ร่มมลุลี,1998,dbscan,0
 Johnny Rivers,Secret Agent Man,1998,dbscan,-1
@@ -4182,7 +4182,7 @@ Tribo De Jah,Azul da cor do mar - Ao vivo,1999,dbscan,0
 João Nogueira,Boteco do Arlindo,1999,dbscan,0
 Aleksandr Galich,Kogda ja vernus',1999,dbscan,-1
 Power Station,愛情鋼索,1999,dbscan,0
-William Ross,Will Grows Up,1999,dbscan,1
+William Ross,Will Grows Up,1999,dbscan,0
 Mr. Pookie,Crook for Life,1999,dbscan,0
 Los Santos Dumont,Ayer,1999,dbscan,0
 Banda Cuisillos,Hasta La Eternidad,1999,dbscan,0
@@ -4272,7 +4272,7 @@ Albert Hammond,Everything I Want To Do,1999,dbscan,0
 Toni Dimitrova,"Как си, Тони?",1999,dbscan,0
 Jorge Oñate,El Alto Del Rosario,1999,dbscan,0
 South Park Mexican,High so High,1999,dbscan,0
-Loreena McKennitt,Dante's Prayer,1999,dbscan,-1
+Loreena McKennitt,Dante's Prayer,1999,dbscan,0
 Disney - Der König der Löwen,Kapitel 06: Der König der Löwen 2 - Simbas Königreich,1999,dbscan,-1
 Bang Gang,So Alone,1999,dbscan,-1
 Notis Sfakianakis,Ti Tou Les Ke Ti Sou Lei - Live,1999,dbscan,0
@@ -4288,7 +4288,7 @@ Lootpack,Whenimondamic,1999,dbscan,0
 "Freundeskreis, Joy Denalane",Mit dir (feat. Joy Denalane) - FK Radio Edit,1999,dbscan,0
 Markoolio,Sola och bada i Pina Colada,1999,dbscan,0
 Eddy Mitchell,Alice,1999,dbscan,0
-"Pelle Politibil, Steinar Toftesund, Lennart Mårli",Pelle Politibil - 1,1999,dbscan,-1
+"Pelle Politibil, Steinar Toftesund, Lennart Mårli",Pelle Politibil - 1,1999,dbscan,0
 "Abhijeet, Alka Yagnik",Hum To Deewane Huye,1999,dbscan,0
 Grupo Tentacion,Basura Y Lodo,1999,dbscan,0
 Müslüm Gürses,Bakma Bana Öyle,1999,dbscan,0
@@ -4365,7 +4365,7 @@ Mary Beth Maziarz,Daydream Believer,2000,dbscan,0
 Liviu Vasilica,Mult Mi-E Gheorghe Băutor,2000,dbscan,0
 Zemfira,Искала,2000,dbscan,0
 Leningrad,Когда нет денег,2000,dbscan,0
-Elena Kuschnerova,Scriabin - 24 Preludes Op.11 No.22,2000,dbscan,1
+Elena Kuschnerova,Scriabin - 24 Preludes Op.11 No.22,2000,dbscan,0
 Die drei ???,089 - Tödliche Spur - Teil 33,2000,dbscan,0
 Republic,A 67-es út,2000,dbscan,0
 "Ethnix, Rita",אגדת השמש והירח,2000,dbscan,0
@@ -4386,8 +4386,8 @@ Amr Diab,We Heya Amla Eh,2000,dbscan,0
 サザンオールスターズ,LOVE AFFAIR~秘密のデート,2000,dbscan,0
 Nelly,St. Louie,2000,dbscan,0
 Čechomor,Slunecko,2000,dbscan,0
-Fintelligens,Kellareiden kasvatit,2000,dbscan,-1
-Lulu Santos,Sereia / De Repente Califórnia / Como uma Onda (Zen Surfismo),2000,dbscan,-1
+Fintelligens,Kellareiden kasvatit,2000,dbscan,0
+Lulu Santos,Sereia / De Repente Califórnia / Como uma Onda (Zen Surfismo),2000,dbscan,0
 Francisco Céspedes,Dónde está la vida,2000,dbscan,0
 Shotei Hanevuah,אין אני,2000,dbscan,0
 Benjamin Dube,Bless The Lord,2000,dbscan,0
@@ -4432,7 +4432,7 @@ Cornelia Catanga,Aș Da Zile De La Mine,2000,dbscan,0
 Chikano Uruguay,Cariñito,2000,dbscan,0
 Darude,Sandstorm,2000,dbscan,0
 El Coyote Y Su Banda Tierra Santa,El Cachanilla,2000,dbscan,0
-Chet Atkins,Guitars On Parade - Buddha Remastered - 2000,2000,dbscan,-1
+Chet Atkins,Guitars On Parade - Buddha Remastered - 2000,2000,dbscan,0
 DALI,ムーンライト伝説,2000,dbscan,0
 Republic,Ne meneküljek,2000,dbscan,0
 Esat Kabaklı,Bil Oğlum,2000,dbscan,0
@@ -4441,11 +4441,11 @@ Samudera,Sudah Takdir Begitu,2000,dbscan,0
 "Memphis Bleek, JAY-Z, Missy Elliott, Twista",Is That Your Chick (The Lost Verses),2000,dbscan,0
 Yavuz Bingöl,Sele Verseydim,2000,dbscan,0
 Joe,I Wanna Know,2000,dbscan,0
-"Erik Satie, Claude Debussy, Orchestre Symphonique et Lyrique de Nancy, Jerome Kaltenbach",3 Gymnopedies (orch. Debussy): No. 1: Lent et douloureux (orch. Debussy),2000,dbscan,1
+"Erik Satie, Claude Debussy, Orchestre Symphonique et Lyrique de Nancy, Jerome Kaltenbach",3 Gymnopedies (orch. Debussy): No. 1: Lent et douloureux (orch. Debussy),2000,dbscan,0
 P.I.F.,Prikazka,2000,dbscan,0
 The Style Council,Shout To The Top,2000,dbscan,0
 "хор ""Бодра смяна""",Снежният човек,2000,dbscan,0
-kent,En helt ny karriär II,2000,dbscan,-1
+kent,En helt ny karriär II,2000,dbscan,0
 Barcode Brothers,It's A Fine Day,2000,dbscan,0
 Xuxa,Batatinha Bem Quentinha,2000,dbscan,0
 Inspiraciòn,Joel 2:16-19,2000,dbscan,0
@@ -4469,7 +4469,7 @@ Mayday,雨眠,2000,dbscan,0
 Ratones Paranoicos,Rock del Pedazo,2000,dbscan,0
 Buttercup,Endalausar nætur,2000,dbscan,0
 "Nurit Hirsh, Dalik Wollinitz, Sharon Shahal",חתול קטן וג'ינג'י,2000,dbscan,0
-Groove Armada,At the River,2000,dbscan,-1
+Groove Armada,At the River,2000,dbscan,0
 Norman Blake,You Are My Sunshine,2000,dbscan,0
 Eminem,Drug Ballad,2000,dbscan,0
 "Dan Zanes, Friends, Donald Saaf, The Rocket Ship Singers",Bushel And A Peck,2000,dbscan,0
@@ -4492,12 +4492,12 @@ Shakira,Si Te Vas - En Vivo,2000,dbscan,0
 K. Veeramani,Pallikkattu Sabarimalaikku - Revival,2000,dbscan,0
 Gunilla Bergström,Hokus-Pokus,2000,dbscan,0
 Desi Slava,Goreshti strasti,2000,dbscan,0
-"Ennio Morricone, Accademia Musicale Italiana",Malena,2000,dbscan,1
+"Ennio Morricone, Accademia Musicale Italiana",Malena,2000,dbscan,0
 Grupo Yoga,Pensando en Ti,2000,dbscan,0
 Johnny Cash,I See A Darkness,2000,dbscan,0
 Fintelligens,7 Veljestä,2000,dbscan,0
 Jurassic 5,Concrete & Clay,2000,dbscan,0
-Fred Mollin,Baby Mine,2000,dbscan,1
+Fred Mollin,Baby Mine,2000,dbscan,0
 "Elba Ramalho, Zé Ramalho, Geraldo Azevedo",Caravana - Ao Vivo,2000,dbscan,0
 JUSTYNA I PIOTR,TY I JA /CI SARA,2000,dbscan,0
 Fred Bongusto,"Spaghetti, pollo, insalatina e una tazzina di caffè",2000,dbscan,0
@@ -4558,7 +4558,7 @@ Mirage,Музыка нас связала,2000,dbscan,0
 Ricky Nelson,A Teenager's Romance,2000,dbscan,0
 VIA Gra,Попытка № 5,2001,dbscan,0
 La Ley,Fuera de mí,2001,dbscan,0
-Ludovico Einaudi,In Un'Altra Vita,2001,dbscan,1
+Ludovico Einaudi,In Un'Altra Vita,2001,dbscan,0
 Efrat Ben Zur,צוללת,2001,dbscan,0
 Lisa Nilsson,Säg det igen,2001,dbscan,0
 Joan Sebastian,Sangoloteadito,2001,dbscan,0
@@ -4571,8 +4571,8 @@ Padi,Bayangkanlah,2001,dbscan,0
 Rammstein,Rein raus,2001,dbscan,0
 Ventania,Marasmo,2001,dbscan,0
 Lou-Kass,Hipnotizados,2001,dbscan,0
-Ludovico Einaudi,I Giorni,2001,dbscan,1
-2002,Summer of 300 Years,2001,dbscan,1
+Ludovico Einaudi,I Giorni,2001,dbscan,0
+2002,Summer of 300 Years,2001,dbscan,0
 Alejandro Sanz,Lo que fui es lo que soy - Unplugged,2001,dbscan,0
 Hampenberg,Ducktoy - Short Cut,2001,dbscan,0
 Leevi and the leavings,Ihanasti sanottu,2001,dbscan,0
@@ -4608,7 +4608,7 @@ Ivy姐姐,打開蚊帳,2001,dbscan,0
 "Nathan Lane, Ernie Sabella, Jason Weaver, Joseph Williams","Hakuna Matata - From ""The Lion King""/Soundtrack",2001,dbscan,0
 İbrahim Tatlıses,Namerd Olayım,2001,dbscan,0
 Hellbillies,Ho eg vilde ha,2001,dbscan,0
-Yiruma,May Be,2001,dbscan,1
+Yiruma,May Be,2001,dbscan,0
 S Club 7,Have You Ever,2001,dbscan,0
 Rómulo Caicedo,Clavelitos,2001,dbscan,0
 Joe Hisaishi,仕事はつらいぜ,2001,dbscan,-1
@@ -4619,7 +4619,7 @@ TOOL,Eon Blue Apocalypse,2001,dbscan,-1
 "Don Moen, Integrity's Hosanna! Music",I Will Sing - Live,2001,dbscan,0
 "Shaan, Kavita Krishnamurthy",Woh Ladki Hai Kahan,2001,dbscan,0
 Bonde do Tigrão,Cerol Na Mão/Entra E Sai,2001,dbscan,0
-Joe Hisaishi,Reprise,2001,dbscan,1
+Joe Hisaishi,Reprise,2001,dbscan,0
 "Lavrentis Machairitsas, Pediki Horodia Spirou Labrou",Teratakia Tsepis,2001,dbscan,0
 Leona Machálková,Svět Je Plnej Bláznů,2001,dbscan,0
 Maya Kristalinskaya,Nezhnost',2001,dbscan,0
@@ -4655,7 +4655,7 @@ Bruno Martino,E la chiamano estate,2001,dbscan,0
 Ulfuls,まかせなさい,2001,dbscan,0
 Zouzounia,Lyke Lyke Eisai Edo,2001,dbscan,0
 Pokémon,Pokémon Johto,2001,dbscan,0
-Yiruma,I,2001,dbscan,1
+Yiruma,I,2001,dbscan,0
 Strollad,St Malo,2001,dbscan,0
 Kabelo,Amasheleni,2001,dbscan,0
 Mnogotochie,Жизнь и свобода,2001,dbscan,0
@@ -4755,7 +4755,7 @@ Fear Factory,Linchpin,2001,dbscan,0
 Pepe Aguilar,Salado,2001,dbscan,0
 Jonas Gwangwa,Diphororo,2001,dbscan,0
 Diyar,Rındıka Dersimi,2001,dbscan,0
-Dancing Mood,20 Minutes To Go,2001,dbscan,-1
+Dancing Mood,20 Minutes To Go,2001,dbscan,0
 杜麗莎,假如(II),2001,dbscan,-1
 "Mariah Carey, Whitney Houston","When You Believe (from ""The Prince of Egypt"")",2001,dbscan,0
 Fragma,Toca Me,2001,dbscan,0
@@ -4772,10 +4772,10 @@ Domenico Modugno,Meraviglioso,2001,dbscan,0
 Adriano Celentano,Una Carezza In Un Pugno,2001,dbscan,0
 Soda Stereo,Corazón Delator,2001,dbscan,0
 Bill Xtillidiex Muir,Otherworld,2001,dbscan,0
-Joe Hisaishi,The Sixth Station,2001,dbscan,1
+Joe Hisaishi,The Sixth Station,2001,dbscan,0
 Johnny Cash,Flesh and Blood,2002,dbscan,0
 Przemyslaw Gintrowski,A my nie chcemy uciekać stąd,2002,dbscan,0
-Extremoduro,Stand By,2002,dbscan,-1
+Extremoduro,Stand By,2002,dbscan,0
 "Udit Narayan, Pamela Jain",Dil Leke,2002,dbscan,0
 The Countdown Kids,Jack and Jill,2002,dbscan,0
 Eddie Vedder,You've Got to Hide Your Love Away,2002,dbscan,0
@@ -4819,7 +4819,7 @@ Cengiz Kurtoğlu,Gelin,2002,dbscan,0
 Siti Nordiana,Kasihmu Seakan Berubah,2002,dbscan,0
 Cidade Negra,Johny B. Goode (Johny B. Goode) [Acústico],2002,dbscan,0
 Partizan,Fata Mea,2002,dbscan,0
-Yiruma,On the Way 在途中,2002,dbscan,1
+Yiruma,On the Way 在途中,2002,dbscan,0
 "Sajid-Wajid, Roop Kumar Rathod, Sabri Brothers",Rooth Kar Hum,2002,dbscan,0
 Miles Davis,Blues for Pablo - Live at Montreux; 2015 Remaster,2002,dbscan,-1
 Chinito Del Ande,Puente de Ocoña,2002,dbscan,0
@@ -4854,7 +4854,7 @@ Der Junge Mit Der Gitarre,Hallo Worum Gehts Ich Bin Dagegen,2002,dbscan,0
 Die drei ???,105 - Der Nebelberg - Teil 31,2002,dbscan,0
 D12,Rap Game,2002,dbscan,0
 José Luis Rodríguez,Sueño Contigo,2002,dbscan,0
-Oscar Lopez,Classical Soul - Edit,2002,dbscan,-1
+Oscar Lopez,Classical Soul - Edit,2002,dbscan,0
 Quien,Es Tu Amor,2002,dbscan,0
 Pilot,Небо,2002,dbscan,0
 "Kruzzada, Hakim",Hayzkool Life,2002,dbscan,0
@@ -4890,7 +4890,7 @@ Butyrka,Баба Маша,2002,dbscan,0
 El Roockie,Sombras en la Noche,2002,dbscan,0
 Tripti Shakya,Khatu Wale Mere Shyam Baba,2002,dbscan,0
 Larbanois & Carrero,El Ñato García - En Vivo,2002,dbscan,0
-"Erik Satie, Jean-Yves Thibaudet",Gnossiennes: No. 4,2002,dbscan,1
+"Erik Satie, Jean-Yves Thibaudet",Gnossiennes: No. 4,2002,dbscan,0
 Where Chou,約定,2002,dbscan,0
 Divididos,Aburridos Peligrosos,2002,dbscan,0
 Qian Bai Hui,想你的时候,2002,dbscan,0
@@ -4937,7 +4937,7 @@ Ivanushki International,Безнадега точка ру,2002,dbscan,0
 "Busta Rhymes, Mariah Carey, Flipmode Squad",I Know What You Want (feat. Flipmode Squad),2002,dbscan,0
 Pito Perez,Lupita,2002,dbscan,0
 "Ivete Sangalo, Jorge Aragão",Loucuras De Uma Paixão - Ao Vivo,2002,dbscan,0
-"Eminem, Hailie Jade",My Dad's Gone Crazy,2002,dbscan,-1
+"Eminem, Hailie Jade",My Dad's Gone Crazy,2002,dbscan,0
 Ivan Kuchin,А на чёрных ресницах,2002,dbscan,0
 Kelly Rowland,Stole,2002,dbscan,0
 Jota Quest,Todas As Janelas,2002,dbscan,0
@@ -4947,7 +4947,7 @@ El Roockie,Tormenta,2002,dbscan,0
 Giannis Parios,To Louloudaki Tou Baxe,2002,dbscan,0
 Shankar Mahadevan,Niddura Potunna,2002,dbscan,0
 "Indochine, Melissa Auf der Maur",Le grand secret (feat. Melissa Auf der Maur),2002,dbscan,0
-Steve Anderson,"Suite Bergamasque, L. 75: III. Clair De Lune",2002,dbscan,1
+Steve Anderson,"Suite Bergamasque, L. 75: III. Clair De Lune",2002,dbscan,0
 Firdaus,Cinta Dan Harapan,2002,dbscan,0
 Unknown Artist,Reason (藍色生死戀),2002,dbscan,0
 Solistiyhtye Suomi,Miks ai aina voi olla lauantai,2002,dbscan,0
@@ -4955,7 +4955,7 @@ Hljómsveit Stefáns P.,Út í Elliðaey,2002,dbscan,0
 Sonu Nigam,Sab Kuchh Bhula Diya,2002,dbscan,0
 Norah Jones,Don't Know Why,2002,dbscan,0
 "Þrjú á palli, Sólskinskórinn",Kálfurinn á Kálfagilsá,2002,dbscan,0
-純音樂,抱抱 - Instrumental,2002,dbscan,1
+純音樂,抱抱 - Instrumental,2002,dbscan,0
 Silahsız Kuvvet,Saltanatın Hakimleri (feat. Ceza),2002,dbscan,0
 Panteon Rococo,Dime,2002,dbscan,0
 Maurette Brown Clark,Just Want to Praise You,2002,dbscan,0
@@ -4966,7 +4966,7 @@ Taking Back Sunday,Cute Without The 'E' (Cut From The Team) - Remastered,2002,db
 Yiannis Kotsiras,Tis Dikeosinis Ilie Noite - Live,2002,dbscan,0
 Kelly Chen,對你太在乎,2002,dbscan,0
 Zeal,จากตรงนี้,2002,dbscan,0
-aikamachi+nagie,gonna rain,2002,dbscan,1
+aikamachi+nagie,gonna rain,2002,dbscan,0
 The Chicks,Godspeed (Sweet Dreams),2002,dbscan,0
 Gem Boy,Holly e Benji,2002,dbscan,0
 Transplants,Tall Cans In The Air,2002,dbscan,0
@@ -4980,7 +4980,7 @@ Giorgia,Strano Il Mio Destino,2002,dbscan,0
 Piknik,А может быть и не было меня,2002,dbscan,0
 Zemfira,P,2002,dbscan,0
 Los Gigantes Del Vallenato,Me das y Me Quitas Todo,2002,dbscan,0
-2002,Lady of the Moon,2002,dbscan,1
+2002,Lady of the Moon,2002,dbscan,0
 RIP SLYME,花火,2002,dbscan,0
 Patrice,Sunshine - Radio Edit,2002,dbscan,0
 Chinito Del Ande,Cuando Yo Me Alejo,2002,dbscan,0
@@ -5043,7 +5043,7 @@ The Strokes,Automatic Stop,2003,dbscan,0
 Glukoza,Глюк оza nostra,2003,dbscan,0
 Kane,Rain Down on Me,2003,dbscan,0
 Sõpruse Puiestee,Mustale Merele,2003,dbscan,0
-Die drei ???,111 - und Die Höhle des Grauens - Teil 08,2003,dbscan,-1
+Die drei ???,111 - und Die Höhle des Grauens - Teil 08,2003,dbscan,0
 Samba De Raiz,Zé do Caroço - Ao Vivo,2003,dbscan,0
 Renato Zero,Magari - Remastered 2019,2003,dbscan,0
 JAY-Z,Dirt Off Your Shoulder,2003,dbscan,0
@@ -5148,7 +5148,7 @@ Llajtaymanta,Tinkus Huajchas,2003,dbscan,0
 Ha*Ash,Odio Amarte,2003,dbscan,0
 "Deva, Udit Narayan, Anuradha Sriram",Kannamma Kannamma,2003,dbscan,0
 Ina,Fall,2003,dbscan,0
-Sagopa Kajmer,Kör Savaşçı (feat. Mista Brown),2003,dbscan,-1
+Sagopa Kajmer,Kör Savaşçı (feat. Mista Brown),2003,dbscan,0
 Danny Mendoza,Ojos de Capuli,2003,dbscan,0
 Conni,Conni und der Osterhase - Teil 08,2003,dbscan,0
 Giorgos Lempesis,Marilyn Monroe,2003,dbscan,0
@@ -5223,7 +5223,7 @@ Everclear,Strawberry - Remastered,2004,dbscan,0
 Chevelle,Vitamin R (Leading Us Along),2004,dbscan,0
 Special D.,Come With Me - Radio Edit,2004,dbscan,0
 Güllü,Unuttum İşte,2004,dbscan,0
-Joe Hisaishi,The Flower Garden,2004,dbscan,1
+Joe Hisaishi,The Flower Garden,2004,dbscan,0
 Butyrka,Шарик,2004,dbscan,0
 Jay-Jay Johanson,Believe in Us,2004,dbscan,0
 Vanessa Amorosi,Have A Look,2004,dbscan,0
@@ -5239,7 +5239,7 @@ Sergio Vargas,Anoche Hablamos De Amor,2004,dbscan,0
 Zeynep Casalini,Duvar,2004,dbscan,0
 Snatam Kaur,By Thy Grace,2004,dbscan,0
 Candy Lo,三角誌,2004,dbscan,0
-Bamse,Sjörövarjul - Del.3,2004,dbscan,-1
+Bamse,Sjörövarjul - Del.3,2004,dbscan,0
 Special D.,You - Single Edit,2004,dbscan,0
 Pelo Madueño,Alma de 80's,2004,dbscan,0
 Arkadi Duchin,יש בי אהבה,2004,dbscan,0
@@ -5289,7 +5289,7 @@ Los Temerarios,Las Llaves de Mi Alma,2004,dbscan,0
 "Madhu Balakrishnan, Kalabhavan Mani",Kuttanadan,2004,dbscan,0
 Legião Urbana,Monte Castelo - Live,2004,dbscan,0
 林嘉欣,六樓后座,2004,dbscan,0
-Joe Hisaishi,消えない呪い,2004,dbscan,1
+Joe Hisaishi,消えない呪い,2004,dbscan,0
 Barış Akarsu,Mavi,2004,dbscan,0
 Luiza Possi,Over the Rainbow - Bonus Track,2004,dbscan,0
 Clara Nunes,Feira De Mangaio,2004,dbscan,0
@@ -5303,7 +5303,7 @@ Nikita,Ku B'rikan Syukurku,2004,dbscan,0
 Ryan Cabrera,True,2004,dbscan,0
 Raymond Lam,"心呼吸 - (劇集 ""天涯俠醫"" 主題曲)",2004,dbscan,0
 Nightwish,Planet Hell,2004,dbscan,0
-Silverwood Quartet,Vivaldi: Winter From The Four Seasons 1. Allegro Non Molto,2004,dbscan,1
+Silverwood Quartet,Vivaldi: Winter From The Four Seasons 1. Allegro Non Molto,2004,dbscan,0
 Juan Carlos Alfonso y su Dan Den,"Por teléfono, no - Remasterizado",2004,dbscan,0
 Bushido,Nie wieder,2004,dbscan,0
 Helena Eyjólfsdóttir,Hopsa bomm (Á skíðum skemmti ég mér),2004,dbscan,0
@@ -5336,7 +5336,7 @@ Momoe Yamaguchi,美・サイレント,2004,dbscan,0
 "Pezet, NOON",(To) Tylko Raz 01,2004,dbscan,0
 Moderndog,กันและกัน,2004,dbscan,0
 "S. P. Balasubrahmanyam, Radhika",Mirapakaya,2004,dbscan,0
-John Williams,Buckbeak's Flight,2004,dbscan,1
+John Williams,Buckbeak's Flight,2004,dbscan,0
 F.I.R.,你的微笑,2004,dbscan,0
 Nephew,USA DSB,2004,dbscan,0
 Daddy Yankee,Salud y Vida,2004,dbscan,0
@@ -5404,7 +5404,7 @@ Booba,Mon Son,2004,dbscan,0
 Dolphin,Серебро,2004,dbscan,0
 Glenn Fredly,Pada Satu Cinta,2004,dbscan,0
 "Nouvelle Vague, Camille",Guns of Brixton,2004,dbscan,0
-John Adams,Hallelujah Junction: 1st Movement,2004,dbscan,1
+John Adams,Hallelujah Junction: 1st Movement,2004,dbscan,0
 "Alka Yagnik, Shahid Kapoor, Blaise, Kareena Kapoor, Udit Narayan",Aaja Ve Mahi,2004,dbscan,0
 ศรัณย่า,รักเอย,2004,dbscan,0
 Sel,Nors Trumpam,2004,dbscan,0
@@ -5440,7 +5440,7 @@ Yalın,İstanbul Benden Büyük,2005,dbscan,0
 "Shaan, KK",Dus Bahane,2005,dbscan,0
 Endy Chow,漢城沉沒了,2005,dbscan,0
 Tanel Padar & The Sun,Welcome to Estonia,2005,dbscan,0
-"Frédéric Chopin, Maurizio Pollini","Nocturne No.2 In E Flat, Op.9 No.2",2005,dbscan,1
+"Frédéric Chopin, Maurizio Pollini","Nocturne No.2 In E Flat, Op.9 No.2",2005,dbscan,0
 Ivan Ferreiro,Abrázame,2005,dbscan,0
 紫薇,昨夜,2005,dbscan,0
 Nikos Makropoulos,Katastasi Ektaktou Anagkis - Live,2005,dbscan,0
@@ -5476,7 +5476,7 @@ Los Tigres Del Norte,Directo Al Corazón,2005,dbscan,0
 Opeth,Ghost of Perdition,2005,dbscan,0
 James Blunt,You're Beautiful,2005,dbscan,0
 Leikhópurinn Kalli á þakinu,Komdu niður,2005,dbscan,0
-Brad Mehldau,Alfie,2005,dbscan,1
+Brad Mehldau,Alfie,2005,dbscan,0
 Kolera,Aklımın Odaları,2005,dbscan,0
 Andrés Calamaro,Paloma - En directo 2005,2005,dbscan,0
 Mihai Margineanu,Trecea Un Țigan Săracu',2005,dbscan,0
@@ -5611,7 +5611,7 @@ Theory of a Deadman,Santa Monica,2005,dbscan,0
 Fujifabric,モノノケハカランダ,2005,dbscan,0
 The Tragically Hip,New Orleans Is Sinking,2005,dbscan,0
 Babasónicos,Puesto - [Blank],2005,dbscan,0
-"Dario Marianelli, English Chamber Orchestra, Benjamin Wallfisch","The Living Sculptures Of Pemberley - From ""Pride & Prejudice"" Soundtrack",2005,dbscan,1
+"Dario Marianelli, English Chamber Orchestra, Benjamin Wallfisch","The Living Sculptures Of Pemberley - From ""Pride & Prejudice"" Soundtrack",2005,dbscan,0
 kent,M,2005,dbscan,0
 Sugar Ray,Someday,2005,dbscan,0
 Banda El Recodo,Lo Mejor De Mi Vida,2005,dbscan,0
@@ -5625,7 +5625,7 @@ Cheer Chen,雨天的尾巴 - 滬尾小情歌,2005,dbscan,0
 Necrodeath,Hate and Scorn,2005,dbscan,0
 Ella Baila Sola,Por ti,2005,dbscan,0
 System Of A Down,Kill Rock 'n Roll,2005,dbscan,0
-Robert Gitelman,Children Of The Sun [ASOT 182] - Original Mix,2005,dbscan,-1
+Robert Gitelman,Children Of The Sun [ASOT 182] - Original Mix,2005,dbscan,0
 Editors,Munich,2005,dbscan,0
 Ninnilerle Rüyalar,Dandini Dastana,2005,dbscan,0
 Bodyslam,ชีวิตเป็นของเรา,2005,dbscan,0
@@ -5667,8 +5667,8 @@ Jenni Rivera,Ahora Que Estuviste Lejos,2006,dbscan,0
 Roberto Lugo,Jugando Con Mi Vida,2006,dbscan,0
 Keba,Pitash Za Men,2006,dbscan,0
 Diaframma,Siberia,2006,dbscan,0
-"Rei Harakami, Ikuko Harada",intro,2006,dbscan,1
-"Robert Schumann, Fujiko Hemming","Kinderszenen, Op. 15: トロイメライ",2006,dbscan,1
+"Rei Harakami, Ikuko Harada",intro,2006,dbscan,0
+"Robert Schumann, Fujiko Hemming","Kinderszenen, Op. 15: トロイメライ",2006,dbscan,0
 Placebo,Infra-Red,2006,dbscan,0
 Dusty Springfield,You Don't Have To Say You Love Me,2006,dbscan,0
 Incubus,Dig,2006,dbscan,0
@@ -5680,7 +5680,7 @@ Tanya Chua,夜盲症,2006,dbscan,0
 Peter Belli,Ingen Regning,2006,dbscan,0
 Karol Duchoň,Elena,2006,dbscan,0
 ayaka,I believe,2006,dbscan,0
-Giorgio Gaber,La libertà,2006,dbscan,-1
+Giorgio Gaber,La libertà,2006,dbscan,0
 "Kaptein Sabeltann, Terje Formoe",Du og jeg,2006,dbscan,0
 Jhonny Rivera,Soy Soltero,2006,dbscan,0
 Juluka,Impi,2006,dbscan,0
@@ -5773,7 +5773,7 @@ The Antarcticans,2000 Year Clearing Of All Peace,2006,dbscan,-1
 Agrupación Marilyn,2 de Abril,2006,dbscan,0
 Jimmy Bauer,Todas Tus Cosas,2006,dbscan,0
 R.E.M.,Cuyahoga - Remastered 2006,2006,dbscan,0
-Various Artists,Dziesma Pulkstens devinus jau zvana. (instrumental piece),2006,dbscan,1
+Various Artists,Dziesma Pulkstens devinus jau zvana. (instrumental piece),2006,dbscan,0
 "A.R. Rahman, Naresh Iyer, Siva Chidambaram",Kummi Adi,2006,dbscan,0
 Tumsa,Un pirms mēs aizmigām,2006,dbscan,0
 Tinariwen,Cler Achel,2006,dbscan,0
@@ -5809,7 +5809,7 @@ Los Hispanos,Cariñito,2006,dbscan,0
 Sevim Deran,Hatırla Sevgili,2006,dbscan,0
 "Mato Seco, Circuito Reggae",Salvação,2006,dbscan,0
 Wilfred Lau,眼緣,2006,dbscan,0
-The Piano God,Unie,2006,dbscan,1
+The Piano God,Unie,2006,dbscan,0
 PXNDX,Estoy Más Soloh Que Ayer Pero Menos Que Mañana,2006,dbscan,0
 Stuðmenn,Ofboðslega frægur,2006,dbscan,0
 Viola Valentino,Comprami,2006,dbscan,0
@@ -5888,7 +5888,7 @@ Keks,Tak Málo Žádám,2007,dbscan,0
 Los Piojos,Bicho de Ciudad,2007,dbscan,0
 Silereves,Hometimes Interlude,2007,dbscan,-1
 Mustafa Zahid,Toh Phir Aao - Remix,2007,dbscan,0
-Pannonia Allstars Ska Orchestra,A tenkes kapitánya,2007,dbscan,-1
+Pannonia Allstars Ska Orchestra,A tenkes kapitánya,2007,dbscan,0
 Jacky Cheung,在你身邊,2007,dbscan,0
 David Fonseca,"Kiss Me, Oh Kiss Me",2007,dbscan,0
 Jeito Moleque,Sem Radar,2007,dbscan,0
@@ -5899,7 +5899,7 @@ Vivian Hsu,狠狠愛,2007,dbscan,0
 Flex,Gritarle,2007,dbscan,0
 "Too Phat, V.E.",Just A Friend,2007,dbscan,0
 Krisdayanti,I'm Sorry Goodbye,2007,dbscan,0
-"Xavier Montsalvatge, Kim Kashkashian, Robert Levin",Canción de cuna para dormir un negrito,2007,dbscan,1
+"Xavier Montsalvatge, Kim Kashkashian, Robert Levin",Canción de cuna para dormir un negrito,2007,dbscan,0
 Sergio Vargas,Te Va A Doler,2007,dbscan,0
 Aventura,Alexandra / No Lo Perdona Dios / Amor Bonito / ¿cuándo Volverás? - Live,2007,dbscan,0
 Juan Luis Guerra 4.40,Sabia Manera,2007,dbscan,0
@@ -5939,7 +5939,7 @@ Pang Nakarin,คนมันไม่ใช่,2007,dbscan,0
 Kany Garcia,Qué Nos Pasó,2007,dbscan,0
 Yoni Bloch,אחריות,2007,dbscan,0
 Fondo Flamenco,Ojalá,2007,dbscan,0
-Devendra Banhart,Shabop Shalom,2007,dbscan,-1
+Devendra Banhart,Shabop Shalom,2007,dbscan,0
 Jay R,Bakit Pa Ba,2007,dbscan,0
 José Feliciano,La Carcel De Sing Sing,2007,dbscan,0
 Barry Manilow,I Write The Songs,2007,dbscan,0
@@ -5948,7 +5948,7 @@ Ungu,Apalah Arti Cinta,2007,dbscan,0
 Bunkface,High School Rocker,2007,dbscan,0
 Pablo Olivares,En La Cornisa,2007,dbscan,0
 Jeff Chang,讓我忘記你的臉,2007,dbscan,0
-Something For Kate,Electricity,2007,dbscan,-1
+Something For Kate,Electricity,2007,dbscan,0
 Kany Garcia,Estigma de Amor,2007,dbscan,0
 Kaija Koo,Valeria,2007,dbscan,0
 Paramore,That's What You Get,2007,dbscan,0
@@ -6043,12 +6043,12 @@ James Marsden,The Nicest Kids In Town,2007,dbscan,0
 Amber Kuo,誠實地想你,2007,dbscan,0
 Vytautas Kernagis,Geri vyrai (live),2007,dbscan,0
 Ikimonogakari,コイスルオトメ,2007,dbscan,0
-"Johann Sebastian Bach, Ton Koopman, Boys Choir Of Sacraments-Church Breda","Matthäus Passion, BWV 244: Choral, ""Was mein Gott will, das g'scheh allzeit""",2007,dbscan,1
+"Johann Sebastian Bach, Ton Koopman, Boys Choir Of Sacraments-Church Breda","Matthäus Passion, BWV 244: Choral, ""Was mein Gott will, das g'scheh allzeit""",2007,dbscan,0
 Miro Žbirka,Balada o poľných vtákoch,2007,dbscan,0
 Alison Krauss,"Down To The River To Pray - From “O Brother, Where Art Thou” Soundtrack",2007,dbscan,0
 Dschinghis Khan,Moskau,2007,dbscan,0
 Mr. Vegas,Hot Fuk (Album Version),2007,dbscan,0
-"Johann Sebastian Bach, Ton Koopman, Boys Choir Of Sacraments-Church Breda","Matthäus Passion, BWV 244: Choral, ""Erkenne mich, mein Hüte""",2007,dbscan,1
+"Johann Sebastian Bach, Ton Koopman, Boys Choir Of Sacraments-Church Breda","Matthäus Passion, BWV 244: Choral, ""Erkenne mich, mein Hüte""",2007,dbscan,0
 Milky,Just the Way You Are - Extended Mix,2007,dbscan,0
 Russell Hitchcock,Someone Who Believes in You,2007,dbscan,0
 Junichi Inagaki,夏のクラクション,2007,dbscan,0
@@ -6079,7 +6079,7 @@ Manuel Carrasco,¿Qué Nos Está Pasando?,2008,dbscan,0
 Onda Vaga,Mambeado,2008,dbscan,0
 "Darren Styles, Ultrabeat",Discolights - Darren Styles Vs. Ultrabeat,2008,dbscan,0
 Alborosie,Rastafari Anthem,2008,dbscan,0
-Parijat,Return to Your Body,2008,dbscan,1
+Parijat,Return to Your Body,2008,dbscan,0
 aiko,学校,2008,dbscan,0
 Rod Stewart,Sailing - 2008 Remaster,2008,dbscan,0
 Psy 4 De La Rime,Les Cités D'Or,2008,dbscan,0
@@ -6094,7 +6094,7 @@ Christos Kiriazis,Sto Imerovigli (Santorini),2008,dbscan,0
 Potap & Nastya,Почему?,2008,dbscan,0
 Vilhjálmur Vilhjálmsson,Ég labbaði í bæinn,2008,dbscan,0
 Dumbfoundead,K-Town Story,2008,dbscan,0
-John Powell,P.S. I Love You,2008,dbscan,1
+John Powell,P.S. I Love You,2008,dbscan,0
 Toni Storaro,Sedem Puti,2008,dbscan,0
 Dread Mar I,Nena,2008,dbscan,0
 Jill Barber,Be My Man,2008,dbscan,0
@@ -6165,7 +6165,7 @@ Agatha Christie,Моряк,2008,dbscan,0
 Doe Maar,Belle Helene,2008,dbscan,0
 Strapping Young Lad,All Hail The New Flesh,2008,dbscan,0
 Cliver y su Grupo Coralí,Amantes,2008,dbscan,0
-Nach,Nada Ni Nadie,2008,dbscan,-1
+Nach,Nada Ni Nadie,2008,dbscan,0
 Colbie Caillat,Realize,2008,dbscan,0
 Ruper Ordorika,Zaindu Maite Duzu Hori,2008,dbscan,0
 Mariya Takeuchi,今夜はHearty Party - シングル・ミックス,2008,dbscan,0
@@ -6187,7 +6187,7 @@ REY VALERA,Naalala Ka,2008,dbscan,0
 Kings of Leon,Closer,2008,dbscan,0
 El Tigrillo Palma,El Bazucazo,2008,dbscan,0
 "Pa Joe, Donne Robert, Alpha Yaya Diallo, Madagascar Slim, Mighty Popo, Kofi Ackah, Theo Yaa Boakye",Obaa Y Ewa,2008,dbscan,0
-Krovostok,Зимняя,2008,dbscan,-1
+Krovostok,Зимняя,2008,dbscan,0
 "Snoop Dogg, R. Kelly",That's That Shit,2008,dbscan,0
 Toby Keith,Whiskey Girl,2008,dbscan,0
 Marracash,La Danza Della Pioggia,2008,dbscan,0
@@ -6208,7 +6208,7 @@ G&G Sindikatas,Tiems Kas Rašo,2008,dbscan,0
 Richard Cepeda,Digan Lo Que Diga,2008,dbscan,0
 Taylor Swift,Untouchable,2008,dbscan,0
 Marracash,La Mia Prigione,2008,dbscan,0
-Petra Jurinová,O Jankovi a troch bosorienkach - 1. cast,2008,dbscan,-1
+Petra Jurinová,O Jankovi a troch bosorienkach - 1. cast,2008,dbscan,0
 "Azzido Da Bass, Timo Maas",Dooms Night - Timo Maas Radio Edit,2008,dbscan,0
 Eesti Raadio laululapsed,Üksteist peab hoidma,2008,dbscan,0
 Storm Weather Shanty Choir,Drunken Sailor,2008,dbscan,0
@@ -6216,7 +6216,7 @@ Sonora Kaliente De Jorge Amaral,Hoy La Vi Pasar,2008,dbscan,0
 Lenka,Trouble Is a Friend,2008,dbscan,0
 Tricarico,Vita tranquilla,2008,dbscan,0
 Disturbed,Inside the Fire,2008,dbscan,0
-Halldor Waren,Krummavisur (Krummi Svaf í Klettagja ),2008,dbscan,-1
+Halldor Waren,Krummavisur (Krummi Svaf í Klettagja ),2008,dbscan,0
 "Páll Óskar, Milljónamæringarnir",Cuanto Le Gusta,2008,dbscan,0
 Della,我愛上的,2008,dbscan,0
 Aizat Amdan,Lagu Kita,2008,dbscan,0
@@ -6288,7 +6288,7 @@ Páll Óskar,Jafnvel þó við þekkjumst ekki neitt,2008,dbscan,0
 Yasemin Mori,Aslında Bir Konu Var,2008,dbscan,0
 Gerry & The Pacemakers,Pretty Flamingo - Mono; 2008 Remaster,2008,dbscan,0
 Halldor Waren,Loan Er Komin,2008,dbscan,0
-Señor Loop,Onda Y Particula,2008,dbscan,-1
+Señor Loop,Onda Y Particula,2008,dbscan,0
 "Shaarib Toshi, Toshi Sabri",Maahi - Rock with Me,2008,dbscan,0
 "Kailash Kher, Paresh Kamath, Naresh Kamath",Saiyyan,2008,dbscan,0
 Basic Element,I'll Never Let You Know,2008,dbscan,0
@@ -6299,7 +6299,7 @@ Arleta,Ta Isiha Vradia - To Tragoudi Tis Erimou,2009,dbscan,0
 Funky,No Vuelvo Pa' Trás - Feat. Alex Campos,2009,dbscan,0
 "David Calzado y su Charanga Habanera, El Chacal",Gozando En Miami (with El Chacal),2009,dbscan,0
 "Damien Sargue, Joy Esther","Aimer - Roméo & Juliette, Les enfants de Vérone",2009,dbscan,0
-"Bobo Moreno, Dario Campeotto, Tritonus Koret",Bella Notte,2009,dbscan,-1
+"Bobo Moreno, Dario Campeotto, Tritonus Koret",Bella Notte,2009,dbscan,0
 Meeia Foo,我是不是你最疼愛的人,2009,dbscan,0
 Eliana Ribeiro,Força e Vitória (Ao Vivo),2009,dbscan,0
 "Ajda Pekkan, Toygar Işıklı",Bir Günah Gibi,2009,dbscan,0
@@ -6346,16 +6346,16 @@ Color,無賴正義,2009,dbscan,0
 LMFAO,Yes,2009,dbscan,0
 "Yuvan Shankar Raja, Andrea Jeremiah, Tanvi Shah, Ranjith Govind, Vinaita",Theeratha Vilaiyattu,2009,dbscan,0
 Villeros al Toque,El Chupa Chichi,2009,dbscan,0
-Alex Campos,Te Puedo Sentir,2009,dbscan,-1
+Alex Campos,Te Puedo Sentir,2009,dbscan,0
 Calle Real,Abreme la puerta,2009,dbscan,0
-Rockabye Baby!,Bohemian Rhapsody,2009,dbscan,1
+Rockabye Baby!,Bohemian Rhapsody,2009,dbscan,0
 Kirka,Leijat,2009,dbscan,0
 Babylon Circus,L'envol,2009,dbscan,0
 "Vega, Johnnydangerous",London Roots (feat. Johnny Dangerous) - Main Mix,2009,dbscan,0
 Munehiro,LUV,2009,dbscan,0
 Birsen Tezer,Di Gel Yanıma,2009,dbscan,0
 Ocho Macho,Jó Nekem,2009,dbscan,0
-Matthew Halsall,Together,2009,dbscan,1
+Matthew Halsall,Together,2009,dbscan,0
 Paula Sergio,Tarde em Itapuan,2009,dbscan,0
 Ringo Madlingozi,Ndiyagodola,2009,dbscan,0
 Every Avenue,Tell Me I'm A Wreck,2009,dbscan,0
@@ -6368,7 +6368,7 @@ Bamse,Bamse och Bronto - Del.1,2009,dbscan,0
 "Frédéric Chopin, Alice Sara Ott","Waltz No.6 In D Flat, Op.64 No.1 -""Minute""",2009,dbscan,-1
 Tiësto,Adagio For Strings,2009,dbscan,0
 DJ Digress,The Frequency - Single Edit,2009,dbscan,0
-Bernward Koch,Under Trees,2009,dbscan,1
+Bernward Koch,Under Trees,2009,dbscan,0
 Bobby Day,Rockin' Robin,2009,dbscan,0
 Lucie Vondrackova,Vítr,2009,dbscan,0
 Deacon Blue,Real Gone Kid,2009,dbscan,0
@@ -6376,7 +6376,7 @@ Pandora BX,Bad Romance - Original Radio Edit,2009,dbscan,0
 TANK 呂建忠,如果我變成回憶,2009,dbscan,0
 Kid Cudi,Simple As...,2009,dbscan,0
 Cliff Bennett & The Rebel Rousers,When Something Is Wrong with My Baby - Mono; 2009 Remaster,2009,dbscan,0
-Fito Paez,Al Lado Del Camino,2009,dbscan,-1
+Fito Paez,Al Lado Del Camino,2009,dbscan,0
 Alejandro Fernández,Mañana Es Para Siempre,2009,dbscan,0
 Jordin Sparks,Battlefield,2009,dbscan,0
 António Zambujo,Eu Já Não Sei,2009,dbscan,0
@@ -6397,11 +6397,11 @@ Scotts,Jag tror på oss,2009,dbscan,0
 Mike Denver,The Galway Girl,2009,dbscan,0
 Sam Lee,痴心絕對,2009,dbscan,0
 Jeremy Moyer,Fishing Secrets,2009,dbscan,0
-Worship Ensemble,Your Grace Is Enough - Be Still & Know: Instrumental Songs Of Worship Album Version,2009,dbscan,1
+Worship Ensemble,Your Grace Is Enough - Be Still & Know: Instrumental Songs Of Worship Album Version,2009,dbscan,0
 Nil Karaibrahimgil,Ne Garip Adam,2009,dbscan,0
 Aqua,My Mamma Said,2009,dbscan,0
 The Prodigy,Stand Up,2009,dbscan,0
-Joe Hisaishi,おくりびと ~memory~ - 「おくりびと」オリジナル・サウンドトラック,2009,dbscan,1
+Joe Hisaishi,おくりびと ~memory~ - 「おくりびと」オリジナル・サウンドトラック,2009,dbscan,0
 MY ASTRO,惜福,2009,dbscan,0
 El Hombrecito,Jack Veneno Ha Muerto,2009,dbscan,0
 Four-Mod,We Will Love U.,2009,dbscan,0
@@ -6437,7 +6437,7 @@ Arlindo Cruz,Fora de Ocasião,2009,dbscan,0
 Calm,Light Years (Live),2009,dbscan,-1
 Peggy Zina,Anatheorisa,2009,dbscan,0
 Echo & the Bunnymen,The Idolness of Gods,2009,dbscan,0
-Nicola Piovani,Buon Giorno Principessa,2009,dbscan,1
+Nicola Piovani,Buon Giorno Principessa,2009,dbscan,0
 "JAY-Z, J. Cole",A Star Is Born,2009,dbscan,0
 IAMX,The Great Shipwreck Of Life,2009,dbscan,0
 PSG,愛してます,2009,dbscan,0
@@ -6470,7 +6470,7 @@ Shonan No Kaze,恋時雨,2009,dbscan,0
 Keri Hilson,I Like - Jost & Grubert Radio Mix,2009,dbscan,0
 Ginette Reno,Fais-moi la tendresse,2009,dbscan,0
 Łąki Łan,Selawi,2009,dbscan,0
-Kay Tse,鍾無艷 - Instrumental,2009,dbscan,1
+Kay Tse,鍾無艷 - Instrumental,2009,dbscan,0
 Lula,เรื่องมหัศจรรย์,2009,dbscan,0
 İbrahim Tatlıses,Antebin Kalesine,2009,dbscan,0
 João Neto & Frederico,Boate Azul / Ipê e o Prisioneiro / Telefone Mudo - Ao Vivo,2009,dbscan,0
@@ -6567,7 +6567,7 @@ Allen Idol,Whataya Want From Me,2010,dbscan,0
 Saez,Des p'tits sous,2010,dbscan,0
 Gusttavo Lima,Refém - Ao Vivo,2010,dbscan,0
 "Cutee B., Bob Sinclar, Gary Pine, DollarMan",Sound Of Freedom - Radio Edit,2010,dbscan,0
-Friðrik Karlsson,Algleymi,2010,dbscan,1
+Friðrik Karlsson,Algleymi,2010,dbscan,0
 Two Steps from Hell,Invincible,2010,dbscan,0
 Krokus,Born To Be Wild,2010,dbscan,0
 Gusttavo Lima,Coração / Revelação - Ao Vivo,2010,dbscan,0
@@ -6584,7 +6584,7 @@ Boboy,Episod Cinta,2010,dbscan,0
 "Swedish House Mafia, Tinie Tempah",Miami 2 Ibiza - Radio Edit,2010,dbscan,0
 Sabaton,Attero Dominatus,2010,dbscan,0
 Transient,Clinging to My Disease Live at Rotture 2008,2010,dbscan,0
-"Frédéric Chopin, Nelson Freire","Nocturne No.1 in B flat minor, Op.9 No.1",2010,dbscan,1
+"Frédéric Chopin, Nelson Freire","Nocturne No.1 in B flat minor, Op.9 No.1",2010,dbscan,0
 Daan,Icon,2010,dbscan,0
 "Antologia, Pata Amarilla",Alejate,2010,dbscan,0
 Göksel,Olmaz Olsun,2010,dbscan,0
@@ -6650,7 +6650,7 @@ Pariisin Kevät,Imatrankoski,2010,dbscan,0
 Crystal Fighters,At Home,2010,dbscan,0
 "Rascal Flatts, Natasha Bedingfield",Easy,2010,dbscan,0
 Sorgente,Please Be with Me,2010,dbscan,0
-"Ingo, Jóhanna Guðrún",Ég er sko vinur þinn,2010,dbscan,-1
+"Ingo, Jóhanna Guðrún",Ég er sko vinur þinn,2010,dbscan,0
 Noyz Narcos,Role Models,2010,dbscan,0
 Argema,Jen s tebou byt,2010,dbscan,0
 Los gedientos del rock,Berretines de verduga,2010,dbscan,0
@@ -6689,7 +6689,7 @@ Monika,Yes I Do,2010,dbscan,0
 D2B,ไม่เปลี่ยนใจ (เธอคนเดียว),2010,dbscan,0
 Gaëtan Roussel,Dis-Moi Encore Que Tu M'Aimes,2010,dbscan,0
 Rojo,Solo Tú,2010,dbscan,0
-"Wolfgang Amadeus Mozart, Mitsuko Uchida, Cleveland Orchestra","Piano Concerto No.20 in D minor, K.466: 2. Romance - Live At Severance Hall, Cleveland / 2010",2010,dbscan,1
+"Wolfgang Amadeus Mozart, Mitsuko Uchida, Cleveland Orchestra","Piano Concerto No.20 in D minor, K.466: 2. Romance - Live At Severance Hall, Cleveland / 2010",2010,dbscan,0
 "Bondan Prakoso, Fade2Black",Tidurlah,2010,dbscan,0
 เฟย์ ฟาง แก้ว,ไม่ใช่อิจฉา (Jealous),2010,dbscan,0
 Terry Da Libra,Enchanted Waters - Ayleon Remix,2010,dbscan,0
@@ -6726,7 +6726,7 @@ Jacek Stachursky,Gdy Zaplaczesz (When She Cries),2010,dbscan,0
 Bubbi Morthens,Sól,2010,dbscan,0
 Club Dogo,All'Ultimo Respiro,2010,dbscan,0
 Los Romanticos de Zacatecas,Muchacha,2010,dbscan,0
-"Camille Saint-Saëns, Philippe Entremont, Gaby Casadesus, Yo-Yo Ma",The Swan,2011,dbscan,1
+"Camille Saint-Saëns, Philippe Entremont, Gaby Casadesus, Yo-Yo Ma",The Swan,2011,dbscan,0
 Pigeon John,The Bomb - Single version,2011,dbscan,0
 Alci Acosta,El Preso Número 9,2011,dbscan,0
 SIX60,Rest Of You,2011,dbscan,0
@@ -6754,7 +6754,7 @@ Tina,Mam ta v hlave,2011,dbscan,0
 "Majk Spirit, Nironic",Sen,2011,dbscan,0
 Mercedes Band,סופי,2011,dbscan,0
 Edgar Broughton Band,Out Demons Out - 2004 Remaster,2011,dbscan,0
-"Moonface, Pretty Criminals",These Sounds - Pretty Criminals Remix Remastered 2011,2011,dbscan,-1
+"Moonface, Pretty Criminals",These Sounds - Pretty Criminals Remix Remastered 2011,2011,dbscan,0
 Mashina,אז למה לי פוליטיקה עכשיו,2011,dbscan,0
 Paul Elstak,Life Is Like A Dance,2011,dbscan,0
 "raku, Ombladon",Cautand,2011,dbscan,0
@@ -6863,7 +6863,7 @@ Ostbahn-Kurti & Die Chefpartie,Arbeit,2011,dbscan,0
 "Kostas Makedonas, Glykeria",Antikrista,2011,dbscan,0
 Kane,Damn Those Eyes,2011,dbscan,0
 Mazapán,"Andrés, el Pez",2011,dbscan,-1
-Rockabye Lullaby,When You Wish Upon A Star - Pinocchio,2011,dbscan,1
+Rockabye Lullaby,When You Wish Upon A Star - Pinocchio,2011,dbscan,0
 Endy Chow,重逢,2011,dbscan,0
 Trashtucada,De Festi? Vale,2011,dbscan,0
 Jenni Rivera,A Cambio de Qué - Banda,2011,dbscan,0
@@ -6887,10 +6887,10 @@ Vetusta Morla,Mapas,2011,dbscan,0
 The Thrillseekers,Song For Sendai [ASOT 541] - Original Mix,2011,dbscan,0
 Lindisfarne,Nobody Loves You Anymore - 2005 Remaster,2011,dbscan,0
 "Prefab Sprout, Thomas Dolby",When Love Breaks Down - 2007 Remastered Version,2011,dbscan,0
-C418,Clark,2011,dbscan,1
+C418,Clark,2011,dbscan,0
 "Jabu Hlongwane, Vuyo Mokoena",Inqanawe,2011,dbscan,0
 "ОУ74, Triagrutrika",Город дыма,2011,dbscan,0
-Adam Szabo,Arcade - Willem de Roo Remix Remix,2011,dbscan,-1
+Adam Szabo,Arcade - Willem de Roo Remix Remix,2011,dbscan,0
 Mujuice,На Луне,2011,dbscan,0
 Bill Anderson,Restless,2011,dbscan,0
 Happyendless,Sweet Sweet Super Sweet,2011,dbscan,0
@@ -6940,7 +6940,7 @@ Lady Gaga,Hair,2011,dbscan,0
 "Björn Jörundur Friðbjörnsson, Eyjólfur Kristjánsson",Allt búið,2011,dbscan,0
 Justin Moore,Til My Last Day,2011,dbscan,0
 Hiroshi Kitadani,ウィーアー! for the new world,2011,dbscan,0
-Jürgen Paape,So Weit Wie Noch Nie,2011,dbscan,-1
+Jürgen Paape,So Weit Wie Noch Nie,2011,dbscan,0
 "Kris Lawrence, Denise Laurel",I Will Take You Forever,2011,dbscan,0
 T. Rex,Ride A White Swan,2011,dbscan,0
 SHINee,Sherlock (Clue + Note),2012,dbscan,0
@@ -6951,7 +6951,7 @@ AAA,ウィーアー!,2012,dbscan,0
 Armonia 10,La Carta Final,2012,dbscan,0
 Jordan,Tomo para Olvidar,2012,dbscan,0
 Megaherz,Jagdzeit,2012,dbscan,0
-"Pyotr Ilyich Tchaikovsky, Mariss Jansons, Wiener Philharmoniker","Dornröschen, Ballet-Suite, Op. 66, Act II: No. 17 Panorama",2012,dbscan,1
+"Pyotr Ilyich Tchaikovsky, Mariss Jansons, Wiener Philharmoniker","Dornröschen, Ballet-Suite, Op. 66, Act II: No. 17 Panorama",2012,dbscan,0
 "Mohammed Rafi, Lata Mangeshkar","Kuchh Kehta Hai Ye Savan - From ""Mera Gaon Mera Desh""",2012,dbscan,0
 Nosequien y los Nosecuantos,Las Torres,2012,dbscan,0
 Django Wagner,In Ons Café (Duet met Frans Duijts),2012,dbscan,0
@@ -6962,7 +6962,7 @@ Theuns Jordaan,Honger Hart,2012,dbscan,0
 Lethal MG,Pin Da Case,2012,dbscan,-1
 Reik,Déjame Ir,2012,dbscan,0
 Jeroen Van Der Boom,Kom Maar Op,2012,dbscan,0
-Thad Fiscella,Bittersweet September,2012,dbscan,1
+Thad Fiscella,Bittersweet September,2012,dbscan,0
 "Vesku Jokinen, Sundin Pojat",Olen suomalainen,2012,dbscan,0
 Frejat,Por Você - Ao Vivo,2012,dbscan,0
 Bruno Mars,Gorilla,2012,dbscan,0
@@ -6979,7 +6979,7 @@ Sleeping With Sirens,Scene Two - Roger Rabbit,2012,dbscan,0
 "Mugison, Bubbi Morthens",Þorpið,2012,dbscan,0
 Barthezz,Infected - Radio Edit,2012,dbscan,0
 Pedro Laza Y Sus Pelayeros,La Buchaca,2012,dbscan,0
-"Donatan, Sokół",Z Samym Sobą,2012,dbscan,-1
+"Donatan, Sokół",Z Samym Sobą,2012,dbscan,0
 Tan Taşçı,İmkansız (Rüyalarım Olmasa),2012,dbscan,0
 Нервы,Тише,2012,dbscan,0
 Kontrust,Monkey Boy,2012,dbscan,0
@@ -7136,12 +7136,12 @@ Satu Sopanen & Tuttiorkesteri,Lennä Lennä Leppäkerttu,2012,dbscan,0
 Caballero Gaucho,Viejo Farol,2012,dbscan,0
 "Loredana, Cabron",Apa,2012,dbscan,0
 Fede Finn & Funny Boyz,Kærligheden Brænder,2012,dbscan,0
-Balmorhea,The Winter,2012,dbscan,1
-Artemius Wolf,The Day Before The New Year,2012,dbscan,1
+Balmorhea,The Winter,2012,dbscan,0
+Artemius Wolf,The Day Before The New Year,2012,dbscan,0
 Ben Mazué,La valse,2012,dbscan,0
 The Vaccines,I Always Knew,2012,dbscan,0
 Ojārs Grīnbergs,Somu pirts,2012,dbscan,0
-Franki Juncaj,I'll Be Around - Chris Finke's Heat Dub,2012,dbscan,-1
+Franki Juncaj,I'll Be Around - Chris Finke's Heat Dub,2012,dbscan,0
 "Inaya Day, Diego Ray, Nick Corline, Vic Palminteri",Til the Morning Comes 2012 - Vic Palminteri 2012 Radio Edit,2012,dbscan,0
 Grimes,Genesis,2012,dbscan,0
 Guru Josh,Infinity 2012 - DJ Antoine vs Mad Mark Radio Edit,2012,dbscan,0
@@ -7262,7 +7262,7 @@ Depeche Mode,Angel,2013,dbscan,0
 Idan Amedi,גם וגם,2013,dbscan,0
 Mandrage,Siluety,2013,dbscan,0
 "Alex M.O.R.P.H., Sylvia Tosun, Andrew Rayel",An Angel's Love (Mix Cut) - Andrew Rayel Aether Remix,2013,dbscan,0
-C418,Chirp,2013,dbscan,-1
+C418,Chirp,2013,dbscan,0
 Hedley,Heaven In Our Headlights,2013,dbscan,0
 Thorbjørn Harr,Reinsdyr Er Bedre Enn Folk,2013,dbscan,0
 New folder (นิว โฟลเดอร์),ไม่โกรธความรัก (The Memories),2013,dbscan,0
@@ -7344,7 +7344,7 @@ Joris Voorn,Ringo,2013,dbscan,0
 Anika Moa,"Tahi, Rua, Toru, Wha",2013,dbscan,0
 Falling In Reverse,It's Over When It's Over,2013,dbscan,0
 Onkel Tuka,Lasse Polakk,2013,dbscan,0
-Kołysanki Dla Maluszka,Idzie zima,2013,dbscan,1
+Kołysanki Dla Maluszka,Idzie zima,2013,dbscan,0
 Mari Pokinen,Sinu Jaoks,2013,dbscan,0
 You Entertain,Year 3000 (Professional Backing Track) - In the Style of Busted,2013,dbscan,0
 Vlad Dobrescu,Astia Mici,2013,dbscan,0
@@ -7398,7 +7398,7 @@ Joe Luciano,El Baile De La Botella,2014,dbscan,0
 "Boomdabash, Otto Ohm",L'importante,2014,dbscan,0
 "Broiler, Dirt Nasty, Andy Milonakis",Get Drunk,2014,dbscan,0
 เอกชัย ศรีวิชัย,หมากัด,2014,dbscan,0
-GusGus,Crossfade - Maceo Plex Mix,2014,dbscan,-1
+GusGus,Crossfade - Maceo Plex Mix,2014,dbscan,0
 Antonis Remos,Terma I Istoria,2014,dbscan,0
 Croatia Squad,Pop Your Pu**y - Original Mix,2014,dbscan,0
 "Aztech, Nikkita",The Tribe (2014 Mix) - Radio Edit,2014,dbscan,0
@@ -7407,7 +7407,7 @@ Los Corrientes,De Viejito,2014,dbscan,0
 kent,Var är vi nu?,2014,dbscan,0
 Feby Febiola,Dia Mengerti,2014,dbscan,0
 "Max Graham, Maarten de Jong",Lekker [Mix Cut] - Original Mix,2014,dbscan,0
-Cheloo,Vrem Totul,2014,dbscan,-1
+Cheloo,Vrem Totul,2014,dbscan,0
 "Dart Rayne, Yura Moonlight, Katty Heath",Stole The Sun [Mix Cut] - Allen & Envy Remix,2014,dbscan,0
 G-Amado,Estrela Guia,2014,dbscan,0
 4F-Club,Tanga,2014,dbscan,0
@@ -7434,7 +7434,7 @@ Cartel De Santa,Wacha Están Maman** Riata,2014,dbscan,0
 Kevin Gates,Posed to Be in Love,2014,dbscan,0
 Tumsa,Paspēlēsim Paslēpes,2014,dbscan,0
 Shift K3Y,I Know - Radio Edit,2014,dbscan,0
-Savia Andina,Boquerón Abandonado,2014,dbscan,-1
+Savia Andina,Boquerón Abandonado,2014,dbscan,0
 La Delio Valdez,"Negra, Ron y Velas",2014,dbscan,0
 Bjørnskov,Venner for evigt,2014,dbscan,0
 Labyrint,Fakkin fin,2014,dbscan,0
@@ -7461,7 +7461,7 @@ El Tambor De La Tribu,Solo Me Faltas Tu,2014,dbscan,0
 J SOUL BROTHERS III,PRIDE,2014,dbscan,0
 Oslo Ess,Det Brenner Under Beina Mine,2014,dbscan,0
 John Coltrane,Pristine (2014 - Remaster),2014,dbscan,0
-"Agonoize, A.D.N.",Open the Gate - A.D.N. Remix,2014,dbscan,-1
+"Agonoize, A.D.N.",Open the Gate - A.D.N. Remix,2014,dbscan,0
 "Tr1ckmusic, Thugga, Kriminal, Fox, Joker Flow, Hoodini, Dim4ou, Varna Sound, Madmatic, 42, Ats, F.O.",Кой те излъга,2014,dbscan,0
 Zara Larsson,Carry You Home,2014,dbscan,0
 Shota Shimizu,DREAM,2014,dbscan,0
@@ -7524,7 +7524,7 @@ Nicky Jam,Travesuras,2014,dbscan,0
 Son Feci Bisiklet,Bikinisinde Astronomi (Bonus Trek),2014,dbscan,0
 Mike Oldfield,Nuclear,2014,dbscan,0
 Air Supply,Here I Am (Just When I Thought I Was Over You),2014,dbscan,0
-Mark Sixma,Adagio For Strings [Mix Cut] - Original Mix,2014,dbscan,-1
+Mark Sixma,Adagio For Strings [Mix Cut] - Original Mix,2014,dbscan,0
 Tommy Fleming,Bright Blue Rose,2014,dbscan,0
 Parokya Ni Edgar,Pangarap Lang Kita,2014,dbscan,0
 Bruno & Marrone,Você Me Vira a Cabeça (Me Tira do Sério) - Ao Vivo,2014,dbscan,0
@@ -7575,7 +7575,7 @@ Marijonas Mikutavičius,Drąsių Nieks Nežudo,2014,dbscan,0
 Agonoize,Blut Sex Tod,2014,dbscan,0
 Coro I Piccoli Cantori di Milano,Diamo la caccia al bruco,2014,dbscan,0
 C-Kan,Un Par De Balas,2014,dbscan,0
-"Ludwig van Beethoven, Hjordis Schymberg, Lisa Tunell, Gösta Backelin, Sigurd Bjorling, Musikalista Sallskapet, Stockholm Concert Association Orchestra, Wilhelm Furtwängler","Sinfonie Nr. 9 d-Moll, Op. 125: 4. Finale: Presto - Allegro assai (Uhrwerk Orange): I. Allegro ma non troppo, un poco maestoso",2014,dbscan,-1
+"Ludwig van Beethoven, Hjordis Schymberg, Lisa Tunell, Gösta Backelin, Sigurd Bjorling, Musikalista Sallskapet, Stockholm Concert Association Orchestra, Wilhelm Furtwängler","Sinfonie Nr. 9 d-Moll, Op. 125: 4. Finale: Presto - Allegro assai (Uhrwerk Orange): I. Allegro ma non troppo, un poco maestoso",2014,dbscan,0
 Jay Chou,天涯過客,2014,dbscan,0
 Suffused,Year 2008 - Ultimate Progress Late Night Mix,2014,dbscan,0
 茅原実里,Paradise Lost,2014,dbscan,0
@@ -7601,7 +7601,7 @@ Rizky Febian,Kesempurnaan Cinta,2015,dbscan,0
 Oh Wonder,Technicolour Beat,2015,dbscan,0
 Emma Bale,All I Want,2015,dbscan,0
 Quinn XCII,Another Day in Paradise,2015,dbscan,0
-Meredith Monk,Astronaut Anthem - Ryuichi Sakamoto Remix,2015,dbscan,1
+Meredith Monk,Astronaut Anthem - Ryuichi Sakamoto Remix,2015,dbscan,0
 Popstar Factory,Up,2015,dbscan,0
 xacdo,After ten million years 천만년후에,2015,dbscan,0
 "Meek Mill, Drake",R.I.C.O. (feat. Drake),2015,dbscan,0
@@ -7617,7 +7617,7 @@ Gianluca Grignani,Mi Historia Entre Tus Dedos,2015,dbscan,0
 "Giorgos Zambetas, Christina Maragozi",Stalia - Stalia,2015,dbscan,0
 Bo Kaspers Orkester,Floden,2015,dbscan,0
 Leader,Warrior Inside,2015,dbscan,0
-Ryuichi Sakamoto,Roly-poly 5|命の循環,2015,dbscan,-1
+Ryuichi Sakamoto,Roly-poly 5|命の循環,2015,dbscan,0
 Teza Sumendra,"I Want You, Love",2015,dbscan,0
 Official HIGE DANdism,ダーリン。,2015,dbscan,0
 Kwabs,Walk,2015,dbscan,0
@@ -7753,7 +7753,7 @@ SHINee,재연 An Encore,2015,dbscan,0
 Antonio Teoli,"The Plague (From ""Bloodgate"") [2015]",2015,dbscan,-1
 Bad Boys Blue,You're a Woman,2015,dbscan,0
 "Feint, Veela",Vagrant,2015,dbscan,0
-"Ludovico Einaudi, Daniel Hope",Petricor,2015,dbscan,1
+"Ludovico Einaudi, Daniel Hope",Petricor,2015,dbscan,0
 Kortez,Pocztówka z kosmosu,2015,dbscan,0
 Turmion Kätilöt,Lataa ja varmista,2015,dbscan,0
 SIX60,Stay Together,2015,dbscan,0
@@ -7814,10 +7814,10 @@ G.E.M.,再見,2015,dbscan,0
 Chelsea Heart,Lush Life,2016,dbscan,0
 "Maiara & Maraisa, Cristiano Araújo",Se Olha No Espelho - Ao Vivo,2016,dbscan,-1
 "Dolly Parton, Kenny Rogers",Islands in the Stream,2016,dbscan,0
-Oasis de Luxe,Friday Night Cafe (New Years Eve 2016),2016,dbscan,-1
+Oasis de Luxe,Friday Night Cafe (New Years Eve 2016),2016,dbscan,0
 "Conjunto Primavera, Ricardo Montaner",Déjame Llorar,2016,dbscan,0
 Poi,เหงาแต่ไม่ง่าย,2016,dbscan,0
-Deep Sleep Music Collective,Music to Help You Sleep,2016,dbscan,1
+Deep Sleep Music Collective,Music to Help You Sleep,2016,dbscan,0
 Dato Hattan,Memburu Rindu,2016,dbscan,0
 Local Natives,Coins,2016,dbscan,0
 Coldplay,Viva La Vida - Live from Spotify London,2016,dbscan,0
@@ -7936,7 +7936,7 @@ NICKTHEREAL,帥到分手,2016,dbscan,0
 Poju,Kalsarikännit,2016,dbscan,0
 Club Fitness Radio Djs,Sirene,2016,dbscan,0
 Bruno Mars,Perm,2016,dbscan,0
-"James Blake, Bon Iver",I Need A Forest Fire,2016,dbscan,1
+"James Blake, Bon Iver",I Need A Forest Fire,2016,dbscan,0
 Page Four,Du Og Jeg - Magi I Luften,2016,dbscan,0
 UG14,Bunga Larangan,2016,dbscan,0
 Conor Maynard,Don't Let Me Down,2016,dbscan,0
@@ -8011,7 +8011,7 @@ The Weeknd,False Alarm,2016,dbscan,0
 DMA'S,Lay Down,2016,dbscan,0
 ba.,Saulėsužtemimas,2016,dbscan,0
 "Jay-Roc, Jakebeatz, Dj Platinum",Point Blank Breaks,2016,dbscan,0
-Michael Tai,"路小雨 | Lu Xiao Yu (From ""Secret"")",2016,dbscan,1
+Michael Tai,"路小雨 | Lu Xiao Yu (From ""Secret"")",2016,dbscan,0
 Years & Years,Desire,2016,dbscan,0
 "Jolin Tsai, Alesso",Play我呸 - Alesso Remix Version,2016,dbscan,0
 Logic,44 Bars,2016,dbscan,0
@@ -8134,7 +8134,7 @@ Workout Music ,This Is How We Do (Remix),2017,dbscan,0
 Nicky Lee,Will You Remember Me,2017,dbscan,0
 "Itay Levi, Omri 69 Segal, Hevi Levi",Halo Mami,2017,dbscan,0
 Hayes & Y,"Always So Simple, Always So Cold",2017,dbscan,0
-Nane,B.M.V.,2017,dbscan,-1
+Nane,B.M.V.,2017,dbscan,0
 Matheus & Kauan,Exclusividade - Ao Vivo,2017,dbscan,0
 "Jesse Mader, D. Hood",A-Side / K-Ville Intro (2017) [feat. D. Hood],2017,dbscan,0
 David Bowie,Five Years - Live; 2017 Remaster,2017,dbscan,0
@@ -8145,7 +8145,7 @@ randi,Puteri Asupra Mea,2017,dbscan,0
 "JVG, Märkä-Simo",Tappiolla tappiin (feat. Märkä Simo),2017,dbscan,0
 Musiko,Contigo,2017,dbscan,0
 Labanoon,ใจ... กลางเมือง,2017,dbscan,0
-"Dmitri Shostakovich, André Cluytens, Orchestre National Radiodiffusion Française","Shostakovich: Symphony No. 11 in G Minor, Op. 103, ""The Year 1905"": IV. The Tocsin (Allegro non troppo - Allegro - Moderato - Adagio - Allegro)",2017,dbscan,1
+"Dmitri Shostakovich, André Cluytens, Orchestre National Radiodiffusion Française","Shostakovich: Symphony No. 11 in G Minor, Op. 103, ""The Year 1905"": IV. The Tocsin (Allegro non troppo - Allegro - Moderato - Adagio - Allegro)",2017,dbscan,0
 阿涵,不想,2017,dbscan,0
 Trash,能給的只有這麼多,2017,dbscan,0
 Ethnofobia,"RTL (2006 Version, Leftovers Edit)",2017,dbscan,0
@@ -8185,7 +8185,7 @@ Calculasian,夜空中最亮的星 (The Brightest Star in the Night Sky),2017,dbs
 Paluch,Dym,2017,dbscan,0
 "Esteban Lopez, Pedro Pons, Aura",Dark Sweet Piano 2016,2017,dbscan,0
 Materia,Rolling Down,2017,dbscan,0
-"Erik Eriksson, White Noise Baby Sleep, White Noise for Babies",Air Conditioner - Loopable with no fade,2017,dbscan,1
+"Erik Eriksson, White Noise Baby Sleep, White Noise for Babies",Air Conditioner - Loopable with no fade,2017,dbscan,0
 "Migos, Travis Scott",Kelly Price (feat. Travis Scott),2017,dbscan,0
 "ODZ, Canto",Helt Crack,2017,dbscan,0
 Ben Gold,Kingdoms (Mix Cut),2017,dbscan,0
@@ -8380,12 +8380,12 @@ Djadja & Dinaz,C63,2018,dbscan,0
 Flashmob,Year1993 - Original Mix,2018,dbscan,0
 Not For Sale,Prima o poi,2018,dbscan,0
 ACTART,นอกจากชื่อฉัน - Acoustic Version,2018,dbscan,0
-Volcano Fist,The Year 2008,2018,dbscan,1
+Volcano Fist,The Year 2008,2018,dbscan,0
 "Way Out West, Modd",Tuesday Maybe - Modd Extended Mix,2018,dbscan,0
 Agua Marina,Tu Traición Se Acabó - En Vivo,2018,dbscan,0
 Kayee Tam,"陪著你走 - 劇集 ""不懂撒嬌的女人"" 插曲",2018,dbscan,0
 "Bhaskar, Silva, Anitta",Fica Tudo Bem - Bhaskar Remix,2018,dbscan,0
-Burna Boy,Ye,2018,dbscan,-1
+Burna Boy,Ye,2018,dbscan,0
 Kenshi Yonezu,クランベリーとパンケーキ,2018,dbscan,0
 "Netsky, David Guetta",Ice Cold,2018,dbscan,0
 Mitch James,Bright Blue Skies,2018,dbscan,0
@@ -8418,7 +8418,7 @@ Coldiac,Vow,2018,dbscan,0
 Jae Jin,Gonna Be Honest,2018,dbscan,0
 "Za100let, Marek Ztraceny, Tomas Klus, Ewa Farna, XINDL X, Michal Hruza, David Stypka, Debbi, Čechomor, DIVOKEJ BILL, Jananas, Slza, Jelen, Mirai",Za 100 let,2018,dbscan,0
 AVEC,Under Water - Club Edit,2018,dbscan,0
-Helene Holmes,Mary Had a Little Lamb,2018,dbscan,1
+Helene Holmes,Mary Had a Little Lamb,2018,dbscan,0
 MG,Yaya,2018,dbscan,0
 Bizarrap,Wanda Nara (Bizarrap Remix),2018,dbscan,0
 Manuş Baba,Bu Havada Gidilmez,2018,dbscan,0
@@ -8455,7 +8455,7 @@ Gal Adam,לקחת איתך הכל,2018,dbscan,0
 "Above & Beyond, Zoë Johnston",Always - Above & Beyond Club Mix [Mix Cut],2018,dbscan,0
 Alan Sorrenti,Microfoni Assassini - Remastered 2018,2018,dbscan,0
 Renvo,Next Gen (FYHYM2018),2018,dbscan,0
-Ed Maverick,Fuentes de Ortiz,2018,dbscan,-1
+Ed Maverick,Fuentes de Ortiz,2018,dbscan,0
 "Riton, Kah-Lo",Rinse & Repeat (feat. Kah-Lo) - Radio Edit,2018,dbscan,0
 El Perro Original,Te escapas de mis brazos,2018,dbscan,0
 "Ryan.B, effie",No Reason,2018,dbscan,0
@@ -8487,7 +8487,7 @@ Didi Kempot,Ambyar,2019,dbscan,0
 Dennis Lloyd,Wild West,2019,dbscan,0
 Durani,Wavey,2019,dbscan,0
 CJ Alexis,Beats,2019,dbscan,0
-Buddha Music Sanctuary,Touch of Freedom,2019,dbscan,1
+Buddha Music Sanctuary,Touch of Freedom,2019,dbscan,0
 "Yung Nnelg, Idaly",Girl (feat. Idaly),2019,dbscan,0
 "Papatinho, Luccas Carlos, Orochi, Pk, Xamã","Como ela vem (feat. Luccas Carlos, Xamã, PK e Orochi)",2019,dbscan,0
 Kay Tse,我們的基因,2019,dbscan,0
@@ -8531,8 +8531,8 @@ Lidia Buble,Lacătul Și Femeia,2019,dbscan,0
 "Mista Bombo, Yemil",Fuera Luces,2019,dbscan,0
 "Bobina, Mariska Hekkenberg",Slow - Remaster 2019,2019,dbscan,0
 GReeeN,Autostrada,2019,dbscan,0
-OG Version,Nojaus Laivas,2019,dbscan,-1
-MC Drini,Piano Wave,2019,dbscan,1
+OG Version,Nojaus Laivas,2019,dbscan,0
+MC Drini,Piano Wave,2019,dbscan,0
 Tribo da Periferia,Pianista da Rua 6,2019,dbscan,0
 Soppgirobygget,Friminutt 2020,2019,dbscan,0
 Yiyo Sarante,Probablemente,2019,dbscan,0
@@ -8542,7 +8542,7 @@ John Adams,Lover - Acoustic,2019,dbscan,0
 "D-Block Europe, Yxng Bane",Pretty Little Nike Airs,2019,dbscan,0
 Nekfeu,Chanson d'amour,2019,dbscan,0
 Mayo 214,Alejandro,2019,dbscan,0
-Bruce Brus,White Noise Crashing Waves,2019,dbscan,-1
+Bruce Brus,White Noise Crashing Waves,2019,dbscan,0
 IU,Love poem,2019,dbscan,0
 "Gera MX, Santa Fe Klan",El Catrín,2019,dbscan,0
 "Becky G, Myke Towers",DOLLAR,2019,dbscan,0
@@ -8551,7 +8551,7 @@ El Chaval de la Bachata,Me Sacaste Del Llavero,2019,dbscan,0
 "Bandalos Chinos, Adan Jodorowsky",Departamento,2019,dbscan,0
 Samthing Soweto,Nodoli,2019,dbscan,0
 IBE,Table Of Fools,2019,dbscan,0
-loner pop,"Making Sense of Things, 2019",2019,dbscan,-1
+loner pop,"Making Sense of Things, 2019",2019,dbscan,0
 Sujeto Oro 24,Solamente Ella,2019,dbscan,0
 Fulminacci,Al Giusto Momento,2019,dbscan,0
 Harry Styles,Watermelon Sugar,2019,dbscan,0
@@ -8606,7 +8606,7 @@ Os Barões Da Pisadinha,Eu Acho Que Não,2019,dbscan,0
 ASMR Baby Sleep Sounds,Vacuum Cleaner Sound (Soft),2019,dbscan,-1
 BuckHolmes,"Dirty Hands, Pt. 2",2019,dbscan,0
 Manuel,Messziről jöttem,2019,dbscan,0
-Germany Germany,New Year,2019,dbscan,-1
+Germany Germany,New Year,2019,dbscan,0
 "Sneha Mahadik, Pravin Koli",Majha Pillu,2019,dbscan,0
 Gregor Tresher,A Thousand Nights,2019,dbscan,0
 Andy Blueman,Sea Tides - Cinematic Remake,2019,dbscan,0
@@ -8628,7 +8628,7 @@ Juice WRLD,Maze,2019,dbscan,0
 Josh A,Fearless,2019,dbscan,0
 Christmas 2019,It's the Most Wonderful Time of the Year,2019,dbscan,0
 "Lizzo, Ariana Grande",Good as Hell (feat. Ariana Grande),2019,dbscan,0
-Prusax,A+,2019,dbscan,-1
+Prusax,A+,2019,dbscan,0
 El Chaval de la Bachata,Estoy Perdido,2019,dbscan,0
 дора,Младшая сестра,2019,dbscan,0
 "David Lebón, Ricardo Mollo",Mundo Agradable (feat. Ricardo Mollo),2019,dbscan,0
@@ -8662,7 +8662,7 @@ Ami Faku,Ubuhle Bakho,2019,dbscan,0
 Maija Vilkkumaa,Hei sisko,2019,dbscan,0
 Joe Buck,The Way You Take Time,2019,dbscan,0
 "Sansar Salvo, Kaan Boşnak",Koptu Kayış,2019,dbscan,0
-Sum Wave,Malin's Song,2019,dbscan,-1
+Sum Wave,Malin's Song,2019,dbscan,0
 "Ricky Hsiao, A-Lin",迷路在雲端,2019,dbscan,0
 "Papi Hans, Tita",Ti Gonish,2019,dbscan,0
 Arijit Singh,"Main Dhoondne Ko Zamaane Mein (From ""Heartless"")",2019,dbscan,0
@@ -8713,13 +8713,13 @@ Beissoul & Einius,Drama Boy (B&E Redo) - Radio Edit,2020,dbscan,0
 OneRepublic,Better Days,2020,dbscan,0
 "RESISTIRÉ MÉXICO, Aida Cuevas, Belinda, Edith Márquez, Gloria Trevi, Ha*Ash, Kaia Lana, Lila Downs, María José, María León, Paty Cantú, Sandra Echeverria, Ximena Sariñana, Arath Herce, Axel Muñiz, Benny, Camila, Caztro, Chucho Rivas, Cristian Castro, DLD, Horacio Palencia, Kinky, Leonel García, Lupe Esparza, MC Davo, Mijares, Mœnia, Río Roma, Rodrigo Dávila, Yahir",Resistiré,2020,dbscan,0
 HVME,Goosebumps,2020,dbscan,0
-Jams Bond,Staff Meeting,2020,dbscan,-1
+Jams Bond,Staff Meeting,2020,dbscan,0
 KayBlack,A Cunhada,2020,dbscan,0
 "Jamie, Jay Park",Apollo 11 (feat. Jay Park),2020,dbscan,0
 Matt Monro,All Of A Sudden - Remastered 2010,2020,dbscan,0
 Troye Sivan,Easy,2020,dbscan,0
 "Tropa do Bruxo, Djonga, MC Rick, Sidoka",Oclin e Evoque,2020,dbscan,0
-The Creeps,Falling Apart,2020,dbscan,-1
+The Creeps,Falling Apart,2020,dbscan,0
 OG Version,Opa Ikrito,2020,dbscan,0
 Gabriel Louis,New Years Eve 2013 - Original Mix,2020,dbscan,-1
 "Edy Lemond, DJ Lucas Beat",Tuts Tuts Quero Ver Pensando Em Você,2020,dbscan,0
@@ -8756,7 +8756,7 @@ Lenier,Como Te Pago,2020,dbscan,0
 SEKAI NO OWARI,周波数,2020,dbscan,0
 THE RAMPAGE from EXILE TRIBE,MY PRAYER,2020,dbscan,0
 Chinese New Year Collective,Lunar New Year Music,2020,dbscan,-1
-Chillout Sound Festival,Smile Every Day,2020,dbscan,-1
+Chillout Sound Festival,Smile Every Day,2020,dbscan,0
 Graham BLVD,Have I Told You Lately,2020,dbscan,0
 Miksa,Drum Madness,2020,dbscan,-1
 Joni Mitchell,"Intro To What's The Story Mr. Blue - Live at The 2nd Fret, Philadelphia, PA, 11/1966",2020,dbscan,0
@@ -8774,7 +8774,7 @@ Support Lesbiens,White Lines,2020,dbscan,0
 Artigeardit,Kom Af Sig Selv,2020,dbscan,-1
 Hailee Steinfeld,Wrong Direction,2020,dbscan,0
 KALEO,Backbone,2020,dbscan,0
-Christopher McGinnis,New Years Eve 2020,2020,dbscan,1
+Christopher McGinnis,New Years Eve 2020,2020,dbscan,0
 DJ Roman,Prrum (Dale Suave),2020,dbscan,-1
 Junior H,Mente Positiva,2020,dbscan,0
 Zé Vaqueiro,Foi Amor,2020,dbscan,0
@@ -8794,7 +8794,7 @@ Casual Breakdown,Welcome To Our Show,2020,dbscan,0
 EVERGLOW,LA DI DA,2020,dbscan,0
 Adrenal,Spiral Down,2020,dbscan,-1
 "CHASE B, OMB Bloodbath, KenTheMan",For Me,2020,dbscan,0
-"Luxury Lounge Cafe Allstars, Wake Up Music Paradise, Jazz Sax Lounge Collection",Midnight Kiss,2020,dbscan,1
+"Luxury Lounge Cafe Allstars, Wake Up Music Paradise, Jazz Sax Lounge Collection",Midnight Kiss,2020,dbscan,0
 BLANCO,Ladro Di Fiori,2020,dbscan,0
 GRIP TIGHT,In Luck - Radio Edit,2020,dbscan,0
 Mr.Children,turn over?,2020,dbscan,0
@@ -8816,7 +8816,7 @@ Filatov & Karas,Чилить,2020,dbscan,0
 Lau,She Put on Her Headphones - Radio Edit,2020,dbscan,-1
 TIDALWAVE,Always,2020,dbscan,0
 "Theo Rose, Bogdan DLP",Fara Tine,2020,dbscan,0
-"RDJR, RODRIX",Did Not Make Stems (Outro 2020) [Bonus Track],2020,dbscan,-1
+"RDJR, RODRIX",Did Not Make Stems (Outro 2020) [Bonus Track],2020,dbscan,0
 "LEGADO 7, Junior H",Ojos De Maniaco,2020,dbscan,0
 "Bebo Best, Coimbra, The Super Lounge Orchestra",Whole Lotta Love,2020,dbscan,0
 Margaret Island,Boldogságtól,2020,dbscan,0
@@ -8854,9 +8854,9 @@ kizaru,Что за бизнес сука?,2020,dbscan,0
 "Pekeño 77, Cazzu, Neo Pistea, C.R.O, Bhavi, Homer El Mero Mero, Ruben Rada",Rangos II,2020,dbscan,0
 "167 Gang, Baby Gang",Baby Gang,2020,dbscan,0
 Fer Palacio,Highx,2020,dbscan,0
-"Loko Loko, Pil C",Pohľad spoza deviny,2020,dbscan,-1
+"Loko Loko, Pil C",Pohľad spoza deviny,2020,dbscan,0
 "G Herbo, Juice WRLD, Lil Uzi Vert, Chance the Rapper",PTSD,2020,dbscan,0
-XL,123,2020,dbscan,-1
+XL,123,2020,dbscan,0
 "Thelonious B., Knfuzed",VVS & Molly,2020,dbscan,0
 Zuna,1 Stunde,2020,dbscan,0
 G Tom Mac Aka Gerard McMahon,One World for Us,2020,dbscan,0
@@ -8896,1088 +8896,219 @@ Bonez MC,Big Body Benz,2020,dbscan,0
 "Kygo, Kim Petras",Broken Glass,2020,dbscan,0
 "Somna, HALIENE",Secret (FYHYM2019) - Kinetic Mix,2020,dbscan,0
 "Sound De Barrio, La Kuppe",Si la Ves / Perdoname / Igual Que Ayer / Voy a Olvidarte,2020,dbscan,0
-Myke Towers,MÍRENME AHORA,2021,dbscan,0
-Beéle,Si Te Interesa,2021,dbscan,0
-Treaty Oak Revival,No Vacancy,2021,dbscan,0
-Megan Moroney,Wonder,2021,dbscan,0
-Volbeat,Shotgun Blues,2021,dbscan,0
-Doja Cat,Been Like This,2021,dbscan,0
-John Mayer,New Light,2021,dbscan,0
-Alvaro Diaz,Babysita </3,2021,dbscan,0
-Lainey Wilson,Things A Man Oughta Know,2021,dbscan,0
-"Maverick City Music, UPPERROOM, Brandon Lake, Eniola Abioye",Rest on Us (feat. Brandon Lake & Eniola Abioye),2021,dbscan,0
-Clairo,Amoeba,2021,dbscan,0
-"ACRAZE, Cherish",Do It To It,2021,dbscan,0
-"KAYTRANADA, H.E.R.",Intimidated (feat. H.E.R.),2021,dbscan,0
-Nathan Evans,Wellerman - Sea Shanty,2021,dbscan,0
-Myke Towers,ALMAS GEMELAS,2021,dbscan,0
-Los Retros,Amtrak,2021,dbscan,0
-Feid,CORONE,2021,dbscan,0
-Lana Del Rey,Chemtrails Over The Country Club,2021,dbscan,0
-LATIN MAFIA,Julieta,2021,dbscan,0
-Leo Rizzi,Amapolas,2021,dbscan,0
-Faye Webster,In A Good Way,2021,dbscan,0
-Morgan Wallen,7 Summers,2021,dbscan,0
-"Christian Nodal, Banda MS de Sergio Lizárraga",La Sinvergüenza,2021,dbscan,0
-"Don Toliver, Travis Scott",You (feat. Travis Scott),2021,dbscan,0
-Three Peels,White Noise Waterfall,2021,dbscan,0
-"The Kid LAROI, Justin Bieber",STAY (with Justin Bieber),2021,dbscan,0
-Maluma,Sobrio,2021,dbscan,0
-Baby Keem,16,2021,dbscan,0
-"Bruno Mars, Anderson .Paak, Silk Sonic",Smokin Out The Window,2021,dbscan,0
-Mareux,The Perfect Girl,2021,dbscan,0
-Feid,TENGO FE,2021,dbscan,0
-Luar La L,Giuseppe,2021,dbscan,0
-YOASOBI,たぶん,2021,dbscan,0
-Edy Boman,Thunder And Rain Sounds For Sleep,2021,dbscan,0
-Muggy Forecast,Oddly Comforting Rain,2021,dbscan,0
+Olivia Rodrigo,favorite crime,2021,dbscan,0
 "Jordana, TV Girl",Better in the Dark,2021,dbscan,0
-Alemán,Categoría 5,2021,dbscan,0
-"J Balvin, Dua Lipa, Bad Bunny, Tainy",UN DIA (ONE DAY),2021,dbscan,0
-aespa,Next Level,2021,dbscan,0
-Ed Sheeran,Shivers,2021,dbscan,0
-"Rebzyyx, hoshie star",all I want is you,2021,dbscan,0
-Jhené Aiko,living room flow - Bonus,2021,dbscan,0
-Olivia Rodrigo,"1 step forward, 3 steps back",2021,dbscan,0
-"Laufey, Philharmonia Orchestra",Let You Break My Heart Again,2021,dbscan,0
-TWICE,The Feels,2021,dbscan,0
-Feid,EL PADRINO,2021,dbscan,0
-"Öwnboss, Sevek",Move Your Body,2021,dbscan,0
-Soft Blade,Yugoslavskiy Groove,2021,dbscan,0
-"KAROL G, Mariah Angeliq",EL MAKINON,2021,dbscan,0
-Rauw Alejandro,Aquel Nap ZzZz,2021,dbscan,0
-Morgan Wallen,865,2021,dbscan,0
-Lamis Kan,Mesytara,2021,dbscan,0
-Pink Sweat$,At My Worst,2021,dbscan,0
-SEVENTEEN,To you,2021,dbscan,0
-Moneybagg Yo,Time Today,2021,dbscan,0
-Farruko,Pepas,2021,dbscan,0
-YOASOBI,群青,2021,dbscan,0
-The Noisy Outdoors,Every Night White Noise,2021,dbscan,0
-"Camilo, El Alfa",BEBÉ,2021,dbscan,0
-LANY,dna,2021,dbscan,0
-"Drake, Lil Baby",Girls Want Girls (with Lil Baby),2021,dbscan,0
-Milo j,Tus Vueltas,2021,dbscan,0
-"Egzod, Maestro Chives, Neoni",Royalty,2021,dbscan,0
-NatuREM,Wide Skies (Noise),2021,dbscan,0
-"Chris Stussy, S.A.M.",Breather,2021,dbscan,0
-TileKid,you not the same,2021,dbscan,0
-NIKI,Every Summertime,2021,dbscan,0
-"Natanael Cano, Junior H",El F,2021,dbscan,0
-Morat,A Dónde Vamos,2021,dbscan,0
-Celeste,Strange,2021,dbscan,0
-C. Tangana,Demasiadas Mujeres,2021,dbscan,0
-Grupo 360,La Purga,2021,dbscan,0
-Camilo,Millones,2021,dbscan,0
-Piso 21,Tan Bonita,2021,dbscan,0
 Justin Bieber,Ghost,2021,dbscan,0
-"Majestic, Boney M.",Rasputin,2021,dbscan,0
-Feid,SI TÚ SUPIERAS - Bonus Track,2021,dbscan,0
-Treaty Oak Revival,Ode To Bourbon,2021,dbscan,0
-"Alvaro Diaz, Rauw Alejandro",Problemón,2021,dbscan,0
-"Alan Walker, Ava Max","Alone, Pt. II",2021,dbscan,0
-"DJ Khaled, Lil Baby, Lil Durk",EVERY CHANCE I GET (feat. Lil Baby & Lil Durk),2021,dbscan,0
-Magdalena Bay,Killshot - Slowed + Reverb,2021,dbscan,0
-"Ovy On The Drums, Beéle, Bad Milk",Angelito,2021,dbscan,0
-Rokudenashi,ただ声一つ,2021,dbscan,0
-Manuel Medrano,La Distancia,2021,dbscan,0
-Ayra Starr,Bloody Samaritan,2021,dbscan,0
-Mon Laferte,Química Mayor,2021,dbscan,0
-Olivia Rodrigo,drivers license,2021,dbscan,0
-"Rvssian, Rauw Alejandro, Chris Brown",Nostálgico,2021,dbscan,0
-Billie Eilish,Your Power,2021,dbscan,0
-Lucy Bennett,Brahms Lullaby,2021,dbscan,0
-Doja Cat,Woman,2021,dbscan,0
-"Mariah the Scientist, Lil Baby",Always n Forever (feat. Lil Baby),2021,dbscan,0
-Rauw Alejandro,La Old Skul,2021,dbscan,0
-"LAGOS, Danny Ocean",Mónaco,2021,dbscan,0
-"Majid Jordan, Drake",Stars Align (with Drake),2021,dbscan,0
-LEEHI,ONLY,2021,dbscan,0
-"Elevation Worship, Maverick City Music, Chandler Moore, Naomi Raine",Jireh (feat. Chandler Moore & Naomi Raine),2021,dbscan,0
-Eladio Carrion,Hola Como Vas,2021,dbscan,0
-Matt Martians,An Eater,2021,dbscan,0
-"CKay, Dj Yo!, AX'EL",love nwantiti (feat. Dj Yo! & AX'EL) - Remix,2021,dbscan,0
-Måneskin,I WANNA BE YOUR SLAVE,2021,dbscan,0
-Tito Torbellino Jr,El Vago De Los Nike,2021,dbscan,0
-Remmy Valenzuela,Cada Día Más - En Vivo,2021,dbscan,0
-1da Banton,No Wahala,2021,dbscan,0
-"White Noise Radiance, Rain Sounds","Rain Sounds for Sleeping, Pt. 11 (Continuous No Gaps)",2021,dbscan,0
-"Maroon 5, Megan Thee Stallion",Beautiful Mistakes (feat. Megan Thee Stallion),2021,dbscan,0
-late night drive home,Stress Relief,2021,dbscan,0
-Matt Sassari,Give It To Me - Full Vocal Mix,2021,dbscan,0
-"White Noise Radiance, Rain Sounds","Rain Sounds for Sleeping, Pt. 18 (Continuous No Gaps)",2021,dbscan,0
-LATIN MAFIA,Más humano,2021,dbscan,0
-"Doja Cat, SZA",Kiss Me More (feat. SZA),2021,dbscan,0
-Morgan Wallen,Wasted On You,2021,dbscan,0
-Polo G,RAPSTAR,2021,dbscan,0
-Tory Lanez,Lavender Sunflower,2021,dbscan,0
-"Pooh Shiesty, Lil Durk",Back in Blood (feat. Lil Durk),2021,dbscan,0
-"Drake, Lil Baby",Wants and Needs (feat. Lil Baby),2021,dbscan,0
-PinkPantheress,I Must Apologise,2021,dbscan,0
-"Los Legendarios, Wisin, JHAYCO",Fiel,2021,dbscan,0
-"White Noise Radiance, Rain Sounds","Rain Sounds for Sleeping, Pt. 13 (Continuous No Gaps)",2021,dbscan,0
-INTERWORLD,METAMORPHOSIS,2021,dbscan,0
-"Grupo Firme, Maluma",Cada Quien,2021,dbscan,0
-"Rauw Alejandro, Chencho Corleone",Desesperados,2021,dbscan,0
-Bad Bunny,Yonaguni,2021,dbscan,0
-Falling into Pink,Pink Noise for Sleeping,2021,dbscan,0
-Anuel AA,Esa Cruz,2021,dbscan,0
-GAYLE,abcdefu,2021,dbscan,0
-"White Noise Radiance, Rain Sounds","Rain Sounds for Sleeping, Pt. 09 (Continuous No Gaps)",2021,dbscan,0
-The Weeknd,Earned It (Fifty Shades Of Grey),2021,dbscan,0
-ENHYPEN,FEVER,2021,dbscan,0
-Camilo,Manos de Tijera,2021,dbscan,0
-IU,LILAC,2021,dbscan,0
+Jhené Aiko,stranger,2021,dbscan,0
 YoungBoy Never Broke Again,Nevada,2021,dbscan,0
-Billie Eilish,Halley's Comet,2021,dbscan,0
+Doja Cat,Woman,2021,dbscan,0
+Olivia Rodrigo,good 4 u,2021,dbscan,0
+Måneskin,I WANNA BE YOUR SLAVE,2021,dbscan,0
+"Bruno Mars, Anderson .Paak, Silk Sonic",Leave The Door Open,2021,dbscan,0
+Olivia Rodrigo,traitor,2021,dbscan,0
+"The Kid LAROI, Justin Bieber",STAY (with Justin Bieber),2021,dbscan,0
+"Don Toliver, Travis Scott",You (feat. Travis Scott),2021,dbscan,0
+Cafuné,Tek It,2021,dbscan,0
+"Baby Keem, Kendrick Lamar",family ties (with Kendrick Lamar),2021,dbscan,0
+Treaty Oak Revival,Ode To Bourbon,2021,dbscan,0
+Tate McRae,you broke me first,2021,dbscan,0
+Olivia Rodrigo,drivers license,2021,dbscan,0
+Olivia Rodrigo,"jealousy, jealousy",2021,dbscan,0
 "Justin Bieber, Daniel Caesar, GIVĒON",Peaches (feat. Daniel Caesar & Giveon),2021,dbscan,0
-PinkPantheress,Pain,2021,dbscan,0
-"Ryan Castro, Feid",Monastery,2021,dbscan,0
-"Piso 21, Christian Nodal",Pa' Olvidarme De Ella,2021,dbscan,0
-Cody Johnson,'Til You Can't,2021,dbscan,0
-h4rtbrkr,I Hate You,2021,dbscan,0
-"Drake, 21 Savage, Project Pat",Knife Talk (with 21 Savage ft. Project Pat),2021,dbscan,0
-Rauw Alejandro,Desenfocao',2021,dbscan,0
-"Miracle Tones, Binaural Beats MT",70 Hz Peak Awareness - Binaural Beats,2021,dbscan,0
-KAROL G,SEJODIOTO,2021,dbscan,0
-"Jordan Davis, Luke Bryan",Buy Dirt,2021,dbscan,0
-ENHYPEN,Drunk-Dazed,2021,dbscan,0
-SEVENTEEN,Rock with you,2021,dbscan,0
-Billie Eilish,Happier Than Ever,2021,dbscan,0
+Treaty Oak Revival,Missed Call,2021,dbscan,0
+"Migos, YoungBoy Never Broke Again",Need It (feat. YoungBoy Never Broke Again),2021,dbscan,0
 Olivia Rodrigo,deja vu,2021,dbscan,0
-LATIN MAFIA,Ciudad de las luces,2021,dbscan,0
-Edy Boman,Heavy Rain And Thunder Sounds,2021,dbscan,0
-Myke Towers,EXPERIMENTO,2021,dbscan,0
-"Francis Mercier, Magic System, Nitefreak",Premier Gaou - Nitefreak Remix,2021,dbscan,0
-"Drake, Future, Young Thug",Way 2 Sexy (with Future & Young Thug),2021,dbscan,0
-"24kGoldn, iann dior",Mood (feat. iann dior),2021,dbscan,0
-"Aventura, Bad Bunny",Volví,2021,dbscan,0
-"White Noise Radiance, Rain Sounds","Rain Sounds for Sleeping, Pt. 52 (Continuous No Gaps)",2021,dbscan,0
-GIVĒON,Still Your Best,2021,dbscan,0
-"J Balvin, Maria Becerra",Qué Más Pues?,2021,dbscan,0
-"Miracle Tones, Binaural Beats MT",80 Hz Gamma Waves - Binaural Beats,2021,dbscan,0
-Samsura,In The Clouds,2021,dbscan,0
-Jamie Miller,Here's Your Perfect,2021,dbscan,0
-Junior H,1004 KM,2021,dbscan,0
-Eladio Carrion,Flores en Anónimo,2021,dbscan,0
-Charity Gayle,Thank You Jesus for the Blood,2021,dbscan,0
-"Alex Zurdo, Funky, Redimi2, Un Corazón, Abby Valdez, Indiomar","A Pesar de Mí (feat. Un Corazón, Abby Valdez, Indiomar)",2021,dbscan,0
-Lil Tecca,LOT OF ME,2021,dbscan,0
-KALEO,Hey Gringo,2021,dbscan,0
-"Lil Nas X, Jack Harlow",INDUSTRY BABY (feat. Jack Harlow),2021,dbscan,0
-Sam Fender,Spit Of You,2021,dbscan,0
-"KAROL G, Nicki Minaj",Tusa,2021,dbscan,0
-"SUPER-Hi, NEEKA",Following the Sun,2021,dbscan,0
-ame,raining for hours,2021,dbscan,0
-Los Dos Carnales,Yo Soy Rico,2021,dbscan,0
-"D.O.D, Carla Monroe",Still Sleepless,2021,dbscan,0
-"Trinix, Queen D",She Said (Big Jet Plane),2021,dbscan,0
-"Amaarae, Kali Uchis, MOLIY",SAD GIRLZ LUV MONEY Remix (feat. Kali Uchis and Moliy),2021,dbscan,0
-"Spice, Sean Paul, Shaggy",Go Down Deh (feat. Sean Paul & Shaggy),2021,dbscan,0
-"JHAYCO, Anuel AA",Ley Seca,2021,dbscan,0
-PinkPantheress,Break It Off - Bonus,2021,dbscan,0
-Jade LeMac,Constellations - Piano Version,2021,dbscan,0
-Mariah the Scientist,2 You,2021,dbscan,0
-"Blessd, Justin Quiles, Lenny Tavárez",Medallo,2021,dbscan,0
-Billie Eilish,NDA,2021,dbscan,0
-Maroon 5,Memories,2021,dbscan,0
-RÜFÜS DU SOL,Next to Me,2021,dbscan,0
-"Maluma, Beéle, Rauw Alejandro, Mambo Kingz, DJ Luian, Darell",Aloha,2021,dbscan,0
-"Lost Frequencies, Calum Scott",Where Are You Now,2021,dbscan,0
-"Memo Boy, Chakra Efendi",Insomniac,2021,dbscan,0
-Cris MJ,Locura y Maldad,2021,dbscan,0
-"Videoclub, Adèle Castillon, Mattyeux",Amour plastique,2021,dbscan,0
-Architects,Animals,2021,dbscan,0
-V,Christmas Tree,2021,dbscan,0
-"Pipe Bueno, Jessi Uribe, Yeison Jimenez, Carín León, Alzate, Darío Gómez, Luis Alberto Posada, El Charrito Negro, Jhonny Rivera, Jhon Alex Castaño",Guaro (Remix),2021,dbscan,0
-Oliver Tree,Life Goes On,2021,dbscan,0
-Justin Bieber,Off My Face,2021,dbscan,0
-IVE,ELEVEN,2021,dbscan,0
-Grupo Firme,El Amor Soñado,2021,dbscan,0
-"Eyedress, Dent May",Something About You,2021,dbscan,0
-"Lykke Li, The Magician",I Follow Rivers - The Magician Remix,2021,dbscan,0
-Drake,Champagne Poetry,2021,dbscan,0
-"ATB, Topic, A7S",Your Love (9PM),2021,dbscan,0
-"Calibre 50, Santa Fe Klan, Beto Sierra",Cuidando El Territorio,2021,dbscan,0
-Feid,AMOR DE MI VIDA,2021,dbscan,0
-Rebzyyx,I'm so fucked up please help me,2021,dbscan,0
-"Drake, Yebba",Yebba’s Heartbreak,2021,dbscan,0
-Mike Sherm,Baby,2021,dbscan,0
-Yiyo Sarante,Manos de Tijera,2021,dbscan,0
-"Generación 12, Maverick City Musica, Johan Manjarrés, Karen Espinosa, Nate Diaz",Tu Amor No Tiene Fin (Reprise),2021,dbscan,0
-Surf Curse,Freaks,2021,dbscan,0
-"El Fantasma, Los Dos Carnales",Cabrón y Vago,2021,dbscan,0
-"Mora, JHAYCO",512,2021,dbscan,0
-"White Noise Radiance, Rain Sounds","Rain Sounds for Sleeping, Pt. 04 (Continuous No Gaps)",2021,dbscan,0
-Concrete Showers,Light Crispy Rain,2021,dbscan,0
-"Grupo Firme, Lenin Ramírez",En Tu Perra Vida,2021,dbscan,0
-"White Noise Radiance, Rain Sounds","Rain Sounds for Sleeping, Pt. 12 (Continuous No Gaps)",2021,dbscan,0
-Natural Sample Makers,Addormentarsi,2021,dbscan,0
-"Nusrat Fateh Ali Khan, Afternight Vibes",Dil Pe Zakham Khate Hain,2022,dbscan,0
-"Lil Durk, Morgan Wallen",Broadway Girls (feat. Morgan Wallen),2022,dbscan,0
-La Santa Grifa,Tocame,2022,dbscan,0
-Bad Bunny,El Apagón,2022,dbscan,0
-$uicideboy$,Matte Black,2022,dbscan,0
-Conan Gray,Memories,2022,dbscan,0
-Chuy Lizarraga y Su Banda Tierra Sinaloense,Partido En Dos,2022,dbscan,0
-Kenshi Yonezu,KICK BACK,2022,dbscan,0
-Imagine Dragons,Wrecked,2022,dbscan,0
-Noah Kahan,Northern Attitude,2022,dbscan,0
-"RÜFÜS DU SOL, Anyma",Alive - Anyma Remix,2022,dbscan,0
-"Ali Sethi, Shae Gill",Pasoori,2022,dbscan,0
-Sebastian Yatra,Tacones Rojos,2022,dbscan,0
-Mora,DOMINGO DE BOTE,2022,dbscan,0
-"Bad Bunny, Tainy",Callaita,2022,dbscan,0
-Lasso,Ojos Marrones,2022,dbscan,0
-"Drake, 21 Savage",Jimmy Cooks (feat. 21 Savage),2022,dbscan,0
-"Eslabon Armado, Ivan Cornejo",HASTA LA MUERTE,2022,dbscan,0
-Siddhartha,00:00,2022,dbscan,0
-GIVĒON,Lost Me,2022,dbscan,0
-"Luis Alfonso Partida El Yaki, Grupo Firme",Dile A Tu Orgullo (En Vivo),2022,dbscan,0
-Teddy Swims,Don't Stop Believin',2022,dbscan,0
-Bad Bunny,Un Verano Sin Ti,2022,dbscan,0
-Ruger,Girlfriend,2022,dbscan,0
-Djo,End of Beginning,2022,dbscan,0
-"Abraham Mateo, Ana Mena",Quiero Decirte,2022,dbscan,0
-Zach Bryan,"Burn, Burn, Burn",2022,dbscan,0
-"SZA, Travis Scott",Open Arms (feat. Travis Scott),2022,dbscan,0
-Kevin Kaarl,te quiero tanto,2022,dbscan,0
-Central Cee,Doja,2022,dbscan,0
-SunKissed Lola,Pasilyo,2022,dbscan,0
-"ANOTR, Abel Balder",Relax My Eyes,2022,dbscan,0
-"Avvy Sra, Karan Aujla, Jaani",White Brown Black,2022,dbscan,0
-"Fuerza Regida, Juanpa Salazar",Mi Terre CLN,2022,dbscan,0
-"Gunna, Drake",P power (feat. Drake),2022,dbscan,0
-Dhruv,double take,2022,dbscan,0
-beabadoobee,the perfect pair,2022,dbscan,0
-Feid,California,2022,dbscan,0
-Misa Bee,Noise Waterfalls,2022,dbscan,0
-Panoramia,Tranquil White Noise,2022,dbscan,0
-$uicideboy$,1000 Blunts,2022,dbscan,0
-NIKI,Backburner,2022,dbscan,0
-Rosa Linn,SNAP,2022,dbscan,0
-Depresión Sonora,Como todo el Mundo,2022,dbscan,0
-Zach Bryan,The Good I'll Do,2022,dbscan,0
-"Lojay, Sarz, Chris Brown",Monalisa,2022,dbscan,0
-"DJ Khaled, Rick Ross, Lil Wayne, JAŸ-Z, John Legend, Fridayy","GOD DID (feat. Rick Ross, Lil Wayne, JAY-Z, John Legend & Fridayy)",2022,dbscan,0
-Kid Cudi,Maui Wowie,2022,dbscan,0
-Inlet Noise,Deep Sleep Womb Sounds,2022,dbscan,0
-"Charlie Puth, Jung Kook, BTS",Left and Right (Feat. Jung Kook of BTS),2022,dbscan,0
-Feid,Si Te La Encuentras Por Ahí,2022,dbscan,0
-"Evan Honer, Julia DiGrazia",Jersey Giant,2022,dbscan,0
-Jung Kook,My You,2022,dbscan,0
-"Banda MS de Sergio Lizárraga, Carín León",Ojos Cerrados,2022,dbscan,0
-Drake,Flight's Booked,2022,dbscan,0
-Bad Bunny,Aguacero,2022,dbscan,0
-Wyatt Flores,Please Don't Go,2022,dbscan,0
-Blessd,Instagram,2022,dbscan,0
-"马也_Crabbit, Cole先生",海屿你,2022,dbscan,0
-Kordhell,Murder In My Mind,2022,dbscan,0
-Lizzo,About Damn Time,2022,dbscan,0
-Mariah the Scientist,Spread Thin,2022,dbscan,0
-Joji,Glimpse of Us,2022,dbscan,0
-"Sebastian Yatra, Myke Towers",Pareja Del Año,2022,dbscan,0
-Fontaines D.C.,I Love You,2022,dbscan,0
-Mora,COMO HAS ESTAU?,2022,dbscan,0
-Taylor Swift,Anti-Hero,2022,dbscan,0
-Dei V,VVS,2022,dbscan,0
-Edicion Especial,Quédate Conmigo,2022,dbscan,0
-Alex Zurdo,Pentagrama,2022,dbscan,0
-Lady Gaga,Hold My Hand,2022,dbscan,0
-星野,晚风告白,2022,dbscan,0
-Asake,Peace Be Unto You (PBUY),2022,dbscan,0
-"Mora, YOVNGCHIMI",MODELITO,2022,dbscan,0
-fromis_9,DM,2022,dbscan,0
-SZA,Good Days,2022,dbscan,0
-Mora,PECADO,2022,dbscan,0
-Tom Odell,Best Day Of My Life,2022,dbscan,0
-Noah Kahan,All My Love,2022,dbscan,0
-TAEYEON,INVU,2022,dbscan,0
-"Jung Kook, BTS, FIFA Sound",Dreamers [Music from the FIFA World Cup Qatar 2022 Official Soundtrack],2022,dbscan,0
-Bad Bunny,Efecto,2022,dbscan,0
-keshi,UNDERSTAND,2022,dbscan,0
-Grupo Origen,Cabron Yo Puedo,2022,dbscan,0
-Tom Santa,Rainfall (Praise You),2022,dbscan,0
-Lizzy McAlpine,doomsday,2022,dbscan,0
-"LOVELI LORI, ovg!",Love For You,2022,dbscan,0
-"Tiago PZK, LIT killah, Maria Becerra, Nicki Nicole",Entre Nosotros (Remix) [con Nicki Nicole],2022,dbscan,0
-"Metro Boomin, Travis Scott, Young Thug",Trance (with Travis Scott & Young Thug),2022,dbscan,0
-Tove Lo,No One Dies From Love,2022,dbscan,0
-Alfredo Olivas,Hoy Te Pierdo,2022,dbscan,0
-"Bad Bunny, Buscabulla",Andrea,2022,dbscan,0
+Matt Martians,An Eater,2021,dbscan,0
+Cody Johnson,'Til You Can't,2021,dbscan,0
+Doja Cat,Ain't Shit,2021,dbscan,0
+"Drake, Lil Baby",Wants and Needs (feat. Lil Baby),2021,dbscan,0
+Tory Lanez,The Color Violet,2021,dbscan,0
+Ed Sheeran,Shivers,2021,dbscan,0
+Drake,Pipe Down,2021,dbscan,0
+Surf Curse,Freaks,2021,dbscan,-1
+Olivia Rodrigo,happier,2021,dbscan,0
+The Marías,Heavy,2021,dbscan,0
+Doja Cat,Been Like This,2021,dbscan,0
+Treaty Oak Revival,No Vacancy,2021,dbscan,0
+Billie Eilish,Happier Than Ever,2021,dbscan,0
+"Doja Cat, SZA",Kiss Me More (feat. SZA),2021,dbscan,0
+"Jordan Davis, Luke Bryan",Buy Dirt,2021,dbscan,0
+The Rare Occasions,Notion,2021,dbscan,0
+PinkPantheress,Pain,2021,dbscan,0
+"Drake, Travis Scott",Fair Trade (with Travis Scott),2021,dbscan,0
+EKKSTACY,i walk this earth all by myself,2021,dbscan,-1
+Noah Kahan,The View Between Villages,2022,dbscan,0
+"Bad Bunny, Chencho Corleone",Me Porto Bonito,2022,dbscan,0
+Brent Faiyaz,ALL MINE,2022,dbscan,0
 "Bad Bunny, Rauw Alejandro",Party,2022,dbscan,0
-Danny Ocean,Volare,2022,dbscan,0
-"Nathan Dawe, Ella Henderson",21 Reasons (feat. Ella Henderson),2022,dbscan,0
-Natanael Cano,Morritas,2022,dbscan,0
-"Fred again.., Delilah Montagu",Delilah (pull me out of this),2022,dbscan,0
-Feid,Feliz Cumpleaños Ferxxo,2022,dbscan,0
-"Supermode, MEDUZA",Tell Me Why - MEDUZA Remix,2022,dbscan,0
-"Natanael Cano, Victor Cibrian",Que Me Importa,2022,dbscan,0
-Laufey,Falling Behind,2022,dbscan,0
-"Pritam, Arijit Singh, Amitabh Bhattacharya","Kesariya (From ""Brahmastra"")",2022,dbscan,0
+"Øneheart, reidenshi",snowfall,2022,dbscan,-1
 "Metro Boomin, Future, Chris Brown",Superhero (Heroes & Villains) [with Future & Chris Brown],2022,dbscan,0
-Imagine Dragons,Bones,2022,dbscan,0
-"Fuerza Regida, Grupo Frontera",911 - En Vivo,2022,dbscan,0
-NewJeans,Ditto,2022,dbscan,0
-Grupo Marca Registrada,Solo Me Dejaste,2022,dbscan,0
-Brent Faiyaz,ROLE MODEL,2022,dbscan,0
-Sean Paul,Get Busy,2022,dbscan,0
-"AP Dhillon, Shinda Kahlon",Dil Nu,2022,dbscan,0
-Taylor Swift,"You're On Your Own, Kid",2022,dbscan,0
-Hadrian,Niño De Oro,2022,dbscan,0
-Noah Kahan,Orange Juice,2022,dbscan,0
-SZA,Nobody Gets Me,2022,dbscan,0
-Aileron,Quantum White,2022,dbscan,0
-Natanael Cano,Madrid,2022,dbscan,0
-Brent Faiyaz,DEAD MAN WALKING,2022,dbscan,0
-Harry Styles,Matilda,2022,dbscan,0
-Lainey Wilson,Watermelon Moonshine,2022,dbscan,0
-Tornillo,Morena,2022,dbscan,0
-Jaymes Young,Happiest Year,2022,dbscan,0
-Rex Orange County,THE SHADE,2022,dbscan,0
-"Fireboy DML, Asake",Bandana,2022,dbscan,0
-Montell Fish,Bathroom,2022,dbscan,0
-Harry Styles,Late Night Talking,2022,dbscan,0
-"Cris MJ, Duki, Nicki Nicole, Standly, Stars Music Chile",Marisola (Remix),2022,dbscan,0
-i-dle,Nxde,2022,dbscan,0
-"Yami Safdie, Milo j",El Bolero,2022,dbscan,0
-"Stephen Sanchez, Em Beihold",Until I Found You (with Em Beihold) - Em Beihold Version,2022,dbscan,0
-Ahmed Saad,اليوم الحلو ده,2022,dbscan,0
-Feid,Normal,2022,dbscan,0
-Siddhartha,Brújula,2022,dbscan,0
-"Hannes, waterbaby",Stockholmsvy,2022,dbscan,0
-SZA,Snooze,2022,dbscan,0
-"Rema, Selena Gomez",Calm Down (with Selena Gomez),2022,dbscan,0
-"David Guetta, Bebe Rexha",I'm Good (Blue),2022,dbscan,0
-Suki Waterhouse,Good Looking,2022,dbscan,0
-"Asake, Burna Boy",Sungba (feat. Burna Boy) - Remix,2022,dbscan,0
-Jesus Image,Yeshua - Live,2022,dbscan,0
-Noah Kahan,Stick Season,2022,dbscan,0
-Wonstein,Your Existence,2022,dbscan,0
-"Metro Boomin, The Weeknd, 21 Savage",Creepin' (with The Weeknd & 21 Savage),2022,dbscan,0
-Gunna,Banking On Me,2022,dbscan,0
-"Alex Rose, Rauw Alejandro, Lenny Tavárez, Cazzu, Lyanno",Toda - Remix,2022,dbscan,0
-Asake,Organise,2022,dbscan,0
-Zach Bryan,Sun to Me,2022,dbscan,0
-Joan Sebastian,Sangoloteadito,2022,dbscan,0
-BTS,Run BTS,2022,dbscan,0
-Milli Hughes,Deep Phase Noise 1,2022,dbscan,0
-Steve Lacy,Bad Habit,2022,dbscan,0
-梦然,是你,2022,dbscan,0
-Ambi Val,Noise Rest,2022,dbscan,0
-Feid,Ferxxo 100,2022,dbscan,0
-陈村长,爱怎么了,2022,dbscan,0
-Joji,Die For You,2022,dbscan,0
-Luke Combs,"Going, Going, Gone",2022,dbscan,0
-Morat,Debí Suponerlo,2022,dbscan,0
-"Tiago PZK, LIT killah",Entre Nosotros,2022,dbscan,0
-SELKER,Too Much For Me,2022,dbscan,0
-ENHYPEN,SHOUT OUT,2022,dbscan,0
-"Dei V, Bassy",Quieren Ser Yo,2022,dbscan,0
-Milo j,Morocha,2022,dbscan,0
-Dean Lewis,How Do I Say Goodbye,2022,dbscan,0
-"Liz, Eddy Herrera",A Dormir Juntitos - 2022 Remastered,2022,dbscan,0
-Stromae,Santé,2022,dbscan,0
-Bad Bunny,Yo No Soy Celoso,2022,dbscan,0
-Fujii Kaze,Kirari,2022,dbscan,0
-Cole Swindell,She Had Me At Heads Carolina,2022,dbscan,0
-AP Dhillon,Summer High,2022,dbscan,0
-Muni Long,Hrs & Hrs,2022,dbscan,0
-Mora,ESCALOFRÍOS,2022,dbscan,0
-J.Tajor,Like I Do,2022,dbscan,0
-"Fuerza Regida, Grupo Marca Registrada",Modo Maldito,2022,dbscan,0
-Montell Fish,Hotel,2022,dbscan,0
-Anuel AA,¿Qué Nos Pasó?,2022,dbscan,0
-Montell Fish,Destroy Myself Just For You,2022,dbscan,0
-Feid,CHORRITO PA LAS ANIMAS,2022,dbscan,0
-Bad Bunny,Enséñame a Bailar,2022,dbscan,0
-Generación 12,Quiero Conocer a Jesús (Yeshua) / Nuestro Dios (En Vivo),2022,dbscan,0
-"Mora, Feid",LA INOCENTE,2022,dbscan,0
-"Swedish House Mafia, The Weeknd",Moth To A Flame (with The Weeknd),2022,dbscan,0
-"yuji, putri dahlia",Old Love,2022,dbscan,0
-"Bizarrap, Quevedo","Quevedo: Bzrp Music Sessions, Vol. 52/66",2022,dbscan,0
-Ryan Castro,Jordan,2022,dbscan,0
-Historic Site,Bed Time Noise,2022,dbscan,0
-Tate McRae,she's all i wanna be,2022,dbscan,0
-"Lumi Athena, jnhygs",SMOKE IT OFF!,2022,dbscan,0
-Yeyo,Maldad,2022,dbscan,0
-Asake,Nzaza,2022,dbscan,0
-Royel Otis,Oysters In My Pocket,2022,dbscan,0
-"Polimá Westcoast, Feid, Pailita, Paloma Mami, De La Ghetto",ULTRA SOLO REMIX,2022,dbscan,0
-Junior H,TUS BESOX,2022,dbscan,0
-Montell Fish,Altitude,2022,dbscan,0
-December Avenue,Saksi Ang Langit,2022,dbscan,0
-Dilaw,Uhaw (Tayong Lahat),2022,dbscan,0
-Øneheart,apathy,2022,dbscan,0
-Codiciado,Vamos Aclarando Muchas Cosas - En Vivo,2022,dbscan,0
-"Sachin-Jigar, Arijit Singh, Amitabh Bhattacharya",Apna Bana Le,2022,dbscan,0
-Alfredo Olivas,Yo Todo Lo Doy,2022,dbscan,0
-SZA,Kill Bill,2022,dbscan,0
-Manuel Turizo,La Bachata,2022,dbscan,0
-"Los Gemelos De Sinaloa, Fuerza Regida",No Le Aflojo,2022,dbscan,0
-HYBS,Ride,2022,dbscan,0
-"Ozuna, Feid",Hey Mor,2022,dbscan,0
-"Elton John, Britney Spears",Hold Me Closer,2022,dbscan,0
-Kenny Die,Tu para Mi,2022,dbscan,0
-"Drake, 21 Savage",Hours In Silence,2022,dbscan,0
-Jack Harlow,First Class,2022,dbscan,0
-Junior H,Nací Para Amarte,2022,dbscan,0
-"zandros, Limi",obsessed,2022,dbscan,0
+The Red Clay Strays,Wondering Why,2022,dbscan,0
+"Future, Drake, Tems",WAIT FOR U (feat. Drake & Tems),2022,dbscan,0
 Omar Apollo,Evergreen (You Didn’t Deserve Me At All),2022,dbscan,0
-Asake,Ototo,2022,dbscan,0
-"Yuridia, Ángela Aguilar",Qué Agonía,2022,dbscan,0
-"Metro Boomin, Travis Scott, 21 Savage",Niagara Falls (Foot or 2) [with Travis Scott & 21 Savage],2022,dbscan,0
-Hermanos Espinoza,Prueba De Fuego,2022,dbscan,0
-Ari Abdul,BABYDOLL,2022,dbscan,0
-"Luis Mexia, Grupo Firme",Calidad,2022,dbscan,0
-Billie Eilish,"What Was I Made For? [From The Motion Picture ""Barbie""]",2023,dbscan,0
-"Zach Bryan, The War And Treaty",Hey Driver (feat. The War and Treaty),2023,dbscan,0
-Olivia Rodrigo,vampire,2023,dbscan,0
-Rawayana,Feriado,2023,dbscan,0
-"Sky Rompiendo, Dei V",CRUSH,2023,dbscan,0
-Lewis Capaldi,Wish You The Best,2023,dbscan,0
-La Santa Grifa,Niña Elegante,2023,dbscan,0
-Olivia Dean,Dive,2023,dbscan,0
-"YOVNGCHIMI, Dei V",TU$$I (with Dei V),2023,dbscan,0
-"A$AP Rocky, Imogen Heap, Clams Casino",I Smoked Away My Brain (I'm God x Demons Mashup) (feat. Imogen Heap & Clams Casino),2023,dbscan,0
-Warren Zeiders,Pretty Little Poison,2023,dbscan,0
-Hitsujibungaku,more than words,2023,dbscan,0
-"Anuel AA, Quevedo, Maluma, Mambo Kingz, DJ Luian",OA,2023,dbscan,0
-aespa,Spicy,2023,dbscan,0
-"Adekunle Gold, Zinoleesky",Party No Dey Stop (with Zinoleesky),2023,dbscan,0
-Quevedo,PUNTO G,2023,dbscan,0
-"Jung Kook, Latto",Seven (feat. Latto) (Explicit Ver.),2023,dbscan,0
-Jelly Roll,Need A Favor,2023,dbscan,0
-Feid,EY CHORY,2023,dbscan,0
-Zach Bryan,East Side of Sorrow,2023,dbscan,0
-Don Toliver,No Pole,2023,dbscan,0
-"Cris MJ, Yan Block",333,2023,dbscan,0
-Luke Combs,Fast Car,2023,dbscan,0
-Bad Bunny,CYBERTRUCK,2023,dbscan,0
-"RAYE, 070 Shake",Escapism.,2023,dbscan,0
-LE SSERAFIM,Perfect Night,2023,dbscan,0
-"James Mac, Vall, Rosalie",The Boy Is Mine,2023,dbscan,0
-KAROL G,PROVENZA,2023,dbscan,0
-Miley Cyrus,Flowers,2023,dbscan,0
-Junior H,A TU NOMBRE,2023,dbscan,0
-"Yng Lvcas, Peso Pluma",La Bebe - Remix,2023,dbscan,0
-Jung Kook,Yes or No,2023,dbscan,0
-"Bad Bunny, Feid",PERRO NEGRO,2023,dbscan,0
-"Sebastian Yatra, Manuel Turizo, Beéle",Vagabundo,2023,dbscan,0
-Teddy Swims,The Door,2023,dbscan,0
-Chris Stapleton,White Horse,2023,dbscan,0
-Jan Glack,El Tata,2023,dbscan,0
-Davido,FEEL,2023,dbscan,0
-Peggy Gou,(It Goes Like) Nanana - Edit,2023,dbscan,0
-Jung Kook,Standing Next to You,2023,dbscan,0
-Fridayy,When It Comes To You,2023,dbscan,0
-Musiscape,Calming Clouds of Slumber,2023,dbscan,0
-"Daniel Caesar, Mustafa",Toronto 2014 (with Mustafa),2023,dbscan,0
-"Dimitri Vegas & Like Mike, Tiësto, Dido, W&W, Dimitri Vegas, Like Mike",Thank You (Not So Bad),2023,dbscan,0
-"Jung Kook, Latto",Seven (feat. Latto) (Clean Ver.),2023,dbscan,0
-"Zach Bryan, Noah Kahan",Sarah's Place (feat. Noah Kahan),2023,dbscan,0
-Bad Bunny,MR. OCTOBER,2023,dbscan,0
-Morgan Wallen,Ain’t That Some,2023,dbscan,0
-Clara La San,In This Darkness,2023,dbscan,0
-"Fuerza Regida, Manuel Turizo",UNA CERVEZA,2023,dbscan,0
-XG,NEW DANCE,2023,dbscan,0
-"Victony, Rema, Tempoe, Don Toliver","Soweto (with Don Toliver, Rema & Tempoe)",2023,dbscan,0
-Carín León,No Es Por Acá,2023,dbscan,0
-"Kany García, Christian Nodal",La Siguiente,2023,dbscan,0
-Xavi,La Diabla,2023,dbscan,0
-alex_g_offline,I Wait for You,2023,dbscan,0
-Lana Del Rey,Say Yes To Heaven,2023,dbscan,0
-"Oscar Maydon, Victor Mendivil, Alemán",Hong Kong,2023,dbscan,0
-"Noah Kahan, Post Malone",Dial Drunk (with Post Malone),2023,dbscan,0
-Grupo Frontera,NO SE VA - En Vivo,2023,dbscan,0
-IVE,I AM,2023,dbscan,0
-Carín León,Necesito Encontrarte,2023,dbscan,0
-"Mora, RaiNao",UN DESEO,2023,dbscan,0
-La Santa Grifa,Sabanas Blancas,2023,dbscan,0
-Beach Weather,"Sex, Drugs, Etc.",2023,dbscan,0
-Céline Dion,That's the Way It Is,2023,dbscan,0
-"Peso Pluma, Grupo Frontera",TULUM,2023,dbscan,0
-"Rokero, Luar La L",Baja y Sube,2023,dbscan,0
-Junior H,$AD BOYZ II,2023,dbscan,0
-"ELENA ROSE, Danny Ocean, Jerry Di",CARACAS EN EL 2000,2023,dbscan,0
-El Payaso Plim Plim,Abejita Chiquitita,2023,dbscan,0
-Emmanuel Cortes,Amor,2023,dbscan,0
-"Rauw Alejandro, Lyanno, Brray",LOKERA,2023,dbscan,0
-"Beéle, Farruko",Santorini,2023,dbscan,0
-Zach Bryan,Nine Ball,2023,dbscan,0
-"Ofenbach, Norma Jean Martine",Overdrive (feat. Norma Jean Martine),2023,dbscan,0
-Young Miko,Lisa,2023,dbscan,0
-Cody Johnson,Dirt Cheap,2023,dbscan,0
-Junior H,LOKERON X AMOR,2023,dbscan,0
-"Rawayana, Monsieur Periné",Hora Loca,2023,dbscan,0
-Tom Odell,Black Friday,2023,dbscan,0
-Junior H,ENTRE NOSOTROS,2023,dbscan,0
-"Tainy, Rauw Alejandro",Sci-Fi,2023,dbscan,0
-Asake,Lonely At The Top,2023,dbscan,0
-Bits & Noise,Deep Sleep Brown Noise,2023,dbscan,0
-"LATIN MAFIA, Jesse Baez",Se fue la luz,2023,dbscan,0
-Rauw Alejandro,QUÉ RICO CH**GAMOS,2023,dbscan,0
-"Tiësto, Tate McRae",10:35,2023,dbscan,0
-Laufey,Promise,2023,dbscan,0
-"Nitefreak, Emmanuel Jal",Gorah,2023,dbscan,0
-"KAROL G, Peso Pluma",QLONA,2023,dbscan,0
-Junior H,TRES BOTELLAS,2023,dbscan,0
-Feid,ROMÁNTICOS DE LUNES,2023,dbscan,0
-Tems,Me & U,2023,dbscan,0
-"Calvin Harris, Ellie Goulding",Miracle (with Ellie Goulding),2023,dbscan,0
-"Fuerza Regida, Jonathan Caro, Chino Pacas",PLVO BLNCO,2023,dbscan,0
-Bailey Zimmerman,Fall In Love,2023,dbscan,0
-"Bad Bunny, Luar La L",TELEFONO NUEVO,2023,dbscan,0
-Chappell Roan,Casual,2023,dbscan,0
-"Karan Aujla, Ikky",Softly,2023,dbscan,0
-Dua Lipa,Dance The Night - From Barbie The Album,2023,dbscan,0
-"Jung Kook, Latto",Seven (feat. Latto),2023,dbscan,0
-"LE SSERAFIM, Nile Rodgers",UNFORGIVEN (feat. Nile Rodgers),2023,dbscan,0
-Bailey Zimmerman,Religiously,2023,dbscan,0
-"Maluma, Carín León",Según Quién,2023,dbscan,0
-"Arijit Singh, Harshdeep Kaur",Zaalima,2023,dbscan,0
-"Chase & Status, Bou, Flowdan, IRAH, Trigga, Takura","Baddadan (feat. IRAH, Flowdan, Trigga & Takura)",2023,dbscan,0
-Ella Langley,Excuse The Mess,2023,dbscan,0
-Noah Kahan,You’re Gonna Go Far,2023,dbscan,0
-HARDY,TRUCK BED,2023,dbscan,0
-Jalen Ngonda,If You Don't Want My Love,2023,dbscan,0
-Kali Uchis,Moonlight,2023,dbscan,0
-Tate McRae,greedy,2023,dbscan,0
-Gunna,fukumean,2023,dbscan,0
-"Ozuna, Anuel AA, Chris Jedi",Pa Ti Estoy,2023,dbscan,0
-Officialalex425,Dame Amor,2023,dbscan,0
-"Disclosure, Rivo, Eliza Doolittle",You & Me - Rivo Remix,2023,dbscan,0
-"Eladio Carrion, Myke Towers",Si La Calle Llama - Remix,2023,dbscan,0
-Peso Pluma,NUEVA VIDA,2023,dbscan,0
-Home Sounds,Soothing Fan,2023,dbscan,0
-"Milo j, Peso Pluma",UNA BALA,2023,dbscan,0
-Feid,ALAKRAN,2023,dbscan,0
-Lewis Capaldi,Forget Me,2023,dbscan,0
-"Lost Frequencies, Calum Scott",Where Are You Now,2023,dbscan,0
-"Grupo Frontera, Junior H",EN ALTAVOZ,2023,dbscan,0
-KAROL G,AMARGURA,2023,dbscan,0
-Grupo Marca Registrada,Hoy Todo Cambio,2023,dbscan,0
-"Dave, Central Cee",Sprinter,2023,dbscan,0
-Laufey,From The Start,2023,dbscan,0
-"Nicky Youre, hey daisy",Sunroof,2023,dbscan,0
-Sabrina Carpenter,Feather,2023,dbscan,0
-Mitski,My Love Mine All Mine,2023,dbscan,0
-Alex Zurdo,Guarda Tu Corazón,2023,dbscan,0
-Cris MJ,Ponte Bonita,2023,dbscan,0
-"Morgan Wallen, ERNEST",Cowgirls,2023,dbscan,0
-Bad Bunny,VUELVE CANDY B,2023,dbscan,0
-Jungle,Back On 74,2023,dbscan,0
-"The Weeknd, Playboi Carti, Madonna",Popular (with Playboi Carti & Madonna) - From The Idol Vol. 1 (Music from the HBO Original Series),2023,dbscan,0
-Musiscape,Relaxing Raindrops for Kids Sleep,2023,dbscan,0
-Junior H,PARIS,2023,dbscan,0
-Chappell Roan,Pink Pony Club,2023,dbscan,0
-Bad Bunny,WHERE SHE GOES,2023,dbscan,0
-Gracie Abrams,Best,2023,dbscan,0
-Junior H,MIENTRAS DUERMES,2023,dbscan,0
-Luke Combs,Where the Wild Things Are,2023,dbscan,0
-Myke Towers,HORA CERO,2023,dbscan,0
-Chezile,Beanie,2023,dbscan,0
-Natanael Cano,O Me Voy O Te Vas,2023,dbscan,0
-"Bizarrap, Milo j","Milo J: Bzrp Music Sessions, Vol. 57/66",2023,dbscan,0
-Rauw Alejandro,DILUVIO,2023,dbscan,0
-Fuerza Regida,EXCESOS,2023,dbscan,0
-"Boy Wonder CF, Jon Z, Noriel, Baby Rasta, Darkiel, Messiah, LYAN, High Quality","0 Sentimientos (Remix) [feat. Baby Rasta, Darkiel, Messiah & Lyan]",2023,dbscan,0
-Jung Kook,Shot Glass of Tears,2023,dbscan,0
-elijah woods,"24/7, 365",2023,dbscan,0
-fitterkarma,Kalapastangan,2023,dbscan,0
-"Jung Kook, Major Lazer",Closer to You (feat. Major Lazer),2023,dbscan,0
-NewJeans,OMG,2023,dbscan,0
-"Jung Kook, Jack Harlow",3D (feat. Jack Harlow),2023,dbscan,0
-Chencho Corleone,Un Cigarrillo,2023,dbscan,0
-Rels B,lo que hay x aquí,2023,dbscan,0
-"Gorillaz, Tame Impala, Bootie Brown",New Gold (feat. Tame Impala and Bootie Brown),2023,dbscan,0
-Dermot Kennedy,Kiss Me,2023,dbscan,0
-TWICE,SET ME FREE,2023,dbscan,0
-King Gnu,SPECIALZ,2023,dbscan,0
-"Rawayana, Danny Ocean",Binikini,2023,dbscan,0
-"Peso Pluma, Tito Double P",LA PEOPLE,2023,dbscan,0
-Junior H,MILES DE ROSAS,2023,dbscan,0
-"Drake, Sexyy Red, SZA",Rich Baby Daddy (feat. Sexyy Red & SZA),2023,dbscan,0
-i-dle,Queencard,2023,dbscan,0
-New West,Those Eyes,2023,dbscan,0
-Musiscape,Lullaby Whispers for Sweet Dreams,2023,dbscan,0
-"Oscar Maydon, Junior H",Fin de Semana,2023,dbscan,0
-BABYMONSTER,BATTER UP,2023,dbscan,0
-"Boy Wonder CF, Jon Z, Baby Rasta",Nunca Me Amo,2023,dbscan,0
-Noah Kahan,Call Your Mom,2023,dbscan,0
-"Grupo Firme, Alejandro Fernández",Felicidades,2023,dbscan,0
-Rich Amiri,ONE CALL,2023,dbscan,0
-"Alex Favela, Grupo Marca Registrada, Joaquin Medina",ELOVRGA,2023,dbscan,0
-"Borai & Denham Audio, Franky Rizardo",Make Me - Franky Rizardo Remix,2023,dbscan,0
-Travis Scott,I KNOW ?,2023,dbscan,0
-"Zerb, Sofiya Nzau",Mwaki,2023,dbscan,0
-"Bad Bunny, Young Miko",FINA,2023,dbscan,0
-"Wakyin, Carlos Vives",Beso (Fruta Fresca),2023,dbscan,0
-"Metro Boomin, A$AP Rocky, Roisee","Am I Dreaming (Metro Boomin & A$AP Rocky, Roisee)",2023,dbscan,0
-"MAN WITH A MISSION, milet",絆ノ奇跡,2023,dbscan,0
-Kevin Kaarl,me va a costar,2023,dbscan,0
-Jung Kook,Somebody,2023,dbscan,0
-Bad Bunny,NADIE SABE,2023,dbscan,0
-"Tainy, Bad Bunny, Julieta Venegas",Lo Siento BB:/,2023,dbscan,0
-Fuerza Regida,SABOR FRESA,2023,dbscan,0
-wave to earth,love.,2023,dbscan,0
-"Bad Bunny, Arcángel, De La Ghetto, Ñengo Flow",ACHO PR,2023,dbscan,0
-Quevedo,Columbia,2023,dbscan,0
+Bad Bunny,Tití Me Preguntó,2022,dbscan,0
+Harry Styles,As It Was,2022,dbscan,0
+"Metro Boomin, Travis Scott, Young Thug",Trance (with Travis Scott & Young Thug),2022,dbscan,0
+SZA,Kill Bill,2022,dbscan,0
+SZA,Nobody Gets Me,2022,dbscan,0
+Luke Combs,The Kind of Love We Make,2022,dbscan,0
+Noah Kahan,Northern Attitude,2022,dbscan,0
+Billie Eilish,TV,2022,dbscan,0
+beabadoobee,the perfect pair,2022,dbscan,0
+"Metro Boomin, Future, Don Toliver",Too Many Nights (feat. Don Toliver & with Future),2022,dbscan,0
+Noah Kahan,All My Love,2022,dbscan,0
+Lizzy McAlpine,ceilings,2022,dbscan,0
+"ERNEST, Morgan Wallen",Flower Shops (feat. Morgan Wallen),2022,dbscan,0
+"Metro Boomin, Don Toliver",Around Me (feat. Don Toliver),2022,dbscan,0
+Djo,End of Beginning,2022,dbscan,0
+Bad Bunny,Moscow Mule,2022,dbscan,0
+Zach Bryan,Sun to Me,2022,dbscan,0
+SZA,Snooze,2022,dbscan,0
+Zach Bryan,Oklahoma Smokeshow,2022,dbscan,0
+Jon Pardi,Mr. Saturday Night,2022,dbscan,0
+Noah Kahan,Stick Season,2022,dbscan,0
+"David Guetta, Bebe Rexha",I'm Good (Blue),2022,dbscan,0
+Laufey,Falling Behind,2022,dbscan,0
+Zach Bryan,Something in the Orange,2022,dbscan,0
+$uicideboy$,1000 Blunts,2022,dbscan,0
+"Drake, 21 Savage",Jimmy Cooks (feat. 21 Savage),2022,dbscan,0
+"Bad Bunny, Bomba Estéreo",Ojitos Lindos,2022,dbscan,0
+Zach Bryan,"Burn, Burn, Burn",2022,dbscan,0
+Noah Kahan,Orange Juice,2022,dbscan,0
+SZA,Good Days,2022,dbscan,0
+Noah Kahan,New Perspective,2022,dbscan,0
+Sabrina Carpenter,Nonsense,2022,dbscan,0
+Steve Lacy,Bad Habit,2022,dbscan,0
+d4vd,Romantic Homicide,2022,dbscan,0
+"Lil Durk, Morgan Wallen",Broadway Girls (feat. Morgan Wallen),2022,dbscan,0
+Harry Styles,Matilda,2022,dbscan,0
 Megan Moroney,Tennessee Orange,2023,dbscan,0
-"Peso Pluma, Gabito Ballesteros, Junior H",LADY GAGA,2023,dbscan,0
-XG,SHOOTING STAR,2023,dbscan,0
-Junior H,EN LA PEDA,2023,dbscan,0
-"Milo j, Taiu",Rara Vez,2023,dbscan,0
-"Bizarrap, Milo j",No soy Eterno,2023,dbscan,0
-"Travis Scott, Playboi Carti",FE!N (feat. Playboi Carti),2023,dbscan,0
-"Feid, ATL Jacob",LUNA,2023,dbscan,0
-"Cartel De Santa, La Kelly",Shorty Party,2023,dbscan,0
-"Natanael Cano, Peso Pluma, Gabito Ballesteros",AMG,2023,dbscan,0
+Bailey Zimmerman,Rock and A Hard Place,2023,dbscan,0
+Miley Cyrus,Flowers,2023,dbscan,0
+BigXthaPlug,Levels,2023,dbscan,0
+Bailey Zimmerman,Fall In Love,2023,dbscan,0
+Treaty Oak Revival,Stop & Stare,2023,dbscan,0
+Bad Bunny,MONACO,2023,dbscan,0
+BigXthaPlug,Texas,2023,dbscan,0
+Ella Langley,Country Boy's Dream Girl,2023,dbscan,0
+Olivia Rodrigo,vampire,2023,dbscan,0
+Olivia Dean,Dive,2023,dbscan,0
+Sabrina Carpenter,Feather,2023,dbscan,0
+Don Toliver,No Pole,2023,dbscan,0
+Luke Combs,Where the Wild Things Are,2023,dbscan,0
+Pierce The Veil,So Far So Fake,2023,dbscan,0
+Daniel Caesar,Always,2023,dbscan,0
+Teddy Swims,Lose Control,2023,dbscan,0
+Noah Kahan,You’re Gonna Go Far,2023,dbscan,0
+"Zach Bryan, Kacey Musgraves",I Remember Everything (feat. Kacey Musgraves),2023,dbscan,0
+Laufey,From The Start,2023,dbscan,0
+Chappell Roan,Casual,2023,dbscan,0
 Daniel Caesar,Superpowers,2023,dbscan,0
-"Alok, Mondello'G, CERES, Tribbs",LET'S GET FKD UP,2023,dbscan,0
-Peso Pluma,ZAPATA,2023,dbscan,0
-Gregory Alan Isakov,Sweet Heat Lightning,2023,dbscan,0
-"Grupo Marca Registrada, Grupo Frontera",Di Que Sí,2023,dbscan,0
-"Fuerza Regida, Chuyin",INMORTAL,2023,dbscan,0
-"Grupo Firme, Gerardo Coronel",Qué Onda Perdida,2023,dbscan,0
-"The Weeknd, JENNIE, Lily-Rose Depp","One Of The Girls (with JENNIE, Lily Rose Depp)",2023,dbscan,0
-"&ME, Black Coffee, Keinemusik",The Rapture Pt.III,2023,dbscan,0
-Treaty Oak Revival,I'm the Worst,2023,dbscan,0
-"Tainy, Bad Bunny",MOJABI GHOST,2023,dbscan,0
+Bits & Noise,Deep Sleep Brown Noise,2023,dbscan,-1
+"Daniel Caesar, serpentwithfeet",Disillusioned (with serpentwithfeet),2023,dbscan,0
+Olivia Rodrigo,lacy,2023,dbscan,0
+Olivia Dean,The Hardest Part,2023,dbscan,0
 Treaty Oak Revival,In Between,2023,dbscan,0
-Ruger,Asiwaju,2023,dbscan,0
-Myke Towers,LALA,2023,dbscan,0
-Lainey Wilson,4×4×U,2024,dbscan,0
-PARTYNEXTDOOR,M a k e I t T o T h e M o r n i n g,2024,dbscan,0
-Sabrina Carpenter,Espresso,2024,dbscan,0
-ECLIPSE,Sudden Shower,2024,dbscan,0
-"¥$, Kanye West, Ty Dolla $ign",CARNIVAL,2024,dbscan,0
-Omar Courtz,G O D D E S S,2024,dbscan,0
-"Cris MJ, FloyyMenor, LOUKI",Después De La 1,2024,dbscan,0
-Riley Green,Worst Way,2024,dbscan,0
-TWICE,Strategy (from the Netflix film KPop Demon Hunters),2024,dbscan,0
-"Grupo Frontera, Maluma",POR QUÉ SERÁ,2024,dbscan,0
-Jelly Roll,Liar,2024,dbscan,0
-Future,LIL DEMON,2024,dbscan,0
-"Luar La L, Dei V",Dame La Verde,2024,dbscan,0
-"Marshmello, Kane Brown",Miles On It,2024,dbscan,0
-"Oscar Maydon, Junior H",Volver Al Futuro,2024,dbscan,0
-Julión Álvarez y su Norteño Banda,Rey Sin Reina,2024,dbscan,0
-"Yeison Jimenez, Luis Alfonso",Destino Final,2024,dbscan,0
-"Banda MS de Sergio Lizárraga, Alfredo Olivas",Tengo Claro,2024,dbscan,0
-"Clarent, Myke Towers",Sport+ RMX,2024,dbscan,0
-"Future, Metro Boomin, Travis Scott, Playboi Carti",Type Shit,2024,dbscan,0
-Malcolm Todd,Earrings,2024,dbscan,0
-Lizzy McAlpine,Staying,2024,dbscan,0
-Billie Eilish,WILDFLOWER,2024,dbscan,0
-"Yan Block, Young Martino",18,2024,dbscan,0
-SZA,Saturn,2024,dbscan,0
-Yan Block,3 Doritos,2024,dbscan,0
-Kenshi Yonezu,KICK BACK,2024,dbscan,0
-Fuerza Regida,Brillarosa,2024,dbscan,0
-sombr,back to friends,2024,dbscan,0
-"Sonny Fodera, Jazzy, D.O.D",Somedays,2024,dbscan,0
-Fuerza Regida,BELLA,2024,dbscan,0
-"Maanu, Annural Khalid",Jhol,2024,dbscan,0
-"CYRIL, maryjo",Still Into You,2024,dbscan,0
-Lenin Ramírez,Todo Lo Fue,2024,dbscan,0
-"Post Malone, Morgan Wallen",I Had Some Help (Feat. Morgan Wallen),2024,dbscan,0
-Sabrina Carpenter,Please Please Please,2024,dbscan,0
-Ella Langley,20-20,2024,dbscan,0
-Clairo,Juna,2024,dbscan,0
-Myles Smith,Nice To Meet You,2024,dbscan,0
-"J Abdiel, Anuel AA, Blessd, iZaak, Pirlo",WYA REMIX BLACK AND YELLOW (feat. iZaak & Pirlo),2024,dbscan,0
-Alex Warren,Burning Down,2024,dbscan,0
-PARTYNEXTDOOR,N o C h i l l,2024,dbscan,0
-Chris Grey,LET THE WORLD BURN,2024,dbscan,0
-"Peso Pluma, Estevan Plazola",HOLLYWOOD,2024,dbscan,0
-Omar Courtz,I N T E R L U D I O,2024,dbscan,0
-Moy Bobadilla,Corazón,2024,dbscan,0
-"Nanpa Básico, Beéle",Hasta Aquí Llegué,2024,dbscan,0
-"Greeicy, Kapo",A Veces A Besos - Remix,2024,dbscan,0
-Fontaines D.C.,Bug,2024,dbscan,0
-"Matt Sassari, HUGEL, Sonique",It Feels So Good,2024,dbscan,0
-"Nes, Cris MJ",QUE LE DE,2024,dbscan,0
-Julión Álvarez y su Norteño Banda,Cuando Te Ame,2024,dbscan,0
-Green Day,Holiday,2024,dbscan,0
-Young Cister,miau,2024,dbscan,0
-"Omar Courtz, Anuel AA",SERIO CON ESE Q,2024,dbscan,0
-La Arrolladora Banda El Limón De Rene Camacho,Aquí Hay Para Llevar,2024,dbscan,0
-Jonah Kagen,God Needs The Devil,2024,dbscan,0
-Karencici,愛你但說不出口,2024,dbscan,0
-Grupo Frontera,NUNCA LA OLVIDÉ,2024,dbscan,0
-"Rauw Alejandro, Marconi Impara, Yan Block",Espresso Martini,2024,dbscan,0
-Omar Courtz,⁠LUCES DE COLORES,2024,dbscan,0
-Carín León,El Amor De Mi Herida,2024,dbscan,0
-"Faheem Abdullah, Rauhan Malik, Amir Ameer",Ishq,2024,dbscan,0
-Joost,Europapa,2024,dbscan,0
-ILLIT,Tick-Tack,2024,dbscan,0
-"Lost Frequencies, Tom Odell",Black Friday (pretty like the sun),2024,dbscan,0
-"El BAI, Cris MJ, SowlBeatz",Pensándote,2024,dbscan,0
-Tito Double P,NADIE,2024,dbscan,0
-ELENA ROSE,Me Lo Merezco,2024,dbscan,0
-BABYMONSTER,FOREVER,2024,dbscan,0
-Gracie Abrams,That’s So True,2024,dbscan,0
-XG,IS THIS LOVE,2024,dbscan,0
-"Myke Towers, benny blanco",DEGENERE 👑 (feat. benny blanco),2024,dbscan,0
-Ella Langley,girl you're taking home,2024,dbscan,0
-"Dei V, Bryant Myers",Narcotics (with Bryant Myers),2024,dbscan,0
-Omar Courtz,P I E N S O E N S E X X X O,2024,dbscan,0
-"Koe Wetzel, Jessie Murph",High Road (feat. Jessie Murph),2024,dbscan,0
-Lenin Ramírez,Polvo Rosita,2024,dbscan,0
-"Calle 24, Chino Pacas, Fuerza Regida",QUE ONDA,2024,dbscan,0
-Joé Dwèt Filé,4 Kampé,2024,dbscan,0
-"Mitta Ror, Swara Verma",Sheesha - Aakhya Mai Aakh Ghali Jo Bairan,2024,dbscan,0
-"Un Corazón, Kim Richards, Louie Abrego",1000 Pedazos,2024,dbscan,0
-"Yan Block, NTG, SAIKO, SHB",Juguete,2024,dbscan,0
-"Future, Metro Boomin, Kendrick Lamar",Like That,2024,dbscan,0
-"Gabito Ballesteros, Natanael Cano, Luis R Conriquez, Neton Vega",PRESIDENTE,2024,dbscan,0
-keshi,Soft Spot,2024,dbscan,0
-"Young Miko, Feid",offline,2024,dbscan,0
-Billie Eilish,CHIHIRO,2024,dbscan,0
-"Dionela, Jay R",sining (feat. Jay R),2024,dbscan,0
-"Tito Double P, Natanael Cano",PRIMO,2024,dbscan,0
-Ayra Starr,Commas,2024,dbscan,0
-"Omar Courtz, Bryant Myers",2 K 1 6,2024,dbscan,0
-"RØZ, Natt Calma, Mau Moctezuma",CORA DE HIELO,2024,dbscan,0
-Clarion,Hello Juliet,2024,dbscan,0
-Hades66,Emociones,2024,dbscan,0
-Hozier,Too Sweet,2024,dbscan,0
-"W Sound, Blessd, Ovy On The Drums",Soltera - W Sound 01,2024,dbscan,0
-Dasha,Austin (Boots Stop Workin'),2024,dbscan,0
-Tito Double P,EL LOKERON,2024,dbscan,0
-Yuuri,カーテンコール,2024,dbscan,0
-"Luis R Conriquez, Neton Vega",Si No Quieres No,2024,dbscan,0
-"Alleh, Yorghaki",la culpa (track 11),2024,dbscan,0
-Lizzy McAlpine,Spring Into Summer,2024,dbscan,0
-"Rampa, Adam Port, &ME, chuala, Keinemusik",Say What,2024,dbscan,0
-"Tito Double P, Chino Pacas",ESCAPATE,2024,dbscan,0
-"Riley Green, Ella Langley",Don't Mind If I Do,2024,dbscan,0
-Zach Top,I Never Lie,2024,dbscan,0
-Malcolm Todd,4Me 4Me,2024,dbscan,0
-Anuv Jain,Jo Tum Mere Ho,2024,dbscan,0
-Don Toliver,TORE UP,2024,dbscan,0
-"Lady Gaga, Bruno Mars",Die With A Smile,2024,dbscan,0
-Michael Marcagi,Scared To Start,2024,dbscan,0
-Kapo,UWAIE,2024,dbscan,0
-"Neton Vega, JR",Todo a Su Tiempo,2024,dbscan,0
-"TWICE, Megan Thee Stallion",Strategy (feat. Megan Thee Stallion),2024,dbscan,0
-Fonseca,Que Suerte Tenerte,2024,dbscan,0
-Lola Young,Messy,2024,dbscan,0
-ILLIT,Lucky Girl Syndrome,2024,dbscan,0
-"Tito Double P, Neton Vega",LINDA,2024,dbscan,0
-Neton Vega,Loco,2024,dbscan,0
-SEREBRO,Сладко,2024,dbscan,0
-Cup of Joe,Multo,2024,dbscan,0
-JHAYCO,Viene BASQUIAT…,2024,dbscan,0
-Ken Carson,ss,2024,dbscan,0
-Creepy Nuts,Bling-Bang-Bang-Born,2024,dbscan,0
-BABYMONSTER,DRIP,2024,dbscan,0
-Zach Bryan,Pink Skies,2024,dbscan,0
-Green Day,Boulevard of Broken Dreams,2024,dbscan,0
+Ella Langley,Excuse The Mess,2023,dbscan,0
+Junior H,MIENTRAS DUERMES,2023,dbscan,0
+Luke Combs,Fast Car,2023,dbscan,0
+Tate McRae,greedy,2023,dbscan,0
+Tate McRae,run for the hills,2023,dbscan,0
+"The Weeknd, JENNIE, Lily-Rose Depp","One Of The Girls (with JENNIE, Lily Rose Depp)",2023,dbscan,0
+Chappell Roan,Pink Pony Club,2023,dbscan,0
+Laufey,Promise,2023,dbscan,0
+The Marías,Sienna,2024,dbscan,-1
 KATSEYE,Touch,2024,dbscan,0
-Benson Boone,Beautiful Things,2024,dbscan,0
-"Kris R., Blessd",Las Piponas (Remix),2024,dbscan,0
-"Victor Mendivil, Kevin AMF",Punta Cana,2024,dbscan,0
-Alex Warren,Ordinary,2024,dbscan,0
-"Gunna, Roddy Ricch",let it breathe (feat. Roddy Ricch),2024,dbscan,0
-Kendrick Lamar,squabble up,2024,dbscan,0
-Billie Eilish,BLUE,2024,dbscan,0
-"Carín León, Gabito Ballesteros",Ese Vato No Te Queda,2024,dbscan,0
-"Grupo Frontera, Morat",LOS DOS,2024,dbscan,0
-"Rauw Alejandro, Bad Bunny",Qué Pasaría...,2024,dbscan,0
-Paris Paloma,LABOUR - the cacophony,2024,dbscan,0
-"FloyyMenor, Ozuna, Anitta",Gata Only (Remix),2024,dbscan,0
+Dasha,Austin (Boots Stop Workin'),2024,dbscan,0
+"Fuerza Regida, Grupo Frontera",ME JALO,2024,dbscan,0
+Zach Top,I Never Lie,2024,dbscan,0
+"Kendrick Lamar, SZA",luther (with sza),2024,dbscan,0
+"Future, Metro Boomin, Kendrick Lamar",Like That,2024,dbscan,0
 "wifiskeleton, i wanna be a jack-o-lantern",Nope your too late i already died,2024,dbscan,0
-Chappell Roan,"Good Luck, Babe!",2024,dbscan,0
-"Cachirula, LOOJAN, El Malilla",BEIBY - Remix,2024,dbscan,0
-JVKE,her,2024,dbscan,0
-Skryptonite,не расслабляйся,2024,dbscan,0
-"GEMN, 中島健人, Tatsuya Kitani",ファタール - Fatal,2024,dbscan,0
-The Marías,Lejos de Ti,2024,dbscan,0
-Dua Lipa,Houdini,2024,dbscan,0
-"Sevdaliza, Villano Antillano, Tokischa","Ride Or Die, Pt. 2 (with Villano Antillano & Tokischa)",2024,dbscan,0
-Cris MJ,SI NO ES CONTIGO,2024,dbscan,0
-Mitraz,"Akhiyaan Gulaab (From ""Teri Baaton Mein Aisa Uljha Jiya"")",2024,dbscan,0
-"JHAYCO, Kapo",Passoa,2024,dbscan,0
-"Dj Bountyhunter, Dimitri Vegas, Junkie Kid",Woops - Dimitri Vegas & Junkie Kid Remix,2024,dbscan,0
-"BUNT., Nate Traveller",Clouds,2024,dbscan,0
-"Teddy Swims, CYRIL",The Door - CYRIL Remix,2024,dbscan,0
-"Tito Double P, Grupo Frontera",AY MAMÁ,2024,dbscan,0
-"Ella Henderson, Rudimental",Alibi (feat. Rudimental),2024,dbscan,0
-"Alleh, Yorghaki",capaz (merengueton),2024,dbscan,0
-"Natanael Cano, Oscar Maydon",Giza,2024,dbscan,0
-"BUNT., Mapei",TRIPPIN,2024,dbscan,0
-"Bryant Myers, Cris MJ",Tuss,2024,dbscan,0
-Chris Brown,Residuals,2024,dbscan,0
-"Jaziel Avilez, Codiciado, Peso Pluma",Ando Enfocado,2024,dbscan,0
-Fuerza Regida,PERO NO TE ENAMORES,2024,dbscan,0
-"JHAYCO, Omar Courtz",Quimik,2024,dbscan,0
-"Peso Pluma, Neton Vega",LA PATRULLA,2024,dbscan,0
-"Victor Valverde, JR Torres",El Mayor de los Ranas,2024,dbscan,0
-El De Las R's,Beretta (De Los Cerros La Escuela),2024,dbscan,0
-Fontaines D.C.,Favourite,2024,dbscan,0
-Tim Sanders,Do To Me,2024,dbscan,0
-"Rauw Alejandro, Romeo Santos",Khé?,2024,dbscan,0
-"Grupo Frontera, Romeo Santos",ÁNGEL,2024,dbscan,0
-Ivan Cornejo,Baby Please,2024,dbscan,0
-"Pablo Chill-E, Ñengo Flow, Jere Klein",Bastardo (feat. Ñengo Flow & Jere Klein),2024,dbscan,0
-Lithe,Fall Back,2024,dbscan,0
-KATSEYE,Debut,2024,dbscan,0
-Herencia De Grandes,Como Duele El Amor,2024,dbscan,0
-"Rauw Alejandro, Pharrell Williams",Committed,2024,dbscan,0
-ROSÉ,3am,2024,dbscan,0
-Rauw Alejandro,Tú Con Él,2024,dbscan,0
-ROSÉ,drinks or coffee,2024,dbscan,0
-"ROA, De La Rose, Luar La L, Yan Block, Omar Courtz",ETA - RMX,2024,dbscan,0
-Creepy Nuts,オトノケ - Otonoke,2024,dbscan,0
-BABYMONSTER,CLIK CLAK,2024,dbscan,0
-"Zerb, The Chainsmokers, Ink",Addicted,2024,dbscan,0
-"Tito Double P, Eslabon Armado",LA TROKA,2024,dbscan,0
-"Indila, BENNETT",Dernière danse - Techno Mix,2024,dbscan,0
-T3R Elemento,Labios de Cereza 2,2024,dbscan,0
-Grupo Marca Registrada,La Guerita,2024,dbscan,0
-Gracie Abrams,"I Love You, I'm Sorry",2024,dbscan,0
-Ivan Cornejo,Atención,2024,dbscan,0
-"Tiësto, Dimitri Vegas & Like Mike, Gabry Ponte",Mockingbird,2024,dbscan,0
-"Adam Port, Stryv, Keinemusik, Orso, Malachiii",Move,2024,dbscan,0
-Yan Block,Religión,2024,dbscan,0
-Stardust Vibes,Slumber Sea,2024,dbscan,0
-Don Toliver,NEW DROP,2024,dbscan,0
-Mindless Self Indulgence,Seven Minutes in Heaven,2024,dbscan,0
-"Kris R., Hades66, Yama Make Them Bounce",TREMENDA HP,2024,dbscan,0
-"Peso Pluma, Oscar Maydon",SANTAL 33,2024,dbscan,0
+Julia Wolf,In My Room,2024,dbscan,0
+"Riley Green, Ella Langley",Don't Mind If I Do,2024,dbscan,0
+Billie Eilish,WILDFLOWER,2024,dbscan,0
+Ella Langley,weren't for the wind,2024,dbscan,0
+"Fuerza Regida, Grupo Frontera",COQUETA,2024,dbscan,0
+Malcolm Todd,Roommates,2024,dbscan,0
 Malcolm Todd,Sweet Boy,2024,dbscan,0
-"Blessd, Anuel AA, Ovy On The Drums",MIRAME REMIX,2024,dbscan,0
-Lil Naay,MAMI,2024,dbscan,0
-"HUGEL, Topic, Arash, Daecolm",I Adore You (feat. Daecolm),2024,dbscan,0
-"Morgan Seatree, Florence + The Machine",Say My Name - Remix,2024,dbscan,0
-LE SSERAFIM,CRAZY,2024,dbscan,0
-Charli xcx,B2b,2024,dbscan,0
-Kendrick Lamar,Not Like Us,2024,dbscan,0
-"Jaxomy, Agatino Romero, Raffaella Carrà",Pedro,2024,dbscan,0
-The American Dawn,Her,2024,dbscan,0
-DaBaby,PHAT,2024,dbscan,0
+Chappell Roan,"Good Luck, Babe!",2024,dbscan,0
+Gracie Abrams,"I Love You, I'm Sorry",2024,dbscan,0
+Ariana Grande,we can't be friends (wait for your love),2024,dbscan,0
+"Tyler, The Creator, Lola Young",Like Him (feat. Lola Young),2024,dbscan,0
+Gracie Abrams,That’s So True,2024,dbscan,0
+Riley Green,Worst Way,2024,dbscan,0
+"Ella Langley, Riley Green",you look like you love me (feat. Riley Green),2024,dbscan,0
+"Lady Gaga, Bruno Mars",Die With A Smile,2024,dbscan,0
+Sabrina Carpenter,Espresso,2024,dbscan,0
+Myles Smith,Stargazing,2024,dbscan,0
+Malcolm Todd,Earrings,2024,dbscan,0
+Sabrina Carpenter,Please Please Please,2024,dbscan,0
+"Rauw Alejandro, Bad Bunny",Qué Pasaría...,2024,dbscan,0
+Zach Bryan,Pink Skies,2024,dbscan,0
+sombr,back to friends,2024,dbscan,0
+Luke Combs,Ain't No Love In Oklahoma (From Twisters: The Album),2024,dbscan,0
+Cody Johnson,The Fall,2024,dbscan,0
+Billie Eilish,BIRDS OF A FEATHER,2024,dbscan,0
+Tucker Wetmore,Wind Up Missin’ You,2024,dbscan,0
+Alex Warren,Ordinary,2024,dbscan,0
 "Sam Barber, Avery Anna",Indigo (feat. Avery Anna),2024,dbscan,0
-"Jasmine Sandlas, Mofusion",LAAVAN,2024,dbscan,0
-Los Gemelos De Sinaloa,AMOR,2024,dbscan,0
-Trueno,REAL GANGSTA LOVE,2024,dbscan,0
-攬佬SKAI ISYOURGOD,八方來財(Stacks from All Sides),2024,dbscan,0
-"Yailin la Mas Viral, Puyalo Pantera",Bing Bong,2024,dbscan,0
-Lil Naay,UNA BABY EN SANTIAGO,2025,dbscan,0
-KATSEYE,Gabriela,2025,dbscan,0
-Tame Impala,Dracula,2025,dbscan,0
-"Yan Block, Panda Black",Talento,2025,dbscan,0
-KAROL G,LATINA FOREVA,2025,dbscan,0
-"Xavi, Grupo Frontera",No Capea,2025,dbscan,0
-Aitana,6 DE FEBRERO,2025,dbscan,0
-Tu Corrido Mx,Entre tú y yo,2025,dbscan,0
-Kingfishr,Diamonds & Roses,2025,dbscan,0
-"Alex Warren, Jelly Roll",Bloodline,2025,dbscan,0
-Kyle Raphael,Libu-Libong Buwan (Uuwian),2025,dbscan,0
-"G-DRAGON, TAEYANG, DAESUNG",HOME SWEET HOME (feat. TAEYANG & DAESUNG),2025,dbscan,0
-Buffalo Traffic Jam,Fool's Gold,2025,dbscan,0
-Milo j,Ama De Mi Sol,2025,dbscan,0
-Julión Álvarez y su Norteño Banda,Cero Empatía,2025,dbscan,0
-Rema,FUN,2025,dbscan,0
-Yeat,COMË N GO,2025,dbscan,0
-Laufey,Lover Girl,2025,dbscan,0
-"Clave Especial, Fuerza Regida",COMO CAPO,2025,dbscan,0
-Ella Langley,Choosin' Texas,2025,dbscan,0
-El Manu,Tahanan,2025,dbscan,0
-Bad Bunny,KLOuFRENS,2025,dbscan,0
-"Blessd, Ovy On The Drums",AMISTA,2025,dbscan,0
-BABYMONSTER,HOT SAUCE,2025,dbscan,0
-Miley Cyrus,Dream As One - from Avatar: Fire and Ash,2025,dbscan,0
-"Ryan Castro, Blaiz Fayah, Tribal Kush",BOMBASTIK<3,2025,dbscan,0
-"HUGEL, SOLTO (FR)",Jamaican (Bam Bam),2025,dbscan,0
-"Ovy On The Drums, Quevedo, Beéle",YO y TÚ,2025,dbscan,0
-Taylor Swift,Opalite,2025,dbscan,0
-Morgan Wallen,I Got Better,2025,dbscan,0
-Cris MJ,Tu Eta Exotica,2025,dbscan,0
-Amble,Socrates Smiled,2025,dbscan,0
-Benson Boone,Mystical Magical,2025,dbscan,0
-CORTIS,JoyRide,2025,dbscan,0
-"Maesic, Marshall Jefferson, Salomé Das",Life Is Simple (Move Your Body) [Feat Salomé Das],2025,dbscan,0
-IVE,XOXZ,2025,dbscan,0
-Sabrina Carpenter,Tears,2025,dbscan,0
-Teddy Swims,Bad Dreams,2025,dbscan,0
-"A.R. Rahman, Mohit Chauhan, Balaji","Chikiri Chikiri (From ""Peddi"") [TELUGU]",2025,dbscan,0
-"Peso Pluma, Tito Double P",7-3,2025,dbscan,0
-ALLDAY PROJECT,FAMOUS,2025,dbscan,0
-Murtaza Qizilbash,Hum,2025,dbscan,0
-KAROL G,Papasito,2025,dbscan,0
-Neton Vega,M&M,2025,dbscan,0
-KAROL G,Milagros,2025,dbscan,0
-KAROL G,Si Antes Te Hubiera Conocido,2025,dbscan,0
-"Drake, Central Cee",Which One (feat. Central Cee),2025,dbscan,0
-"Sam Fender, Olivia Dean",Rein Me In (with Olivia Dean),2025,dbscan,0
-"KAROL G, Marco Antonio Solís",Coleccionando Heridas,2025,dbscan,0
-Bad Bunny,KETU TeCRÉ,2025,dbscan,0
-"Pirlo, El Americano 4KT",THIS IS COLOMBIA,2025,dbscan,0
-KATSEYE,Gnarly,2025,dbscan,0
-"Zeeshan Ali, Yuvraj Tung, Sandeep Aulakh, Honey Dhillon",Ishqa Ve,2025,dbscan,0
-Kapo,UWAIE,2025,dbscan,0
-Fuerza Regida,Por Esos Ojos,2025,dbscan,0
-"Grupo Firme, Luis Alfonso Partida El Yaki",Que Te Quieran Bonito,2025,dbscan,0
-ALLDAY PROJECT,ONE MORE TIME,2025,dbscan,0
-"Morgan Wallen, Tate McRae",What I Want (feat. Tate McRae),2025,dbscan,0
-"Luis Carrillo, Omar Camacho, Oscar Maydon",Netflix and Chill,2025,dbscan,0
-"TINI, Beéle",Universidad,2025,dbscan,0
-Sherine,Btmanna Ansak,2025,dbscan,0
-Tito Double P,TATTOO,2025,dbscan,0
-Bad Bunny,NUEVAYoL,2025,dbscan,0
-"Lauta, Amigo de Artistas, Tote",Puñaladas,2025,dbscan,0
-"The Weeknd, Playboi Carti",Timeless (feat Playboi Carti),2025,dbscan,0
-"Ayra Starr, Rema",Who’s Dat Girl,2025,dbscan,0
-"Asim Azhar, Sabri Sisters",Meri Zindagi Hai Tu,2025,dbscan,0
-sombr,12 to 12,2025,dbscan,0
-"Justė, Jaxstyle, Jon",Turn The Lights Off,2025,dbscan,0
-ROSALÍA,Dios Es Un Stalker,2025,dbscan,0
-"EsDeeKid, Rico Ace",Phantom,2025,dbscan,0
-"QMIIR, SALIMA CHICA",TIKI TIKI - Slowed,2025,dbscan,0
-Kapo,OHNANA,2025,dbscan,0
-"Victor Mendivil, Gabito Ballesteros",Mia,2025,dbscan,0
-Los Dareyes De La Sierra,Frecuencia,2025,dbscan,0
-"overtonight throwaways, overtonight",mirrors demo,2025,dbscan,0
-"ARJN, KDS, FIFTY4, RONN",KALYANI,2025,dbscan,0
-RAYE,WHERE IS MY HUSBAND!,2025,dbscan,0
-DopeNation,Kakalika,2025,dbscan,0
-"Ya Ice Dilan, Rey Tony, Helabusador, JipMusic Global, Dj Honda",Dichavate,2025,dbscan,0
-"Beéle, Ovy On The Drums",mi refe,2025,dbscan,0
-"Saja Boys, Andrew Choi, Neckwav, Danny Chung, KEVIN WOO, samUIL Lee, KPop Demon Hunters Cast",Your Idol,2025,dbscan,0
-"Kybba, Sean Paul, Ryan Castro, Busy Signal",Ba Ba Bad Remix,2025,dbscan,0
-ILLIT,NOT CUTE ANYMORE,2025,dbscan,0
-Silence Wang,像晴天像雨天（电视剧《难哄》心动曲）,2025,dbscan,0
-"TxC, Davido, Shoday, Scotts Maphuma, Zlatan, Al Xapo",Nakupenda,2025,dbscan,0
-Bad Bunny,BOKeTE,2025,dbscan,0
-"Shashwat Sachdev, Madhubanti Bagchi, Jasmine Sandlas","Shararat (From ""Dhurandhar"")",2025,dbscan,0
-"Disco Lines, Tinashe",No Broke Boys,2025,dbscan,0
-"Kidd Voodoo, JC Reyes",Me Mareo,2025,dbscan,0
-Fuerza Regida,Marlboro Rojo,2025,dbscan,0
-Herencia De Grandes,Ya Fue,2025,dbscan,0
-"Saint Levant, Marwan Moussa",KALAMANTINA / كلمنتينا,2025,dbscan,0
-"Blessd, GeezyDee",DIOMEDEZ,2025,dbscan,0
-"ROA, Hades66",PPC,2025,dbscan,0
-"PARTYNEXTDOOR, Drake, Yebba",DIE TRYING,2025,dbscan,0
-Jin,Don’t Say You Love Me,2025,dbscan,0
-"Luis R Conriquez, Fuerza Regida, Neton Vega",Chula Vente,2025,dbscan,0
+Tommy Richman,MILLION DOLLAR BABY,2024,dbscan,0
+Sabrina Carpenter,Taste,2024,dbscan,0
+Billie Eilish,CHIHIRO,2024,dbscan,0
+Kendrick Lamar,Not Like Us,2024,dbscan,0
+Benson Boone,Beautiful Things,2024,dbscan,0
+"Post Malone, Morgan Wallen",I Had Some Help (Feat. Morgan Wallen),2024,dbscan,0
+BigXthaPlug,The Largest,2024,dbscan,0
+"Kendrick Lamar, Lefty Gunplay",tv off (feat. lefty gunplay),2024,dbscan,0
+The Marías,No One Noticed,2024,dbscan,0
+Shaboozey,A Bar Song (Tipsy),2024,dbscan,0
+Ravyn Lenae,Love Me Not,2024,dbscan,0
+Ella Langley,girl you're taking home,2024,dbscan,0
+Leon Thomas,MUTT,2024,dbscan,0
+Tucker Wetmore,Brunette,2025,dbscan,0
 Olivia Dean,A Couple Minutes,2025,dbscan,0
-SIENNA SPIRO,Die On This Hill,2025,dbscan,0
-Alex Warren,Eternity,2025,dbscan,0
-ARIA VEGA,AGUA E' PANELA (cule_nota),2025,dbscan,0
-Neton Vega,Pvta Luna,2025,dbscan,0
-Addison Rae,Fame is a Gun,2025,dbscan,0
-F3miii,NOBLE,2025,dbscan,0
-"ELENA ROSE, Rawayana",Luna de Miel,2025,dbscan,0
-El Americano 4KT,COMO ASÍ,2025,dbscan,0
-"Romeo Santos, Prince Royce",Lokita Por Mí,2025,dbscan,0
-EsDeeKid,Rottweiler,2025,dbscan,0
-"Bad Bunny, Chuwi",WELTiTA,2025,dbscan,0
-HWASA,Good Goodbye,2025,dbscan,0
-"NO11, Ayjay bobo, Monochrome",HOW FAR,2025,dbscan,0
-"Easykid, Dysbit",Shiny,2025,dbscan,0
-"Young Jonn, Asake, Focalistic",2Factor,2025,dbscan,0
-"Oscar Maydon, Neton Vega",Amigos? No.,2025,dbscan,0
-DJ Asul,MATADORA,2025,dbscan,0
-"Omar Camacho, Victor Mendivil",2+2,2025,dbscan,0
-"Kapo, Feid",X TI,2025,dbscan,0
-Justin Bieber,DAISIES,2025,dbscan,0
-"Don Toliver, Doja Cat, F1 The Album",Lose My Mind (feat. Doja Cat) [From F1® The Movie],2025,dbscan,0
-"Peso Pluma, Tito Double P",daño,2025,dbscan,0
-Dei V,Te Capie,2025,dbscan,0
-"JISOO, ZAYN",EYES CLOSED (with ZAYN),2025,dbscan,0
-"CKay, Mavo",BODY (danz),2025,dbscan,0
-"Victor Mendivil, $HUPE",PLAK,2025,dbscan,0
-Justin Bieber,YUKON,2025,dbscan,0
-"Arijit Singh, Tanishk Bagchi, Manoj Muntashir",Tumhara Mera Milna Likha Toh Hoga Kahi - One Side Love 💔,2025,dbscan,0
-Olivia Dean,I've Seen It,2025,dbscan,0
-Kapo,RUFF,2025,dbscan,0
-Bad Bunny,DtMF,2025,dbscan,0
-Ian Cordova,Te Amo y Me Amas,2025,dbscan,0
-"Ty Dolla $ign, Quavo, Juicy J",DON'T KILL THE PARTY (feat. Quavo & Juicy J),2025,dbscan,0
-"Bad Bunny, RaiNao",PERFuMITO NUEVO,2025,dbscan,0
-"Bizarrap, J Balvin","J Balvin: Bzrp Music Sessions, Vol. 62/66",2025,dbscan,0
-Hearts2Hearts,FOCUS,2025,dbscan,0
-"BigXthaPlug, Ella Langley",Hell At Night (feat. Ella Langley),2025,dbscan,0
-Chuyin,PUES QUE LE HAGO ?,2025,dbscan,0
-Cris MJ,Vamo a Bailotear,2025,dbscan,0
-Kehlani,Folded,2025,dbscan,0
-Dominic Fike,White Keys,2025,dbscan,0
-Ryan Castro,Ojalá,2025,dbscan,0
-"Neton Vega, Peso Pluma",Morena,2025,dbscan,0
-Grupo Firme,El Beneficio De La Duda,2025,dbscan,0
-"W Sound, Cris MJ, Ovy On The Drums",Chica Galáctica - W Sound 07,2025,dbscan,0
-"Gunna, Burna Boy",wgft (feat. Burna Boy),2025,dbscan,0
-"Xavi, Manuel Turizo",En Privado,2025,dbscan,0
-"Yan Block, RaiNao, Slow Jamz",SUERTE,2025,dbscan,0
-Milo j,Recordé,2025,dbscan,0
-Neton Vega,Pa Ti,2025,dbscan,0
-"Prod.Nifour, Mc Gw, CACAU CHUU, Storys Funk",Ela ké Leitada,2025,dbscan,0
-"Kapo, Myke Towers",ILY,2025,dbscan,0
-"ROSALÍA, Carminho",Memória,2025,dbscan,0
-"cjnobeat, Mc Morena, Mc Gw",Até Quebrar a Cama 2.0,2025,dbscan,0
-Fuerza Regida,CHAKA,2025,dbscan,0
-Navjot Ahuja,Khat,2025,dbscan,0
-Mariah the Scientist,Burning Blue,2025,dbscan,0
-"Blessd, Anuel AA, SOG",TE CANTO BAJITO,2025,dbscan,0
-"Mr Plata, El Americano 4KT",Las Muñequitas,2025,dbscan,0
-Anuv Jain,Arz Kiya Hai | Coke Studio Bharat,2025,dbscan,0
-"Victor Mendivil, Oscar Maydon",Mejores Jordans 2,2025,dbscan,0
-"KAROL G, Feid",Verano Rosa,2025,dbscan,0
-"Banda MS de Sergio Lizárraga, Fuerza Regida",Seguro Le Dolió,2025,dbscan,0
-CORTIS,GO!,2025,dbscan,0
-Rema,Baby (Is it a Crime),2025,dbscan,0
-CORTIS,FaSHioN,2025,dbscan,0
-"The Rish, Jubin Nautiyal","Barbaad (From ""Saiyaara"")",2025,dbscan,0
-"j-hope, GloRilla",Killin' It Girl (feat. GloRilla),2025,dbscan,0
-Tyla,CHANEL,2025,dbscan,0
-TRAP MAFIA HOUSE,Mafia Style,2025,dbscan,0
-"Oscar Maydon, Fuerza Regida",Tu Boda,2025,dbscan,0
-"Shashwat Sachdev, Shahzad Ali, Subhadeep Das Chowdhury, Armaan Khan, Irshad Kamil, Roshan, Sahir Ludhianvi",Ishq Jalakar - Karvaan,2025,dbscan,0
-"Mithoon, Arijit Singh","Dhun (From ""Saiyaara"")",2025,dbscan,0
-Zara Larsson,Midnight Sun,2025,dbscan,0
-TUL8TE,El Hob Gany,2025,dbscan,0
-"Vanco, AYA",Ma Tnsani (Yalla Habibi),2025,dbscan,0
-Beéle,si te pillara,2025,dbscan,0
-Beéle,no tiene sentido,2025,dbscan,0
-"Sech, Ryan Castro, Kybba",Novio No,2025,dbscan,0
-Milo j,Solifican12,2025,dbscan,0
-Amble,Schoolyard Days,2025,dbscan,0
-"Saint Levant, Fares Sokar",DO YOU LOVE ME? / سنيورة,2025,dbscan,0
-"Blessd, Kris R.",JOKER,2025,dbscan,0
-"Milo j, Trueno",Gil,2025,dbscan,0
-Hearts2Hearts,The Chase,2025,dbscan,0
-Milo j,OLIMPO,2025,dbscan,0
-"Neton Vega, Chino Pacas",Gula,2025,dbscan,0
+Sabrina Carpenter,Manchild,2025,dbscan,0
 "HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast",What It Sounds Like,2025,dbscan,0
-"ZXKAI, slxughter",NO BATIDÃO - Slowed,2025,dbscan,0
-NAPA,Deslocado,2025,dbscan,0
-Beéle,quédate,2025,dbscan,0
-"A.R. Rahman, Irshad Kamil",Deewaana Deewaana,2025,dbscan,0
-BABYMONSTER,PSYCHO,2025,dbscan,0
-Olivia Dean,Let Alone The One You Love,2025,dbscan,0
-"The Weeknd, Anitta",São Paulo (feat. Anitta),2025,dbscan,0
-Danny Ocean,Corazón,2025,dbscan,0
-Lewis Capaldi,Survive,2025,dbscan,0
-Bad Bunny,BAILE INoLVIDABLE,2025,dbscan,0
-"Karan Aujla, Ikky",Boyfriend,2025,dbscan,0
-"Omar Camacho, Angel Almaguer",Tusinelli,2025,dbscan,0
-Moy Bobadilla,Tus Mentiras (En Vivo),2025,dbscan,0
-Kane Rodriguez,SE VOLVIERON LOCOS,2025,dbscan,0
-"Peso Pluma, Tito Double P",billete,2025,dbscan,0
-"Jimmy Guzman, Omar Camacho",3 AM,2025,dbscan,0
+Bad Bunny,VOY A LLeVARTE PA PR,2025,dbscan,-1
+Morgan Wallen,Love Somebody,2025,dbscan,0
+Olivia Dean,Man I Need,2025,dbscan,0
+Morgan Wallen,I'm The Problem,2025,dbscan,0
 Taylor Swift,The Fate of Ophelia,2025,dbscan,0
-"Cris MJ, Panda Black",Botellita De Champagne,2025,dbscan,0
-"Peso Pluma, Tito Double P",tu con el,2025,dbscan,0
-"Peso Pluma, Tito Double P",dopamina,2025,dbscan,0
+Bad Bunny,DtMF,2025,dbscan,-1
+"HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast",Golden,2025,dbscan,0
+EsDeeKid,4 Raws,2025,dbscan,0
+Olivia Dean,Nice To Each Other,2025,dbscan,0
+"Disco Lines, Tinashe",No Broke Boys,2025,dbscan,0
+sombr,12 to 12,2025,dbscan,0
+"The Weeknd, Playboi Carti",Timeless (feat Playboi Carti),2025,dbscan,0
+Drake,NOKIA,2025,dbscan,0
+Taylor Swift,Opalite,2025,dbscan,0
+Bad Bunny,NUEVAYoL,2025,dbscan,-1
+sombr,back to friends,2025,dbscan,0
 sombr,undressed,2025,dbscan,0
-"Karan Aujla, Ikky",For A Reason,2025,dbscan,0
-Herencia De Grandes,Cambio Mi Suerte,2025,dbscan,0
-"Dj Caio Vieira, MC Meno K, Mc Rodrigo do CN",FAMOSINHA,2025,dbscan,0
-Cris MJ,30 Mil Pies,2025,dbscan,0
-"Los Dareyes De La Sierra, Tito Double P",Vita Fer,2025,dbscan,0
-"Jombriel, DFZM, Jøtta",VITAMINA,2025,dbscan,0
-"Danny Ocean, Sech",Priti,2025,dbscan,0
-"Trinix, The Macarons Project",Too Sweet,2025,dbscan,0
-Benny Bellson,theclubrock,2025,dbscan,0
+Addison Rae,Fame is a Gun,2025,dbscan,0
+"Morgan Wallen, Tate McRae",What I Want (feat. Tate McRae),2025,dbscan,0
+Ella Langley,Choosin' Texas,2025,dbscan,0
+Gigi Perez,Sailor Song,2025,dbscan,0
+RAYE,WHERE IS MY HUSBAND!,2025,dbscan,0
+Justin Bieber,DAISIES,2025,dbscan,0
+Bad Bunny,EoO,2025,dbscan,-1
+Lil Uzi Vert,What You Saying,2025,dbscan,0
+"PinkPantheress, Zara Larsson",Stateside + Zara Larsson,2025,dbscan,0
+"Saja Boys, Andrew Choi, Neckwav, Danny Chung, KEVIN WOO, samUIL Lee, KPop Demon Hunters Cast",Soda Pop,2025,dbscan,0
+Morgan Wallen,20 Cigarettes,2025,dbscan,0
+Olivia Dean,So Easy (To Fall In Love),2025,dbscan,0
+KATSEYE,Gabriela,2025,dbscan,0
+"Dave, Tems",Raindance (feat. Tems),2025,dbscan,0
+Sabrina Carpenter,House Tour,2025,dbscan,0
+Bad Bunny,BAILE INoLVIDABLE,2025,dbscan,-1
+"BigXthaPlug, Ella Langley",Hell At Night (feat. Ella Langley),2025,dbscan,0
+SIENNA SPIRO,Die On This Hill,2025,dbscan,0
+"Saja Boys, Andrew Choi, Neckwav, Danny Chung, KEVIN WOO, samUIL Lee, KPop Demon Hunters Cast",Your Idol,2025,dbscan,0
+Daniel Caesar,Who Knows,2025,dbscan,0
+Morgan Wallen,I Got Better,2025,dbscan,0
+Tame Impala,Dracula,2025,dbscan,0
+Justin Bieber,YUKON,2025,dbscan,0
+Kehlani,Folded,2025,dbscan,0
+"HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast",How It’s Done,2025,dbscan,0

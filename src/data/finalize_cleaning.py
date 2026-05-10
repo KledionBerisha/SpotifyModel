@@ -84,6 +84,9 @@ def clean_df(df: pd.DataFrame) -> pd.DataFrame:
             median = 0.0
         df.loc[~api_mask, c] = df.loc[~api_mask, c].fillna(median)
 
+    # Drop tracks that are still missing audio features (e.g. the 33 API tracks that couldn't fetch features)
+    df = df.dropna(subset=NUMERIC_COLS).copy()
+
     # Sanity bounds and clipping
     zero_one_cols = [
         "acousticness",

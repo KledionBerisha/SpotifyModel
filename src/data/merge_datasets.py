@@ -18,6 +18,15 @@ def merge_datasets(
 ) -> pd.DataFrame:
     """Merge Kaggle and Spotify API datasets."""
     logger.info("Merging: Kaggle (%d rows) + API (%d rows)", len(kaggle_df), len(api_df))
+    
+    # Handle schema differences between Kaggle and new Spotify API format
+    if "year" not in api_df.columns and "release_date" in api_df.columns:
+        api_df["year"] = pd.to_numeric(api_df["release_date"].astype(str).str[:4], errors="coerce").fillna(0).astype(int)
+        
+    # Align columns to the Kaggle schema
+    common_cols = [col for col in kaggle_df.columns if col in api_df.columns]
+    api_df = api_df[common_cols]
+    
     merged = pd.concat([kaggle_df, api_df], ignore_index=True)
     logger.info("Merged: %d total rows", len(merged))
     return merged

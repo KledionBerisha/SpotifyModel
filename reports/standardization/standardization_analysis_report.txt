@@ -29,10 +29,6 @@ SIGNIFICANT VARIANCE CHANGES (9 features):
     P-value: 0.000000
     Interpretation: Variance changes significantly across decades
 
-  • LIVENESS
-    P-value: 0.000000
-    Interpretation: Variance changes significantly across decades
-
   • LOUDNESS
     P-value: 0.000000
     Interpretation: Variance changes significantly across decades
@@ -41,7 +37,11 @@ SIGNIFICANT VARIANCE CHANGES (9 features):
     P-value: 0.000000
     Interpretation: Variance changes significantly across decades
 
-  • TEMPO
+  • INSTRUMENTALNESS
+    P-value: 0.000000
+    Interpretation: Variance changes significantly across decades
+
+  • LIVENESS
     P-value: 0.000000
     Interpretation: Variance changes significantly across decades
 
@@ -49,7 +49,7 @@ SIGNIFICANT VARIANCE CHANGES (9 features):
     P-value: 0.000000
     Interpretation: Variance changes significantly across decades
 
-  • INSTRUMENTALNESS
+  • TEMPO
     P-value: 0.000000
     Interpretation: Variance changes significantly across decades
 
@@ -62,56 +62,56 @@ VARIANCE TRENDS (1980 → 2025) (5-Year Periods):
 
 ACOUSTICNESS:
   1980s Variance: 0.101838
-  2020s Variance: 0.000000
-  Change: -100.0%
+  2020s Variance: 0.083368
+  Change: -18.1%
   Trend: ↓ DECREASING (more standardized)
 
 DANCEABILITY:
   1980s Variance: 0.026292
-  2020s Variance: 0.000000
-  Change: -100.0%
-  Trend: ↓ DECREASING (more standardized)
+  2020s Variance: 0.028211
+  Change: +7.3%
+  Trend: ↑ INCREASING (more diverse)
 
 ENERGY:
   1980s Variance: 0.053126
-  2020s Variance: 0.000000
-  Change: -100.0%
+  2020s Variance: 0.047916
+  Change: -9.8%
   Trend: ↓ DECREASING (more standardized)
 
 INSTRUMENTALNESS:
   1980s Variance: 0.050980
-  2020s Variance: 0.000000
-  Change: -100.0%
-  Trend: ↓ DECREASING (more standardized)
+  2020s Variance: 0.058332
+  Change: +14.4%
+  Trend: ↑ INCREASING (more diverse)
 
 LIVENESS:
   1980s Variance: 0.040728
-  2020s Variance: 0.000000
-  Change: -100.0%
+  2020s Variance: 0.010885
+  Change: -73.3%
   Trend: ↓ DECREASING (more standardized)
 
 LOUDNESS:
   1980s Variance: 22.274680
-  2020s Variance: 0.000000
-  Change: -100.0%
-  Trend: ↓ DECREASING (more standardized)
+  2020s Variance: 79.590903
+  Change: +257.3%
+  Trend: ↑ INCREASING (more diverse)
 
 SPEECHINESS:
   1980s Variance: 0.072979
-  2020s Variance: 0.000000
-  Change: -100.0%
+  2020s Variance: 0.001772
+  Change: -97.6%
   Trend: ↓ DECREASING (more standardized)
 
 TEMPO:
   1980s Variance: 875.786692
-  2020s Variance: 0.000000
-  Change: -100.0%
+  2020s Variance: 391.005319
+  Change: -55.4%
   Trend: ↓ DECREASING (more standardized)
 
 VALENCE:
   1980s Variance: 0.064978
-  2020s Variance: 0.000000
-  Change: -100.0%
+  2020s Variance: 0.056279
+  Change: -13.4%
   Trend: ↓ DECREASING (more standardized)
 
 ================================================================================

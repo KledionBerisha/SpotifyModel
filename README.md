@@ -190,16 +190,19 @@ python -m src.data.ingest_kaggle `
 2. Merr të dhënat e Spotify API (2021-2025)
 
 python -m src.data.ingest_spotify `
-  --output-csv data/interim/spotify_api_2021_2025.csv `
+  --output-csv data/raw/spotify/tracks_2021_2025.csv `
   --api-start-year 2021 `
-  --api-end-year 2025
+  --api-end-year 2025 `
+  --top-n 50
+
+`--fix-csv` mbush mungesat e "popularity" në një skedar CSV ekzistues
 
 
 3. Bashko të dhënat e Kaggle dhe Spotify në një tabelë të unifikuar
 
 python -m src.data.merge_datasets `
   --kaggle-csv data/interim/kaggle_prepared.csv `
-  --spotify-csv data/raw/spotify/Spotify_2021_2025_API_Only.csv `
+  --spotify-csv data/raw/spotify/tracks_2021_2025.csv `
   --output-csv data/processed/Spotify_1980_2025_Final.csv
 
 

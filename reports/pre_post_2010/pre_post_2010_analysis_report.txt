@@ -24,73 +24,73 @@ Found 9 out of 9 features with significant changes
 
 ACOUSTICNESS:
   Pre-Streaming Mean:  0.3614 (±0.3107)
-  Post-Streaming Mean: 0.2847 (±0.2882)
-  Change: -21.2%
-  Cohen's d: 0.2531 (Small effect)
+  Post-Streaming Mean: 0.2854 (±0.2911)
+  Change: -21.0%
+  Cohen's d: 0.2499 (Small effect)
   p-value (Mann-Whitney): 0.000000
   Variance Changed: Yes (p=0.0000)
 
 VALENCE:
   Pre-Streaming Mean:  0.5678 (±0.2566)
-  Post-Streaming Mean: 0.5122 (±0.2456)
-  Change: -9.8%
-  Cohen's d: 0.2199 (Small effect)
+  Post-Streaming Mean: 0.5113 (±0.2480)
+  Change: -9.9%
+  Cohen's d: 0.2227 (Small effect)
   p-value (Mann-Whitney): 0.000000
   Variance Changed: Yes (p=0.0000)
 
 LIVENESS:
   Pre-Streaming Mean:  0.2173 (±0.1920)
-  Post-Streaming Mean: 0.2027 (±0.1761)
-  Change: -6.7%
-  Cohen's d: 0.0786 (Negligible effect)
+  Post-Streaming Mean: 0.2041 (±0.1775)
+  Change: -6.1%
+  Cohen's d: 0.0707 (Negligible effect)
   p-value (Mann-Whitney): 0.000000
   Variance Changed: Yes (p=0.0000)
 
 SPEECHINESS:
   Pre-Streaming Mean:  0.1015 (±0.1822)
-  Post-Streaming Mean: 0.0926 (±0.1012)
-  Change: -8.8%
-  Cohen's d: 0.0563 (Negligible effect)
+  Post-Streaming Mean: 0.0936 (±0.1020)
+  Change: -7.8%
+  Cohen's d: 0.0501 (Negligible effect)
   p-value (Mann-Whitney): 0.000000
   Variance Changed: Yes (p=0.0000)
 
 TEMPO:
   Pre-Streaming Mean:  119.8893 (±29.5794)
-  Post-Streaming Mean: 122.0031 (±28.3466)
+  Post-Streaming Mean: 122.0935 (±28.6265)
   Change: +1.8%
-  Cohen's d: -0.0725 (Negligible effect)
+  Cohen's d: -0.0754 (Negligible effect)
   p-value (Mann-Whitney): 0.000000
   Variance Changed: Yes (p=0.0000)
 
 INSTRUMENTALNESS:
   Pre-Streaming Mean:  0.0677 (±0.2057)
-  Post-Streaming Mean: 0.0910 (±0.2471)
-  Change: +34.5%
-  Cohen's d: -0.1055 (Negligible effect)
+  Post-Streaming Mean: 0.0928 (±0.2492)
+  Change: +37.1%
+  Cohen's d: -0.1131 (Negligible effect)
   p-value (Mann-Whitney): 0.000000
   Variance Changed: Yes (p=0.0000)
 
 DANCEABILITY:
   Pre-Streaming Mean:  0.5753 (±0.1599)
-  Post-Streaming Mean: 0.6137 (±0.1569)
-  Change: +6.7%
-  Cohen's d: -0.2418 (Small effect)
+  Post-Streaming Mean: 0.6147 (±0.1583)
+  Change: +6.8%
+  Cohen's d: -0.2473 (Small effect)
   p-value (Mann-Whitney): 0.000000
-  Variance Changed: Yes (p=0.0000)
+  Variance Changed: Yes (p=0.0001)
 
 ENERGY:
   Pre-Streaming Mean:  0.5914 (±0.2348)
-  Post-Streaming Mean: 0.6549 (±0.2144)
-  Change: +10.7%
-  Cohen's d: -0.2789 (Small effect)
+  Post-Streaming Mean: 0.6562 (±0.2164)
+  Change: +11.0%
+  Cohen's d: -0.2834 (Small effect)
   p-value (Mann-Whitney): 0.000000
   Variance Changed: Yes (p=0.0000)
 
 LOUDNESS:
   Pre-Streaming Mean:  -9.6457 (±4.4988)
-  Post-Streaming Mean: -7.3530 (±3.8064)
-  Change: -23.8%
-  Cohen's d: -0.5372 (Medium effect)
+  Post-Streaming Mean: -7.3184 (±3.8404)
+  Change: -24.1%
+  Cohen's d: -0.5436 (Medium effect)
   p-value (Mann-Whitney): 0.000000
   Variance Changed: Yes (p=0.0000)
 
