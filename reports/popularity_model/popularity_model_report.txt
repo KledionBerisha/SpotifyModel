@@ -1,0 +1,20 @@
+SPOTIFY POPULARITY MODEL REPORT
+================================================================================
+Best model: random_forest
+Train rows: 65190
+Validation rows: 15211
+Test rows: 8908
+
+Validation MAE: 13.4617
+Validation RMSE: 17.1960
+Validation R2: 0.1188
+
+Test MAE: 18.8331
+Test RMSE: 22.3020
+Test R2: 0.0109
+
+Features used:
+acousticness, danceability, energy, instrumentalness, liveness, loudness, speechiness, tempo, valence, duration_ms, year
+
+Baseline and stronger models used:
+Linear Regression, Random Forest Regressor, Gradient Boosting Regressor
