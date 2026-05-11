@@ -243,6 +243,8 @@ python -m src.analysis.create_spotify_visualizations
 
 streamlit run dashboards\dashboard.py
 
+Start-Process "c:\Users\Asus\OneDrive\Desktop\SpotifyModel\reports\figures\figure_4_interactive_scatter.html"
+
 
 Rezultatet
 Pas përfundimit të pipeline-it, të gjithë rezultatet do të jenë në:
