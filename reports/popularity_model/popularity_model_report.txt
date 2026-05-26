@@ -7,19 +7,19 @@ Test rows: 8908
 
 MODEL COMPARISON — VALIDATION SET
 --------------------------------------------------------------------------------
-Model                                   MAE       RMSE         R2
+Model                                   MAE             R2
 --------------------------------------------------------------------------------
-Random Forest Regressor               13.4617    17.1960     0.1188 *
-Gradient Boosting Regressor           13.7553    17.5182     0.0854
-Linear Regression                     14.0845    18.6608    -0.0378
+Random Forest Regressor               13.4617         0.1188 *
+Gradient Boosting Regressor           13.7553         0.0854
+Linear Regression                     14.0845        -0.0378
 
 MODEL COMPARISON — TEST SET
 --------------------------------------------------------------------------------
-Model                                   MAE       RMSE         R2
+Model                                   MAE             R2
 --------------------------------------------------------------------------------
-Linear Regression                     18.0485    22.6373    -0.0191
-Random Forest Regressor               18.8331    22.3020     0.0109 *
-Gradient Boosting Regressor           19.4046    22.8402    -0.0374
+Linear Regression                     18.0485        -0.0191
+Random Forest Regressor               18.8331         0.0109 *
+Gradient Boosting Regressor           19.4046        -0.0374
 
 (* = model saved to popularity_model.joblib)
 
