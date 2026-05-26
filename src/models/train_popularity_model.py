@@ -142,39 +142,77 @@ def compute_shap_values(model, background: pd.DataFrame, sample: pd.DataFrame) -
     return shap_df
 
 
+def _format_model_label(model_name: str) -> str:
+    """Format internal model key for display."""
+    labels = {
+        "linear_regression": "Linear Regression",
+        "random_forest": "Random Forest Regressor",
+        "gradient_boosting": "Gradient Boosting Regressor",
+    }
+    return labels.get(model_name, model_name.replace("_", " ").title())
+
+
 def build_report(
     best_model_name: str,
-    best_val_metrics: dict[str, float],
-    test_metrics: dict[str, float],
+    metrics_df: pd.DataFrame,
     train_rows: int,
     val_rows: int,
     test_rows: int,
 ) -> str:
-    """Build a human-readable report."""
-    return "\n".join(
+    """Build a human-readable report with metrics for all models."""
+    lines = [
+        "SPOTIFY POPULARITY MODEL REPORT",
+        "=" * 80,
+        f"Best model (selected on validation MAE): {_format_model_label(best_model_name)}",
+        f"Train rows: {train_rows}",
+        f"Validation rows: {val_rows}",
+        f"Test rows: {test_rows}",
+        "",
+        "MODEL COMPARISON — VALIDATION SET",
+        "-" * 80,
+        f"{'Model':<32} {'MAE':>10} {'RMSE':>10} {'R2':>10}",
+        "-" * 80,
+    ]
+
+    val_df = metrics_df[metrics_df["split"] == "validation"].sort_values("mae")
+    for _, row in val_df.iterrows():
+        marker = " *" if row["model"] == best_model_name else ""
+        lines.append(
+            f"{_format_model_label(row['model']):<32} "
+            f"{row['mae']:>10.4f} {row['rmse']:>10.4f} {row['r2']:>10.4f}{marker}"
+        )
+
+    lines.extend(
         [
-            "SPOTIFY POPULARITY MODEL REPORT",
-            "=" * 80,
-            f"Best model: {best_model_name}",
-            f"Train rows: {train_rows}",
-            f"Validation rows: {val_rows}",
-            f"Test rows: {test_rows}",
             "",
-            f"Validation MAE: {best_val_metrics['mae']:.4f}",
-            f"Validation RMSE: {best_val_metrics['rmse']:.4f}",
-            f"Validation R2: {best_val_metrics['r2']:.4f}",
+            "MODEL COMPARISON — TEST SET",
+            "-" * 80,
+            f"{'Model':<32} {'MAE':>10} {'RMSE':>10} {'R2':>10}",
+            "-" * 80,
+        ]
+    )
+
+    test_df = metrics_df[metrics_df["split"] == "test"].sort_values("mae")
+    for _, row in test_df.iterrows():
+        marker = " *" if row["model"] == best_model_name else ""
+        lines.append(
+            f"{_format_model_label(row['model']):<32} "
+            f"{row['mae']:>10.4f} {row['rmse']:>10.4f} {row['r2']:>10.4f}{marker}"
+        )
+
+    lines.extend(
+        [
             "",
-            f"Test MAE: {test_metrics['mae']:.4f}",
-            f"Test RMSE: {test_metrics['rmse']:.4f}",
-            f"Test R2: {test_metrics['r2']:.4f}",
+            "(* = model saved to popularity_model.joblib)",
             "",
             "Features used:",
             ", ".join(MODEL_FEATURE_COLUMNS),
             "",
-            "Baseline and stronger models used:",
+            "Models evaluated:",
             "Linear Regression, Random Forest Regressor, Gradient Boosting Regressor",
         ]
     )
+    return "\n".join(lines)
 
 
 def run(
@@ -210,15 +248,10 @@ def run(
     fitted_models = fit_models(train_df)
 
     metrics_records: list[dict[str, object]] = []
-    validation_scores: dict[str, dict[str, float]] = {}
-    test_scores: dict[str, dict[str, float]] = {}
 
     for model_name, model in fitted_models.items():
         val_metrics = evaluate_model(model, val_df[MODEL_FEATURE_COLUMNS], val_df[TARGET_COLUMN])
         test_metrics = evaluate_model(model, test_df[MODEL_FEATURE_COLUMNS], test_df[TARGET_COLUMN])
-
-        validation_scores[model_name] = val_metrics
-        test_scores[model_name] = test_metrics
 
         for split_name, metrics in (("validation", val_metrics), ("test", test_metrics)):
             metrics_records.append(
@@ -238,15 +271,12 @@ def run(
         .iloc[0]["model"]
     )
     best_model = fitted_models[best_model_name]
-    best_validation_metrics = validation_scores[best_model_name]
-    best_test_metrics = test_scores[best_model_name]
 
     importance_df = extract_feature_importance(best_model)
     shap_df = compute_shap_values(best_model, train_df[MODEL_FEATURE_COLUMNS], test_df[MODEL_FEATURE_COLUMNS].sample(n=min(50, len(test_df)), random_state=42))
     report_text = build_report(
         best_model_name,
-        best_validation_metrics,
-        best_test_metrics,
+        metrics_df,
         len(train_df),
         len(val_df),
         len(test_df),
